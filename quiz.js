@@ -208,7 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     qUnitBadge.textContent = q.unit;
     qUnitBadge.className = `unit-badge ${badgeClass}`;
-    qPatternTag.textContent = q.pattern;
     qIndexDisplay.textContent = `Câu ${String(currentIndex + 1).padStart(2, '0')} / ${String(filteredQuestions.length).padStart(2, '0')}`;
     qText.textContent = q.question;
 
@@ -226,6 +225,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const letters = ['A', 'B', 'C', 'D'];
     const selectedAns = userAnswers[q.id];
     const showExplanation = currentMode === 'instant' ? (selectedAns !== undefined) : isExamSubmitted;
+
+    // Ẩn mẫu ngữ pháp khi chưa chọn đáp án để không bị lộ đề
+    if (showExplanation) {
+      qPatternTag.textContent = q.pattern;
+      qPatternTag.style.display = 'inline-flex';
+    } else {
+      qPatternTag.textContent = '';
+      qPatternTag.style.display = 'none';
+    }
 
     q.options.forEach((opt, idx) => {
       const optItem = document.createElement('div');
