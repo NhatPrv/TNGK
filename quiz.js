@@ -279,6 +279,10 @@ document.addEventListener('DOMContentLoaded', () => {
       qFlagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i>';
     }
 
+    // Hiển thị các phương án đáp án
+    optionsGrid.innerHTML = '';
+    const letters = ['A', 'B', 'C', 'D'];
+
     q.options.forEach((opt, idx) => {
       const optItem = document.createElement('div');
       optItem.className = 'option-item';
