@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Ôn Tập Ngữ Pháp Tiếng Nhật (Unit 9 - 12)</title>
+  <meta name="description" content="Ứng dụng Flashcard tương tác ôn tập 21 mẫu ngữ pháp tiếng Nhật Unit 9, 10, 11, 12 với giải thích chi tiết, cách chia và ví dụ thực tế.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-top-row">
+        <div class="header-badge">
+          <i class="fa-solid fa-graduation-cap"></i> JLPT N3 - N2 GRAMMAR REVIEW
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <a href="quiz.html" class="quiz-nav-btn" title="Luyện thi trắc nghiệm 100 câu" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px; background: rgba(99, 102, 241, 0.2); border: 1px solid var(--primary); color: var(--primary-light); padding: 6px 14px; border-radius: 999px; font-size: 0.82rem; font-weight: 700; transition: all 0.2s ease;">
+            <i class="fa-solid fa-file-pen"></i> Thi Trắc Nghiệm 100 Câu
+          </a>
+          <button class="theme-toggle-btn" id="theme-toggle-btn" title="Chuyển đổi Chế độ Sáng / Tối" aria-label="Chuyển đổi giao diện Sáng / Tối">
+            <i class="fa-solid fa-sun" id="theme-icon"></i>
+            <span id="theme-text">Chế độ Sáng</span>
+          </button>
+        </div>
+      </div>
+      <h1 class="app-title">Flashcard Ngữ Pháp Tiếng Nhật</h1>
+      <p class="app-subtitle">Hệ thống ôn luyện 21 mẫu ngữ pháp trọng tâm Unit 9, 10, 11 & 12 kèm cách chia, giải thích song ngữ và ví dụ có audio phát âm.</p>
+    </header>
+
+    <!-- Thống kê & Tiến độ học -->
+    <section class="stats-bar" aria-label="Thống kê học tập">
+      <div class="stat-card">
+        <div class="stat-value" id="stat-total">21</div>
+        <div class="stat-label">Tổng số thẻ</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-current">1 / 21</div>
+        <div class="stat-label">Thẻ hiện tại</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-mastered" style="color: var(--success);">0</div>
+        <div class="stat-label">Đã thuộc</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-percent" style="color: var(--accent);">0%</div>
+        <div class="stat-label">Tiến độ</div>
+      </div>
+    </section>
+
+    <!-- Thanh tiến độ -->
+    <div class="progress-wrapper">
+      <div class="progress-header">
+        <span>Tiến trình ghi nhớ</span>
+        <span id="progress-text">0% hoàn thành</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- Bảng điều khiển bộ lọc & Tìm kiếm -->
+    <div class="controls-panel">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="search-input" placeholder="Tìm theo mẫu câu, kanji, từ khóa tiếng Việt hoặc tiếng Nhật..." autocomplete="off">
+      </div>
+
+      <div class="filters-row">
+        <div class="unit-filters" id="unit-filters">
+          <button class="filter-btn active" data-unit="all">Tất cả (21)</button>
+          <button class="filter-btn" data-unit="Unit 9">Unit 9 (6)</button>
+          <button class="filter-btn" data-unit="Unit 10">Unit 10 (5)</button>
+          <button class="filter-btn" data-unit="Unit 11">Unit 11 (6)</button>
+          <button class="filter-btn" data-unit="Unit 12">Unit 12 (4)</button>
+          <button class="filter-btn" data-unit="unmastered" title="Chỉ hiển thị các thẻ chưa thuộc">Chưa thuộc</button>
+        </div>
+
+        <div class="view-mode-toggle">
+          <button class="view-btn active" id="btn-mode-card">
+            <i class="fa-solid fa-clone"></i> Thẻ 3D
+          </button>
+          <button class="view-btn" id="btn-mode-table">
+            <i class="fa-solid fa-table-list"></i> Tổng hợp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KHÔNG GIAN THẺ FLASHCARD 3D -->
+    <main class="flashcard-arena" id="flashcard-arena">
+      <div class="card-scene">
+        <div class="card-container" id="card-element" tabindex="0" role="button" aria-label="Nhấn để lật thẻ">
+          <!-- Mặt trước -->
+          <div class="card-face card-front">
+            <div class="card-front-top">
+              <span class="unit-badge u9" id="front-unit-badge">Unit 9</span>
+              <span class="card-index" id="front-card-index">01 / 21</span>
+            </div>
+
+            <div class="card-front-center">
+              <h2 class="grammar-pattern japanese-text" id="front-pattern">〜ごとに</h2>
+              <div class="grammar-romaji" id="front-romaji">goto ni</div>
+              <div class="front-connection-box">
+                <div class="connection-title"><i class="fa-solid fa-link"></i> Cấu trúc / Cách kết hợp (接続):</div>
+                <div class="connection-formula japanese-text" id="front-connection">V（辞書形） + ごとに<br>N + ごとに</div>
+              </div>
+            </div>
+
+            <div class="card-front-bottom">
+              <span class="flip-hint">
+                <i class="fa-solid fa-arrows-rotate"></i> Bấm thẻ hoặc Space để xem ý nghĩa & ví dụ
+              </span>
+              <button class="card-audio-btn" id="front-speak-btn" title="Nghe phát âm mẫu câu">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mặt sau -->
+          <div class="card-face card-back">
+            <div class="card-back-header">
+              <div>
+                <span class="unit-badge u9" id="back-unit-badge">Unit 9</span>
+                <span class="back-pattern-title japanese-text" id="back-pattern">〜ごとに</span>
+              </div>
+              <button class="card-audio-btn" id="back-speak-btn" title="Nghe phát âm">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="back-content-grid">
+              <!-- Ý nghĩa tiếng Việt -->
+              <div class="section-block">
+                <div class="section-label">
+                  <i class="fa-solid fa-language"></i> Ý nghĩa & Cách dùng (Tiếng Việt)
+                </div>
+                <div class="section-text" id="back-meaning-vi">
+                  Cứ... lại... / Từng... một
+                </div>
+              </div>
+
+              <!-- Định nghĩa tiếng Nhật -->
+              <div class="section-block">
+                <div class="section-label">
+                  <i class="fa-solid fa-book-open"></i> 意味 / Cách dùng (Tiếng Nhật)
+                </div>
+                <div class="section-text japanese-text" id="back-meaning-ja">
+                  〜たびに / 〜単位で / 〜周期で
+                </div>
+              </div>
+
+              <!-- Ví dụ thực tế -->
+              <div class="section-block">
+                <div class="section-label">
+                  <i class="fa-solid fa-quote-left"></i> 例文 (Ví dụ minh họa kèm dịch nghĩa)
+                </div>
+                <div class="examples-list" id="back-examples-list">
+                  <!-- Render động từ JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thanh điều hướng và hành động thẻ -->
+      <div class="arena-actions">
+        <button class="action-btn btn-nav" id="btn-prev" title="Thẻ trước (Mũi tên trái)">
+          <i class="fa-solid fa-chevron-left"></i> Trước
+        </button>
+        <button class="action-btn btn-primary" id="btn-flip" title="Lật thẻ (Space)">
+          <i class="fa-solid fa-rotate"></i> Lật thẻ
+        </button>
+        <button class="action-btn btn-nav" id="btn-next" title="Thẻ kế tiếp (Mũi tên phải)">
+          Tiếp <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="action-btn" id="btn-shuffle" title="Xáo trộn thứ tự thẻ">
+          <i class="fa-solid fa-shuffle"></i> Xáo trộn
+        </button>
+        <button class="action-btn btn-mastered" id="btn-toggle-mastered" title="Đánh dấu đã thuộc (M)">
+          <i class="fa-regular fa-circle-check"></i> <span id="mastered-btn-text">Đã thuộc</span>
+        </button>
+      </div>
+
+      <!-- Phím tắt hướng dẫn -->
+      <div class="keyboard-hints">
+        <span><kbd class="kbd">Space</kbd> Lật thẻ</span>
+        <span><kbd class="kbd">←</kbd> / <kbd class="kbd">→</kbd> Đổi thẻ</span>
+        <span><kbd class="kbd">S</kbd> Nghe đọc</span>
+        <span><kbd class="kbd">M</kbd> Đã thuộc / Chưa thuộc</span>
+        <span><kbd class="kbd">R</kbd> Xáo thẻ</span>
+        <span><kbd class="kbd">T</kbd> Sáng / Tối</span>
+      </div>
+    </main>
+
+    <!-- CHẾ ĐỘ XEM BẢNG TỔNG HỢP / GRID DANH SÁCH -->
+    <section class="table-view-container" id="table-view-container">
+      <!-- Render động từ app.js -->
+    </section>
+
+    <!-- Trạng thái trống khi tìm kiếm không ra -->
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <div class="empty-state-icon"><i class="fa-regular fa-folder-open"></i></div>
+      <h3>Không tìm thấy mẫu ngữ pháp nào phù hợp</h3>
+      <p>Thử tìm với từ khóa khác hoặc chuyển sang danh mục Unit khác.</p>
+    </div>
+  </div>
+
+  <!-- Thông báo Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

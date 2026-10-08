@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trắc Nghiệm 100 Câu Ngữ Pháp Tiếng Nhật (Unit 9 - 12)</title>
+  <meta name="description" content="Hệ thống 100 câu hỏi trắc nghiệm ngữ pháp tiếng Nhật JLPT Unit 9, 10, 11, 12 kèm giải thích chi tiết, dịch nghĩa và chấm điểm thi thử.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="quiz.css?v=1">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+      <a href="index.html" class="nav-link-btn" title="Quay lại ứng dụng Flashcard">
+        <i class="fa-solid fa-arrow-left"></i> Về Flashcard 3D
+      </a>
+      <div class="nav-right">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="Chuyển đổi Chế độ Sáng / Tối (T)">
+          <i class="fa-solid fa-sun" id="theme-icon"></i>
+          <span id="theme-text">Chế độ Sáng</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="quiz-header">
+      <div class="header-badge">
+        <i class="fa-solid fa-file-signature"></i> JLPT N3 - N2 PRACTICE EXAM
+      </div>
+      <h1 class="app-title">Trắc Nghiệm Ngữ Pháp JLPT</h1>
+      <p class="app-subtitle">Hệ thống 5 bộ đề độc lập (500 câu hỏi trắc nghiệm) bao quát toàn bộ 21 mẫu ngữ pháp Unit 9, 10, 11 & 12 kèm chấm điểm tự động và giải thích chi tiết.</p>
+    </header>
+
+    <!-- Thanh chọn Bộ Đề Thi (5 Bộ Đề) -->
+    <section class="set-selection-bar" aria-label="Chọn bộ đề thi">
+      <div class="set-group-left">
+        <div class="set-label">
+          <i class="fa-solid fa-layer-group"></i> Chọn bộ đề:
+        </div>
+        <div class="set-btn-group" id="set-btn-group">
+          <button class="set-btn active" data-set="1"><i class="fa-solid fa-book-bookmark"></i> Bộ Đề 1</button>
+          <button class="set-btn" data-set="2"><i class="fa-solid fa-book-bookmark"></i> Bộ Đề 2</button>
+          <button class="set-btn" data-set="3"><i class="fa-solid fa-book-bookmark"></i> Bộ Đề 3</button>
+          <button class="set-btn" data-set="4"><i class="fa-solid fa-book-bookmark"></i> Bộ Đề 4</button>
+          <button class="set-btn" data-set="5"><i class="fa-solid fa-book-bookmark"></i> Bộ Đề 5</button>
+        </div>
+      </div>
+      <button class="shuffle-btn" id="btn-shuffle-questions" title="Xáo trộn ngẫu nhiên thứ tự các câu hỏi trong bộ đề hiện tại">
+        <i class="fa-solid fa-shuffle"></i> Xáo trộn câu hỏi
+      </button>
+    </section>
+
+    <!-- Quiz Controls Panel -->
+    <section class="quiz-controls" aria-label="Bảng điều khiển trắc nghiệm">
+      <div class="mode-switches">
+        <button class="mode-btn active" id="btn-mode-instant" title="Xem kết quả và giải thích ngay khi chọn đáp án">
+          <i class="fa-solid fa-bolt"></i> Luyện tập tức thì
+        </button>
+        <button class="mode-btn" id="btn-mode-exam" title="Làm bài có tính giờ, nộp bài mới chấm điểm">
+          <i class="fa-solid fa-stopwatch"></i> Thi thử tính giờ
+        </button>
+      </div>
+
+      <div class="timer-box" id="timer-box" style="display: none;">
+        <i class="fa-regular fa-clock"></i> <span id="timer-display">60:00</span>
+      </div>
+
+      <div class="unit-filter-group" id="unit-filter-group">
+        <button class="filter-btn active" data-unit="all">Tất cả (100)</button>
+        <button class="filter-btn" data-unit="Unit 9">Unit 9 (25)</button>
+        <button class="filter-btn" data-unit="Unit 10">Unit 10 (25)</button>
+        <button class="filter-btn" data-unit="Unit 11">Unit 11 (25)</button>
+        <button class="filter-btn" data-unit="Unit 12">Unit 12 (25)</button>
+      </div>
+    </section>
+
+    <!-- Main Quiz Area -->
+    <main class="quiz-layout">
+      <!-- Question Column -->
+      <div class="question-card">
+        <div class="question-header">
+          <div class="q-meta">
+            <span class="unit-badge u9" id="q-unit-badge">Unit 9</span>
+            <span class="pattern-tag japanese-text" id="q-pattern-tag">〜ごとに</span>
+            <span class="q-index-tag" id="q-index-display">Câu 01 / 100</span>
+          </div>
+
+          <div class="q-actions-top">
+            <button class="icon-btn" id="q-speak-btn" title="Nghe câu hỏi tiếng Nhật">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <button class="icon-btn" id="q-flag-btn" title="Đánh dấu câu cần xem lại">
+              <i class="fa-regular fa-bookmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Nội dung câu hỏi -->
+        <div class="question-body japanese-text" id="q-text">
+          オリンピックは４年（　　）開催される世界的なスポーツの祭典です。
+        </div>
+
+        <!-- Danh sách 4 đáp án -->
+        <div class="options-grid" id="options-grid">
+          <!-- Render động từ JS -->
+        </div>
+
+        <!-- Hộp giải thích (Hiển thị ở chế độ Luyện tập hoặc sau khi nộp bài) -->
+        <div class="explanation-box" id="explanation-box">
+          <div class="exp-badge" id="exp-badge">
+            <i class="fa-solid fa-check"></i> Chính xác!
+          </div>
+          <div class="exp-translation" id="exp-translation">
+            Dịch nghĩa câu...
+          </div>
+          <div class="exp-detail" id="exp-detail">
+            Giải thích chi tiết ngữ pháp...
+          </div>
+        </div>
+
+        <!-- Thanh chuyển câu -->
+        <div class="question-nav-row">
+          <button class="nav-btn" id="btn-prev-q">
+            <i class="fa-solid fa-chevron-left"></i> Câu trước
+          </button>
+          <button class="nav-btn btn-submit" id="btn-finish-quiz" style="display: none;">
+            <i class="fa-solid fa-paper-plane"></i> Nộp bài
+          </button>
+          <button class="nav-btn btn-primary" id="btn-next-q">
+            Câu tiếp theo <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Sidebar: Bảng 100 câu hỏi -->
+      <aside class="quiz-sidebar">
+        <div class="sidebar-title">
+          <span><i class="fa-solid fa-list-ol"></i> Bảng câu hỏi</span>
+          <span class="palette-stats" id="palette-stats">0/100 đã làm</span>
+        </div>
+
+        <div class="palette-legend">
+          <div class="legend-item"><div class="legend-dot answered"></div> Đã làm</div>
+          <div class="legend-item"><div class="legend-dot flagged"></div> Đặt cờ</div>
+          <div class="legend-item"><div class="legend-dot current"></div> Đang xem</div>
+        </div>
+
+        <div class="palette-grid" id="palette-grid">
+          <!-- Render động 100 nút câu hỏi -->
+        </div>
+
+        <div style="margin-top: 16px;">
+          <button class="nav-btn btn-submit" id="btn-sidebar-submit" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-check-double"></i> Nộp bài thi
+          </button>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Modal Kết Quả Thi Thử -->
+  <div class="modal-overlay" id="result-modal">
+    <div class="modal-card">
+      <div class="modal-icon"><i class="fa-solid fa-trophy"></i></div>
+      <h2 class="modal-title">Kết Quả Bài Thi</h2>
+      <p style="color: var(--text-muted);" id="modal-subtitle">Bạn đã hoàn thành bài thi trắc nghiệm ngữ pháp!</p>
+      
+      <div class="score-display" id="modal-score">85 / 100</div>
+      <div style="font-weight: 700; color: var(--success); font-size: 1.1rem;" id="modal-rating">Xuất sắc!</div>
+
+      <div class="score-breakdown">
+        <div class="breakdown-item" id="breakdown-u9">Unit 9: 22/25</div>
+        <div class="breakdown-item" id="breakdown-u10">Unit 10: 23/25</div>
+        <div class="breakdown-item" id="breakdown-u11">Unit 11: 20/25</div>
+        <div class="breakdown-item" id="breakdown-u12">Unit 12: 20/25</div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="nav-btn btn-primary" id="btn-review-answers">
+          <i class="fa-solid fa-magnifying-glass"></i> Xem lại đáp án
+        </button>
+        <button class="nav-btn" id="btn-retake-quiz">
+          <i class="fa-solid fa-rotate-right"></i> Làm lại bài thi
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Thông Báo -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Scripts -->
+  <script src="quiz_data.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
