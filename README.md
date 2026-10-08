@@ -1,13 +1,13 @@
-# JLPT Grammar Flashcards & Quiz Web App (Unit 9 - 12)
+# JLPT N4 - N3 Grammar Flashcards & Quiz Web App (Unit 9 - 12)
 
-Ứng dụng web hỗ trợ ôn tập và kiểm tra ngữ pháp tiếng Nhật (Unit 9, 10, 11, 12 - 21 mẫu ngữ pháp trọng tâm) với giao diện hiện đại, trực quan, hỗ trợ chế độ Sáng / Tối (Light & Dark Mode) và phát âm giọng đọc tiếng Nhật bản xứ qua Web Speech API.
+Ứng dụng web hỗ trợ ôn tập và kiểm tra ngữ pháp tiếng Nhật JLPT N4 - N3 (Unit 9, 10, 11, 12 - 21 mẫu ngữ pháp trọng tâm) với giao diện hiện đại, trực quan, hỗ trợ chế độ Sáng / Tối (Light & Dark Mode) và phát âm giọng đọc tiếng Nhật bản xứ qua Web Speech API.
 
 ---
 
 ## 🌟 Tính Năng Nổi Bật
 
 ### 1. 🎴 Thẻ Ghi Nhớ Ngữ Pháp 3D (Flashcards) - `index.html`
-- **21 mẫu ngữ pháp N3 đầy đủ**: Bao gồm cấu trúc, giải thích ý nghĩa tiếng Việt và các câu ví dụ thực tế kèm phiên âm romaji / furigana và dịch nghĩa.
+- **21 mẫu ngữ pháp JLPT N4 - N3 đầy đủ**: Bao gồm cấu trúc, giải thích ý nghĩa tiếng Việt và các câu ví dụ thực tế kèm phiên âm romaji / furigana và dịch nghĩa.
 - **Lật thẻ 3D mượt mà**: Click để xem mặt sau của thẻ hoặc dùng phím cách (`Space`).
 - **Phát âm tiếng Nhật chuẩn**: Tích hợp Web Speech API đọc to câu ví dụ và mẫu câu ngữ pháp.
 - **Bộ lọc thông minh**: Lọc theo từng Unit (Unit 9, 10, 11, 12), lọc danh sách "Cần ôn tập" hoặc "Đã thuộc".

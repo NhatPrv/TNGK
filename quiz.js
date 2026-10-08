@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Đánh giá
     if (percent >= 90) {
-      modalRating.textContent = '🏆 Xuất sắc! Bạn đã làm chủ ngữ pháp JLPT N3 - N2!';
+      modalRating.textContent = '🏆 Xuất sắc! Bạn đã làm chủ ngữ pháp JLPT N4 - N3!';
       modalRating.style.color = 'var(--success)';
     } else if (percent >= 75) {
       modalRating.textContent = '🌟 Rất tốt! Nắm chắc hầu hết kiến thức trọng tâm.';
