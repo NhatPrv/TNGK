@@ -14,13 +14,16 @@
 - **Tìm kiếm tức thì**: Tra cứu nhanh chóng theo từ khóa mẫu ngữ pháp hoặc ý nghĩa.
 - **Chế độ xem tổng quan (Grid View)**: Xem toàn bộ các thẻ ngữ pháp dạng lưới bảng.
 
-### 2. 📝 Hệ Thống Trắc Nghiệm 500 Câu (5 Bộ Đề Độc Lập) - `quiz.html`
-- **5 Bộ đề độc lập (100 câu / đề)**: Tổng cộng 500 câu trắc nghiệm bao quát toàn bộ 21 mẫu ngữ pháp.
-- **Xáo trộn ngẫu nhiên (Shuffle)**: Các câu hỏi được xáo trộn đan xen ngẫu nhiên giữa các Unit và mẫu ngữ pháp, mô phỏng sát kỳ thi thực tế. Hỗ trợ nút **"Xáo trộn câu hỏi"** để đảo đề bất kỳ lúc nào.
+### 2. 📝 Hệ Thống Trắc Nghiệm Toàn Diện (7 Bộ Đề) - `quiz.html`
+- **5 Bộ đề luyện thi JLPT (100 câu / đề)**: 500 câu trắc nghiệm điền câu hoàn chỉnh mô phỏng đề thi JLPT N4 - N3.
+- **2 Bộ đề chuyên sâu ôn 21 ngữ pháp cốt lõi (42 câu / đề)**:
+  - 🌐 **Ngữ pháp ➔ Nghĩa TV**: Đưa ra mẫu ngữ pháp tiếng Nhật và cấu trúc kết hợp, chọn nghĩa tiếng Việt chính xác trong 4 phương án (không cần dịch cả câu dài).
+  - 🇻🇳 **Nghĩa TV ➔ Ngữ pháp**: Đưa ra ý nghĩa tiếng Việt hoặc tình huống sử dụng, chọn mẫu ngữ pháp tiếng Nhật tương ứng.
+- **Xáo trộn ngẫu nhiên (Shuffle)**: Toàn bộ câu hỏi được phân bổ ngẫu nhiên; có nút **"Xáo trộn câu hỏi"** để đảo thứ tự bất kỳ lúc nào.
 - **2 Chế độ làm bài linh hoạt**:
-  - ⚡ **Luyện tập tức thì**: Hiển thị ngay đáp án đúng / sai và giải thích chi tiết ngay khi chọn phương án.
+  - ⚡ **Luyện tập tức thì**: Ẩn mẫu ngữ pháp khi chưa trả lời; chọn đáp án xong sẽ lập tức hiện ngữ pháp, kết quả đúng/sai và giải thích chi tiết.
   - ⏱️ **Thi thử tính giờ**: Đồng hồ đếm ngược 60 phút, nộp bài mới chấm điểm, xếp loại kết quả và phân tích chi tiết từng Unit.
-- **Bảng số câu hỏi (Palette)**: Dễ dàng nhảy đến bất kỳ câu nào trong 100 câu, đánh dấu cờ (bookmark) những câu phân vân để xem lại sau.
+- **Bảng số câu hỏi (Palette)**: Dễ dàng nhảy đến bất kỳ câu hỏi nào, đánh dấu cờ (bookmark) những câu phân vân để xem lại sau.
 - **Phím tắt tiện lợi**:
   - `1`, `2`, `3`, `4` hoặc `A`, `B`, `C`, `D`: Chọn đáp án
   - `Mũi tên Trái / Phải`: Chuyển câu trước / sau

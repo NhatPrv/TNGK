@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Khởi động
   function init() {
     applyTheme(currentTheme);
+    updateFilterCounts();
     filterQuestions();
     renderQuestion();
     renderPalette();
@@ -105,7 +106,18 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTheme(currentTheme === 'light' ? 'dark' : 'light');
   }
 
-  // Chuyển đổi bộ đề (1 - 5)
+  // Cập nhật số lượng câu hỏi trên các nút lọc Unit
+  function updateFilterCounts() {
+    unitFilterButtons.forEach(btn => {
+      const u = btn.getAttribute('data-unit');
+      const count = u === 'all' 
+        ? fullQuestions.length 
+        : fullQuestions.filter(q => q.unit === u).length;
+      btn.textContent = u === 'all' ? `Tất cả (${count})` : `${u} (${count})`;
+    });
+  }
+
+  // Chuyển đổi bộ đề (Bộ 1 - 5, hoặc 2 bộ chuyên đề)
   function switchSet(setKey) {
     if (currentMode === 'exam' && !isExamSubmitted && Object.keys(userAnswers).length > 0) {
       if (!confirm('Bạn đang trong quá trình thi. Chuyển sang bộ đề khác sẽ đặt lại tiến trình của bộ đề hiện tại. Bạn có chắc muốn chuyển?')) {
@@ -114,14 +126,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     currentSetKey = String(setKey);
-    fullQuestions = [...QUIZ_SETS[currentSetKey]];
+    fullQuestions = (typeof QUIZ_SETS !== 'undefined' && QUIZ_SETS[currentSetKey]) 
+      ? [...QUIZ_SETS[currentSetKey]] 
+      : [...QUIZ_QUESTIONS];
     userAnswers = {};
     flaggedQuestions.clear();
     isExamSubmitted = false;
     currentIndex = 0;
 
     // Cập nhật active class cho các nút bộ đề
-    setButtons.forEach(btn => {
+    const allSetButtons = document.querySelectorAll('.set-btn-group .set-btn');
+    allSetButtons.forEach(btn => {
       if (btn.getAttribute('data-set') === currentSetKey) {
         btn.classList.add('active');
       } else {
@@ -133,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       startExamTimer();
     }
 
+    updateFilterCounts();
     filterQuestions();
     renderQuestion();
     renderPalette();
@@ -161,11 +177,12 @@ document.addEventListener('DOMContentLoaded', () => {
       startExamTimer();
     }
 
+    updateFilterCounts();
     filterQuestions();
     renderQuestion();
     renderPalette();
 
-    showToast('Đã xáo trộn ngẫu nhiên thứ tự 100 câu hỏi! 🔀');
+    showToast(`Đã xáo trộn ngẫu nhiên thứ tự ${fullQuestions.length} câu hỏi! 🔀`);
   }
 
   // Hiển thị thông báo Toast
@@ -209,6 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
     qUnitBadge.textContent = q.unit;
     qUnitBadge.className = `unit-badge ${badgeClass}`;
     qIndexDisplay.textContent = `Câu ${String(currentIndex + 1).padStart(2, '0')} / ${String(filteredQuestions.length).padStart(2, '0')}`;
+    const isQuestionJa = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(q.question);
+    qText.className = `question-body ${isQuestionJa ? 'japanese-text' : ''}`;
     qText.textContent = q.question;
 
     // Trạng thái cờ đánh dấu
@@ -252,9 +271,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
+      const isOptJa = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(opt);
       optItem.innerHTML = `
         <div class="option-key">${letters[idx]}</div>
-        <div class="option-text japanese-text">${opt}</div>
+        <div class="option-text ${isOptJa ? 'japanese-text' : ''}">${opt}</div>
       `;
 
       // Click chọn đáp án

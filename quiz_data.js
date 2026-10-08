@@ -1,5 +1,5 @@
-// Bộ dữ liệu 5 bộ đề thi trắc nghiệm ngữ pháp tiếng Nhật (500 câu)
-// Đã được xáo trộn ngẫu nhiên đan xen các Unit và ngữ pháp
+// Bộ dữ liệu các bộ đề thi trắc nghiệm ngữ pháp tiếng Nhật
+// Bao gồm: Bộ Đề 1 - 5 (500 câu điền câu) và 2 Bộ Đề Chuyên Đề Cốt Lõi (84 câu)
 const QUIZ_SETS = {
   "1": [
     {
@@ -7509,6 +7509,1270 @@ const QUIZ_SETS = {
       "answer": 0,
       "translation": "Đời nào tôi chịu bỏ cuộc ước mơ ở nơi thế này!",
       "explanation": "Đáp án đúng là A. Không từ bỏ."
+    }
+  ],
+  "grammar-to-meaning": [
+    {
+      "id": 1,
+      "unit": "Unit 9",
+      "pattern": "〜一方で",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜一方で」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Cứ mỗi lần... lại...",
+        "Tuy có... thật nhưng...",
+        "Vừa... vừa... / Song song đó (đồng thời tiến hành hoặc tồn tại)",
+        "Làm sao mà... được / Tuyệt đối không có chuyện..."
+      ],
+      "answer": 2,
+      "translation": "Đặc điểm của 〜一方で: Vừa... vừa... / Song song đó (đồng thời tiến hành hoặc tồn tại)",
+      "explanation": "Đáp án đúng là C. Ngoài ý nghĩa đối lập, 〜一方で còn dùng để chỉ sự song hành: cùng lúc vừa làm việc này vừa làm việc kia."
+    },
+    {
+      "id": 2,
+      "unit": "Unit 10",
+      "pattern": "〜ことだ",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜ことだ」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Không nên... / Đừng... (Vないことだ - lời khuyên cảnh báo)",
+        "Cảm thấy như là / Có xu hướng dễ...",
+        "Có vẻ không... / Khó lòng mà...",
+        "Nhờ có... / Nhờ ơn..."
+      ],
+      "answer": 0,
+      "translation": "Đặc điểm của 〜ことだ: Không nên... / Đừng... (Vないことだ - lời khuyên cảnh báo)",
+      "explanation": "Đáp án đúng là A. Lưu ý: Không dùng mẫu câu này để đưa ra lời khuyên cho người bề trên hoặc cấp trên."
+    },
+    {
+      "id": 3,
+      "unit": "Unit 11",
+      "pattern": "〜ものか / 〜もんか",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜ものか / 〜もんか」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Muốn ai đó làm việc gì cho mình",
+        "Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2",
+        "Vừa mới... xong",
+        "Cho dù... đi chăng nữa"
+      ],
+      "answer": 1,
+      "translation": "Đặc điểm của 〜ものか / 〜もんか: Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2",
+      "explanation": "Đáp án đúng là B. Phân biệt: 〜わけがない là phủ định tính khả thi dựa trên lý lẽ; còn 〜ものか mang sắc thái cảm xúc quyết liệt của người nói."
+    },
+    {
+      "id": 4,
+      "unit": "Unit 10",
+      "pattern": "〜に対して",
+      "question": "Mẫu ngữ pháp「〜に対して」(N + に対して / Nに対するN / 普通形 + のに対して) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Phải... / Nên... (lời khuyên nhủ)",
+        "Đối với... (thái độ, hành vi hướng tới ai/cái gì)",
+        "Độ... / Mức độ...",
+        "Không hẳn là... / Chưa chắc là..."
+      ],
+      "answer": 1,
+      "translation": "Ngữ pháp: 〜に対して (ni taishite) ➔ Ý nghĩa: Đối với... (thái độ, hành vi hướng tới ai/cái gì)",
+      "explanation": "Đáp án đúng là B. 「〜に対して」nghĩa 1: Hướng hành động/thái độ vào đối tượng (Ví dụ: Thầy giáo rất thân thiện đối với học sinh; Danh từ đi kèm: に対するN)."
+    },
+    {
+      "id": 5,
+      "unit": "Unit 9",
+      "pattern": "〜一方で",
+      "question": "Mẫu ngữ pháp「〜一方で」(普通形 + 一方で) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Cứ mỗi lần... lại...",
+        "Một mặt thì... mặt khác thì... (đối lập giữa 2 mặt của sự việc)",
+        "Do ảnh hưởng của...",
+        "Có vẻ là không... / Khó lòng mà..."
+      ],
+      "answer": 1,
+      "translation": "Ngữ pháp: 〜一方で (ippou de) ➔ Ý nghĩa: Một mặt thì... mặt khác thì... (đối lập giữa 2 mặt của sự việc)",
+      "explanation": "Đáp án đúng là B. 「〜一方で」dùng để nêu ra hai mặt đối lập tương phản của một vấn đề (Ví dụ: tiện lợi một mặt nhưng chi phí lại đắt đỏ)."
+    },
+    {
+      "id": 6,
+      "unit": "Unit 9",
+      "pattern": "〜さえ",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜さえ」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Vừa mới... xong",
+        "Thậm chí đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)",
+        "Không hẳn là... / Chưa chắc là...",
+        "Nên... / Phải... (lời khuyên tốt nhất)"
+      ],
+      "answer": 1,
+      "translation": "Đặc điểm của 〜さえ: Thậm chí đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)",
+      "explanation": "Đáp án đúng là B. Thường đi kèm trợ từ phủ định hoặc câu mang hàm ý bất ngờ, thất vọng."
+    },
+    {
+      "id": 7,
+      "unit": "Unit 9",
+      "pattern": "〜せいで",
+      "question": "Mẫu ngữ pháp「〜せいで」(V/A/N + せいで) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Nhờ có... / Nhờ ơn...",
+        "Dễ... / Hay có xu hướng tính cách...",
+        "Do / Vì / Tại... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)",
+        "Độ... / Mức độ..."
+      ],
+      "answer": 2,
+      "translation": "Ngữ pháp: 〜せいで (sei de) ➔ Ý nghĩa: Do / Vì / Tại... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)",
+      "explanation": "Đáp án đúng là C. 「〜せいで」dùng khi nói về nguyên nhân gây ra hậu quả tiêu cực, thường mang sắc thái trách móc, đổ lỗi."
+    },
+    {
+      "id": 8,
+      "unit": "Unit 11",
+      "pattern": "〜代わりに",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜代わりに」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Bù lại... / Đổi lại... (sự bù trừ qua lại)",
+        "Làm sao mà... được / Tuyệt đối không...",
+        "Mong sao... / Muốn ai đó làm",
+        "E là... / Có nguy cơ xảy ra việc xấu"
+      ],
+      "answer": 0,
+      "translation": "Đặc điểm của 〜代わりに: Bù lại... / Đổi lại... (sự bù trừ qua lại)",
+      "explanation": "Đáp án đúng là A. Ngoài ra còn có ý bù trừ: Công việc tuy vất vả nhưng bù lại lương rất cao."
+    },
+    {
+      "id": 9,
+      "unit": "Unit 10",
+      "pattern": "〜わけがない",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜わけがない」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Vừa mới... xong",
+        "Cứ mỗi lần... lại...",
+        "Nên... / Phải... (lời khuyên tốt nhất)",
+        "Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)"
+      ],
+      "answer": 3,
+      "translation": "Đặc điểm của 〜わけがない: Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)",
+      "explanation": "Đáp án đúng là D. Dạng phủ định kép: 〜ないわけがない mang ý nghĩa chắc chắn là có/sẽ."
+    },
+    {
+      "id": 10,
+      "unit": "Unit 12",
+      "pattern": "〜としても",
+      "question": "Mẫu ngữ pháp「〜としても」(普通形 + としても) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Không hẳn là... / Chưa chắc là...",
+        "E là... / Có nguy cơ xảy ra việc xấu",
+        "Làm sao mà... được / Tuyệt đối không...",
+        "Cho dù... (đi chăng nữa thì vẫn không thay đổi)"
+      ],
+      "answer": 3,
+      "translation": "Ngữ pháp: 〜としても (to shitemo) ➔ Ý nghĩa: Cho dù... (đi chăng nữa thì vẫn không thay đổi)",
+      "explanation": "Đáp án đúng là D. 「〜としても」đặt ra điều kiện giả định: Cho dù tình huống ở vế trước có xảy ra đi chăng nữa, thì lập trường, suy nghĩ hoặc sự việc ở vế sau vẫn không hề bị suy chuyển."
+    },
+    {
+      "id": 11,
+      "unit": "Unit 9",
+      "pattern": "〜ことは〜が〜",
+      "question": "Mẫu ngữ pháp「〜ことは〜が〜」(AことはAが... (lặp lại cùng một từ)) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Cứ mỗi lần... lại...",
+        "Cho dù... đi chăng nữa",
+        "Muốn ai đó làm việc gì cho mình",
+        "Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)"
+      ],
+      "answer": 3,
+      "translation": "Ngữ pháp: 〜ことは〜が〜 (koto wa ... ga ...) ➔ Ý nghĩa: Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)",
+      "explanation": "Đáp án đúng là D. 「〜ことは〜が〜」dùng bằng cách lặp lại cùng một động từ hoặc tính từ, biểu thị sự nhượng bộ: thừa nhận vế trước nhưng vế sau nêu mặt hạn chế (Ví dụ: Ngon thì ngon thật đấy nhưng giá đắt quá)."
+    },
+    {
+      "id": 12,
+      "unit": "Unit 9",
+      "pattern": "〜ごとに",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜ごとに」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Một mặt thì... mặt khác thì... (đối lập)",
+        "E là... / Có nguy cơ xảy ra điều xấu",
+        "Nhờ có... / Nhờ ơn... (nguyên nhân kết quả tốt)",
+        "Cứ cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)"
+      ],
+      "answer": 3,
+      "translation": "Đặc điểm của 〜ごとに: Cứ cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)",
+      "explanation": "Đáp án đúng là D. Khác với 〜たびに (nhấn mạnh cứ mỗi lần A thì lại xảy ra B bất kể thời gian), 〜ごとに nhấn mạnh sự lặp lại đều đặn theo chu kỳ, chuỗi thời gian hoặc đơn vị phân chia."
+    },
+    {
+      "id": 13,
+      "unit": "Unit 10",
+      "pattern": "〜に対して",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜に対して」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Cứ mỗi lần... lại...",
+        "Trái ngược với... / Ngược lại với... (so sánh tương phản 2 vế)",
+        "Nhờ có... / Nhờ ơn...",
+        "Phải... / Nên... (lời khuyên nhủ)"
+      ],
+      "answer": 1,
+      "translation": "Đặc điểm của 〜に対して: Trái ngược với... / Ngược lại với... (so sánh tương phản 2 vế)",
+      "explanation": "Đáp án đúng là B. Nghĩa 2: So sánh đối lập hai sự việc tương phản (Ví dụ: Tôi thích thể thao trái ngược với em trai thích đọc sách)."
+    },
+    {
+      "id": 14,
+      "unit": "Unit 9",
+      "pattern": "〜ごとに",
+      "question": "Mẫu ngữ pháp「〜ごとに」(V（辞書形） / N + ごとに) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Thay cho... / Thay vì...",
+        "Cứ mỗi lần... lại... / Từng... một",
+        "E là... / Có nguy cơ xảy ra điều xấu",
+        "Do / Vì / Tại... (kết quả xấu, đổ lỗi)"
+      ],
+      "answer": 1,
+      "translation": "Ngữ pháp: 〜ごとに (goto ni) ➔ Ý nghĩa: Cứ mỗi lần... lại... / Từng... một",
+      "explanation": "Đáp án đúng là B. 「〜ごとに」(chữ Hán là 毎に) diễn tả hành động hay sự việc cứ lặp lại tuần tự theo chu kỳ hoặc đơn vị (Ví dụ: 10分ごとに - cứ 10 phút một lần)."
+    },
+    {
+      "id": 15,
+      "unit": "Unit 10",
+      "pattern": "〜ことだ",
+      "question": "Mẫu ngữ pháp「〜ことだ」(V（辞書形 / ナイ形） + ことだ) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Nên... / Phải... (đưa ra lời khuyên, giải pháp tốt nhất)",
+        "Thay vì... / Thay cho...",
+        "Ngay cả... / Thậm chí đến cả...",
+        "Tuyệt đối không... đâu / Làm sao mà..."
+      ],
+      "answer": 0,
+      "translation": "Ngữ pháp: 〜ことだ (koto da) ➔ Ý nghĩa: Nên... / Phải... (đưa ra lời khuyên, giải pháp tốt nhất)",
+      "explanation": "Đáp án đúng là A. 「〜ことだ」dùng trong văn nói trực tiếp để khuyên nhủ ai đó: Làm việc đó là tốt nhất, thích hợp nhất trong hoàn cảnh này."
+    },
+    {
+      "id": 16,
+      "unit": "Unit 9",
+      "pattern": "〜おかげで",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜おかげで」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Lẽ nào lại... / Tuyệt đối không thể",
+        "Cho dù... đi chăng nữa",
+        "Nhờ có... (đôi khi dùng với sắc thái mỉa mai, châm biếm)",
+        "Thay vì... / Thay cho..."
+      ],
+      "answer": 2,
+      "translation": "Đặc điểm của 〜おかげで: Nhờ có... (đôi khi dùng với sắc thái mỉa mai, châm biếm)",
+      "explanation": "Đáp án đúng là C. Khi dùng với kết quả xấu, 〜おかげで mang hàm ý mỉa mai, trách khéo (Ví dụ: Nhờ ơn cậu làm sai mà tớ phải làm lại hết)."
+    },
+    {
+      "id": 17,
+      "unit": "Unit 10",
+      "pattern": "〜わけがない",
+      "question": "Mẫu ngữ pháp「〜わけがない」(普通形 + わけがない) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Đối với... / Trái ngược với...",
+        "Cứ mỗi lần... lại...",
+        "Nên... / Phải... (lời khuyên tốt nhất)",
+        "Lẽ nào lại... / Làm sao mà... được / Tuyệt đối không thể..."
+      ],
+      "answer": 3,
+      "translation": "Ngữ pháp: 〜わけがない (wake ga nai) ➔ Ý nghĩa: Lẽ nào lại... / Làm sao mà... được / Tuyệt đối không thể...",
+      "explanation": "Đáp án đúng là D. 「〜わけがない」biểu thị sự quả quyết mạnh mẽ của người nói rằng chuyện đó tuyệt đối không thể xảy ra dựa trên lý lẽ xác đáng. Văn thoại hay dùng: 〜わけない."
+    },
+    {
+      "id": 18,
+      "unit": "Unit 12",
+      "pattern": "〜恐れがある",
+      "question": "Mẫu ngữ pháp「〜恐れがある」(V辞書形 / Nの + 恐れがある) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Nên... / Phải... (lời khuyên)",
+        "Không hẳn là... / Chưa chắc là...",
+        "Nhờ có... / Nhờ ơn...",
+        "E là... / Có nguy cơ... / Lo sợ rằng..."
+      ],
+      "answer": 3,
+      "translation": "Ngữ pháp: 〜恐れがある (osore ga aru) ➔ Ý nghĩa: E là... / Có nguy cơ... / Lo sợ rằng...",
+      "explanation": "Đáp án đúng là D. 「〜恐れがある」(chữ Hán là 恐 - sợ hãi) dùng để cảnh báo về khả năng một sự việc tiêu cực, tai họa hoặc tổn thất có thể xảy ra trong tương lai."
+    },
+    {
+      "id": 19,
+      "unit": "Unit 12",
+      "pattern": "〜恐れがある",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜恐れがある」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Nên... / Phải... (lời khuyên)",
+        "Thêm vào đó... / Không chỉ mà còn...",
+        "Vừa mới... xong",
+        "Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra"
+      ],
+      "answer": 3,
+      "translation": "Đặc điểm của 〜恐れがある: Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra",
+      "explanation": "Đáp án đúng là D. Mang văn phong trang trọng, thường xuất hiện trong bản tin thời sự, dự báo thời tiết, thông báo y tế hoặc văn bản pháp quy."
+    },
+    {
+      "id": 20,
+      "unit": "Unit 11",
+      "pattern": "〜たばかり",
+      "question": "Mẫu ngữ pháp「〜たばかり」(V（タ形） + ばかり) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Một mặt thì... mặt khác thì...",
+        "Độ... / Mức độ...",
+        "Vừa mới... xong (theo cảm nhận chủ quan của người nói)",
+        "Tuyệt đối không... đâu / Làm sao mà..."
+      ],
+      "answer": 2,
+      "translation": "Ngữ pháp: 〜たばかり (ta bakari) ➔ Ý nghĩa: Vừa mới... xong (theo cảm nhận chủ quan của người nói)",
+      "explanation": "Đáp án đúng là C. 「〜たばかり」diễn tả hành động vừa xảy ra cách đây ít lâu theo cảm nhận chủ quan của người nói (Ví dụ: Vừa mới vào công ty được 1 tuần; Vừa mới ăn cơm xong)."
+    },
+    {
+      "id": 21,
+      "unit": "Unit 11",
+      "pattern": "〜っぽい",
+      "question": "Mẫu ngữ pháp「〜っぽい」(N / Aい（bỏ い） / Vます（bỏ ます） + っぽい) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Thay cho... / Thay vì...",
+        "Vừa mới... xong",
+        "Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)",
+        "Lẽ nào lại... / Làm sao có chuyện..."
+      ],
+      "answer": 2,
+      "translation": "Ngữ pháp: 〜っぽい (-ppoi) ➔ Ý nghĩa: Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)",
+      "explanation": "Đáp án đúng là C. 「〜っぽい」có 3 nghĩa chính: 1. Có vẻ như (大人っぽい - giống người lớn, 白っぽい - hơi trắng); 2. Có nhiều chất gì đó (油っぽい - nhiều dầu mỡ); 3. Hay/Dễ làm gì (怒りっぽい - hay cáu, 忘れっぽい - hay quên)."
+    },
+    {
+      "id": 22,
+      "unit": "Unit 12",
+      "pattern": "〜としても",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜としても」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Không hẳn là... / Chưa chắc là...",
+        "Nhờ có... / Nhờ ơn...",
+        "Thêm vào đó... / Không chỉ mà còn...",
+        "Dù giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên"
+      ],
+      "answer": 3,
+      "translation": "Đặc điểm của 〜としても: Dù giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên",
+      "explanation": "Đáp án đúng là D. Ví dụ: Cho dù tôi có trở thành người giàu thì lối sống của tôi vẫn bình dị như hiện tại."
+    },
+    {
+      "id": 23,
+      "unit": "Unit 10",
+      "pattern": "〜によって / 〜により / 〜による",
+      "question": "Mẫu ngữ pháp「〜によって / 〜により / 〜による」(N + によって / により / によるN) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Do / Vì... (nguyên nhân) HOẶC Bởi... (tác giả trong câu bị động)",
+        "Làm sao mà... được / Tuyệt đối không...",
+        "E là có nguy cơ xảy ra việc xấu",
+        "Vừa mới... xong"
+      ],
+      "answer": 0,
+      "translation": "Ngữ pháp: 〜によって / 〜により / 〜による (ni yotte / ni yori / ni yoru) ➔ Ý nghĩa: Do / Vì... (nguyên nhân) HOẶC Bởi... (tác giả trong câu bị động)",
+      "explanation": "Đáp án đúng là A. 「〜によって」có 4 nghĩa quan trọng: 1. Do/Vì nguyên nhân; 2. Bởi ai (chủ thể bị động); 3. Bằng phương tiện/cách thức; 4. Tùy thuộc vào từng đối tượng."
+    },
+    {
+      "id": 24,
+      "unit": "Unit 9",
+      "pattern": "〜ことは〜が〜",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜ことは〜が〜」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "A thì có A nhưng không hoàn hảo / có điểm trừ",
+        "Tuyệt đối không có chuyện... / Làm sao mà...",
+        "Cho dù... đi chăng nữa",
+        "Thêm vào đó... / Bên cạnh việc..."
+      ],
+      "answer": 0,
+      "translation": "Đặc điểm của 〜ことは〜が〜: A thì có A nhưng không hoàn hảo / có điểm trừ",
+      "explanation": "Đáp án đúng là A. Cấu trúc: V/AことはV/Aが... giúp câu nói mang tính khách quan, tế nhị hơn khi chê."
+    },
+    {
+      "id": 25,
+      "unit": "Unit 11",
+      "pattern": "〜っぽい",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜っぽい」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Lẽ nào lại... / Làm sao có chuyện...",
+        "Tùy vào... / Do...",
+        "Dễ... / Hay... (xu hướng tính cách: hay quên, hay giận, chóng chán)",
+        "Làm sao mà... được / Tuyệt đối không..."
+      ],
+      "answer": 2,
+      "translation": "Đặc điểm của 〜っぽい: Dễ... / Hay... (xu hướng tính cách: hay quên, hay giận, chóng chán)",
+      "explanation": "Đáp án đúng là C. Dùng nhiều trong văn nói thường ngày."
+    },
+    {
+      "id": 26,
+      "unit": "Unit 9",
+      "pattern": "〜おかげで",
+      "question": "Mẫu ngữ pháp「〜おかげで」(V/A/N + おかげで) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Vừa mới... xong",
+        "Do / Vì / Tại... (nguyên nhân đem lại kết quả xấu)",
+        "Lẽ nào lại... / Tuyệt đối không thể",
+        "Nhờ có... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)"
+      ],
+      "answer": 3,
+      "translation": "Ngữ pháp: 〜おかげで (okage de) ➔ Ý nghĩa: Nhờ có... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)",
+      "explanation": "Đáp án đúng là D. 「〜おかげで」chỉ nguyên nhân đem lại kết quả tốt đẹp, thuận lợi. Thể hiện sự cảm kích, biết ơn."
+    },
+    {
+      "id": 27,
+      "unit": "Unit 12",
+      "pattern": "〜とは限りません / 〜とは限らない",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜とは限りません / 〜とは限らない」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Tuyệt đối không... đâu",
+        "E là... / Có nguy cơ...",
+        "Cho dù... đi chăng nữa",
+        "Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ"
+      ],
+      "answer": 3,
+      "translation": "Đặc điểm của 〜とは限りません / 〜とは限らない: Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ",
+      "explanation": "Đáp án đúng là D. Thường đi kèm các phó từ: 必ずしも (chưa hẳn), いつも (luôn luôn), 全部 (toàn bộ)."
+    },
+    {
+      "id": 28,
+      "unit": "Unit 11",
+      "pattern": "〜さ（Aいさ / なAさ）",
+      "question": "Mẫu ngữ pháp「〜さ（Aいさ / なAさ）」(Aい（bỏ い） + さ / Aな + さ) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Có vẻ như / Có khuynh hướng tính cách...",
+        "Chưa chắc là... / Không hẳn là...",
+        "Cho dù... đi chăng nữa",
+        "Độ... / Mức độ... (danh từ hóa tính từ đo lường)"
+      ],
+      "answer": 3,
+      "translation": "Ngữ pháp: 〜さ（Aいさ / なAさ） (-sa) ➔ Ý nghĩa: Độ... / Mức độ... (danh từ hóa tính từ đo lường)",
+      "explanation": "Đáp án đúng là D. Thêm đuôi「〜さ」vào sau gốc tính từ để tạo thành danh từ chỉ mức độ đo lường khách quan (Ví dụ: 重さ - độ nặng, 長さ - chiều dài, 深さ - độ sâu)."
+    },
+    {
+      "id": 29,
+      "unit": "Unit 9",
+      "pattern": "〜さえ",
+      "question": "Mẫu ngữ pháp「〜さえ」(N / Vます（bỏ ます） + さえ) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Nên... / Phải... (lời khuyên tốt nhất)",
+        "Không hẳn là... / Chưa chắc là...",
+        "Ngay cả... / Đến cả... (cũng không)",
+        "Tùy vào mỗi người..."
+      ],
+      "answer": 2,
+      "translation": "Ngữ pháp: 〜さえ (sae) ➔ Ý nghĩa: Ngay cả... / Đến cả... (cũng không)",
+      "explanation": "Đáp án đúng là C. 「〜さえ」nêu ra một ví dụ cực đoan hoặc ở mức tối thiểu mà còn (không) làm được, huống chi là những thứ khác (Ví dụ: Ngay cả tên mình cũng không viết được)."
+    },
+    {
+      "id": 30,
+      "unit": "Unit 10",
+      "pattern": "〜てほしい / 〜ないでほしい",
+      "question": "Mẫu ngữ pháp「〜てほしい / 〜ないでほしい」(Vてほしい / Vないでほしい) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Lẽ nào lại... / Tuyệt đối không thể...",
+        "Muốn (ai đó) làm... / Mong (ai đó) đừng làm...",
+        "Cho dù... đi chăng nữa",
+        "Đã vừa mới... xong"
+      ],
+      "answer": 1,
+      "translation": "Ngữ pháp: 〜てほしい / 〜ないでほしい (te hoshii / naide hoshii) ➔ Ý nghĩa: Muốn (ai đó) làm... / Mong (ai đó) đừng làm...",
+      "explanation": "Đáp án đúng là B. 「〜てほしい」dùng để biểu đạt mong muốn của người nói yêu cầu đối phương hoặc người khác thực hiện một hành động (hoặc mong một hiện tượng tự nhiên xảy ra)."
+    },
+    {
+      "id": 31,
+      "unit": "Unit 12",
+      "pattern": "〜に加えて",
+      "question": "Mẫu ngữ pháp「〜に加えて」(N + に加えて) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Thay vì... / Thay cho...",
+        "Thêm vào đó... / Không chỉ... mà còn...",
+        "Làm sao mà... được / Tuyệt đối không...",
+        "Trái ngược với... / Đối với..."
+      ],
+      "answer": 1,
+      "translation": "Ngữ pháp: 〜に加えて (ni kuwaete) ➔ Ý nghĩa: Thêm vào đó... / Không chỉ... mà còn...",
+      "explanation": "Đáp án đúng là B. 「〜に加えて」(chữ Hán là 加 - gia tăng) dùng để bổ sung thêm một điều gì đó cùng tính chất (Ví dụ: Ngoài kiến thức chuyên môn, anh ấy còn có kinh nghiệm phong phú)."
+    },
+    {
+      "id": 32,
+      "unit": "Unit 10",
+      "pattern": "〜てほしい / 〜ないでほしい",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜てほしい / 〜ないでほしい」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Mong ước, nguyện vọng người khác làm điều gì đó cho mình",
+        "Một mặt thì... mặt khác thì...",
+        "Thêm vào đó... / Không chỉ mà còn...",
+        "Cho dù... đi chăng nữa"
+      ],
+      "answer": 0,
+      "translation": "Đặc điểm của 〜てほしい / 〜ないでほしい: Mong ước, nguyện vọng người khác làm điều gì đó cho mình",
+      "explanation": "Đáp án đúng là A. Phân biệt: Vたい là bản thân người nói muốn làm; còn Vてほしい là muốn NGƯỜI KHÁC làm."
+    },
+    {
+      "id": 33,
+      "unit": "Unit 11",
+      "pattern": "〜そうにない / 〜そうもない",
+      "question": "Mẫu ngữ pháp「〜そうにない / 〜そうもない」(Vます（bỏ ます） + そうにない / そうもない) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Thay cho... / Thay vì...",
+        "Cho dù... đi chăng nữa",
+        "Cứ mỗi lần... lại...",
+        "Có vẻ là không... / Khó lòng mà... (khả năng xảy ra cực kỳ thấp)"
+      ],
+      "answer": 3,
+      "translation": "Ngữ pháp: 〜そうにない / 〜そうもない (sou ni nai / sou mo nai) ➔ Ý nghĩa: Có vẻ là không... / Khó lòng mà... (khả năng xảy ra cực kỳ thấp)",
+      "explanation": "Đáp án đúng là D. 「〜そうにない」diễn tả phán đoán của người nói dựa trên quan sát thực tế rằng khả năng một hành động/sự việc diễn ra là rất khó hoặc gần như không thể."
+    },
+    {
+      "id": 34,
+      "unit": "Unit 11",
+      "pattern": "〜ものか / 〜もんか",
+      "question": "Mẫu ngữ pháp「〜ものか / 〜もんか」(V辞書形 / A / N + ものか) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Vừa mới... xong",
+        "Làm sao mà... được / Tuyệt đối không... đâu!",
+        "Cứ mỗi lần... lại...",
+        "Muốn ai đó làm việc gì cho mình"
+      ],
+      "answer": 1,
+      "translation": "Ngữ pháp: 〜ものか / 〜もんか (mono ka / mon ka) ➔ Ý nghĩa: Làm sao mà... được / Tuyệt đối không... đâu!",
+      "explanation": "Đáp án đúng là B. 「〜ものか」(văn nói thân mật: もんか) thể hiện sự phủ định đanh thép và quyết tâm mạnh mẽ của người nói (Ví dụ: Quán ăn tệ thế này tôi quyết không đến lần thứ hai đâu!)."
+    },
+    {
+      "id": 35,
+      "unit": "Unit 11",
+      "pattern": "〜さ（Aいさ / なAさ）",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜さ（Aいさ / なAさ）」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Có vẻ như / Có khuynh hướng tính cách...",
+        "Vừa mới... xong",
+        "Ngay cả... / Thậm chí đến cả...",
+        "Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, độ sâu, sức nặng...)"
+      ],
+      "answer": 3,
+      "translation": "Đặc điểm của 〜さ（Aいさ / なAさ）: Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, độ sâu, sức nặng...)",
+      "explanation": "Đáp án đúng là D. Trường hợp ngoại lệ đặc biệt: いい / よい biến thành よさ (điểm tốt, nét đẹp)."
+    },
+    {
+      "id": 36,
+      "unit": "Unit 11",
+      "pattern": "〜代わりに",
+      "question": "Mẫu ngữ pháp「〜代わりに」(V辞書形 / Nの + かわりに) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Độ... / Mức độ... (danh từ hóa)",
+        "Do / Vì / Tại... (đổ lỗi)",
+        "Thay cho... / Thay vì... (thay thế người, vật hoặc hành động)",
+        "E là... / Có nguy cơ xảy ra việc xấu"
+      ],
+      "answer": 2,
+      "translation": "Ngữ pháp: 〜代わりに (kawari ni) ➔ Ý nghĩa: Thay cho... / Thay vì... (thay thế người, vật hoặc hành động)",
+      "explanation": "Đáp án đúng là C. 「〜代わりに」diễn tả ý thay thế: không làm A mà làm B, hoặc dùng B để thay cho A (Ví dụ: Uống nước thay vì uống nước ngọt)."
+    },
+    {
+      "id": 37,
+      "unit": "Unit 11",
+      "pattern": "〜そうにない / 〜そうもない",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜そうにない / 〜そうもない」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Nhờ có... / Nhờ ơn...",
+        "Nhìn tình hình thì khó mà hoàn thành/xảy ra được",
+        "Vừa mới... xong",
+        "Thay cho... / Thay vì..."
+      ],
+      "answer": 1,
+      "translation": "Đặc điểm của 〜そうにない / 〜そうもない: Nhìn tình hình thì khó mà hoàn thành/xảy ra được",
+      "explanation": "Đáp án đúng là B. Bản chất là thể phủ định của 〜そうだ (trông có vẻ)."
+    },
+    {
+      "id": 38,
+      "unit": "Unit 12",
+      "pattern": "〜に加えて",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜に加えて」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Cho dù... đi chăng nữa",
+        "Trái ngược với... / Đối với...",
+        "Cứ mỗi lần... lại...",
+        "Bên cạnh N, hơn thế nữa còn bổ sung thêm một yếu tố khác"
+      ],
+      "answer": 3,
+      "translation": "Đặc điểm của 〜に加えて: Bên cạnh N, hơn thế nữa còn bổ sung thêm một yếu tố khác",
+      "explanation": "Đáp án đúng là D. Thường dùng trong văn viết hoặc văn phong trang trọng. Có thể lược bỏ て thành 〜にくわえ."
+    },
+    {
+      "id": 39,
+      "unit": "Unit 10",
+      "pattern": "〜によって / 〜により / 〜による",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜によって / 〜により / 〜による」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Vừa mới... xong",
+        "Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC Tùy vào...",
+        "E là có nguy cơ xảy ra việc xấu",
+        "Làm sao mà... được / Tuyệt đối không..."
+      ],
+      "answer": 1,
+      "translation": "Đặc điểm của 〜によって / 〜により / 〜による: Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC Tùy vào...",
+      "explanation": "Đáp án đúng là B. Đứng trước danh từ sẽ biến đổi thành「〜による + N」."
+    },
+    {
+      "id": 40,
+      "unit": "Unit 9",
+      "pattern": "〜せいで",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜せいで」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Tại vì... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)",
+        "Nhờ có... / Nhờ ơn...",
+        "Trái ngược với... / Đối với...",
+        "Độ... / Mức độ..."
+      ],
+      "answer": 0,
+      "translation": "Đặc điểm của 〜せいで: Tại vì... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)",
+      "explanation": "Đáp án đúng là A. Phân biệt: Kết quả tốt dùng 〜おかげで, kết quả xấu đổ trách nhiệm dùng 〜せいで."
+    },
+    {
+      "id": 41,
+      "unit": "Unit 12",
+      "pattern": "〜とは限りません / 〜とは限らない",
+      "question": "Mẫu ngữ pháp「〜とは限りません / 〜とは限らない」(普通形 + とは限らない) có ý nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        "Không hẳn là... / Chưa chắc là... (phủ định một phần)",
+        "Cho dù... đi chăng nữa",
+        "Thêm vào đó... / Không chỉ mà còn...",
+        "Tuyệt đối không... đâu"
+      ],
+      "answer": 0,
+      "translation": "Ngữ pháp: 〜とは限りません / 〜とは限らない (to wa kagiranai) ➔ Ý nghĩa: Không hẳn là... / Chưa chắc là... (phủ định một phần)",
+      "explanation": "Đáp án đúng là A. 「〜とは限らない」dùng để phủ định một phần: không phải lúc nào cũng là như thế, vẫn có khả năng ngoại lệ (Ví dụ: Đắt tiền chưa chắc đã là đồ tốt)."
+    },
+    {
+      "id": 42,
+      "unit": "Unit 11",
+      "pattern": "〜たばかり",
+      "question": "Trong tiếng Nhật, mẫu ngữ pháp「〜たばかり」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "options": [
+        "Do / Vì / Tại... (đổ lỗi)",
+        "Tuyệt đối không... đâu / Làm sao mà...",
+        "Hành động vừa mới kết thúc cách đây không lâu",
+        "Một mặt thì... mặt khác thì..."
+      ],
+      "answer": 2,
+      "translation": "Đặc điểm của 〜たばかり: Hành động vừa mới kết thúc cách đây không lâu",
+      "explanation": "Đáp án đúng là C. Khác với 〜たところ (thời gian thực tế vừa trôi qua trong tích tắc), 〜たばかり có thể dùng cho sự việc đã qua vài tháng nếu người nói cảm thấy như mới hôm qua."
+    }
+  ],
+  "meaning-to-grammar": [
+    {
+      "id": 1,
+      "unit": "Unit 12",
+      "pattern": "〜とは限りません / 〜とは限らない",
+      "question": "Ý nghĩa tiếng Việt: \"Không hẳn là... / Chưa chắc là... (phủ định một phần)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜ことは〜が〜",
+        "〜とは限りません / 〜とは限らない",
+        "〜ごとに",
+        "〜に加えて"
+      ],
+      "answer": 1,
+      "translation": "Ý nghĩa: \"Không hẳn là... / Chưa chắc là... (phủ định một phần)\" ➔ Mẫu ngữ pháp: 〜とは限りません / 〜とは限らない",
+      "explanation": "Đáp án đúng là B (「〜とは限りません / 〜とは限らない」). 「〜とは限らない」dùng để phủ định một phần: không phải lúc nào cũng là như thế, vẫn có khả năng ngoại lệ (Ví dụ: Đắt tiền chưa chắc đã là đồ tốt)."
+    },
+    {
+      "id": 2,
+      "unit": "Unit 9",
+      "pattern": "〜せいで",
+      "question": "Khi muốn diễn đạt: \"Tại vì... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜わけがない",
+        "〜せいで",
+        "〜恐れがある",
+        "〜としても"
+      ],
+      "answer": 1,
+      "translation": "Sắc thái: \"Tại vì... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)\" ➔ 〜せいで",
+      "explanation": "Đáp án đúng là B (「〜せいで」). Phân biệt: Kết quả tốt dùng 〜おかげで, kết quả xấu đổ trách nhiệm dùng 〜せいで."
+    },
+    {
+      "id": 3,
+      "unit": "Unit 11",
+      "pattern": "〜代わりに",
+      "question": "Khi muốn diễn đạt: \"Bù lại... / Đổi lại... (sự bù trừ qua lại)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜一方で",
+        "〜代わりに",
+        "〜さえ",
+        "〜っぽい"
+      ],
+      "answer": 1,
+      "translation": "Sắc thái: \"Bù lại... / Đổi lại... (sự bù trừ qua lại)\" ➔ 〜代わりに",
+      "explanation": "Đáp án đúng là B (「〜代わりに」). Ngoài ra còn có ý bù trừ: Công việc tuy vất vả nhưng bù lại lương rất cao."
+    },
+    {
+      "id": 4,
+      "unit": "Unit 9",
+      "pattern": "〜おかげで",
+      "question": "Khi muốn diễn đạt: \"Nhờ có... (đôi khi dùng với sắc thái mỉa mai, châm biếm)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜ものか / 〜もんか",
+        "〜によって / 〜により / 〜による",
+        "〜に加えて",
+        "〜おかげで"
+      ],
+      "answer": 3,
+      "translation": "Sắc thái: \"Nhờ có... (đôi khi dùng với sắc thái mỉa mai, châm biếm)\" ➔ 〜おかげで",
+      "explanation": "Đáp án đúng là D (「〜おかげで」). Khi dùng với kết quả xấu, 〜おかげで mang hàm ý mỉa mai, trách khéo (Ví dụ: Nhờ ơn cậu làm sai mà tớ phải làm lại hết)."
+    },
+    {
+      "id": 5,
+      "unit": "Unit 9",
+      "pattern": "〜さえ",
+      "question": "Ý nghĩa tiếng Việt: \"Ngay cả... / Đến cả... (cũng không)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜ことは〜が〜",
+        "〜ことだ",
+        "〜さえ",
+        "〜さ（Aいさ / なAさ）"
+      ],
+      "answer": 2,
+      "translation": "Ý nghĩa: \"Ngay cả... / Đến cả... (cũng không)\" ➔ Mẫu ngữ pháp: 〜さえ",
+      "explanation": "Đáp án đúng là C (「〜さえ」). 「〜さえ」nêu ra một ví dụ cực đoan hoặc ở mức tối thiểu mà còn (không) làm được, huống chi là những thứ khác (Ví dụ: Ngay cả tên mình cũng không viết được)."
+    },
+    {
+      "id": 6,
+      "unit": "Unit 10",
+      "pattern": "〜に対して",
+      "question": "Ý nghĩa tiếng Việt: \"Đối với... (thái độ, hành vi hướng tới ai/cái gì)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜に対して",
+        "〜によって / 〜により / 〜による",
+        "〜おかげで",
+        "〜ものか / 〜もんか"
+      ],
+      "answer": 0,
+      "translation": "Ý nghĩa: \"Đối với... (thái độ, hành vi hướng tới ai/cái gì)\" ➔ Mẫu ngữ pháp: 〜に対して",
+      "explanation": "Đáp án đúng là A (「〜に対して」). 「〜に対して」nghĩa 1: Hướng hành động/thái độ vào đối tượng (Ví dụ: Thầy giáo rất thân thiện đối với học sinh; Danh từ đi kèm: に対するN)."
+    },
+    {
+      "id": 7,
+      "unit": "Unit 12",
+      "pattern": "〜恐れがある",
+      "question": "Khi muốn diễn đạt: \"Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜に対して",
+        "〜おかげで",
+        "〜恐れがある",
+        "〜わけがない"
+      ],
+      "answer": 2,
+      "translation": "Sắc thái: \"Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra\" ➔ 〜恐れがある",
+      "explanation": "Đáp án đúng là C (「〜恐れがある」). Mang văn phong trang trọng, thường xuất hiện trong bản tin thời sự, dự báo thời tiết, thông báo y tế hoặc văn bản pháp quy."
+    },
+    {
+      "id": 8,
+      "unit": "Unit 12",
+      "pattern": "〜に加えて",
+      "question": "Ý nghĩa tiếng Việt: \"Thêm vào đó... / Không chỉ... mà còn...\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜さ（Aいさ / なAさ）",
+        "〜恐れがある",
+        "〜に加えて",
+        "〜たばかり"
+      ],
+      "answer": 2,
+      "translation": "Ý nghĩa: \"Thêm vào đó... / Không chỉ... mà còn...\" ➔ Mẫu ngữ pháp: 〜に加えて",
+      "explanation": "Đáp án đúng là C (「〜に加えて」). 「〜に加えて」(chữ Hán là 加 - gia tăng) dùng để bổ sung thêm một điều gì đó cùng tính chất (Ví dụ: Ngoài kiến thức chuyên môn, anh ấy còn có kinh nghiệm phong phú)."
+    },
+    {
+      "id": 9,
+      "unit": "Unit 9",
+      "pattern": "〜おかげで",
+      "question": "Ý nghĩa tiếng Việt: \"Nhờ có... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜恐れがある",
+        "〜たばかり",
+        "〜おかげで",
+        "〜ことは〜が〜"
+      ],
+      "answer": 2,
+      "translation": "Ý nghĩa: \"Nhờ có... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)\" ➔ Mẫu ngữ pháp: 〜おかげで",
+      "explanation": "Đáp án đúng là C (「〜おかげで」). 「〜おかげで」chỉ nguyên nhân đem lại kết quả tốt đẹp, thuận lợi. Thể hiện sự cảm kích, biết ơn."
+    },
+    {
+      "id": 10,
+      "unit": "Unit 10",
+      "pattern": "〜ことだ",
+      "question": "Ý nghĩa tiếng Việt: \"Nên... / Phải... (đưa ra lời khuyên, giải pháp tốt nhất)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜せいで",
+        "〜としても",
+        "〜に加えて",
+        "〜ことだ"
+      ],
+      "answer": 3,
+      "translation": "Ý nghĩa: \"Nên... / Phải... (đưa ra lời khuyên, giải pháp tốt nhất)\" ➔ Mẫu ngữ pháp: 〜ことだ",
+      "explanation": "Đáp án đúng là D (「〜ことだ」). 「〜ことだ」dùng trong văn nói trực tiếp để khuyên nhủ ai đó: Làm việc đó là tốt nhất, thích hợp nhất trong hoàn cảnh này."
+    },
+    {
+      "id": 11,
+      "unit": "Unit 9",
+      "pattern": "〜ごとに",
+      "question": "Khi muốn diễn đạt: \"Cứ cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜ごとに",
+        "〜わけがない",
+        "〜に対して",
+        "〜てほしい / 〜ないでほしい"
+      ],
+      "answer": 0,
+      "translation": "Sắc thái: \"Cứ cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)\" ➔ 〜ごとに",
+      "explanation": "Đáp án đúng là A (「〜ごとに」). Khác với 〜たびに (nhấn mạnh cứ mỗi lần A thì lại xảy ra B bất kể thời gian), 〜ごとに nhấn mạnh sự lặp lại đều đặn theo chu kỳ, chuỗi thời gian hoặc đơn vị phân chia."
+    },
+    {
+      "id": 12,
+      "unit": "Unit 9",
+      "pattern": "〜さえ",
+      "question": "Khi muốn diễn đạt: \"Thậm chí đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜さえ",
+        "〜ことだ",
+        "〜ごとに",
+        "〜に対して"
+      ],
+      "answer": 0,
+      "translation": "Sắc thái: \"Thậm chí đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)\" ➔ 〜さえ",
+      "explanation": "Đáp án đúng là A (「〜さえ」). Thường đi kèm trợ từ phủ định hoặc câu mang hàm ý bất ngờ, thất vọng."
+    },
+    {
+      "id": 13,
+      "unit": "Unit 11",
+      "pattern": "〜さ（Aいさ / なAさ）",
+      "question": "Ý nghĩa tiếng Việt: \"Độ... / Mức độ... (danh từ hóa tính từ đo lường)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜恐れがある",
+        "〜さ（Aいさ / なAさ）",
+        "〜ことだ",
+        "〜ごとに"
+      ],
+      "answer": 1,
+      "translation": "Ý nghĩa: \"Độ... / Mức độ... (danh từ hóa tính từ đo lường)\" ➔ Mẫu ngữ pháp: 〜さ（Aいさ / なAさ）",
+      "explanation": "Đáp án đúng là B (「〜さ（Aいさ / なAさ）」). Thêm đuôi「〜さ」vào sau gốc tính từ để tạo thành danh từ chỉ mức độ đo lường khách quan (Ví dụ: 重さ - độ nặng, 長さ - chiều dài, 深さ - độ sâu)."
+    },
+    {
+      "id": 14,
+      "unit": "Unit 9",
+      "pattern": "〜ごとに",
+      "question": "Ý nghĩa tiếng Việt: \"Cứ mỗi lần... lại... / Từng... một\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜ごとに",
+        "〜さえ",
+        "〜そうにない / 〜そうもない",
+        "〜恐れがある"
+      ],
+      "answer": 0,
+      "translation": "Ý nghĩa: \"Cứ mỗi lần... lại... / Từng... một\" ➔ Mẫu ngữ pháp: 〜ごとに",
+      "explanation": "Đáp án đúng là A (「〜ごとに」). 「〜ごとに」(chữ Hán là 毎に) diễn tả hành động hay sự việc cứ lặp lại tuần tự theo chu kỳ hoặc đơn vị (Ví dụ: 10分ごとに - cứ 10 phút một lần)."
+    },
+    {
+      "id": 15,
+      "unit": "Unit 9",
+      "pattern": "〜ことは〜が〜",
+      "question": "Ý nghĩa tiếng Việt: \"Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜ごとに",
+        "〜せいで",
+        "〜一方で",
+        "〜ことは〜が〜"
+      ],
+      "answer": 3,
+      "translation": "Ý nghĩa: \"Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)\" ➔ Mẫu ngữ pháp: 〜ことは〜が〜",
+      "explanation": "Đáp án đúng là D (「〜ことは〜が〜」). 「〜ことは〜が〜」dùng bằng cách lặp lại cùng một động từ hoặc tính từ, biểu thị sự nhượng bộ: thừa nhận vế trước nhưng vế sau nêu mặt hạn chế (Ví dụ: Ngon thì ngon thật đấy nhưng giá đắt quá)."
+    },
+    {
+      "id": 16,
+      "unit": "Unit 10",
+      "pattern": "〜てほしい / 〜ないでほしい",
+      "question": "Ý nghĩa tiếng Việt: \"Muốn (ai đó) làm... / Mong (ai đó) đừng làm...\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜てほしい / 〜ないでほしい",
+        "〜さえ",
+        "〜代わりに",
+        "〜によって / 〜により / 〜による"
+      ],
+      "answer": 0,
+      "translation": "Ý nghĩa: \"Muốn (ai đó) làm... / Mong (ai đó) đừng làm...\" ➔ Mẫu ngữ pháp: 〜てほしい / 〜ないでほしい",
+      "explanation": "Đáp án đúng là A (「〜てほしい / 〜ないでほしい」). 「〜てほしい」dùng để biểu đạt mong muốn của người nói yêu cầu đối phương hoặc người khác thực hiện một hành động (hoặc mong một hiện tượng tự nhiên xảy ra)."
+    },
+    {
+      "id": 17,
+      "unit": "Unit 11",
+      "pattern": "〜たばかり",
+      "question": "Ý nghĩa tiếng Việt: \"Vừa mới... xong (theo cảm nhận chủ quan của người nói)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜としても",
+        "〜たばかり",
+        "〜さえ",
+        "〜ことだ"
+      ],
+      "answer": 1,
+      "translation": "Ý nghĩa: \"Vừa mới... xong (theo cảm nhận chủ quan của người nói)\" ➔ Mẫu ngữ pháp: 〜たばかり",
+      "explanation": "Đáp án đúng là B (「〜たばかり」). 「〜たばかり」diễn tả hành động vừa xảy ra cách đây ít lâu theo cảm nhận chủ quan của người nói (Ví dụ: Vừa mới vào công ty được 1 tuần; Vừa mới ăn cơm xong)."
+    },
+    {
+      "id": 18,
+      "unit": "Unit 9",
+      "pattern": "〜一方で",
+      "question": "Khi muốn diễn đạt: \"Vừa... vừa... / Song song đó (đồng thời tiến hành hoặc tồn tại)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜っぽい",
+        "〜おかげで",
+        "〜一方で",
+        "〜ごとに"
+      ],
+      "answer": 2,
+      "translation": "Sắc thái: \"Vừa... vừa... / Song song đó (đồng thời tiến hành hoặc tồn tại)\" ➔ 〜一方で",
+      "explanation": "Đáp án đúng là C (「〜一方で」). Ngoài ý nghĩa đối lập, 〜一方で còn dùng để chỉ sự song hành: cùng lúc vừa làm việc này vừa làm việc kia."
+    },
+    {
+      "id": 19,
+      "unit": "Unit 11",
+      "pattern": "〜そうにない / 〜そうもない",
+      "question": "Ý nghĩa tiếng Việt: \"Có vẻ là không... / Khó lòng mà... (khả năng xảy ra cực kỳ thấp)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜によって / 〜により / 〜による",
+        "〜さえ",
+        "〜に対して",
+        "〜そうにない / 〜そうもない"
+      ],
+      "answer": 3,
+      "translation": "Ý nghĩa: \"Có vẻ là không... / Khó lòng mà... (khả năng xảy ra cực kỳ thấp)\" ➔ Mẫu ngữ pháp: 〜そうにない / 〜そうもない",
+      "explanation": "Đáp án đúng là D (「〜そうにない / 〜そうもない」). 「〜そうにない」diễn tả phán đoán của người nói dựa trên quan sát thực tế rằng khả năng một hành động/sự việc diễn ra là rất khó hoặc gần như không thể."
+    },
+    {
+      "id": 20,
+      "unit": "Unit 10",
+      "pattern": "〜てほしい / 〜ないでほしい",
+      "question": "Khi muốn diễn đạt: \"Mong ước, nguyện vọng người khác làm điều gì đó cho mình\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜さ（Aいさ / なAさ）",
+        "〜わけがない",
+        "〜てほしい / 〜ないでほしい",
+        "〜ことは〜が〜"
+      ],
+      "answer": 2,
+      "translation": "Sắc thái: \"Mong ước, nguyện vọng người khác làm điều gì đó cho mình\" ➔ 〜てほしい / 〜ないでほしい",
+      "explanation": "Đáp án đúng là C (「〜てほしい / 〜ないでほしい」). Phân biệt: Vたい là bản thân người nói muốn làm; còn Vてほしい là muốn NGƯỜI KHÁC làm."
+    },
+    {
+      "id": 21,
+      "unit": "Unit 11",
+      "pattern": "〜そうにない / 〜そうもない",
+      "question": "Khi muốn diễn đạt: \"Nhìn tình hình thì khó mà hoàn thành/xảy ra được\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜わけがない",
+        "〜っぽい",
+        "〜そうにない / 〜そうもない",
+        "〜恐れがある"
+      ],
+      "answer": 2,
+      "translation": "Sắc thái: \"Nhìn tình hình thì khó mà hoàn thành/xảy ra được\" ➔ 〜そうにない / 〜そうもない",
+      "explanation": "Đáp án đúng là C (「〜そうにない / 〜そうもない」). Bản chất là thể phủ định của 〜そうだ (trông có vẻ)."
+    },
+    {
+      "id": 22,
+      "unit": "Unit 9",
+      "pattern": "〜せいで",
+      "question": "Ý nghĩa tiếng Việt: \"Do / Vì / Tại... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜せいで",
+        "〜ことは〜が〜",
+        "〜に加えて",
+        "〜たばかり"
+      ],
+      "answer": 0,
+      "translation": "Ý nghĩa: \"Do / Vì / Tại... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)\" ➔ Mẫu ngữ pháp: 〜せいで",
+      "explanation": "Đáp án đúng là A (「〜せいで」). 「〜せいで」dùng khi nói về nguyên nhân gây ra hậu quả tiêu cực, thường mang sắc thái trách móc, đổ lỗi."
+    },
+    {
+      "id": 23,
+      "unit": "Unit 10",
+      "pattern": "〜わけがない",
+      "question": "Khi muốn diễn đạt: \"Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜に対して",
+        "〜せいで",
+        "〜一方で",
+        "〜わけがない"
+      ],
+      "answer": 3,
+      "translation": "Sắc thái: \"Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)\" ➔ 〜わけがない",
+      "explanation": "Đáp án đúng là D (「〜わけがない」). Dạng phủ định kép: 〜ないわけがない mang ý nghĩa chắc chắn là có/sẽ."
+    },
+    {
+      "id": 24,
+      "unit": "Unit 10",
+      "pattern": "〜ことだ",
+      "question": "Khi muốn diễn đạt: \"Không nên... / Đừng... (Vないことだ - lời khuyên cảnh báo)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜とは限りません / 〜とは限らない",
+        "〜ことだ",
+        "〜ことは〜が〜",
+        "〜ものか / 〜もんか"
+      ],
+      "answer": 1,
+      "translation": "Sắc thái: \"Không nên... / Đừng... (Vないことだ - lời khuyên cảnh báo)\" ➔ 〜ことだ",
+      "explanation": "Đáp án đúng là B (「〜ことだ」). Lưu ý: Không dùng mẫu câu này để đưa ra lời khuyên cho người bề trên hoặc cấp trên."
+    },
+    {
+      "id": 25,
+      "unit": "Unit 10",
+      "pattern": "〜に対して",
+      "question": "Khi muốn diễn đạt: \"Trái ngược với... / Ngược lại với... (so sánh tương phản 2 vế)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜おかげで",
+        "〜に加えて",
+        "〜とは限りません / 〜とは限らない",
+        "〜に対して"
+      ],
+      "answer": 3,
+      "translation": "Sắc thái: \"Trái ngược với... / Ngược lại với... (so sánh tương phản 2 vế)\" ➔ 〜に対して",
+      "explanation": "Đáp án đúng là D (「〜に対して」). Nghĩa 2: So sánh đối lập hai sự việc tương phản (Ví dụ: Tôi thích thể thao trái ngược với em trai thích đọc sách)."
+    },
+    {
+      "id": 26,
+      "unit": "Unit 12",
+      "pattern": "〜とは限りません / 〜とは限らない",
+      "question": "Khi muốn diễn đạt: \"Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜おかげで",
+        "〜ことは〜が〜",
+        "〜とは限りません / 〜とは限らない",
+        "〜そうにない / 〜そうもない"
+      ],
+      "answer": 2,
+      "translation": "Sắc thái: \"Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ\" ➔ 〜とは限りません / 〜とは限らない",
+      "explanation": "Đáp án đúng là C (「〜とは限りません / 〜とは限らない」). Thường đi kèm các phó từ: 必ずしも (chưa hẳn), いつも (luôn luôn), 全部 (toàn bộ)."
+    },
+    {
+      "id": 27,
+      "unit": "Unit 11",
+      "pattern": "〜っぽい",
+      "question": "Khi muốn diễn đạt: \"Dễ... / Hay... (xu hướng tính cách: hay quên, hay giận, chóng chán)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜さ（Aいさ / なAさ）",
+        "〜ごとに",
+        "〜っぽい",
+        "〜に加えて"
+      ],
+      "answer": 2,
+      "translation": "Sắc thái: \"Dễ... / Hay... (xu hướng tính cách: hay quên, hay giận, chóng chán)\" ➔ 〜っぽい",
+      "explanation": "Đáp án đúng là C (「〜っぽい」). Dùng nhiều trong văn nói thường ngày."
+    },
+    {
+      "id": 28,
+      "unit": "Unit 10",
+      "pattern": "〜によって / 〜により / 〜による",
+      "question": "Khi muốn diễn đạt: \"Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC Tùy vào...\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜ごとに",
+        "〜によって / 〜により / 〜による",
+        "〜さえ",
+        "〜に加えて"
+      ],
+      "answer": 1,
+      "translation": "Sắc thái: \"Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC Tùy vào...\" ➔ 〜によって / 〜により / 〜による",
+      "explanation": "Đáp án đúng là B (「〜によって / 〜により / 〜による」). Đứng trước danh từ sẽ biến đổi thành「〜による + N」."
+    },
+    {
+      "id": 29,
+      "unit": "Unit 11",
+      "pattern": "〜たばかり",
+      "question": "Khi muốn diễn đạt: \"Hành động vừa mới kết thúc cách đây không lâu\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜てほしい / 〜ないでほしい",
+        "〜せいで",
+        "〜ことは〜が〜",
+        "〜たばかり"
+      ],
+      "answer": 3,
+      "translation": "Sắc thái: \"Hành động vừa mới kết thúc cách đây không lâu\" ➔ 〜たばかり",
+      "explanation": "Đáp án đúng là D (「〜たばかり」). Khác với 〜たところ (thời gian thực tế vừa trôi qua trong tích tắc), 〜たばかり có thể dùng cho sự việc đã qua vài tháng nếu người nói cảm thấy như mới hôm qua."
+    },
+    {
+      "id": 30,
+      "unit": "Unit 10",
+      "pattern": "〜わけがない",
+      "question": "Ý nghĩa tiếng Việt: \"Lẽ nào lại... / Làm sao mà... được / Tuyệt đối không thể...\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜に加えて",
+        "〜一方で",
+        "〜さえ",
+        "〜わけがない"
+      ],
+      "answer": 3,
+      "translation": "Ý nghĩa: \"Lẽ nào lại... / Làm sao mà... được / Tuyệt đối không thể...\" ➔ Mẫu ngữ pháp: 〜わけがない",
+      "explanation": "Đáp án đúng là D (「〜わけがない」). 「〜わけがない」biểu thị sự quả quyết mạnh mẽ của người nói rằng chuyện đó tuyệt đối không thể xảy ra dựa trên lý lẽ xác đáng. Văn thoại hay dùng: 〜わけない."
+    },
+    {
+      "id": 31,
+      "unit": "Unit 10",
+      "pattern": "〜によって / 〜により / 〜による",
+      "question": "Ý nghĩa tiếng Việt: \"Do / Vì... (nguyên nhân) HOẶC Bởi... (tác giả trong câu bị động)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜によって / 〜により / 〜による",
+        "〜代わりに",
+        "〜ことだ",
+        "〜恐れがある"
+      ],
+      "answer": 0,
+      "translation": "Ý nghĩa: \"Do / Vì... (nguyên nhân) HOẶC Bởi... (tác giả trong câu bị động)\" ➔ Mẫu ngữ pháp: 〜によって / 〜により / 〜による",
+      "explanation": "Đáp án đúng là A (「〜によって / 〜により / 〜による」). 「〜によって」có 4 nghĩa quan trọng: 1. Do/Vì nguyên nhân; 2. Bởi ai (chủ thể bị động); 3. Bằng phương tiện/cách thức; 4. Tùy thuộc vào từng đối tượng."
+    },
+    {
+      "id": 32,
+      "unit": "Unit 12",
+      "pattern": "〜としても",
+      "question": "Ý nghĩa tiếng Việt: \"Cho dù... (đi chăng nữa thì vẫn không thay đổi)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜たばかり",
+        "〜そうにない / 〜そうもない",
+        "〜としても",
+        "〜に加えて"
+      ],
+      "answer": 2,
+      "translation": "Ý nghĩa: \"Cho dù... (đi chăng nữa thì vẫn không thay đổi)\" ➔ Mẫu ngữ pháp: 〜としても",
+      "explanation": "Đáp án đúng là C (「〜としても」). 「〜としても」đặt ra điều kiện giả định: Cho dù tình huống ở vế trước có xảy ra đi chăng nữa, thì lập trường, suy nghĩ hoặc sự việc ở vế sau vẫn không hề bị suy chuyển."
+    },
+    {
+      "id": 33,
+      "unit": "Unit 11",
+      "pattern": "〜ものか / 〜もんか",
+      "question": "Khi muốn diễn đạt: \"Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜ものか / 〜もんか",
+        "〜おかげで",
+        "〜さ（Aいさ / なAさ）",
+        "〜そうにない / 〜そうもない"
+      ],
+      "answer": 0,
+      "translation": "Sắc thái: \"Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2\" ➔ 〜ものか / 〜もんか",
+      "explanation": "Đáp án đúng là A (「〜ものか / 〜もんか」). Phân biệt: 〜わけがない là phủ định tính khả thi dựa trên lý lẽ; còn 〜ものか mang sắc thái cảm xúc quyết liệt của người nói."
+    },
+    {
+      "id": 34,
+      "unit": "Unit 9",
+      "pattern": "〜一方で",
+      "question": "Ý nghĩa tiếng Việt: \"Một mặt thì... mặt khác thì... (đối lập giữa 2 mặt của sự việc)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜ことは〜が〜",
+        "〜一方で",
+        "〜たばかり",
+        "〜てほしい / 〜ないでほしい"
+      ],
+      "answer": 1,
+      "translation": "Ý nghĩa: \"Một mặt thì... mặt khác thì... (đối lập giữa 2 mặt của sự việc)\" ➔ Mẫu ngữ pháp: 〜一方で",
+      "explanation": "Đáp án đúng là B (「〜一方で」). 「〜一方で」dùng để nêu ra hai mặt đối lập tương phản của một vấn đề (Ví dụ: tiện lợi một mặt nhưng chi phí lại đắt đỏ)."
+    },
+    {
+      "id": 35,
+      "unit": "Unit 12",
+      "pattern": "〜に加えて",
+      "question": "Khi muốn diễn đạt: \"Bên cạnh N, hơn thế nữa còn bổ sung thêm một yếu tố khác\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜恐れがある",
+        "〜とは限りません / 〜とは限らない",
+        "〜に加えて",
+        "〜わけがない"
+      ],
+      "answer": 2,
+      "translation": "Sắc thái: \"Bên cạnh N, hơn thế nữa còn bổ sung thêm một yếu tố khác\" ➔ 〜に加えて",
+      "explanation": "Đáp án đúng là C (「〜に加えて」). Thường dùng trong văn viết hoặc văn phong trang trọng. Có thể lược bỏ て thành 〜にくわえ."
+    },
+    {
+      "id": 36,
+      "unit": "Unit 11",
+      "pattern": "〜代わりに",
+      "question": "Ý nghĩa tiếng Việt: \"Thay cho... / Thay vì... (thay thế người, vật hoặc hành động)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜とは限りません / 〜とは限らない",
+        "〜代わりに",
+        "〜さえ",
+        "〜ことだ"
+      ],
+      "answer": 1,
+      "translation": "Ý nghĩa: \"Thay cho... / Thay vì... (thay thế người, vật hoặc hành động)\" ➔ Mẫu ngữ pháp: 〜代わりに",
+      "explanation": "Đáp án đúng là B (「〜代わりに」). 「〜代わりに」diễn tả ý thay thế: không làm A mà làm B, hoặc dùng B để thay cho A (Ví dụ: Uống nước thay vì uống nước ngọt)."
+    },
+    {
+      "id": 37,
+      "unit": "Unit 11",
+      "pattern": "〜っぽい",
+      "question": "Ý nghĩa tiếng Việt: \"Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜によって / 〜により / 〜による",
+        "〜っぽい",
+        "〜さえ",
+        "〜ことだ"
+      ],
+      "answer": 1,
+      "translation": "Ý nghĩa: \"Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)\" ➔ Mẫu ngữ pháp: 〜っぽい",
+      "explanation": "Đáp án đúng là B (「〜っぽい」). 「〜っぽい」có 3 nghĩa chính: 1. Có vẻ như (大人っぽい - giống người lớn, 白っぽい - hơi trắng); 2. Có nhiều chất gì đó (油っぽい - nhiều dầu mỡ); 3. Hay/Dễ làm gì (怒りっぽい - hay cáu, 忘れっぽい - hay quên)."
+    },
+    {
+      "id": 38,
+      "unit": "Unit 11",
+      "pattern": "〜ものか / 〜もんか",
+      "question": "Ý nghĩa tiếng Việt: \"Làm sao mà... được / Tuyệt đối không... đâu!\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜とは限りません / 〜とは限らない",
+        "〜恐れがある",
+        "〜ものか / 〜もんか",
+        "〜わけがない"
+      ],
+      "answer": 2,
+      "translation": "Ý nghĩa: \"Làm sao mà... được / Tuyệt đối không... đâu!\" ➔ Mẫu ngữ pháp: 〜ものか / 〜もんか",
+      "explanation": "Đáp án đúng là C (「〜ものか / 〜もんか」). 「〜ものか」(văn nói thân mật: もんか) thể hiện sự phủ định đanh thép và quyết tâm mạnh mẽ của người nói (Ví dụ: Quán ăn tệ thế này tôi quyết không đến lần thứ hai đâu!)."
+    },
+    {
+      "id": 39,
+      "unit": "Unit 9",
+      "pattern": "〜ことは〜が〜",
+      "question": "Khi muốn diễn đạt: \"A thì có A nhưng không hoàn hảo / có điểm trừ\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜おかげで",
+        "〜さえ",
+        "〜によって / 〜により / 〜による",
+        "〜ことは〜が〜"
+      ],
+      "answer": 3,
+      "translation": "Sắc thái: \"A thì có A nhưng không hoàn hảo / có điểm trừ\" ➔ 〜ことは〜が〜",
+      "explanation": "Đáp án đúng là D (「〜ことは〜が〜」). Cấu trúc: V/AことはV/Aが... giúp câu nói mang tính khách quan, tế nhị hơn khi chê."
+    },
+    {
+      "id": 40,
+      "unit": "Unit 12",
+      "pattern": "〜としても",
+      "question": "Khi muốn diễn đạt: \"Dù giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜としても",
+        "〜に加えて",
+        "〜恐れがある",
+        "〜たばかり"
+      ],
+      "answer": 0,
+      "translation": "Sắc thái: \"Dù giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên\" ➔ 〜としても",
+      "explanation": "Đáp án đúng là A (「〜としても」). Ví dụ: Cho dù tôi có trở thành người giàu thì lối sống của tôi vẫn bình dị như hiện tại."
+    },
+    {
+      "id": 41,
+      "unit": "Unit 11",
+      "pattern": "〜さ（Aいさ / なAさ）",
+      "question": "Khi muốn diễn đạt: \"Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, độ sâu, sức nặng...)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "options": [
+        "〜に対して",
+        "〜ことは〜が〜",
+        "〜っぽい",
+        "〜さ（Aいさ / なAさ）"
+      ],
+      "answer": 3,
+      "translation": "Sắc thái: \"Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, độ sâu, sức nặng...)\" ➔ 〜さ（Aいさ / なAさ）",
+      "explanation": "Đáp án đúng là D (「〜さ（Aいさ / なAさ）」). Trường hợp ngoại lệ đặc biệt: いい / よい biến thành よさ (điểm tốt, nét đẹp)."
+    },
+    {
+      "id": 42,
+      "unit": "Unit 12",
+      "pattern": "〜恐れがある",
+      "question": "Ý nghĩa tiếng Việt: \"E là... / Có nguy cơ... / Lo sợ rằng...\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "options": [
+        "〜せいで",
+        "〜さえ",
+        "〜恐れがある",
+        "〜とは限りません / 〜とは限らない"
+      ],
+      "answer": 2,
+      "translation": "Ý nghĩa: \"E là... / Có nguy cơ... / Lo sợ rằng...\" ➔ Mẫu ngữ pháp: 〜恐れがある",
+      "explanation": "Đáp án đúng là C (「〜恐れがある」). 「〜恐れがある」(chữ Hán là 恐 - sợ hãi) dùng để cảnh báo về khả năng một sự việc tiêu cực, tai họa hoặc tổn thất có thể xảy ra trong tương lai."
     }
   ]
 };
