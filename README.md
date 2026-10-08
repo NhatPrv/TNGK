@@ -24,9 +24,14 @@
   - ⚡ **Luyện tập tức thì**: Ẩn mẫu ngữ pháp khi chưa trả lời; chọn đáp án xong sẽ lập tức hiện ngữ pháp, kết quả đúng/sai và giải thích chi tiết.
   - ⏱️ **Thi thử tính giờ**: Đồng hồ đếm ngược 60 phút, nộp bài mới chấm điểm, xếp loại kết quả và phân tích chi tiết từng Unit.
 - **Bảng số câu hỏi (Palette)**: Dễ dàng nhảy đến bất kỳ câu hỏi nào, đánh dấu cờ (bookmark) những câu phân vân để xem lại sau.
+- **Hỗ trợ học tập thông minh**:
+  - 🈳 **Furigana trên Hán tự**: Tích hợp phiên âm hiragana nhỏ trên đầu chữ Hán (chuẩn `<ruby>`), có nút `あ` bật/tắt linh hoạt.
+  - 💡 **Gợi ý dịch câu (chừa chỗ trống)**: Nút bóng đèn mở bản dịch tiếng Việt của câu nhưng giữ lại chỗ trống `（......）`, giúp hiểu nghĩa xung quanh khi chưa dịch được.
+  - 🔒 **Bảo mật đề thi**: Ẩn hoàn toàn Unit và mẫu ngữ pháp trước khi chọn đáp án để rèn luyện tư duy thực tế.
 - **Phím tắt tiện lợi**:
   - `1`, `2`, `3`, `4` hoặc `A`, `B`, `C`, `D`: Chọn đáp án
   - `Mũi tên Trái / Phải`: Chuyển câu trước / sau
+  - `H`: Bật/Tắt gợi ý dịch nghĩa câu (chừa chỗ trống)
   - `F`: Đánh dấu cờ (Bookmark)
   - `S`: Nghe phát âm câu hỏi
   - `T`: Chuyển đổi giao diện Sáng / Tối

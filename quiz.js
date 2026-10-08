@@ -41,10 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const qUnitBadge = document.getElementById('q-unit-badge');
   const qPatternTag = document.getElementById('q-pattern-tag');
   const qIndexDisplay = document.getElementById('q-index-display');
+  const qHintBtn = document.getElementById('q-hint-btn');
+  const qFuriBtn = document.getElementById('q-furi-btn');
   const qSpeakBtn = document.getElementById('q-speak-btn');
   const qFlagBtn = document.getElementById('q-flag-btn');
   const qText = document.getElementById('q-text');
+  const hintBox = document.getElementById('hint-box');
+  const hintText = document.getElementById('hint-text');
   const optionsGrid = document.getElementById('options-grid');
+
+  let showFurigana = true;
+  let isHintOpen = false;
 
   // Explanation Elements
   const explanationBox = document.getElementById('explanation-box');
@@ -223,12 +230,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const q = filteredQuestions[currentIndex];
     const badgeClass = getBadgeClass(q.unit);
 
-    qUnitBadge.textContent = q.unit;
-    qUnitBadge.className = `unit-badge ${badgeClass}`;
+    // Ẩn badge Unit và mẫu ngữ pháp khi chưa chọn đáp án để không bị lộ đề
+    const selectedAns = userAnswers[q.id];
+    const showExplanation = currentMode === 'instant' ? (selectedAns !== undefined) : isExamSubmitted;
+
+    if (showExplanation) {
+      qUnitBadge.textContent = q.unit;
+      qUnitBadge.className = `unit-badge ${badgeClass}`;
+      qUnitBadge.style.display = 'inline-block';
+
+      qPatternTag.textContent = q.pattern;
+      qPatternTag.style.display = 'inline-flex';
+    } else {
+      qUnitBadge.textContent = '';
+      qUnitBadge.style.display = 'none';
+
+      qPatternTag.textContent = '';
+      qPatternTag.style.display = 'none';
+    }
+
     qIndexDisplay.textContent = `Câu ${String(currentIndex + 1).padStart(2, '0')} / ${String(filteredQuestions.length).padStart(2, '0')}`;
     const isQuestionJa = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(q.question);
     qText.className = `question-body ${isQuestionJa ? 'japanese-text' : ''}`;
-    qText.textContent = q.question;
+    
+    // Hiển thị Furigana qua thẻ ruby nếu có
+    if (q.rubyQuestion) {
+      qText.innerHTML = q.rubyQuestion;
+    } else {
+      qText.textContent = q.question;
+    }
+
+    // Hiển thị khung gợi ý dịch câu (chừa chỗ trống) nếu đang mở
+    if (isHintOpen && q.hintTranslation) {
+      hintBox.style.display = 'block';
+      hintText.textContent = q.hintTranslation;
+      if (qHintBtn) qHintBtn.classList.add('active');
+    } else {
+      hintBox.style.display = 'none';
+      if (qHintBtn) qHintBtn.classList.remove('active');
+    }
 
     // Trạng thái cờ đánh dấu
     if (flaggedQuestions.has(q.id)) {
@@ -237,21 +277,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       qFlagBtn.classList.remove('is-flagged');
       qFlagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i>';
-    }
-
-    // Hiển thị các phương án đáp án
-    optionsGrid.innerHTML = '';
-    const letters = ['A', 'B', 'C', 'D'];
-    const selectedAns = userAnswers[q.id];
-    const showExplanation = currentMode === 'instant' ? (selectedAns !== undefined) : isExamSubmitted;
-
-    // Ẩn mẫu ngữ pháp khi chưa chọn đáp án để không bị lộ đề
-    if (showExplanation) {
-      qPatternTag.textContent = q.pattern;
-      qPatternTag.style.display = 'inline-flex';
-    } else {
-      qPatternTag.textContent = '';
-      qPatternTag.style.display = 'none';
     }
 
     q.options.forEach((opt, idx) => {
@@ -372,6 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       btn.addEventListener('click', () => {
+        isHintOpen = false;
         currentIndex = idx;
         renderQuestion();
       });
@@ -397,6 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Đổi câu hỏi
   function nextQuestion() {
     if (currentIndex < filteredQuestions.length - 1) {
+      isHintOpen = false;
       currentIndex++;
       renderQuestion();
     }
@@ -404,6 +431,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function prevQuestion() {
     if (currentIndex > 0) {
+      isHintOpen = false;
       currentIndex--;
       renderQuestion();
     }
@@ -567,6 +595,37 @@ document.addEventListener('DOMContentLoaded', () => {
     qFlagBtn.addEventListener('click', toggleFlag);
     qSpeakBtn.addEventListener('click', speakQuestion);
 
+    // Bật / Tắt Furigana
+    if (qFuriBtn) {
+      qFuriBtn.addEventListener('click', () => {
+        showFurigana = !showFurigana;
+        document.body.classList.toggle('hide-furigana', !showFurigana);
+        qFuriBtn.classList.toggle('active', showFurigana);
+        showToast(showFurigana ? 'Đã bật Furigana trên Hán tự' : 'Đã ẩn Furigana');
+      });
+    }
+
+    // Gợi ý dịch nghĩa câu (vẫn chừa chỗ trống)
+    if (qHintBtn) {
+      qHintBtn.addEventListener('click', () => {
+        const q = filteredQuestions[currentIndex];
+        if (!q || !q.hintTranslation) {
+          showToast('Câu này không có gợi ý dịch.');
+          return;
+        }
+        isHintOpen = !isHintOpen;
+        if (isHintOpen) {
+          hintBox.style.display = 'block';
+          hintText.textContent = q.hintTranslation;
+          qHintBtn.classList.add('active');
+          showToast('Đã mở gợi ý nghĩa câu 💡');
+        } else {
+          hintBox.style.display = 'none';
+          qHintBtn.classList.remove('active');
+        }
+      });
+    }
+
     // Nộp bài thi
     btnFinishQuiz.addEventListener('click', () => {
       if (confirm('Bạn có chắc chắn muốn nộp bài thi ngay bây giờ?')) {
@@ -621,6 +680,8 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleFlag();
       } else if (['s', 'S'].includes(e.key)) {
         speakQuestion();
+      } else if (['h', 'H'].includes(e.key)) {
+        if (qHintBtn) qHintBtn.click();
       } else if (['t', 'T'].includes(e.key)) {
         toggleTheme();
       }

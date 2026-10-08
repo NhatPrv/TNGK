@@ -1,5 +1,6 @@
 // Bộ dữ liệu các bộ đề thi trắc nghiệm ngữ pháp tiếng Nhật
 // Bao gồm: Bộ Đề 1 - 5 (500 câu điền câu) và 2 Bộ Đề Chuyên Đề Cốt Lõi (84 câu)
+// Đã tích hợp rubyQuestion (Furigana) và hintTranslation (gợi ý dịch có chỗ trống)
 const QUIZ_SETS = {
   "1": [
     {
@@ -15,7 +16,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Nhờ thời tiết đẹp nên ngắm rõ đỉnh núi Phú Sĩ.",
-      "explanation": "Đáp án đúng là A. Nguyên nhân tích cực."
+      "explanation": "Đáp án đúng là A. Nguyên nhân tích cực.",
+      "rubyQuestion": "<ruby>天気<rt>てんき</rt></ruby>が<ruby>良か<rt>よか</rt></ruby>った（　　）、<ruby>富士山<rt>ふじさん</rt></ruby>の<ruby>頂上<rt>ちょうじょう</rt></ruby>まできれいに<ruby>見え<rt>みえ</rt></ruby>ました。",
+      "hintTranslation": "（......） thời tiết đẹp nên ngắm rõ đỉnh núi Phú Sĩ."
     },
     {
       "id": 2,
@@ -30,7 +33,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cứ mỗi lần thất bại nếu tìm ra điểm khắc phục thì sẽ trưởng thành.",
-      "explanation": "Đáp án đúng là D. 「V辞書形 + ごとに」: cứ mỗi lần..."
+      "explanation": "Đáp án đúng là D. 「V辞書形 + ごとに」: cứ mỗi lần...",
+      "rubyQuestion": "<ruby>失敗<rt>しっぱい</rt></ruby>する（　　）<ruby>改善点<rt>かいぜんてん</rt></ruby>を<ruby>見つ<rt>みつ</rt></ruby>けていけば、<ruby>必ず<rt>かならず</rt></ruby><ruby>成長<rt>せいちょう</rt></ruby>できる。",
+      "hintTranslation": "（......） thất bại nếu tìm ra điểm khắc phục thì sẽ trưởng thành."
     },
     {
       "id": 3,
@@ -45,7 +50,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Anh ấy túng quẫn đến tiền mua bánh mì ngày mai cũng không có.",
-      "explanation": "Đáp án đúng là C. Ngay cả tiền lẻ."
+      "explanation": "Đáp án đúng là C. Ngay cả tiền lẻ.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby>お<ruby>金<rt>きん</rt></ruby>がなくて、<ruby>明日<rt>あした</rt></ruby>のパンを<ruby>買う<rt>かう</rt></ruby><ruby>小銭<rt>こぜに</rt></ruby>（　　）<ruby>持っ<rt>もっ</rt></ruby>ていない。",
+      "hintTranslation": "（......） Anh ấy túng quẫn đến tiền mua bánh mì ngày mai cũng không có."
     },
     {
       "id": 4,
@@ -60,7 +67,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Thay vì mua ô tô, nhà tôi quyết định đi du lịch nước ngoài.",
-      "explanation": "Đáp án đúng là C. Lựa chọn thay thế."
+      "explanation": "Đáp án đúng là C. Lựa chọn thay thế.",
+      "rubyQuestion": "<ruby>車<rt>くるま</rt></ruby>を<ruby>買う<rt>かう</rt></ruby>（　　）、<ruby>家族<rt>かぞく</rt></ruby>で<ruby>海外旅行<rt>かいがいりょこう</rt></ruby>に<ruby>行く<rt>いく</rt></ruby>ことにした。",
+      "hintTranslation": "（......） mua ô tô, nhà tôi quyết định đi du lịch nước ngoài."
     },
     {
       "id": 5,
@@ -75,7 +84,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Vừa mới nghe giải thích lúc nãy mà giờ đã quên rồi à?",
-      "explanation": "Đáp án đúng là B. Vừa mới nghe xong."
+      "explanation": "Đáp án đúng là B. Vừa mới nghe xong.",
+      "rubyQuestion": "さっき<ruby>説明<rt>せつめい</rt></ruby>を<ruby>聞い<rt>きい</rt></ruby>（　　）なのに、もう<ruby>忘れ<rt>わすれ</rt></ruby>てしまったのですか。",
+      "hintTranslation": "（......） nghe giải thích lúc nãy mà giờ đã quên rồi à?"
     },
     {
       "id": 6,
@@ -90,7 +101,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cuộc sống thành thị tiện lợi nhưng chi phí đắt đỏ.",
-      "explanation": "Đáp án đúng là D. 「普通形 + 一方で」nêu 2 mặt đối lập."
+      "explanation": "Đáp án đúng là D. 「普通形 + 一方で」nêu 2 mặt đối lập.",
+      "rubyQuestion": "<ruby>都会<rt>とかい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>な（　　）、<ruby>生活費<rt>せいかつひ</rt></ruby>が<ruby>高く<rt>たかく</rt></ruby>ストレスも<ruby>多い<rt>おおい</rt></ruby>。",
+      "hintTranslation": "（......） Cuộc sống thành thị tiện lợi nhưng chi phí đắt đỏ."
     },
     {
       "id": 7,
@@ -105,7 +118,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Dùng mật ong thay cho đường để làm bánh ít calo.",
-      "explanation": "Đáp án đúng là B. Thay thế nguyên liệu."
+      "explanation": "Đáp án đúng là B. Thay thế nguyên liệu.",
+      "rubyQuestion": "<ruby>砂糖<rt>さとう</rt></ruby>の（　　）ハチミツを<ruby>使って<rt>つかって</rt></ruby>、<ruby>低<rt>てい</rt></ruby>カロリーのお<ruby>菓子<rt>かし</rt></ruby>を<ruby>作っ<rt>つくっ</rt></ruby>た。",
+      "hintTranslation": "Dùng mật ong （......） đường để làm bánh ít calo."
     },
     {
       "id": 8,
@@ -120,7 +135,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cân độ nặng hành lý rồi tính phí ship.",
-      "explanation": "Đáp án đúng là D. 「重い」→「重さ」độ nặng."
+      "explanation": "Đáp án đúng là D. 「重い」→「重さ」độ nặng.",
+      "rubyQuestion": "この<ruby>荷物<rt>にもつ</rt></ruby>の（　　）を<ruby>測っ<rt>はかっ</rt></ruby>てから、<ruby>送料<rt>そうりょう</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>してください。",
+      "hintTranslation": "（......） Cân độ nặng hành lý rồi tính phí ship."
     },
     {
       "id": 9,
@@ -135,7 +152,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ông tôi dạo này có tuổi nên trở nên rất hay quên.",
-      "explanation": "Đáp án đúng là B. 「忘れっぽい」tính hay quên."
+      "explanation": "Đáp án đúng là B. 「忘れっぽい」tính hay quên.",
+      "rubyQuestion": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>最近<rt>さいきん</rt></ruby><ruby>歳<rt>とし</rt></ruby>をとったせいか、とても<ruby>忘れ<rt>わすれ</rt></ruby>（　　）なった。",
+      "hintTranslation": "Ông tôi dạo này có tuổi nên trở nên rất （......）."
     },
     {
       "id": 10,
@@ -150,7 +169,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Có nguy cơ dịch cúm lan rộng nhanh chóng.",
-      "explanation": "Đáp án đúng là B. Nguy cơ dịch bệnh."
+      "explanation": "Đáp án đúng là B. Nguy cơ dịch bệnh.",
+      "rubyQuestion": "インフルエンザが<ruby>急速<rt>きゅうそく</rt></ruby>に<ruby>感染<rt>かんせん</rt></ruby><ruby>拡大<rt>かくだい</rt></ruby>する（　　）がある。",
+      "hintTranslation": "（......） dịch cúm lan rộng nhanh chóng."
     },
     {
       "id": 11,
@@ -165,7 +186,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ngon thì ngon thật nhưng nấu mất nhiều thời gian.",
-      "explanation": "Đáp án đúng là C. 「イAことはイAが」."
+      "explanation": "Đáp án đúng là C. 「イAことはイAが」.",
+      "rubyQuestion": "この<ruby>料理<rt>りょうり</rt></ruby>は<ruby>美味しい<rt>おいしい</rt></ruby>（　　）<ruby>美味しい<rt>おいしい</rt></ruby>が、<ruby>作る<rt>つくる</rt></ruby>のに<ruby>時間<rt>じかん</rt></ruby>がかかる。",
+      "hintTranslation": "Ngon （......） nhưng nấu mất nhiều thời gian."
     },
     {
       "id": 12,
@@ -180,7 +203,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cảm cúm kéo dài nên trận đấu cuối tuần khó mà ra sân được.",
-      "explanation": "Đáp án đúng là D. Khó ra sân thi đấu."
+      "explanation": "Đáp án đúng là D. Khó ra sân thi đấu.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>が<ruby>長引い<rt>ながびい</rt></ruby>ていて、<ruby>今週末<rt>こんしゅうまつ</rt></ruby>の<ruby>試合<rt>しあい</rt></ruby>には<ruby>出場<rt>しゅつじょう</rt></ruby>でき（　　）。",
+      "hintTranslation": "（......） Cảm cúm kéo dài nên trận đấu cuối tuần khó mà ra sân được."
     },
     {
       "id": 13,
@@ -195,7 +220,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Lời tên nói dối đó thì ai mà tin cho được!",
-      "explanation": "Đáp án đúng là D. Ai mà thèm tin."
+      "explanation": "Đáp án đúng là D. Ai mà thèm tin.",
+      "rubyQuestion": "あんな<ruby>嘘つき<rt>うそつき</rt></ruby>の<ruby>言う<rt>いう</rt></ruby>ことなんて、<ruby>誰が<rt>だれが</rt></ruby><ruby>信じ<rt>しんじ</rt></ruby>る（　　）！",
+      "hintTranslation": "（......） Lời tên nói dối đó thì ai mà tin cho được!"
     },
     {
       "id": 14,
@@ -210,7 +237,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dù có giàu có tôi vẫn sống giản dị như giờ.",
-      "explanation": "Đáp án đúng là A. 「〜としても」cho dù đi nữa."
+      "explanation": "Đáp án đúng là A. 「〜としても」cho dù đi nữa.",
+      "rubyQuestion": "たとえ<ruby>大金持<rt>おおがねもち</rt></ruby>ちになっ（　　）、<ruby>質素<rt>しっそ</rt></ruby>な<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>変え<rt>かえ</rt></ruby>ないだろう。",
+      "hintTranslation": "（......） có giàu có tôi vẫn sống giản dị như giờ."
     },
     {
       "id": 15,
@@ -225,7 +254,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Nhờ lời khuyên của tiền bối mà tôi đã tự tin trả lời phỏng vấn.",
-      "explanation": "Đáp án đúng là A. Kết quả tích cực từ lời khuyên."
+      "explanation": "Đáp án đúng là A. Kết quả tích cực từ lời khuyên.",
+      "rubyQuestion": "<ruby>先輩<rt>せんぱい</rt></ruby>のアドバイスの（　　）、<ruby>面接<rt>めんせつ</rt></ruby>で<ruby>落ち着い<rt>おちつい</rt></ruby>て<ruby>受け答え<rt>うけこたえ</rt></ruby>ができた。",
+      "hintTranslation": "（......） lời khuyên của tiền bối mà tôi đã tự tin trả lời phỏng vấn."
     },
     {
       "id": 16,
@@ -240,7 +271,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Do có nguy cơ sóng thần vì động đất nên phát cảnh báo.",
-      "explanation": "Đáp án đúng là A. 「NによるN」."
+      "explanation": "Đáp án đúng là A. 「NによるN」.",
+      "rubyQuestion": "<ruby>地震<rt>じしん</rt></ruby>（　　）<ruby>津波<rt>つなみ</rt></ruby>の<ruby>危険<rt>きけん</rt></ruby>があるため、<ruby>警報<rt>けいほう</rt></ruby>が<ruby>発令<rt>はつれい</rt></ruby>された。",
+      "hintTranslation": "（......） Do có nguy cơ sóng thần vì động đất nên phát cảnh báo."
     },
     {
       "id": 17,
@@ -255,7 +288,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Dù bị ai nói gì tôi cũng không từ bỏ ước mơ.",
-      "explanation": "Đáp án đúng là C. Cho dù bị ai nói gì."
+      "explanation": "Đáp án đúng là C. Cho dù bị ai nói gì.",
+      "rubyQuestion": "<ruby>誰<rt>だれ</rt></ruby>に<ruby>何を<rt>なにを</rt></ruby><ruby>言わ<rt>いわ</rt></ruby>れ（　　）、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>諦め<rt>あきらめ</rt></ruby>るつもりはありません。",
+      "hintTranslation": "（......） bị ai nói gì tôi cũng không từ bỏ ước mơ."
     },
     {
       "id": 18,
@@ -270,7 +305,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Do mưa lớn nên tàu dừng chạy, tôi bị muộn làm.",
-      "explanation": "Đáp án đúng là C. Hậu quả tiêu cực do mưa."
+      "explanation": "Đáp án đúng là C. Hậu quả tiêu cực do mưa.",
+      "rubyQuestion": "<ruby>大雨<rt>おおあめ</rt></ruby>の（　　）<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>を<ruby>見合わ<rt>みあわ</rt></ruby>せ、<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>遅刻<rt>ちこく</rt></ruby>した。",
+      "hintTranslation": "（......） mưa lớn nên tàu dừng chạy, tôi bị muộn làm."
     },
     {
       "id": 19,
@@ -285,7 +322,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Muốn thi đỗ thì tốt nhất không nên lơ là ôn tập.",
-      "explanation": "Đáp án đúng là D. 「Vないことだ」khuyên không nên."
+      "explanation": "Đáp án đúng là D. 「Vないことだ」khuyên không nên.",
+      "rubyQuestion": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>したいなら、<ruby>毎日<rt>まいにち</rt></ruby><ruby>復習<rt>ふくしゅう</rt></ruby>を<ruby>怠ら<rt>おこたら</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn thi đỗ thì tốt nhất （......） lơ là ôn tập."
     },
     {
       "id": 20,
@@ -300,7 +339,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nỗi khổ của tao đứa như mày làm sao mà hiểu được!",
-      "explanation": "Đáp án đúng là B. Văn nói: もんか."
+      "explanation": "Đáp án đúng là B. Văn nói: もんか.",
+      "rubyQuestion": "「<ruby>俺<rt>おれ</rt></ruby>の<ruby>苦しい<rt>くるしい</rt></ruby><ruby>気持ち<rt>きもち</rt></ruby>がお<ruby>前<rt>まえ</rt></ruby>なんかに<ruby>分か<rt>わか</rt></ruby>ってたまる（　　）！」",
+      "hintTranslation": "（......） Nỗi khổ của tao đứa như mày làm sao mà hiểu được!"
     },
     {
       "id": 21,
@@ -315,7 +356,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Loài chim này có nguy cơ tuyệt chủng.",
-      "explanation": "Đáp án đúng là C. 「絶滅のおそれがある」."
+      "explanation": "Đáp án đúng là C. 「絶滅のおそれがある」.",
+      "rubyQuestion": "この<ruby>鳥<rt>とり</rt></ruby>は<ruby>生息地<rt>せいそくち</rt></ruby>が<ruby>減少<rt>げんしょう</rt></ruby>し、<ruby>絶滅<rt>ぜつめつ</rt></ruby>の（　　）があると<ruby>言わ<rt>いわ</rt></ruby>れている。",
+      "hintTranslation": "Loài chim này （......） tuyệt chủng."
     },
     {
       "id": 22,
@@ -330,7 +373,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Cứ mỗi lần lật một trang lại có phát hiện mới, cuốn sách rất hay.",
-      "explanation": "Đáp án đúng là B. 「めくるごとに」: cứ mỗi lần lật trang."
+      "explanation": "Đáp án đúng là B. 「めくるごとに」: cứ mỗi lần lật trang.",
+      "rubyQuestion": "ページをめくる（　　）<ruby>新しい<rt>あたらしい</rt></ruby><ruby>発見<rt>はっけん</rt></ruby>があり、とても<ruby>面白い<rt>おもしろい</rt></ruby><ruby>本<rt>ほん</rt></ruby>だ。",
+      "hintTranslation": "（......） lật một trang lại có phát hiện mới, cuốn sách rất hay."
     },
     {
       "id": 23,
@@ -345,7 +390,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Bức tranh này được vẽ bởi Picasso.",
-      "explanation": "Đáp án đúng là C. Chủ thể trong câu bị động."
+      "explanation": "Đáp án đúng là C. Chủ thể trong câu bị động.",
+      "rubyQuestion": "この<ruby>素晴らしい<rt>すばらしい</rt></ruby><ruby>絵画<rt>かいが</rt></ruby>は、ピカソ（　　）<ruby>描か<rt>えがか</rt></ruby>れた。",
+      "hintTranslation": "（......） Bức tranh này được vẽ bởi Picasso."
     },
     {
       "id": 24,
@@ -360,7 +407,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Độ sâu của bể bơi này là mấy mét?",
-      "explanation": "Đáp án đúng là B. 「深い」→「深さ」."
+      "explanation": "Đáp án đúng là B. 「深い」→「深さ」.",
+      "rubyQuestion": "このプールの<ruby>水深<rt>すいしん</rt></ruby>の（　　）は<ruby>何<rt>なに</rt></ruby>メートルですか。",
+      "hintTranslation": "（......） Độ sâu của bể bơi này là mấy mét?"
     },
     {
       "id": 25,
@@ -375,7 +424,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Độ chính xác trong công việc của anh ấy ai cũng nể phục.",
-      "explanation": "Đáp án đúng là B. 「正確さ」tính từ đuôi na."
+      "explanation": "Đáp án đúng là B. 「正確さ」tính từ đuôi na.",
+      "rubyQuestion": "<ruby>彼の<rt>かの</rt></ruby><ruby>仕事<rt>しごと</rt></ruby>の<ruby>正確<rt>せいかく</rt></ruby>（　　）には、<ruby>誰も<rt>だれも</rt></ruby>が<ruby>一目<rt>いちもく</rt></ruby><ruby>置い<rt>おい</rt></ruby>ている。",
+      "hintTranslation": "（......） Độ chính xác trong công việc của anh ấy ai cũng nể phục."
     },
     {
       "id": 26,
@@ -390,7 +441,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Người chưa gặp bao giờ làm sao hiểu thấu lòng dạ họ được!",
-      "explanation": "Đáp án đúng là D. Tuyệt đối không thể hiểu."
+      "explanation": "Đáp án đúng là D. Tuyệt đối không thể hiểu.",
+      "rubyQuestion": "まだ<ruby>一度<rt>いちど</rt></ruby>も<ruby>会っ<rt>あっ</rt></ruby>たことがない<ruby>人<rt>にん</rt></ruby>の<ruby>本心<rt>ほんしん</rt></ruby>が、<ruby>分か<rt>わか</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Người chưa gặp bao giờ làm sao hiểu thấu lòng dạ họ được!"
     },
     {
       "id": 27,
@@ -405,7 +458,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Người giàu không hẳn ai cũng đều hạnh phúc.",
-      "explanation": "Đáp án đúng là C. ナAだとは限らない."
+      "explanation": "Đáp án đúng là C. ナAだとは限らない.",
+      "rubyQuestion": "お<ruby>金持ち<rt>かねもち</rt></ruby>の<ruby>人<rt>にん</rt></ruby>が、みんな<ruby>幸せ<rt>しあわせ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Người giàu không hẳn ai cũng đều hạnh phúc."
     },
     {
       "id": 28,
@@ -420,7 +475,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Trái ngược với cái nóng gay gắt hôm qua, hôm nay lạnh se se.",
-      "explanation": "Đáp án đúng là B. Đối lập thời tiết 2 ngày."
+      "explanation": "Đáp án đúng là B. Đối lập thời tiết 2 ngày.",
+      "rubyQuestion": "<ruby>昨日<rt>きのう</rt></ruby>の<ruby>猛暑<rt>もうしょ</rt></ruby>（　　）、<ruby>今日は<rt>こんにちは</rt></ruby><ruby>急に<rt>きゅうに</rt></ruby><ruby>気温<rt>きおん</rt></ruby>が<ruby>下が<rt>さが</rt></ruby>って<ruby>肌寒い<rt>はださむい</rt></ruby>。",
+      "hintTranslation": "（......） cái nóng gay gắt hôm qua, hôm nay lạnh se se."
     },
     {
       "id": 29,
@@ -435,7 +492,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Bị bão tàn phá thêm vào đó động đất xảy ra khiến hiện trường hỗn loạn.",
-      "explanation": "Đáp án đúng là D. Thiên tai chồng chất."
+      "explanation": "Đáp án đúng là D. Thiên tai chồng chất.",
+      "rubyQuestion": "<ruby>台風<rt>たいふう</rt></ruby>の<ruby>被害<rt>ひがい</rt></ruby>（　　）、<ruby>地震<rt>じしん</rt></ruby>まで<ruby>発生<rt>はっせい</rt></ruby>して<ruby>現地<rt>げんち</rt></ruby>は<ruby>混乱<rt>こんらん</rt></ruby>している。",
+      "hintTranslation": "Bị bão tàn phá （......） động đất xảy ra khiến hiện trường hỗn loạn."
     },
     {
       "id": 30,
@@ -450,7 +509,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Hoạt động núi lửa sôi động, nguy cơ phun trào tăng cao.",
-      "explanation": "Đáp án đúng là A. Nguy cơ phun trào."
+      "explanation": "Đáp án đúng là A. Nguy cơ phun trào.",
+      "rubyQuestion": "<ruby>火山活動<rt>かざんかつどう</rt></ruby>が<ruby>活発化<rt>かっぱつか</rt></ruby>しており、<ruby>噴火<rt>ふんか</rt></ruby>の（　　）が<ruby>高ま<rt>たかま</rt></ruby>っている。",
+      "hintTranslation": "Hoạt động núi lửa sôi động, （......） phun trào tăng cao."
     },
     {
       "id": 31,
@@ -465,7 +526,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Thầy dạy tiếng Nhật bao năm lẽ nào lại không biết ngữ pháp này!",
-      "explanation": "Đáp án đúng là A. Phủ định kép."
+      "explanation": "Đáp án đúng là A. Phủ định kép.",
+      "rubyQuestion": "<ruby>何年<rt>なんねん</rt></ruby>も<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>ている<ruby>先生<rt>せんせい</rt></ruby>が、この<ruby>文法<rt>ぶんぽう</rt></ruby>を<ruby>知ら<rt>しら</rt></ruby>ない（　　）。",
+      "hintTranslation": "Thầy dạy tiếng Nhật bao năm （......） không biết ngữ pháp này!"
     },
     {
       "id": 32,
@@ -480,7 +543,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sơ suất tàn lửa có nguy cơ phát triển thành hỏa hoạn lớn.",
-      "explanation": "Đáp án đúng là C. Nguy cơ cháy nổ."
+      "explanation": "Đáp án đúng là C. Nguy cơ cháy nổ.",
+      "rubyQuestion": "<ruby>火<rt>ひ</rt></ruby>の<ruby>不始末<rt>ふしまつ</rt></ruby>から<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>火災<rt>かさい</rt></ruby>に<ruby>発展<rt>はってん</rt></ruby>する（　　）。",
+      "hintTranslation": "Sơ suất tàn lửa （......） phát triển thành hỏa hoạn lớn."
     },
     {
       "id": 33,
@@ -495,7 +560,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Khách du lịch tăng làm vùng phát triển, mặt khác phát sinh rác thải ồn ào.",
-      "explanation": "Đáp án đúng là B. Mặt tích cực đi kèm tiêu cực."
+      "explanation": "Đáp án đúng là B. Mặt tích cực đi kèm tiêu cực.",
+      "rubyQuestion": "<ruby>観光客<rt>かんこうきゃく</rt></ruby>の<ruby>増加<rt>ぞうか</rt></ruby>で<ruby>地域<rt>ちいき</rt></ruby>が<ruby>潤<rt>じゅん</rt></ruby>う（　　）、ゴミや<ruby>騒音<rt>そうおん</rt></ruby>などの<ruby>問題<rt>もんだい</rt></ruby>も<ruby>生じ<rt>しょうじ</rt></ruby>ている。",
+      "hintTranslation": "Khách du lịch tăng làm vùng phát triển, （......） phát sinh rác thải ồn ào."
     },
     {
       "id": 34,
@@ -510,7 +577,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Hay nỗi gì! Tôi ngủ gật giữa chừng luôn đấy.",
-      "explanation": "Đáp án đúng là A. Phủ định mỉa mai."
+      "explanation": "Đáp án đúng là A. Phủ định mỉa mai.",
+      "rubyQuestion": "「あの<ruby>映画<rt>えいが</rt></ruby>、<ruby>面白か<rt>おもしろか</rt></ruby>った？」「<ruby>面白か<rt>おもしろか</rt></ruby>った（　　）。<ruby>途中<rt>とちゅう</rt></ruby>で<ruby>寝ち<rt>ねち</rt></ruby>ゃったよ。」",
+      "hintTranslation": "（......） Hay nỗi gì! Tôi ngủ gật giữa chừng luôn đấy."
     },
     {
       "id": 35,
@@ -525,7 +594,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Chuẩn bị bài thuyết trình công phu thế thì làm sao thất bại được!",
-      "explanation": "Đáp án đúng là D. Tự tin không thể hỏng."
+      "explanation": "Đáp án đúng là D. Tự tin không thể hỏng.",
+      "rubyQuestion": "あんなに<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby><ruby>準備<rt>じゅんび</rt></ruby>したプレゼンが、<ruby>失敗<rt>しっぱい</rt></ruby>する（　　）。",
+      "hintTranslation": "（......） Chuẩn bị bài thuyết trình công phu thế thì làm sao thất bại được!"
     },
     {
       "id": 36,
@@ -540,7 +611,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Thay vì trả tiền mặt, thanh toán ví điện tử sẽ được điểm.",
-      "explanation": "Đáp án đúng là D. Thay đổi hình thức trả tiền."
+      "explanation": "Đáp án đúng là D. Thay đổi hình thức trả tiền.",
+      "rubyQuestion": "<ruby>現金<rt>げんきん</rt></ruby>で<ruby>支払う<rt>しはらう</rt></ruby>（　　）、<ruby>電子<rt>でんし</rt></ruby>マネーで<ruby>決済<rt>けっさい</rt></ruby>するとポイントが<ruby>付く<rt>つく</rt></ruby>。",
+      "hintTranslation": "（......） trả tiền mặt, thanh toán ví điện tử sẽ được điểm."
     },
     {
       "id": 37,
@@ -555,7 +628,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đồ đắt tiền chưa chắc chất lượng đã tốt.",
-      "explanation": "Đáp án đúng là D. 「〜とは限らない」chưa chắc là."
+      "explanation": "Đáp án đúng là D. 「〜とは限らない」chưa chắc là.",
+      "rubyQuestion": "<ruby>値段<rt>ねだん</rt></ruby>が<ruby>高い<rt>たかい</rt></ruby>ものが、<ruby>必ずしも<rt>かならずしも</rt></ruby><ruby>品質<rt>ひんしつ</rt></ruby>が<ruby>良い<rt>よい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Đồ đắt tiền chưa chắc chất lượng đã tốt."
     },
     {
       "id": 38,
@@ -570,7 +645,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tiện thì tiện thật nhưng cần luyện tập mới quen dùng.",
-      "explanation": "Đáp án đúng là D. Tính từ đuôi na: 便利なことは便利だが."
+      "explanation": "Đáp án đúng là D. Tính từ đuôi na: 便利なことは便利だが.",
+      "rubyQuestion": "<ruby>便利<rt>べんり</rt></ruby>な（　　）<ruby>便利<rt>べんり</rt></ruby>だが、<ruby>使い<rt>つかい</rt></ruby>こなすまでに<ruby>練習<rt>れんしゅう</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だ。",
+      "hintTranslation": "Tiện thì tiện （......） cần luyện tập mới quen dùng."
     },
     {
       "id": 39,
@@ -585,7 +662,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đang tuyển nhân sự có kiến thức chuyên môn cộng thêm kinh nghiệm phong phú.",
-      "explanation": "Đáp án đúng là C. Kiến thức cộng kinh nghiệm."
+      "explanation": "Đáp án đúng là C. Kiến thức cộng kinh nghiệm.",
+      "rubyQuestion": "<ruby>専門知識<rt>せんもんちしき</rt></ruby>（　　）<ruby>豊か<rt>ゆたか</rt></ruby>な<ruby>実務経験<rt>じつむけいけん</rt></ruby>を<ruby>持つ<rt>もつ</rt></ruby><ruby>人材<rt>じんざい</rt></ruby>が<ruby>求め<rt>もとめ</rt></ruby>られている。",
+      "hintTranslation": "（......） Đang tuyển nhân sự có kiến thức chuyên môn cộng thêm kinh nghiệm phong phú."
     },
     {
       "id": 40,
@@ -600,7 +679,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Do cơn bão lần này, nhiều nhà cửa bị thiệt hại.",
-      "explanation": "Đáp án đúng là D. 「N + によって」chỉ nguyên nhân."
+      "explanation": "Đáp án đúng là D. 「N + によって」chỉ nguyên nhân.",
+      "rubyQuestion": "<ruby>今回<rt>こんかい</rt></ruby>の<ruby>台風<rt>たいふう</rt></ruby>（　　）、<ruby>多く<rt>おおく</rt></ruby>の<ruby>家屋<rt>かおく</rt></ruby>が<ruby>被害<rt>ひがい</rt></ruby>を<ruby>受け<rt>うけ</rt></ruby>ました。",
+      "hintTranslation": "（......） Do cơn bão lần này, nhiều nhà cửa bị thiệt hại."
     },
     {
       "id": 41,
@@ -615,7 +696,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đầu bếp chuyên nghiệp nấu thì làm sao mà dở được!",
-      "explanation": "Đáp án đúng là A. Chắc chắn ngon."
+      "explanation": "Đáp án đúng là A. Chắc chắn ngon.",
+      "rubyQuestion": "プロの<ruby>料理人<rt>りょうりにん</rt></ruby>が<ruby>作っ<rt>つくっ</rt></ruby>たのだから、まずい（　　）。",
+      "hintTranslation": "Đầu bếp chuyên nghiệp nấu thì （......） dở được!"
     },
     {
       "id": 42,
@@ -630,7 +713,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đối diện với những lời phê phán gắt gao, thủ tướng vẫn bình tĩnh giải thích.",
-      "explanation": "Đáp án đúng là A. Đối mặt với chỉ trích."
+      "explanation": "Đáp án đúng là A. Đối mặt với chỉ trích.",
+      "rubyQuestion": "<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>批判<rt>ひはん</rt></ruby>（　　）、<ruby>首相<rt>しゅしょう</rt></ruby>は<ruby>冷静<rt>れいせい</rt></ruby>に<ruby>説明<rt>せつめい</rt></ruby>を<ruby>続け<rt>つづけ</rt></ruby>た。",
+      "hintTranslation": "（......） Đối diện với những lời phê phán gắt gao, thủ tướng vẫn bình tĩnh giải thích."
     },
     {
       "id": 43,
@@ -645,7 +730,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Mặc áo khoác màu hơi ngả đen đi làm.",
-      "explanation": "Đáp án đúng là B. 「黒っぽい」hơi đen."
+      "explanation": "Đáp án đúng là B. 「黒っぽい」hơi đen.",
+      "rubyQuestion": "<ruby>黒<rt>くろ</rt></ruby>（　　）ジャケットを<ruby>羽織<rt>はおり</rt></ruby>って<ruby>出勤<rt>しゅっきん</rt></ruby>した。",
+      "hintTranslation": "（......） Mặc áo khoác màu hơi ngả đen đi làm."
     },
     {
       "id": 44,
@@ -660,7 +747,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Món súp này nhiều nước (loãng toẹt), không ngon.",
-      "explanation": "Đáp án đúng là A. 「水っぽい」loãng, nhiều nước."
+      "explanation": "Đáp án đúng là A. 「水っぽい」loãng, nhiều nước.",
+      "rubyQuestion": "このスープは<ruby>水<rt>みず</rt></ruby>（　　）て、あまり<ruby>美味しく<rt>おいしく</rt></ruby>ない。",
+      "hintTranslation": "Món súp này （......） (loãng toẹt), không ngon."
     },
     {
       "id": 45,
@@ -675,7 +764,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đừng sợ thất bại, tốt nhất là cứ thử sức với điều mới.",
-      "explanation": "Đáp án đúng là A. Động viên nên thử."
+      "explanation": "Đáp án đúng là A. Động viên nên thử.",
+      "rubyQuestion": "<ruby>失敗<rt>しっぱい</rt></ruby>を<ruby>恐れ<rt>おそれ</rt></ruby>ずに、<ruby>新しい<rt>あたらしい</rt></ruby>ことに<ruby>挑戦<rt>ちょうせん</rt></ruby>して<ruby>挑戦<rt>ちょうせん</rt></ruby>してみる（　　）。",
+      "hintTranslation": "（......） sợ thất bại, tốt nhất là cứ thử sức với điều mới."
     },
     {
       "id": 46,
@@ -690,7 +781,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Bão đến gần có nguy cơ nước sông tràn bờ.",
-      "explanation": "Đáp án đúng là C. 「〜恐れがある」nguy cơ xấu."
+      "explanation": "Đáp án đúng là C. 「〜恐れがある」nguy cơ xấu.",
+      "rubyQuestion": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>接近し<rt>せっきんし</rt></ruby>ているため、<ruby>大雨<rt>おおあめ</rt></ruby>による<ruby>河川<rt>かせん</rt></ruby>の<ruby>氾濫<rt>はんらん</rt></ruby>の（　　）。",
+      "hintTranslation": "Bão đến gần （......） nước sông tràn bờ."
     },
     {
       "id": 47,
@@ -705,7 +798,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Để đáp lại kỳ vọng của cha mẹ, tôi dốc sức thi.",
-      "explanation": "Đáp án đúng là B. Hướng tới kỳ vọng."
+      "explanation": "Đáp án đúng là B. Hướng tới kỳ vọng.",
+      "rubyQuestion": "<ruby>親<rt>おや</rt></ruby>の<ruby>期待<rt>きたい</rt></ruby>（　　）<ruby>応え<rt>こたえ</rt></ruby>られるよう、<ruby>全力<rt>ぜんりょく</rt></ruby>で<ruby>試験<rt>しけん</rt></ruby>に<ruby>臨ん<rt>のぞん</rt></ruby>だ。",
+      "hintTranslation": "（......） Để đáp lại kỳ vọng của cha mẹ, tôi dốc sức thi."
     },
     {
       "id": 48,
@@ -720,7 +815,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Dù có tốn thời gian tôi muốn tự sức hoàn thành.",
-      "explanation": "Đáp án đúng là D. Dù mất thời gian."
+      "explanation": "Đáp án đúng là D. Dù mất thời gian.",
+      "rubyQuestion": "たとえ<ruby>時間<rt>じかん</rt></ruby>がかかっ（　　）、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>で<ruby>最後<rt>さいご</rt></ruby>までやり<ruby>遂げ<rt>とげ</rt></ruby>たい。",
+      "hintTranslation": "（......） có tốn thời gian tôi muốn tự sức hoàn thành."
     },
     {
       "id": 49,
@@ -735,7 +832,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Chi phí nhân công tăng cộng thêm nguyên liệu đắt gây áp lực kinh doanh.",
-      "explanation": "Đáp án đúng là C. Cộng thêm khó khăn."
+      "explanation": "Đáp án đúng là C. Cộng thêm khó khăn.",
+      "rubyQuestion": "<ruby>人件費<rt>じんけんひ</rt></ruby>の<ruby>高騰<rt>こうとう</rt></ruby>（　　）<ruby>原材料費<rt>げんざいりょうひ</rt></ruby>の<ruby>値上がり<rt>ねあがり</rt></ruby>も、<ruby>経営<rt>けいえい</rt></ruby>を<ruby>圧迫<rt>あっぱく</rt></ruby>している。",
+      "hintTranslation": "（......） Chi phí nhân công tăng cộng thêm nguyên liệu đắt gây áp lực kinh doanh."
     },
     {
       "id": 50,
@@ -750,7 +849,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Mong bạn đừng nói việc này cho ai biết.",
-      "explanation": "Đáp án đúng là B. 「Vないでほしい」mong đừng làm."
+      "explanation": "Đáp án đúng là B. 「Vないでほしい」mong đừng làm.",
+      "rubyQuestion": "この<ruby>件<rt>けん</rt></ruby>については、<ruby>他の<rt>ほかの</rt></ruby><ruby>人<rt>にん</rt></ruby>には<ruby>誰<rt>だれ</rt></ruby>にも<ruby>言わ<rt>いわ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Mong bạn đừng nói việc này cho ai biết."
     },
     {
       "id": 51,
@@ -765,7 +866,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dự luật đó đã được thông qua bằng biểu quyết đa số ở quốc hội.",
-      "explanation": "Đáp án đúng là A. Phương tiện thông qua."
+      "explanation": "Đáp án đúng là A. Phương tiện thông qua.",
+      "rubyQuestion": "その<ruby>法案<rt>ほうあん</rt></ruby>は<ruby>国会<rt>こっかい</rt></ruby>の<ruby>多数決<rt>たすうけつ</rt></ruby>（　　）<ruby>可決<rt>かけつ</rt></ruby>されました。",
+      "hintTranslation": "（......） Dự luật đó đã được thông qua bằng biểu quyết đa số ở quốc hội."
     },
     {
       "id": 52,
@@ -780,7 +883,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Một mình nâng sao nổi cây đàn piano này! Giúp tôi với.",
-      "explanation": "Đáp án đúng là B. Bất khả thi."
+      "explanation": "Đáp án đúng là B. Bất khả thi.",
+      "rubyQuestion": "<ruby>一人<rt>ひとり</rt></ruby>でこの<ruby>重い<rt>おもい</rt></ruby>ピアノを<ruby>持ち<rt>もち</rt></ruby><ruby>上げ<rt>あげ</rt></ruby>られる（　　）。<ruby>手伝っ<rt>てつだっ</rt></ruby>てくれ。",
+      "hintTranslation": "（......） Một mình nâng sao nổi cây đàn piano này! Giúp tôi với."
     },
     {
       "id": 53,
@@ -795,7 +900,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Phó từ hay đi kèm là 必ずしも.",
-      "explanation": "Đáp án đúng là C. Đi kèm 必ずしも."
+      "explanation": "Đáp án đúng là C. Đi kèm 必ずしも.",
+      "rubyQuestion": "「〜とは<ruby>限ら<rt>かぎら</rt></ruby>ない」と<ruby>一緒に<rt>いっしょに</rt></ruby>よく<ruby>使わ<rt>つかわ</rt></ruby>れる<ruby>副詞<rt>ふくし</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Phó từ hay đi kèm là 必ずしも."
     },
     {
       "id": 54,
@@ -810,7 +917,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tắc đường nặng thế này có vẻ không kịp giờ hẹn.",
-      "explanation": "Đáp án đúng là D. Khó lòng kịp giờ."
+      "explanation": "Đáp án đúng là D. Khó lòng kịp giờ.",
+      "rubyQuestion": "<ruby>渋滞<rt>じゅうたい</rt></ruby>がひどいので、<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>に<ruby>間に合い<rt>まにあい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Tắc đường nặng thế này có vẻ không kịp giờ hẹn."
     },
     {
       "id": 55,
@@ -825,7 +934,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Chịu nỗi nhục nhã này làm sao mà im lặng chịu trận được!",
-      "explanation": "Đáp án đúng là C. Không thể ngồi yên."
+      "explanation": "Đáp án đúng là C. Không thể ngồi yên.",
+      "rubyQuestion": "こんな<ruby>屈辱<rt>くつじょく</rt></ruby>を<ruby>味わ<rt>あじわ</rt></ruby>って、<ruby>黙っ<rt>だまっ</rt></ruby>ていられる（　　）。",
+      "hintTranslation": "（......） Chịu nỗi nhục nhã này làm sao mà im lặng chịu trận được!"
     },
     {
       "id": 56,
@@ -840,7 +951,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Được dạy tiếng Anh, đổi lại tôi dạy tiếng Việt cho bạn.",
-      "explanation": "Đáp án đúng là C. Bù lại tương xứng."
+      "explanation": "Đáp án đúng là C. Bù lại tương xứng.",
+      "rubyQuestion": "<ruby>英語<rt>えいご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>てもらう（　　）、<ruby>彼<rt>かれ</rt></ruby>にベトナム<ruby>語<rt>ご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>てあげている。",
+      "hintTranslation": "（......） Được dạy tiếng Anh, đổi lại tôi dạy tiếng Việt cho bạn."
     },
     {
       "id": 57,
@@ -855,7 +968,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Anh ấy tính hay nổi nóng chuyện nhỏ cũng cáu.",
-      "explanation": "Đáp án đúng là D. 「怒りっぽい」."
+      "explanation": "Đáp án đúng là D. 「怒りっぽい」.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby><ruby>少し<rt>すこし</rt></ruby>のことですぐに<ruby>怒る<rt>いかる</rt></ruby>、<ruby>怒り<rt>いかり</rt></ruby>（　　）<ruby>性格<rt>せいかく</rt></ruby>だ。",
+      "hintTranslation": "（......） Anh ấy tính hay nổi nóng chuyện nhỏ cũng cáu."
     },
     {
       "id": 58,
@@ -870,7 +985,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "(Mỉa mai) 'Nhờ cậu quên tài liệu mà cuộc họp bị hủy luôn rồi đấy!'",
-      "explanation": "Đáp án đúng là D. 「おかげで」dùng mỉa mai trách khéo."
+      "explanation": "Đáp án đúng là D. 「おかげで」dùng mỉa mai trách khéo.",
+      "rubyQuestion": "（<ruby>皮肉<rt>ひにく</rt></ruby>）「<ruby>君<rt>くん</rt></ruby>が<ruby>重要な<rt>じゅうような</rt></ruby><ruby>書類<rt>しょるい</rt></ruby>を<ruby>忘れ<rt>わすれ</rt></ruby>てくれた（　　）、<ruby>会議<rt>かいぎ</rt></ruby>が<ruby>中止<rt>ちゅうし</rt></ruby>になっちゃったよ。」",
+      "hintTranslation": "(Mỉa mai) '（......） cậu quên tài liệu mà cuộc họp bị hủy luôn rồi đấy!'"
     },
     {
       "id": 59,
@@ -885,7 +1002,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Chiếc điện thoại vừa mới mua tháng trước đã hỏng.",
-      "explanation": "Đáp án đúng là A. Cảm nhận chủ quan vừa mới mua."
+      "explanation": "Đáp án đúng là A. Cảm nhận chủ quan vừa mới mua.",
+      "rubyQuestion": "<ruby>先月<rt>せんげつ</rt></ruby><ruby>買っ<rt>かっ</rt></ruby>（　　）のスマートフォンが、もう<ruby>壊れ<rt>こわれ</rt></ruby>てしまった。",
+      "hintTranslation": "Chiếc điện thoại （......） mua tháng trước đã hỏng."
     },
     {
       "id": 60,
@@ -900,7 +1019,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Cha mẹ một mặt nghiêm khắc nhưng mặt khác cũng không quên khen con.",
-      "explanation": "Đáp án đúng là A. 2 mặt đối lập của việc dạy con."
+      "explanation": "Đáp án đúng là A. 2 mặt đối lập của việc dạy con.",
+      "rubyQuestion": "<ruby>親<rt>おや</rt></ruby>は<ruby>子供<rt>こども</rt></ruby>を<ruby>厳しく<rt>いかめしく</rt></ruby><ruby>注意<rt>ちゅうい</rt></ruby>する（　　）、<ruby>優し<rt>やさし</rt></ruby>く<ruby>褒め<rt>ほめ</rt></ruby>ることも<ruby>忘れ<rt>わすれ</rt></ruby>ない。",
+      "hintTranslation": "Cha mẹ một mặt nghiêm khắc nhưng （......） cũng không quên khen con."
     },
     {
       "id": 61,
@@ -915,7 +1036,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Nói thì nói được thật nhưng chỉ mức cơ bản.",
-      "explanation": "Đáp án đúng là A. Cấu trúc lặp từ 「VことはVが」."
+      "explanation": "Đáp án đúng là A. Cấu trúc lặp từ 「VことはVが」.",
+      "rubyQuestion": "<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話せ<rt>はなせ</rt></ruby>る（　　）<ruby>話せ<rt>はなせ</rt></ruby>ますが、<ruby>日常会話<rt>にちじょうかいわ</rt></ruby>レベルです。",
+      "hintTranslation": "Nói thì nói được （......） chỉ mức cơ bản."
     },
     {
       "id": 62,
@@ -930,7 +1053,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tôi được bế em bé vừa mới chào đời.",
-      "explanation": "Đáp án đúng là D. Vừa mới sinh ra."
+      "explanation": "Đáp án đúng là D. Vừa mới sinh ra.",
+      "rubyQuestion": "<ruby>生まれ<rt>うまれ</rt></ruby>て（　　）の<ruby>赤ちゃん<rt>あかちゃん</rt></ruby>を<ruby>抱っこ<rt>だっこ</rt></ruby>させてもらった。",
+      "hintTranslation": "Tôi được bế em bé （......） chào đời."
     },
     {
       "id": 63,
@@ -945,7 +1070,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Dự báo mưa chưa chắc trời đã mưa.",
-      "explanation": "Đáp án đúng là C. Chưa chắc đã mưa."
+      "explanation": "Đáp án đúng là C. Chưa chắc đã mưa.",
+      "rubyQuestion": "<ruby>天気予報<rt>てんきよほう</rt></ruby>が<ruby>雨<rt>あめ</rt></ruby>だと<ruby>言って<rt>いって</rt></ruby>も、<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降る<rt>ふる</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Dự báo mưa chưa chắc trời đã mưa."
     },
     {
       "id": 64,
@@ -960,7 +1087,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "(Mỉa mai) 'Nhờ cậu nói lời thừa thãi mà không khí hỏng bét rồi đấy.'",
-      "explanation": "Đáp án đúng là A. おかげで dùng châm biếm."
+      "explanation": "Đáp án đúng là A. おかげで dùng châm biếm.",
+      "rubyQuestion": "（<ruby>皮肉<rt>ひにく</rt></ruby>）「あなたが<ruby>余計<rt>よけい</rt></ruby>なことを<ruby>言った<rt>いった</rt></ruby>（　　）、<ruby>雰囲気<rt>ふんいき</rt></ruby>が<ruby>台無し<rt>だいなし</rt></ruby>ですよ。」",
+      "hintTranslation": "(Mỉa mai) '（......） cậu nói lời thừa thãi mà không khí hỏng bét rồi đấy.'"
     },
     {
       "id": 65,
@@ -975,7 +1104,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu.",
-      "explanation": "Đáp án đúng là C. 「面白さ」."
+      "explanation": "Đáp án đúng là C. 「面白さ」.",
+      "rubyQuestion": "この<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>面白<rt>おもしろ</rt></ruby>（　　）は、<ruby>読んだ<rt>よんだ</rt></ruby><ruby>人<rt>にん</rt></ruby>にしか<ruby>分か<rt>わか</rt></ruby>らない。",
+      "hintTranslation": "（......） Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu."
     },
     {
       "id": 66,
@@ -990,7 +1121,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Dù là quần áo trông có vẻ rẻ tiền nhưng khéo mặc vẫn đẹp.",
-      "explanation": "Đáp án đúng là B. 「安っぽい」trông rẻ tiền."
+      "explanation": "Đáp án đúng là B. 「安っぽい」trông rẻ tiền.",
+      "rubyQuestion": "<ruby>安物<rt>やすもの</rt></ruby>（　　）<ruby>服<rt>ふく</rt></ruby>でも、<ruby>着こ<rt>つこ</rt></ruby>なし<ruby>次第<rt>しだい</rt></ruby>でおしゃれに<ruby>見え<rt>みえ</rt></ruby>る。",
+      "hintTranslation": "（......） Dù là quần áo trông có vẻ rẻ tiền nhưng khéo mặc vẫn đẹp."
     },
     {
       "id": 67,
@@ -1005,7 +1138,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Do chủ quan nên sát giờ hết trận bị đối thủ ghi bàn lội ngược dòng.",
-      "explanation": "Đáp án đúng là D. Nguyên nhân dẫn tới thua trận."
+      "explanation": "Đáp án đúng là D. Nguyên nhân dẫn tới thua trận.",
+      "rubyQuestion": "<ruby>油断<rt>ゆだん</rt></ruby>した（　　）、<ruby>試合<rt>しあい</rt></ruby>の<ruby>終了間際<rt>しゅうりょうまぎわ</rt></ruby>に<ruby>逆転<rt>ぎゃくてん</rt></ruby>ゴールを<ruby>決め<rt>きめ</rt></ruby>られた。",
+      "hintTranslation": "（......） chủ quan nên sát giờ hết trận bị đối thủ ghi bàn lội ngược dòng."
     },
     {
       "id": 68,
@@ -1020,7 +1155,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Dù thất bại thế nào nếu học hỏi được thì không vô ích.",
-      "explanation": "Đáp án đúng là D. Dù thất bại."
+      "explanation": "Đáp án đúng là D. Dù thất bại.",
+      "rubyQuestion": "どんなに<ruby>失敗<rt>しっぱい</rt></ruby>し（　　）、そこから<ruby>学べ<rt>まなべ</rt></ruby>ば<ruby>無駄<rt>むだ</rt></ruby>にはならない。",
+      "hintTranslation": "（......） thất bại thế nào nếu học hỏi được thì không vô ích."
     },
     {
       "id": 69,
@@ -1035,7 +1172,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Trái với anh trai hòa đồng, em trai lại hướng nội.",
-      "explanation": "Đáp án đúng là C. So sánh đối lập 2 sự việc."
+      "explanation": "Đáp án đúng là C. So sánh đối lập 2 sự việc.",
+      "rubyQuestion": "<ruby>兄<rt>あに</rt></ruby>が<ruby>社交的<rt>しゃこうてき</rt></ruby>なの（　　）、<ruby>弟<rt>おとうと</rt></ruby>は<ruby>内向的<rt>ないこうてき</rt></ruby>で<ruby>物<rt>もの</rt></ruby><ruby>静か<rt>しずか</rt></ruby>だ。",
+      "hintTranslation": "（......） anh trai hòa đồng, em trai lại hướng nội."
     },
     {
       "id": 70,
@@ -1050,7 +1189,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nghĩa trong từ điển chưa chắc đúng mọi ngữ cảnh.",
-      "explanation": "Đáp án đúng là B. Chưa hẳn đúng mọi lúc."
+      "explanation": "Đáp án đúng là B. Chưa hẳn đúng mọi lúc.",
+      "rubyQuestion": "<ruby>辞書<rt>じしょ</rt></ruby>に<ruby>載っ<rt>のっ</rt></ruby>ている<ruby>意味<rt>いみ</rt></ruby>が、すべての<ruby>文脈<rt>ぶんみゃく</rt></ruby>に<ruby>当て<rt>あて</rt></ruby>はまる（　　）。",
+      "hintTranslation": "（......） Nghĩa trong từ điển chưa chắc đúng mọi ngữ cảnh."
     },
     {
       "id": 71,
@@ -1065,7 +1206,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tôi dặn mong họ đừng lại gần nơi nguy hiểm.",
-      "explanation": "Đáp án đúng là C. Phủ định: ないでほしい."
+      "explanation": "Đáp án đúng là C. Phủ định: ないでほしい.",
+      "rubyQuestion": "<ruby>危険<rt>きけん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>には<ruby>近づ<rt>ちかづ</rt></ruby>か（　　）と<ruby>注意<rt>ちゅうい</rt></ruby>した。",
+      "hintTranslation": "（......） Tôi dặn mong họ đừng lại gần nơi nguy hiểm."
     },
     {
       "id": 72,
@@ -1080,7 +1223,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tốt nghiệp đại học danh tiếng chưa chắc vào được công ty tốt.",
-      "explanation": "Đáp án đúng là C. Không hẳn là."
+      "explanation": "Đáp án đúng là C. Không hẳn là.",
+      "rubyQuestion": "<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>大学<rt>だいがく</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>したからといって、<ruby>良い<rt>よい</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入れ<rt>いれ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Tốt nghiệp đại học danh tiếng chưa chắc vào được công ty tốt."
     },
     {
       "id": 73,
@@ -1095,7 +1240,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Trên cung đường chạy này cứ 1km lại có trạm tiếp nước.",
-      "explanation": "Đáp án đúng là D. 「1キロごとに」: cứ cách 1 km."
+      "explanation": "Đáp án đúng là D. 「1キロごとに」: cứ cách 1 km.",
+      "rubyQuestion": "このマラソンコースには、１キロ（　　）<ruby>給水所<rt>きゅうすいじょ</rt></ruby>が<ruby>設置<rt>せっち</rt></ruby>されています。",
+      "hintTranslation": "Trên cung đường chạy này （......） 1km lại có trạm tiếp nước."
     },
     {
       "id": 74,
@@ -1110,7 +1257,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Từ người mà ngay cả tên tôi cũng không nhớ, bỗng nhận được quà đắt tiền.",
-      "explanation": "Đáp án đúng là C. Nhấn mạnh mức độ không biết."
+      "explanation": "Đáp án đúng là C. Nhấn mạnh mức độ không biết.",
+      "rubyQuestion": "<ruby>名前<rt>なまえ</rt></ruby>（　　）<ruby>覚え<rt>おぼえ</rt></ruby>ていない<ruby>相手<rt>あいて</rt></ruby>から、<ruby>突然<rt>とつぜん</rt></ruby><ruby>高価<rt>こうか</rt></ruby>なプレゼントが<ruby>届い<rt>とどい</rt></ruby>た。",
+      "hintTranslation": "Từ người mà （......） tên tôi cũng không nhớ, bỗng nhận được quà đắt tiền."
     },
     {
       "id": 75,
@@ -1125,7 +1274,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Rét đậm cộng thêm tuyết rơi dày khiến giao thông tê liệt.",
-      "explanation": "Đáp án đúng là B. Rét cộng tuyết lớn."
+      "explanation": "Đáp án đúng là B. Rét cộng tuyết lớn.",
+      "rubyQuestion": "<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>寒さ<rt>さむさ</rt></ruby>（　　）<ruby>大雪<rt>おおゆき</rt></ruby>に<ruby>見舞<rt>みまい</rt></ruby>われ、<ruby>交通網<rt>こうつうもう</rt></ruby>が<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>麻痺<rt>まひ</rt></ruby>した。",
+      "hintTranslation": "（......） Rét đậm cộng thêm tuyết rơi dày khiến giao thông tê liệt."
     },
     {
       "id": 76,
@@ -1140,7 +1291,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đối thủ là tuyển thủ chuyên nghiệp, tôi khó mà thắng nổi.",
-      "explanation": "Đáp án đúng là D. Khó thắng được."
+      "explanation": "Đáp án đúng là D. Khó thắng được.",
+      "rubyQuestion": "<ruby>相手<rt>あいて</rt></ruby>はプロの<ruby>選手<rt>せんしゅ</rt></ruby>だから、<ruby>初心者<rt>しょしんしゃ</rt></ruby>の<ruby>私<rt>わたし</rt></ruby>が<ruby>勝て<rt>かて</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Đối thủ là tuyển thủ chuyên nghiệp, tôi khó mà thắng nổi."
     },
     {
       "id": 77,
@@ -1155,7 +1308,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Thế vận hội Olympic được tổ chức 4 năm một lần.",
-      "explanation": "Đáp án đúng là A. 「N + ごとに」chỉ chu kỳ lặp lại 'cứ mỗi... lại...'."
+      "explanation": "Đáp án đúng là A. 「N + ごとに」chỉ chu kỳ lặp lại 'cứ mỗi... lại...'.",
+      "rubyQuestion": "オリンピックは４<ruby>年<rt>ねん</rt></ruby>（　　）<ruby>開催<rt>かいさい</rt></ruby>される<ruby>世界的<rt>せかいてき</rt></ruby>なスポーツの<ruby>祭典<rt>さいてん</rt></ruby>です。",
+      "hintTranslation": "（......） Thế vận hội Olympic được tổ chức 4 năm một lần."
     },
     {
       "id": 78,
@@ -1170,7 +1325,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Nhờ có internet, tin tức toàn cầu truyền đi chớp mắt.",
-      "explanation": "Đáp án đúng là A. Phương tiện / cách thức."
+      "explanation": "Đáp án đúng là A. Phương tiện / cách thức.",
+      "rubyQuestion": "インターネット（　　）、<ruby>世界中<rt>せかいじゅう</rt></ruby>のニュースが<ruby>瞬時<rt>しゅんじ</rt></ruby>に<ruby>伝わ<rt>つたわ</rt></ruby>る。",
+      "hintTranslation": "（......） Nhờ có internet, tin tức toàn cầu truyền đi chớp mắt."
     },
     {
       "id": 79,
@@ -1185,7 +1342,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Muốn tránh rắc rối thì nên đọc kỹ hợp đồng.",
-      "explanation": "Đáp án đúng là C. Lời khuyên thực tế."
+      "explanation": "Đáp án đúng là C. Lời khuyên thực tế.",
+      "rubyQuestion": "トラブルを<ruby>避け<rt>さけ</rt></ruby>たいなら、<ruby>契約書<rt>けいやくしょ</rt></ruby>をよく<ruby>確認す<rt>かくにんす</rt></ruby>る（　　）ね。",
+      "hintTranslation": "Muốn tránh rắc rối thì （......） đọc kỹ hợp đồng."
     },
     {
       "id": 80,
@@ -1200,7 +1359,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Là cha mẹ thì luôn mong con lớn lên khỏe mạnh hạnh phúc.",
-      "explanation": "Đáp án đúng là A. Mong ước cho con cái."
+      "explanation": "Đáp án đúng là A. Mong ước cho con cái.",
+      "rubyQuestion": "<ruby>親<rt>おや</rt></ruby>としては、<ruby>子供<rt>こども</rt></ruby>に<ruby>健康<rt>けんこう</rt></ruby>で<ruby>幸せ<rt>しあわせ</rt></ruby>に<ruby>育っ<rt>そだっ</rt></ruby>（　　）ものだ。",
+      "hintTranslation": "（......） Là cha mẹ thì luôn mong con lớn lên khỏe mạnh hạnh phúc."
     },
     {
       "id": 81,
@@ -1215,7 +1376,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Trái ngược dân số thành thị tăng, vùng quê bị giảm dân.",
-      "explanation": "Đáp án đúng là D. Đối lập 2 thực trạng."
+      "explanation": "Đáp án đúng là D. Đối lập 2 thực trạng.",
+      "rubyQuestion": "<ruby>都市部<rt>としぶ</rt></ruby>の<ruby>人口<rt>じんこう</rt></ruby>が<ruby>増加<rt>ぞうか</rt></ruby>しているの（　　）、<ruby>地方<rt>ちほう</rt></ruby>では<ruby>過疎<rt>かそ</rt></ruby><ruby>化<rt>か</rt></ruby>が<ruby>進ん<rt>すすん</rt></ruby>でいる。",
+      "hintTranslation": "（......） Trái ngược dân số thành thị tăng, vùng quê bị giảm dân."
     },
     {
       "id": 82,
@@ -1230,7 +1393,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Người mà ngay cả lỗi sai của mình cũng không thừa nhận thì không thể tiến bộ.",
-      "explanation": "Đáp án đúng là D. Ngay cả lỗi bản thân."
+      "explanation": "Đáp án đúng là D. Ngay cả lỗi bản thân.",
+      "rubyQuestion": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>間違い<rt>まちがい</rt></ruby>（　　）<ruby>認め<rt>みとめ</rt></ruby>られない<ruby>人<rt>にん</rt></ruby>は、<ruby>成長す<rt>せいちょうす</rt></ruby>ることができない。",
+      "hintTranslation": "Người mà （......） lỗi sai của mình cũng không thừa nhận thì không thể tiến bộ."
     },
     {
       "id": 83,
@@ -1245,7 +1410,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Chân đau dữ dội, đến cả việc đứng cũng không làm được.",
-      "explanation": "Đáp án đúng là A. 「V辞書形こと + さえ」."
+      "explanation": "Đáp án đúng là A. 「V辞書形こと + さえ」.",
+      "rubyQuestion": "<ruby>足<rt>あし</rt></ruby>の<ruby>痛み<rt>いたみ</rt></ruby>がひどくて、<ruby>立つ<rt>たつ</rt></ruby>こと（　　）できない<ruby>状態<rt>じょうたい</rt></ruby>だ。",
+      "hintTranslation": "Chân đau dữ dội, （......） việc đứng cũng không làm được."
     },
     {
       "id": 84,
@@ -1260,7 +1427,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sống ở Nhật lâu chưa chắc đã dùng kính ngữ chuẩn.",
-      "explanation": "Đáp án đúng là B. Chưa chắc đã thành thạo."
+      "explanation": "Đáp án đúng là B. Chưa chắc đã thành thạo.",
+      "rubyQuestion": "<ruby>日本<rt>にっぽん</rt></ruby>に<ruby>長く<rt>ながく</rt></ruby><ruby>住ん<rt>すん</rt></ruby>でいるからといって、<ruby>敬語<rt>けいご</rt></ruby>が<ruby>完璧<rt>かんぺき</rt></ruby>に<ruby>使え<rt>つかえ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Sống ở Nhật lâu chưa chắc đã dùng kính ngữ chuẩn."
     },
     {
       "id": 85,
@@ -1275,7 +1444,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Anh ấy vừa là nhà nghiên cứu giỏi vừa là nhà giáo dục.",
-      "explanation": "Đáp án đúng là B. 「である一方で」nêu 2 vai trò song song."
+      "explanation": "Đáp án đúng là B. 「である一方で」nêu 2 vai trò song song.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby><ruby>優秀<rt>ゆうしゅう</rt></ruby>な<ruby>研究者<rt>けんきゅうしゃ</rt></ruby>である（　　）、<ruby>大学<rt>だいがく</rt></ruby>で<ruby>学生<rt>がくせい</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>る<ruby>教育者<rt>きょういくしゃ</rt></ruby>でもある。",
+      "hintTranslation": "（......） Anh ấy vừa là nhà nghiên cứu giỏi vừa là nhà giáo dục."
     },
     {
       "id": 86,
@@ -1290,7 +1461,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Xe cũ nên dốc đứng thế này trông khó mà leo hết nổi.",
-      "explanation": "Đáp án đúng là B. Khó leo nổi dốc."
+      "explanation": "Đáp án đúng là B. Khó leo nổi dốc.",
+      "rubyQuestion": "<ruby>古い<rt>ふるい</rt></ruby><ruby>車<rt>くるま</rt></ruby>なので、<ruby>急な<rt>きゅうな</rt></ruby><ruby>坂道<rt>さかみち</rt></ruby>を<ruby>登り<rt>のぼり</rt></ruby><ruby>切れ<rt>きれ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Xe cũ nên dốc đứng thế này trông khó mà leo hết nổi."
     },
     {
       "id": 87,
@@ -1305,7 +1478,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Vì chơi game muộn nên sáng nay ngủ quên.",
-      "explanation": "Đáp án đúng là B. 「せいで」chỉ nguyên nhân gây hậu quả xấu."
+      "explanation": "Đáp án đúng là B. 「せいで」chỉ nguyên nhân gây hậu quả xấu.",
+      "rubyQuestion": "<ruby>昨夜<rt>さくや</rt></ruby><ruby>遅く<rt>おそく</rt></ruby>までゲームをした（　　）、<ruby>今朝<rt>けさ</rt></ruby><ruby>寝坊<rt>ねぼう</rt></ruby>してしまった。",
+      "hintTranslation": "（......） chơi game muộn nên sáng nay ngủ quên."
     },
     {
       "id": 88,
@@ -1320,7 +1495,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Hồi vừa mới sang Nhật, đổi tàu cũng thấy khó.",
-      "explanation": "Đáp án đúng là C. 「Vタ形 + ばかり」vừa mới xong."
+      "explanation": "Đáp án đúng là C. 「Vタ形 + ばかり」vừa mới xong.",
+      "rubyQuestion": "<ruby>日本<rt>にっぽん</rt></ruby>に<ruby>来<rt>らい</rt></ruby>（　　）の<ruby>頃<rt>ごろ</rt></ruby>は、<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>乗り換え<rt>のりかえ</rt></ruby>さえ<ruby>難しか<rt>むずかしか</rt></ruby>った。",
+      "hintTranslation": "Hồi （......） sang Nhật, đổi tàu cũng thấy khó."
     },
     {
       "id": 89,
@@ -1335,7 +1512,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tôi mong bạn thấu hiểu cho tâm trạng của tôi một chút.",
-      "explanation": "Đáp án đúng là C. Mong người khác hiểu."
+      "explanation": "Đáp án đúng là C. Mong người khác hiểu.",
+      "rubyQuestion": "<ruby>私<rt>わたし</rt></ruby>の<ruby>気持ち<rt>きもち</rt></ruby>をもう<ruby>少し<rt>すこし</rt></ruby><ruby>理解<rt>りかい</rt></ruby>し（　　）と<ruby>思い<rt>おもい</rt></ruby>ます。",
+      "hintTranslation": "（......） Tôi mong bạn thấu hiểu cho tâm trạng của tôi một chút."
     },
     {
       "id": 90,
@@ -1350,7 +1529,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đổ lỗi cho người khác không phải thái độ người lớn.",
-      "explanation": "Đáp án đúng là D. 「他人のせいにする」: đổ lỗi cho người khác."
+      "explanation": "Đáp án đúng là D. 「他人のせいにする」: đổ lỗi cho người khác.",
+      "rubyQuestion": "<ruby>何で<rt>なんで</rt></ruby>も<ruby>他人<rt>たにん</rt></ruby>の（　　）にするのは、<ruby>大人<rt>おとな</rt></ruby>の<ruby>態度<rt>たいど</rt></ruby>とは<ruby>言え<rt>いえ</rt></ruby>ない。",
+      "hintTranslation": "（......） Đổ lỗi cho người khác không phải thái độ người lớn."
     },
     {
       "id": 91,
@@ -1365,7 +1546,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Internet giúp tra thông tin nhanh, mặt khác có nguy cơ lan truyền tin giả.",
-      "explanation": "Đáp án đúng là C. Mặt lợi và mặt hại đối lập."
+      "explanation": "Đáp án đúng là C. Mặt lợi và mặt hại đối lập.",
+      "rubyQuestion": "インターネットは<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>素早く<rt>すばやく</rt></ruby><ruby>得ら<rt>えら</rt></ruby>れる（　　）、<ruby>誤<rt>ご</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>が<ruby>広が<rt>ひろが</rt></ruby>りやすいリスクもある。",
+      "hintTranslation": "Internet giúp tra thông tin nhanh, （......） có nguy cơ lan truyền tin giả."
     },
     {
       "id": 92,
@@ -1380,7 +1563,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Muốn sống lâu khỏe mạnh thì nên sinh hoạt điều độ.",
-      "explanation": "Đáp án đúng là D. Khuyên bảo lối sống."
+      "explanation": "Đáp án đúng là D. Khuyên bảo lối sống.",
+      "rubyQuestion": "<ruby>健康<rt>けんこう</rt></ruby>で<ruby>長生き<rt>ながいき</rt></ruby>したければ、<ruby>規則正し<rt>きそくただし</rt></ruby>い<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送る<rt>おくる</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn sống lâu khỏe mạnh thì （......） sinh hoạt điều độ."
     },
     {
       "id": 93,
@@ -1395,7 +1580,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Bận rộn việc cộng thêm thiếu ngủ khiến tôi kiệt sức.",
-      "explanation": "Đáp án đúng là A. Yếu tố dồn thêm."
+      "explanation": "Đáp án đúng là A. Yếu tố dồn thêm.",
+      "rubyQuestion": "<ruby>今週<rt>こんしゅう</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>の<ruby>忙しさ<rt>いそがしさ</rt></ruby>（　　）<ruby>寝不足<rt>ねぶそく</rt></ruby>も<ruby>重なり<rt>かさなり</rt></ruby>、ひどく<ruby>疲れ<rt>つかれ</rt></ruby>ている。",
+      "hintTranslation": "（......） Bận rộn việc cộng thêm thiếu ngủ khiến tôi kiệt sức."
     },
     {
       "id": 94,
@@ -1410,7 +1597,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Dạng văn viết trang trọng là 〜に加え.",
-      "explanation": "Đáp án đúng là B. Lược bỏ 'て' thành に加え."
+      "explanation": "Đáp án đúng là B. Lược bỏ 'て' thành に加え.",
+      "rubyQuestion": "「〜に<ruby>加え<rt>くわえ</rt></ruby>て」を<ruby>文章語<rt>ぶんしょうご</rt></ruby>（<ruby>書き言葉<rt>かきことば</rt></ruby>）でより<ruby>硬く<rt>かたく</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>、<ruby>正しい<rt>ただしい</rt></ruby><ruby>形<rt>かたち</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Dạng văn viết trang trọng là 〜に加え."
     },
     {
       "id": 95,
@@ -1425,7 +1614,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đặt mật khẩu dễ đoán có nguy cơ bị tấn công tài khoản.",
-      "explanation": "Đáp án đúng là D. Nguy cơ an ninh mạng."
+      "explanation": "Đáp án đúng là D. Nguy cơ an ninh mạng.",
+      "rubyQuestion": "パスワードを<ruby>簡単<rt>かんたん</rt></ruby>にすると、<ruby>不正<rt>ふせい</rt></ruby>アクセスの<ruby>被害<rt>ひがい</rt></ruby>に<ruby>遭う<rt>あう</rt></ruby>（　　）。",
+      "hintTranslation": "Đặt mật khẩu dễ đoán （......） bị tấn công tài khoản."
     },
     {
       "id": 96,
@@ -1440,7 +1631,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Muốn mau khỏi cảm cúm thì nên giữ ấm nghỉ ngơi.",
-      "explanation": "Đáp án đúng là C. 「V辞書形 + ことだ」lời khuyên tốt nhất."
+      "explanation": "Đáp án đúng là C. 「V辞書形 + ことだ」lời khuyên tốt nhất.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>を<ruby>早く<rt>はやく</rt></ruby><ruby>治し<rt>なおし</rt></ruby>たければ、<ruby>暖かく<rt>あたたかく</rt></ruby>してゆっくり<ruby>休む<rt>やすむ</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn mau khỏi cảm cúm thì （......） giữ ấm nghỉ ngơi."
     },
     {
       "id": 97,
@@ -1455,7 +1648,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Dù lương có cao tôi cũng không làm công ty bóc lột tăng ca.",
-      "explanation": "Đáp án đúng là C. Dù lương cao."
+      "explanation": "Đáp án đúng là C. Dù lương cao.",
+      "rubyQuestion": "どんなに<ruby>給料<rt>きゅうりょう</rt></ruby>が<ruby>高い<rt>たかい</rt></ruby>（　　）、<ruby>残業<rt>ざんぎょう</rt></ruby>ばかりのブラック<ruby>企業<rt>きぎょう</rt></ruby>では<ruby>働き<rt>はたらき</rt></ruby>たくない。",
+      "hintTranslation": "（......） lương có cao tôi cũng không làm công ty bóc lột tăng ca."
     },
     {
       "id": 98,
@@ -1470,7 +1665,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ngày kỷ niệm quan trọng nên muốn cả hai bên nhau trọn vẹn.",
-      "explanation": "Đáp án đúng là B. Mong ước."
+      "explanation": "Đáp án đúng là B. Mong ước.",
+      "rubyQuestion": "<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>記念日<rt>きねんび</rt></ruby>だから、<ruby>二人<rt>ふたり</rt></ruby>でゆっくり<ruby>過ご<rt>すご</rt></ruby>し（　　）。",
+      "hintTranslation": "（......） Ngày kỷ niệm quan trọng nên muốn cả hai bên nhau trọn vẹn."
     },
     {
       "id": 99,
@@ -1485,7 +1682,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Mua thì mua được nhưng vượt quá ngân sách tháng này.",
-      "explanation": "Đáp án đúng là D. Công nhận khả năng mua."
+      "explanation": "Đáp án đúng là D. Công nhận khả năng mua.",
+      "rubyQuestion": "<ruby>買え<rt>かえ</rt></ruby>る（　　）<ruby>買え<rt>かえ</rt></ruby>るが、<ruby>今月<rt>こんげつ</rt></ruby>の<ruby>予算<rt>よさん</rt></ruby>をオーバーしてしまう。",
+      "hintTranslation": "（......） Mua thì mua được nhưng vượt quá ngân sách tháng này."
     },
     {
       "id": 100,
@@ -1500,7 +1699,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Cho dù chuyện đó là thật tôi cũng không tha thứ cho anh ấy.",
-      "explanation": "Đáp án đúng là C. Dù là sự thật."
+      "explanation": "Đáp án đúng là C. Dù là sự thật.",
+      "rubyQuestion": "<ruby>仮に<rt>かりに</rt></ruby>その<ruby>話<rt>はなし</rt></ruby>が<ruby>本当<rt>ほんとう</rt></ruby>だ（　　）、<ruby>彼<rt>かれ</rt></ruby>を<ruby>許す<rt>ゆるす</rt></ruby>ことはできない。",
+      "hintTranslation": "（......） chuyện đó là thật tôi cũng không tha thứ cho anh ấy."
     }
   ],
   "2": [
@@ -1517,7 +1718,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Độ sâu của bể bơi này là mấy mét?",
-      "explanation": "Đáp án đúng là D. 「深い」→「深さ」."
+      "explanation": "Đáp án đúng là D. 「深い」→「深さ」.",
+      "rubyQuestion": "このプールの<ruby>水深<rt>すいしん</rt></ruby>の（　　）は<ruby>何<rt>なに</rt></ruby>メートルですか。",
+      "hintTranslation": "（......） Độ sâu của bể bơi này là mấy mét?"
     },
     {
       "id": 2,
@@ -1532,7 +1735,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Mặc áo khoác màu hơi ngả đen đi làm.",
-      "explanation": "Đáp án đúng là B. 「黒っぽい」hơi đen."
+      "explanation": "Đáp án đúng là B. 「黒っぽい」hơi đen.",
+      "rubyQuestion": "<ruby>黒<rt>くろ</rt></ruby>（　　）ジャケットを<ruby>羽織<rt>はおり</rt></ruby>って<ruby>出勤<rt>しゅっきん</rt></ruby>した。",
+      "hintTranslation": "（......） Mặc áo khoác màu hơi ngả đen đi làm."
     },
     {
       "id": 3,
@@ -1547,7 +1752,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Chi phí nhân công tăng cộng thêm nguyên liệu đắt gây áp lực kinh doanh.",
-      "explanation": "Đáp án đúng là B. Cộng thêm khó khăn."
+      "explanation": "Đáp án đúng là B. Cộng thêm khó khăn.",
+      "rubyQuestion": "<ruby>人件費<rt>じんけんひ</rt></ruby>の<ruby>高騰<rt>こうとう</rt></ruby>（　　）<ruby>原材料費<rt>げんざいりょうひ</rt></ruby>の<ruby>値上がり<rt>ねあがり</rt></ruby>も、<ruby>経営<rt>けいえい</rt></ruby>を<ruby>圧迫<rt>あっぱく</rt></ruby>している。",
+      "hintTranslation": "（......） Chi phí nhân công tăng cộng thêm nguyên liệu đắt gây áp lực kinh doanh."
     },
     {
       "id": 4,
@@ -1562,7 +1769,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Xin lỗi thì xin lỗi rồi nhưng đối phương vẫn chưa nguôi giận.",
-      "explanation": "Đáp án đúng là D. Đã xin lỗi nhưng chưa ổn."
+      "explanation": "Đáp án đúng là D. Đã xin lỗi nhưng chưa ổn.",
+      "rubyQuestion": "<ruby>謝っ<rt>あやまっ</rt></ruby>た（　　）<ruby>謝っ<rt>あやまっ</rt></ruby>たが、まだ<ruby>相手<rt>あいて</rt></ruby>の<ruby>怒り<rt>いかり</rt></ruby>は<ruby>収ま<rt>おさま</rt></ruby>っていない。",
+      "hintTranslation": "（......） Xin lỗi thì xin lỗi rồi nhưng đối phương vẫn chưa nguôi giận."
     },
     {
       "id": 5,
@@ -1577,7 +1786,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Kinh tế xấu tiếp diễn có nguy cơ nhiều doanh nghiệp phá sản.",
-      "explanation": "Đáp án đúng là D. Nguy cơ phá sản."
+      "explanation": "Đáp án đúng là D. Nguy cơ phá sản.",
+      "rubyQuestion": "<ruby>景気<rt>けいき</rt></ruby>の<ruby>悪化<rt>あっか</rt></ruby>が<ruby>続け<rt>つづけ</rt></ruby>ば、<ruby>多く<rt>おおく</rt></ruby>の<ruby>中小企業<rt>ちゅうしょうきぎょう</rt></ruby>が<ruby>倒産<rt>とうさん</rt></ruby>する（　　）。",
+      "hintTranslation": "Kinh tế xấu tiếp diễn （......） nhiều doanh nghiệp phá sản."
     },
     {
       "id": 6,
@@ -1592,7 +1803,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Thay vì mẹ bận, anh trai đã nấu cơm tối.",
-      "explanation": "Đáp án đúng là C. Thay mẹ nấu ăn."
+      "explanation": "Đáp án đúng là C. Thay mẹ nấu ăn.",
+      "rubyQuestion": "<ruby>忙しい<rt>いそがしい</rt></ruby><ruby>母<rt>はは</rt></ruby>の（　　）、<ruby>兄<rt>あに</rt></ruby>が<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>めし</rt></ruby>を<ruby>作っ<rt>つくっ</rt></ruby>てくれた。",
+      "hintTranslation": "（......） mẹ bận, anh trai đã nấu cơm tối."
     },
     {
       "id": 7,
@@ -1607,7 +1820,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đối với câu hỏi của thầy, anh ấy tự tin trả lời.",
-      "explanation": "Đáp án đúng là C. Hướng vào đối tượng câu hỏi."
+      "explanation": "Đáp án đúng là C. Hướng vào đối tượng câu hỏi.",
+      "rubyQuestion": "<ruby>先生<rt>せんせい</rt></ruby>の<ruby>質問<rt>しつもん</rt></ruby>（　　）、<ruby>彼は<rt>かれは</rt></ruby><ruby>自信<rt>じしん</rt></ruby>を<ruby>持っ<rt>もっ</rt></ruby>て<ruby>答え<rt>こたえ</rt></ruby>た。",
+      "hintTranslation": "（......） câu hỏi của thầy, anh ấy tự tin trả lời."
     },
     {
       "id": 8,
@@ -1622,7 +1837,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Do chủ quan nên sát giờ hết trận bị đối thủ ghi bàn lội ngược dòng.",
-      "explanation": "Đáp án đúng là A. Nguyên nhân dẫn tới thua trận."
+      "explanation": "Đáp án đúng là A. Nguyên nhân dẫn tới thua trận.",
+      "rubyQuestion": "<ruby>油断<rt>ゆだん</rt></ruby>した（　　）、<ruby>試合<rt>しあい</rt></ruby>の<ruby>終了間際<rt>しゅうりょうまぎわ</rt></ruby>に<ruby>逆転<rt>ぎゃくてん</rt></ruby>ゴールを<ruby>決め<rt>きめ</rt></ruby>られた。",
+      "hintTranslation": "（......） chủ quan nên sát giờ hết trận bị đối thủ ghi bàn lội ngược dòng."
     },
     {
       "id": 9,
@@ -1637,7 +1854,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Trái ngược dân số thành thị tăng, vùng quê bị giảm dân.",
-      "explanation": "Đáp án đúng là A. Đối lập 2 thực trạng."
+      "explanation": "Đáp án đúng là A. Đối lập 2 thực trạng.",
+      "rubyQuestion": "<ruby>都市部<rt>としぶ</rt></ruby>の<ruby>人口<rt>じんこう</rt></ruby>が<ruby>増加<rt>ぞうか</rt></ruby>しているの（　　）、<ruby>地方<rt>ちほう</rt></ruby>では<ruby>過疎<rt>かそ</rt></ruby><ruby>化<rt>か</rt></ruby>が<ruby>進ん<rt>すすん</rt></ruby>でいる。",
+      "hintTranslation": "（......） Trái ngược dân số thành thị tăng, vùng quê bị giảm dân."
     },
     {
       "id": 10,
@@ -1652,7 +1871,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Để ngừa tai nạn do bất cẩn, hãy kiểm tra kỹ.",
-      "explanation": "Đáp án đúng là D. Bổ nghĩa danh từ: 「NによるN」."
+      "explanation": "Đáp án đúng là D. Bổ nghĩa danh từ: 「NによるN」.",
+      "rubyQuestion": "<ruby>不注意<rt>ふちゅうい</rt></ruby>（　　）<ruby>事故<rt>じこ</rt></ruby>を<ruby>防ぐ<rt>ふせぐ</rt></ruby>ために、<ruby>確認<rt>かくにん</rt></ruby>を<ruby>徹底<rt>てってい</rt></ruby>しましょう。",
+      "hintTranslation": "（......） Để ngừa tai nạn do bất cẩn, hãy kiểm tra kỹ."
     },
     {
       "id": 11,
@@ -1667,7 +1888,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Chuyến tàu này cứ mỗi lần dừng ở ga lại có đông hành khách lên xuống.",
-      "explanation": "Đáp án đúng là D. 「止まるごとに」: cứ mỗi lần dừng lại."
+      "explanation": "Đáp án đúng là D. 「止まるごとに」: cứ mỗi lần dừng lại.",
+      "rubyQuestion": "この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>に<ruby>止ま<rt>とま</rt></ruby>る（　　）<ruby>多く<rt>おおく</rt></ruby>の<ruby>乗客<rt>じょうきゃく</rt></ruby>が<ruby>乗り降り<rt>のりおり</rt></ruby>する。",
+      "hintTranslation": "Chuyến tàu này （......） dừng ở ga lại có đông hành khách lên xuống."
     },
     {
       "id": 12,
@@ -1682,7 +1905,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Doanh nghiệp lớn chưa hẳn tương lai đã mãi ổn định.",
-      "explanation": "Đáp án đúng là B. Chưa chắc ổn định."
+      "explanation": "Đáp án đúng là B. Chưa chắc ổn định.",
+      "rubyQuestion": "<ruby>大手<rt>おおて</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>だからといって、<ruby>将来<rt>しょうらい</rt></ruby>ずっと<ruby>安定<rt>あんてい</rt></ruby>している（　　）。",
+      "hintTranslation": "（......） Doanh nghiệp lớn chưa hẳn tương lai đã mãi ổn định."
     },
     {
       "id": 13,
@@ -1697,7 +1922,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "(Mỉa mai) 'Nhờ cậu quên tài liệu mà cuộc họp bị hủy luôn rồi đấy!'",
-      "explanation": "Đáp án đúng là B. 「おかげで」dùng mỉa mai trách khéo."
+      "explanation": "Đáp án đúng là B. 「おかげで」dùng mỉa mai trách khéo.",
+      "rubyQuestion": "（<ruby>皮肉<rt>ひにく</rt></ruby>）「<ruby>君<rt>くん</rt></ruby>が<ruby>重要な<rt>じゅうような</rt></ruby><ruby>書類<rt>しょるい</rt></ruby>を<ruby>忘れ<rt>わすれ</rt></ruby>てくれた（　　）、<ruby>会議<rt>かいぎ</rt></ruby>が<ruby>中止<rt>ちゅうし</rt></ruby>になっちゃったよ。」",
+      "hintTranslation": "(Mỉa mai) '（......） cậu quên tài liệu mà cuộc họp bị hủy luôn rồi đấy!'"
     },
     {
       "id": 14,
@@ -1712,7 +1939,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Người giàu không hẳn ai cũng đều hạnh phúc.",
-      "explanation": "Đáp án đúng là B. ナAだとは限らない."
+      "explanation": "Đáp án đúng là B. ナAだとは限らない.",
+      "rubyQuestion": "お<ruby>金持ち<rt>かねもち</rt></ruby>の<ruby>人<rt>にん</rt></ruby>が、みんな<ruby>幸せ<rt>しあわせ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Người giàu không hẳn ai cũng đều hạnh phúc."
     },
     {
       "id": 15,
@@ -1727,7 +1956,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Thầy dạy tiếng Nhật bao năm lẽ nào lại không biết ngữ pháp này!",
-      "explanation": "Đáp án đúng là B. Phủ định kép."
+      "explanation": "Đáp án đúng là B. Phủ định kép.",
+      "rubyQuestion": "<ruby>何年<rt>なんねん</rt></ruby>も<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>ている<ruby>先生<rt>せんせい</rt></ruby>が、この<ruby>文法<rt>ぶんぽう</rt></ruby>を<ruby>知ら<rt>しら</rt></ruby>ない（　　）。",
+      "hintTranslation": "Thầy dạy tiếng Nhật bao năm （......） không biết ngữ pháp này!"
     },
     {
       "id": 16,
@@ -1742,7 +1973,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn sống lâu khỏe mạnh thì nên sinh hoạt điều độ.",
-      "explanation": "Đáp án đúng là A. Khuyên bảo lối sống."
+      "explanation": "Đáp án đúng là A. Khuyên bảo lối sống.",
+      "rubyQuestion": "<ruby>健康<rt>けんこう</rt></ruby>で<ruby>長生き<rt>ながいき</rt></ruby>したければ、<ruby>規則正し<rt>きそくただし</rt></ruby>い<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送る<rt>おくる</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn sống lâu khỏe mạnh thì （......） sinh hoạt điều độ."
     },
     {
       "id": 17,
@@ -1757,7 +1990,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Sự quan tâm đối với môi trường đang tăng lên.",
-      "explanation": "Đáp án đúng là A. Bổ nghĩa danh từ: 「〜に対するN」."
+      "explanation": "Đáp án đúng là A. Bổ nghĩa danh từ: 「〜に対するN」.",
+      "rubyQuestion": "<ruby>環境問題<rt>かんきょうもんだい</rt></ruby>（　　）<ruby>関心<rt>かんしん</rt></ruby>が<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>高ま<rt>たかま</rt></ruby>っている。",
+      "hintTranslation": "Sự quan tâm （......） môi trường đang tăng lên."
     },
     {
       "id": 18,
@@ -1772,7 +2007,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tại vì suy thoái kinh tế nên việc tìm việc làm rất gian nan.",
-      "explanation": "Đáp án đúng là D. Hậu quả xấu do kinh tế."
+      "explanation": "Đáp án đúng là D. Hậu quả xấu do kinh tế.",
+      "rubyQuestion": "<ruby>不景気<rt>ふけいき</rt></ruby>の（　　）<ruby>新卒<rt>しんそつ</rt></ruby>の<ruby>就職活動<rt>しゅうしょくかつどう</rt></ruby>が<ruby>非常に<rt>ひじょうに</rt></ruby><ruby>厳しく<rt>いかめしく</rt></ruby>なっている。",
+      "hintTranslation": "（......） suy thoái kinh tế nên việc tìm việc làm rất gian nan."
     },
     {
       "id": 19,
@@ -1787,7 +2024,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Trái ngược với cái nóng gay gắt hôm qua, hôm nay lạnh se se.",
-      "explanation": "Đáp án đúng là C. Đối lập thời tiết 2 ngày."
+      "explanation": "Đáp án đúng là C. Đối lập thời tiết 2 ngày.",
+      "rubyQuestion": "<ruby>昨日<rt>きのう</rt></ruby>の<ruby>猛暑<rt>もうしょ</rt></ruby>（　　）、<ruby>今日は<rt>こんにちは</rt></ruby><ruby>急に<rt>きゅうに</rt></ruby><ruby>気温<rt>きおん</rt></ruby>が<ruby>下が<rt>さが</rt></ruby>って<ruby>肌寒い<rt>はださむい</rt></ruby>。",
+      "hintTranslation": "（......） cái nóng gay gắt hôm qua, hôm nay lạnh se se."
     },
     {
       "id": 20,
@@ -1802,7 +2041,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Vì thiếu ngủ nên đầu óc lơ mơ không tập trung làm việc được.",
-      "explanation": "Đáp án đúng là D. 「Nのせいで」."
+      "explanation": "Đáp án đúng là D. 「Nのせいで」.",
+      "rubyQuestion": "<ruby>寝不足<rt>ねぶそく</rt></ruby>の（　　）<ruby>頭<rt>あたま</rt></ruby>がボーッとして、<ruby>仕事<rt>しごと</rt></ruby>に<ruby>集中<rt>しゅうちゅう</rt></ruby>できない。",
+      "hintTranslation": "（......） thiếu ngủ nên đầu óc lơ mơ không tập trung làm việc được."
     },
     {
       "id": 21,
@@ -1817,7 +2058,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nhờ đồng nghiệp giúp đỡ nên tôi đã xong việc đúng giờ.",
-      "explanation": "Đáp án đúng là B. Nhờ sự giúp đỡ của đồng nghiệp."
+      "explanation": "Đáp án đúng là B. Nhờ sự giúp đỡ của đồng nghiệp.",
+      "rubyQuestion": "<ruby>同僚<rt>どうりょう</rt></ruby>が<ruby>手伝っ<rt>てつだっ</rt></ruby>てくれた（　　）、<ruby>定時<rt>ていじ</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>を<ruby>終え<rt>おえ</rt></ruby>ることができた。",
+      "hintTranslation": "（......） đồng nghiệp giúp đỡ nên tôi đã xong việc đúng giờ."
     },
     {
       "id": 22,
@@ -1832,7 +2075,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Phó từ hay đi kèm là 必ずしも.",
-      "explanation": "Đáp án đúng là C. Đi kèm 必ずしも."
+      "explanation": "Đáp án đúng là C. Đi kèm 必ずしも.",
+      "rubyQuestion": "「〜とは<ruby>限ら<rt>かぎら</rt></ruby>ない」と<ruby>一緒に<rt>いっしょに</rt></ruby>よく<ruby>使わ<rt>つかわ</rt></ruby>れる<ruby>副詞<rt>ふくし</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Phó từ hay đi kèm là 必ずしも."
     },
     {
       "id": 23,
@@ -1847,7 +2092,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sơ suất tàn lửa có nguy cơ phát triển thành hỏa hoạn lớn.",
-      "explanation": "Đáp án đúng là C. Nguy cơ cháy nổ."
+      "explanation": "Đáp án đúng là C. Nguy cơ cháy nổ.",
+      "rubyQuestion": "<ruby>火<rt>ひ</rt></ruby>の<ruby>不始末<rt>ふしまつ</rt></ruby>から<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>火災<rt>かさい</rt></ruby>に<ruby>発展<rt>はってん</rt></ruby>する（　　）。",
+      "hintTranslation": "Sơ suất tàn lửa （......） phát triển thành hỏa hoạn lớn."
     },
     {
       "id": 24,
@@ -1862,7 +2109,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cho dù chuyện đó là thật tôi cũng không tha thứ cho anh ấy.",
-      "explanation": "Đáp án đúng là D. Dù là sự thật."
+      "explanation": "Đáp án đúng là D. Dù là sự thật.",
+      "rubyQuestion": "<ruby>仮に<rt>かりに</rt></ruby>その<ruby>話<rt>はなし</rt></ruby>が<ruby>本当<rt>ほんとう</rt></ruby>だ（　　）、<ruby>彼<rt>かれ</rt></ruby>を<ruby>許す<rt>ゆるす</rt></ruby>ことはできない。",
+      "hintTranslation": "（......） chuyện đó là thật tôi cũng không tha thứ cho anh ấy."
     },
     {
       "id": 25,
@@ -1877,7 +2126,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sau động đất có nguy cơ sóng thần nên hãy sơ tán.",
-      "explanation": "Đáp án đúng là D. Nguy cơ sóng thần."
+      "explanation": "Đáp án đúng là D. Nguy cơ sóng thần.",
+      "rubyQuestion": "<ruby>地震<rt>じしん</rt></ruby>の<ruby>後<rt>のち</rt></ruby>は、<ruby>津波<rt>つなみ</rt></ruby>が<ruby>発生<rt>はっせい</rt></ruby>する（　　）ので<ruby>避難<rt>ひなん</rt></ruby>してください。",
+      "hintTranslation": "Sau động đất （......） sóng thần nên hãy sơ tán."
     },
     {
       "id": 26,
@@ -1892,7 +2143,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Anh ấy túng quẫn đến tiền mua bánh mì ngày mai cũng không có.",
-      "explanation": "Đáp án đúng là C. Ngay cả tiền lẻ."
+      "explanation": "Đáp án đúng là C. Ngay cả tiền lẻ.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby>お<ruby>金<rt>きん</rt></ruby>がなくて、<ruby>明日<rt>あした</rt></ruby>のパンを<ruby>買う<rt>かう</rt></ruby><ruby>小銭<rt>こぜに</rt></ruby>（　　）<ruby>持っ<rt>もっ</rt></ruby>ていない。",
+      "hintTranslation": "（......） Anh ấy túng quẫn đến tiền mua bánh mì ngày mai cũng không có."
     },
     {
       "id": 27,
@@ -1907,7 +2160,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dù có tốn thời gian tôi muốn tự sức hoàn thành.",
-      "explanation": "Đáp án đúng là A. Dù mất thời gian."
+      "explanation": "Đáp án đúng là A. Dù mất thời gian.",
+      "rubyQuestion": "たとえ<ruby>時間<rt>じかん</rt></ruby>がかかっ（　　）、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>で<ruby>最後<rt>さいご</rt></ruby>までやり<ruby>遂げ<rt>とげ</rt></ruby>たい。",
+      "hintTranslation": "（......） có tốn thời gian tôi muốn tự sức hoàn thành."
     },
     {
       "id": 28,
@@ -1922,7 +2177,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cảm cúm kéo dài nên trận đấu cuối tuần khó mà ra sân được.",
-      "explanation": "Đáp án đúng là D. Khó ra sân thi đấu."
+      "explanation": "Đáp án đúng là D. Khó ra sân thi đấu.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>が<ruby>長引い<rt>ながびい</rt></ruby>ていて、<ruby>今週末<rt>こんしゅうまつ</rt></ruby>の<ruby>試合<rt>しあい</rt></ruby>には<ruby>出場<rt>しゅつじょう</rt></ruby>でき（　　）。",
+      "hintTranslation": "（......） Cảm cúm kéo dài nên trận đấu cuối tuần khó mà ra sân được."
     },
     {
       "id": 29,
@@ -1937,7 +2194,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Muốn mau khỏi cảm cúm thì nên giữ ấm nghỉ ngơi.",
-      "explanation": "Đáp án đúng là B. 「V辞書形 + ことだ」lời khuyên tốt nhất."
+      "explanation": "Đáp án đúng là B. 「V辞書形 + ことだ」lời khuyên tốt nhất.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>を<ruby>早く<rt>はやく</rt></ruby><ruby>治し<rt>なおし</rt></ruby>たければ、<ruby>暖かく<rt>あたたかく</rt></ruby>してゆっくり<ruby>休む<rt>やすむ</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn mau khỏi cảm cúm thì （......） giữ ấm nghỉ ngơi."
     },
     {
       "id": 30,
@@ -1952,7 +2211,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Chịu nỗi nhục nhã này làm sao mà im lặng chịu trận được!",
-      "explanation": "Đáp án đúng là A. Không thể ngồi yên."
+      "explanation": "Đáp án đúng là A. Không thể ngồi yên.",
+      "rubyQuestion": "こんな<ruby>屈辱<rt>くつじょく</rt></ruby>を<ruby>味わ<rt>あじわ</rt></ruby>って、<ruby>黙っ<rt>だまっ</rt></ruby>ていられる（　　）。",
+      "hintTranslation": "（......） Chịu nỗi nhục nhã này làm sao mà im lặng chịu trận được!"
     },
     {
       "id": 31,
@@ -1967,7 +2228,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sắp muộn rồi nên mong tàu đến đúng giờ.",
-      "explanation": "Đáp án đúng là B. Mong hiện tượng xảy ra."
+      "explanation": "Đáp án đúng là B. Mong hiện tượng xảy ra.",
+      "rubyQuestion": "<ruby>遅刻<rt>ちこく</rt></ruby>しそうだから、<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>時間<rt>じかん</rt></ruby><ruby>通り<rt>とうり</rt></ruby>に<ruby>来<rt>らい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Sắp muộn rồi nên mong tàu đến đúng giờ."
     },
     {
       "id": 32,
@@ -1982,7 +2245,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Dù lương có cao tôi cũng không làm công ty bóc lột tăng ca.",
-      "explanation": "Đáp án đúng là D. Dù lương cao."
+      "explanation": "Đáp án đúng là D. Dù lương cao.",
+      "rubyQuestion": "どんなに<ruby>給料<rt>きゅうりょう</rt></ruby>が<ruby>高い<rt>たかい</rt></ruby>（　　）、<ruby>残業<rt>ざんぎょう</rt></ruby>ばかりのブラック<ruby>企業<rt>きぎょう</rt></ruby>では<ruby>働き<rt>はたらき</rt></ruby>たくない。",
+      "hintTranslation": "（......） lương có cao tôi cũng không làm công ty bóc lột tăng ca."
     },
     {
       "id": 33,
@@ -1997,7 +2262,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Dạng văn viết trang trọng là 〜に加え.",
-      "explanation": "Đáp án đúng là D. Lược bỏ 'て' thành に加え."
+      "explanation": "Đáp án đúng là D. Lược bỏ 'て' thành に加え.",
+      "rubyQuestion": "「〜に<ruby>加え<rt>くわえ</rt></ruby>て」を<ruby>文章語<rt>ぶんしょうご</rt></ruby>（<ruby>書き言葉<rt>かきことば</rt></ruby>）でより<ruby>硬く<rt>かたく</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>、<ruby>正しい<rt>ただしい</rt></ruby><ruby>形<rt>かたち</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Dạng văn viết trang trọng là 〜に加え."
     },
     {
       "id": 34,
@@ -2012,7 +2279,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đối diện với những lời phê phán gắt gao, thủ tướng vẫn bình tĩnh giải thích.",
-      "explanation": "Đáp án đúng là D. Đối mặt với chỉ trích."
+      "explanation": "Đáp án đúng là D. Đối mặt với chỉ trích.",
+      "rubyQuestion": "<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>批判<rt>ひはん</rt></ruby>（　　）、<ruby>首相<rt>しゅしょう</rt></ruby>は<ruby>冷静<rt>れいせい</rt></ruby>に<ruby>説明<rt>せつめい</rt></ruby>を<ruby>続け<rt>つづけ</rt></ruby>た。",
+      "hintTranslation": "（......） Đối diện với những lời phê phán gắt gao, thủ tướng vẫn bình tĩnh giải thích."
     },
     {
       "id": 35,
@@ -2027,7 +2296,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Quá bận rộn, đến thời gian gọi điện cho gia đình cũng không thu xếp được.",
-      "explanation": "Đáp án đúng là A. Ngay cả việc tối thiểu."
+      "explanation": "Đáp án đúng là A. Ngay cả việc tối thiểu.",
+      "rubyQuestion": "<ruby>忙しす<rt>いそがしす</rt></ruby>ぎて、<ruby>家族<rt>かぞく</rt></ruby>と<ruby>電話<rt>でんわ</rt></ruby>で<ruby>話す<rt>はなす</rt></ruby><ruby>時間<rt>じかん</rt></ruby>（　　）<ruby>取れ<rt>とれ</rt></ruby>ない。",
+      "hintTranslation": "（......） Quá bận rộn, đến thời gian gọi điện cho gia đình cũng không thu xếp được."
     },
     {
       "id": 36,
@@ -2042,7 +2313,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Người đó cứ mỗi lần gặp lại mặc đồ mới.",
-      "explanation": "Đáp án đúng là A. 「V辞書形 + ごとに」: cứ mỗi lần gặp."
+      "explanation": "Đáp án đúng là A. 「V辞書形 + ごとに」: cứ mỗi lần gặp.",
+      "rubyQuestion": "あの<ruby>人<rt>にん</rt></ruby>は<ruby>会う<rt>あう</rt></ruby>（　　）<ruby>新しい<rt>あたらしい</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>着て<rt>きて</rt></ruby>いて、とてもおしゃれだ。",
+      "hintTranslation": "Người đó （......） gặp lại mặc đồ mới."
     },
     {
       "id": 37,
@@ -2057,7 +2330,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Anh trai hoạt bát nhiều bạn bè, trái lại em trai trầm tính thích ở một mình.",
-      "explanation": "Đáp án đúng là A. So sánh đối lập 2 người."
+      "explanation": "Đáp án đúng là A. So sánh đối lập 2 người.",
+      "rubyQuestion": "<ruby>兄<rt>あに</rt></ruby>は<ruby>社交的<rt>しゃこうてき</rt></ruby>で<ruby>友達<rt>ともだち</rt></ruby>が<ruby>多い<rt>おおい</rt></ruby>（　　）、<ruby>弟<rt>おとうと</rt></ruby>は<ruby>物<rt>もの</rt></ruby><ruby>静か<rt>しずか</rt></ruby>で<ruby>一人<rt>ひとり</rt></ruby>を<ruby>好む<rt>このむ</rt></ruby><ruby>性格<rt>せいかく</rt></ruby>だ。",
+      "hintTranslation": "（......） Anh trai hoạt bát nhiều bạn bè, trái lại em trai trầm tính thích ở một mình."
     },
     {
       "id": 38,
@@ -2072,7 +2347,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu.",
-      "explanation": "Đáp án đúng là C. 「面白さ」."
+      "explanation": "Đáp án đúng là C. 「面白さ」.",
+      "rubyQuestion": "この<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>面白<rt>おもしろ</rt></ruby>（　　）は、<ruby>読んだ<rt>よんだ</rt></ruby><ruby>人<rt>にん</rt></ruby>にしか<ruby>分か<rt>わか</rt></ruby>らない。",
+      "hintTranslation": "（......） Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu."
     },
     {
       "id": 39,
@@ -2087,7 +2364,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đã khóa cửa cẩn thận thì trộm làm sao vào dễ thế được!",
-      "explanation": "Đáp án đúng là C. Khẳng định an toàn."
+      "explanation": "Đáp án đúng là C. Khẳng định an toàn.",
+      "rubyQuestion": "<ruby>鍵<rt>かぎ</rt></ruby>をかけたのだから、<ruby>泥棒<rt>どろぼう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>入れ<rt>いれ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Đã khóa cửa cẩn thận thì trộm làm sao vào dễ thế được!"
     },
     {
       "id": 40,
@@ -2102,7 +2381,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Xe cũ nên dốc đứng thế này trông khó mà leo hết nổi.",
-      "explanation": "Đáp án đúng là A. Khó leo nổi dốc."
+      "explanation": "Đáp án đúng là A. Khó leo nổi dốc.",
+      "rubyQuestion": "<ruby>古い<rt>ふるい</rt></ruby><ruby>車<rt>くるま</rt></ruby>なので、<ruby>急な<rt>きゅうな</rt></ruby><ruby>坂道<rt>さかみち</rt></ruby>を<ruby>登り<rt>のぼり</rt></ruby><ruby>切れ<rt>きれ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Xe cũ nên dốc đứng thế này trông khó mà leo hết nổi."
     },
     {
       "id": 41,
@@ -2117,7 +2398,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Vừa mới bước ra khỏi nhà thì trời mưa, phải quay lại lấy ô.",
-      "explanation": "Đáp án đúng là C. Vừa mới ra khỏi nhà."
+      "explanation": "Đáp án đúng là C. Vừa mới ra khỏi nhà.",
+      "rubyQuestion": "<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>しゅつ</rt></ruby>（　　）のところで<ruby>雨<rt>あめ</rt></ruby>が<ruby>降り<rt>おり</rt></ruby><ruby>出し<rt>だし</rt></ruby>、<ruby>傘<rt>かさ</rt></ruby>を<ruby>取り<rt>とり</rt></ruby>に<ruby>戻っ<rt>もどっ</rt></ruby>た。",
+      "hintTranslation": "（......） bước ra khỏi nhà thì trời mưa, phải quay lại lấy ô."
     },
     {
       "id": 42,
@@ -2132,7 +2415,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tôi tính chóng chán nên làm gì cũng không bền.",
-      "explanation": "Đáp án đúng là C. 「飽きっぽい」tính chóng chán."
+      "explanation": "Đáp án đúng là C. 「飽きっぽい」tính chóng chán.",
+      "rubyQuestion": "<ruby>私<rt>わたし</rt></ruby>は<ruby>飽き<rt>あき</rt></ruby>（　　）<ruby>性格<rt>せいかく</rt></ruby>なので、<ruby>何を<rt>なにを</rt></ruby>やっても<ruby>長続き<rt>ながつづき</rt></ruby>しない。",
+      "hintTranslation": "（......） Tôi tính chóng chán nên làm gì cũng không bền."
     },
     {
       "id": 43,
@@ -2147,7 +2432,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Kỹ thuật y tế tiến bộ, bên cạnh đó các vấn đề đạo đức cũng được bàn luận nhiều.",
-      "explanation": "Đáp án đúng là A. Hai mặt cùng diễn ra song song."
+      "explanation": "Đáp án đúng là A. Hai mặt cùng diễn ra song song.",
+      "rubyQuestion": "<ruby>医療技術<rt>いりょうぎじゅつ</rt></ruby>が<ruby>進歩<rt>しんぽ</rt></ruby>する（　　）、<ruby>倫理的<rt>りんりてき</rt></ruby>な<ruby>課題<rt>かだい</rt></ruby>も<ruby>多く<rt>おおく</rt></ruby><ruby>議論<rt>ぎろん</rt></ruby>されるようになった。",
+      "hintTranslation": "（......） Kỹ thuật y tế tiến bộ, bên cạnh đó các vấn đề đạo đức cũng được bàn luận nhiều."
     },
     {
       "id": 44,
@@ -2162,7 +2449,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Gần ga thì có gần thật nhưng giá quá đắt.",
-      "explanation": "Đáp án đúng là A. 「AことはAが」nhượng bộ: công nhận nhưng có điểm trừ."
+      "explanation": "Đáp án đúng là A. 「AことはAが」nhượng bộ: công nhận nhưng có điểm trừ.",
+      "rubyQuestion": "このアパートは<ruby>駅<rt>えき</rt></ruby>から<ruby>近い<rt>ちかい</rt></ruby>（　　）<ruby>近い<rt>ちかい</rt></ruby>が、<ruby>家賃<rt>やちん</rt></ruby>が<ruby>高す<rt>たかす</rt></ruby>ぎる。",
+      "hintTranslation": "Gần ga thì có gần （......） giá quá đắt."
     },
     {
       "id": 45,
@@ -2177,7 +2466,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dù bị cha mẹ phản đối tôi vẫn quyết tâm du học.",
-      "explanation": "Đáp án đúng là A. Dù bị phản đối."
+      "explanation": "Đáp án đúng là A. Dù bị phản đối.",
+      "rubyQuestion": "<ruby>親<rt>おや</rt></ruby>に<ruby>反対<rt>はんたい</rt></ruby>され（　　）、<ruby>私<rt>わたし</rt></ruby>は<ruby>海外留学<rt>かいがいりゅうがく</rt></ruby>を<ruby>決意<rt>けつい</rt></ruby>した。",
+      "hintTranslation": "（......） bị cha mẹ phản đối tôi vẫn quyết tâm du học."
     },
     {
       "id": 46,
@@ -2192,7 +2483,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nghĩa trong từ điển chưa chắc đúng mọi ngữ cảnh.",
-      "explanation": "Đáp án đúng là C. Chưa hẳn đúng mọi lúc."
+      "explanation": "Đáp án đúng là C. Chưa hẳn đúng mọi lúc.",
+      "rubyQuestion": "<ruby>辞書<rt>じしょ</rt></ruby>に<ruby>載っ<rt>のっ</rt></ruby>ている<ruby>意味<rt>いみ</rt></ruby>が、すべての<ruby>文脈<rt>ぶんみゃく</rt></ruby>に<ruby>当て<rt>あて</rt></ruby>はまる（　　）。",
+      "hintTranslation": "（......） Nghĩa trong từ điển chưa chắc đúng mọi ngữ cảnh."
     },
     {
       "id": 47,
@@ -2207,7 +2500,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Trước khi cái lạnh mùa đông buốt giá, tôi chuẩn bị lò sưởi.",
-      "explanation": "Đáp án đúng là D. 「寒さ」cái lạnh."
+      "explanation": "Đáp án đúng là D. 「寒さ」cái lạnh.",
+      "rubyQuestion": "<ruby>冬<rt>ふゆ</rt></ruby>の<ruby>寒<rt>かん</rt></ruby>（　　）が<ruby>厳しく<rt>いかめしく</rt></ruby>なる<ruby>前<rt>まえ</rt></ruby>に、<ruby>暖房器<rt>だんぼうき</rt></ruby><ruby>具<rt>ぐ</rt></ruby>を<ruby>用意し<rt>よういし</rt></ruby>た。",
+      "hintTranslation": "（......） Trước khi cái lạnh mùa đông buốt giá, tôi chuẩn bị lò sưởi."
     },
     {
       "id": 48,
@@ -2222,7 +2517,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tùy theo mùa loài hoa nở thay đổi nên ngắm được 4 mùa.",
-      "explanation": "Đáp án đúng là C. Tương ứng theo mùa."
+      "explanation": "Đáp án đúng là C. Tương ứng theo mùa.",
+      "rubyQuestion": "<ruby>季節<rt>きせつ</rt></ruby>（　　）<ruby>咲く<rt>さく</rt></ruby><ruby>花<rt>はな</rt></ruby>の<ruby>種類<rt>しゅるい</rt></ruby>が<ruby>変わ<rt>かわ</rt></ruby>るので、<ruby>四季<rt>しき</rt></ruby>を<ruby>楽し<rt>たのし</rt></ruby>める。",
+      "hintTranslation": "（......） Tùy theo mùa loài hoa nở thay đổi nên ngắm được 4 mùa."
     },
     {
       "id": 49,
@@ -2237,7 +2534,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Từ người mà ngay cả tên tôi cũng không nhớ, bỗng nhận được quà đắt tiền.",
-      "explanation": "Đáp án đúng là D. Nhấn mạnh mức độ không biết."
+      "explanation": "Đáp án đúng là D. Nhấn mạnh mức độ không biết.",
+      "rubyQuestion": "<ruby>名前<rt>なまえ</rt></ruby>（　　）<ruby>覚え<rt>おぼえ</rt></ruby>ていない<ruby>相手<rt>あいて</rt></ruby>から、<ruby>突然<rt>とつぜん</rt></ruby><ruby>高価<rt>こうか</rt></ruby>なプレゼントが<ruby>届い<rt>とどい</rt></ruby>た。",
+      "hintTranslation": "Từ người mà （......） tên tôi cũng không nhớ, bỗng nhận được quà đắt tiền."
     },
     {
       "id": 50,
@@ -2252,7 +2551,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Thay mặt trưởng phòng đi công tác, tôi sẽ họp thay.",
-      "explanation": "Đáp án đúng là A. Thay mặt ai."
+      "explanation": "Đáp án đúng là A. Thay mặt ai.",
+      "rubyQuestion": "<ruby>出張中<rt>しゅっちょうちゅう</rt></ruby>の<ruby>部長<rt>ぶちょう</rt></ruby>の（　　）、<ruby>私<rt>わたし</rt></ruby>が<ruby>代理<rt>だいり</rt></ruby>で<ruby>会議<rt>かいぎ</rt></ruby>に<ruby>出席<rt>しゅっせき</rt></ruby>します。",
+      "hintTranslation": "Thay mặt trưởng phòng đi công tác, tôi sẽ họp （......）."
     },
     {
       "id": 51,
@@ -2267,7 +2568,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dự luật đó đã được thông qua bằng biểu quyết đa số ở quốc hội.",
-      "explanation": "Đáp án đúng là A. Phương tiện thông qua."
+      "explanation": "Đáp án đúng là A. Phương tiện thông qua.",
+      "rubyQuestion": "その<ruby>法案<rt>ほうあん</rt></ruby>は<ruby>国会<rt>こっかい</rt></ruby>の<ruby>多数決<rt>たすうけつ</rt></ruby>（　　）<ruby>可決<rt>かけつ</rt></ruby>されました。",
+      "hintTranslation": "（......） Dự luật đó đã được thông qua bằng biểu quyết đa số ở quốc hội."
     },
     {
       "id": 52,
@@ -2282,7 +2585,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Món Trung này ngấy nhiều dầu mỡ quá.",
-      "explanation": "Đáp án đúng là C. 「油っぽい」nhiều dầu mỡ."
+      "explanation": "Đáp án đúng là C. 「油っぽい」nhiều dầu mỡ.",
+      "rubyQuestion": "この<ruby>中華料理<rt>ちゅうかりょうり</rt></ruby>は<ruby>油<rt>あぶら</rt></ruby>（　　）て、<ruby>胃<rt>い</rt></ruby>にもたれる。",
+      "hintTranslation": "Món Trung này ngấy （......） quá."
     },
     {
       "id": 53,
@@ -2297,7 +2602,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Văn hóa khác nhau tùy theo mỗi quốc gia.",
-      "explanation": "Đáp án đúng là B. 「N + によって」= tùy vào."
+      "explanation": "Đáp án đúng là B. 「N + によって」= tùy vào.",
+      "rubyQuestion": "<ruby>文化<rt>ぶんか</rt></ruby>や<ruby>習慣<rt>しゅうかん</rt></ruby>は、<ruby>国<rt>くに</rt></ruby>（　　）<ruby>大きく<rt>おおきく</rt></ruby><ruby>異な<rt>ことな</rt></ruby>ります。",
+      "hintTranslation": "（......） Văn hóa khác nhau tùy theo mỗi quốc gia."
     },
     {
       "id": 54,
@@ -2312,7 +2619,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Có chứng cứ hôm qua anh ấy ở Tokyo thì lẽ nào là thủ phạm được!",
-      "explanation": "Đáp án đúng là C. Nの + わけがない."
+      "explanation": "Đáp án đúng là C. Nの + わけがない.",
+      "rubyQuestion": "<ruby>彼<rt>かれ</rt></ruby>が<ruby>昨日<rt>きのう</rt></ruby><ruby>東京<rt>とうきょう</rt></ruby>にいた<ruby>証拠<rt>しょうこ</rt></ruby>があるのだから、<ruby>犯人<rt>はんにん</rt></ruby>の（　　）。",
+      "hintTranslation": "Có chứng cứ hôm qua anh ấy ở Tokyo thì （......） là thủ phạm được!"
     },
     {
       "id": 55,
@@ -2327,7 +2636,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nơi nguy hiểm thế dù có năn nỉ tôi cũng không thèm đi.",
-      "explanation": "Đáp án đúng là B. Nhất định không đi."
+      "explanation": "Đáp án đúng là B. Nhất định không đi.",
+      "rubyQuestion": "あんな<ruby>危険<rt>きけん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>、<ruby>頼ま<rt>たのま</rt></ruby>れたって<ruby>行く<rt>いく</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Nơi nguy hiểm thế dù có năn nỉ tôi cũng không thèm đi."
     },
     {
       "id": 56,
@@ -2342,7 +2653,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tuy xa ga nhưng bù lại phòng rộng và giá rẻ.",
-      "explanation": "Đáp án đúng là B. Bù lại khuyết điểm."
+      "explanation": "Đáp án đúng là B. Bù lại khuyết điểm.",
+      "rubyQuestion": "このアパートは<ruby>駅<rt>えき</rt></ruby>から<ruby>遠い<rt>とおい</rt></ruby>（　　）、<ruby>部屋<rt>へや</rt></ruby>が<ruby>広く<rt>ひろく</rt></ruby>て<ruby>家賃<rt>やちん</rt></ruby>も<ruby>安い<rt>やすい</rt></ruby>。",
+      "hintTranslation": "（......） Tuy xa ga nhưng bù lại phòng rộng và giá rẻ."
     },
     {
       "id": 57,
@@ -2357,7 +2670,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dự báo mưa chưa chắc trời đã mưa.",
-      "explanation": "Đáp án đúng là A. Chưa chắc đã mưa."
+      "explanation": "Đáp án đúng là A. Chưa chắc đã mưa.",
+      "rubyQuestion": "<ruby>天気予報<rt>てんきよほう</rt></ruby>が<ruby>雨<rt>あめ</rt></ruby>だと<ruby>言って<rt>いって</rt></ruby>も、<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降る<rt>ふる</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Dự báo mưa chưa chắc trời đã mưa."
     },
     {
       "id": 58,
@@ -2372,7 +2687,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Thường thức đến trẻ con cũng biết sao người lớn lại không biết.",
-      "explanation": "Đáp án đúng là A. 「子供さえ」."
+      "explanation": "Đáp án đúng là A. 「子供さえ」.",
+      "rubyQuestion": "<ruby>子供<rt>こども</rt></ruby>（　　）<ruby>知って<rt>しって</rt></ruby>いる<ruby>常識<rt>じょうしき</rt></ruby>を、なぜ<ruby>大人<rt>おとな</rt></ruby>のあなたが<ruby>知ら<rt>しら</rt></ruby>ないのですか。",
+      "hintTranslation": "（......） Thường thức đến trẻ con cũng biết sao người lớn lại không biết."
     },
     {
       "id": 59,
@@ -2387,7 +2704,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Luyện 5 tiếng mỗi ngày thì lẽ nào lại không thắng được!",
-      "explanation": "Đáp án đúng là B. Phủ định kép: chắc chắn thắng."
+      "explanation": "Đáp án đúng là B. Phủ định kép: chắc chắn thắng.",
+      "rubyQuestion": "<ruby>毎日<rt>まいにち</rt></ruby>５<ruby>時間<rt>じかん</rt></ruby>も<ruby>練習<rt>れんしゅう</rt></ruby>したのだから、<ruby>試合<rt>しあい</rt></ruby>に<ruby>勝て<rt>かて</rt></ruby>ない（　　）。",
+      "hintTranslation": "Luyện 5 tiếng mỗi ngày thì （......） không thắng được!"
     },
     {
       "id": 60,
@@ -2402,7 +2721,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Mua thì mua được nhưng vượt quá ngân sách tháng này.",
-      "explanation": "Đáp án đúng là D. Công nhận khả năng mua."
+      "explanation": "Đáp án đúng là D. Công nhận khả năng mua.",
+      "rubyQuestion": "<ruby>買え<rt>かえ</rt></ruby>る（　　）<ruby>買え<rt>かえ</rt></ruby>るが、<ruby>今月<rt>こんげつ</rt></ruby>の<ruby>予算<rt>よさん</rt></ruby>をオーバーしてしまう。",
+      "hintTranslation": "（......） Mua thì mua được nhưng vượt quá ngân sách tháng này."
     },
     {
       "id": 61,
@@ -2417,7 +2738,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Có nguy cơ dịch cúm lan rộng nhanh chóng.",
-      "explanation": "Đáp án đúng là B. Nguy cơ dịch bệnh."
+      "explanation": "Đáp án đúng là B. Nguy cơ dịch bệnh.",
+      "rubyQuestion": "インフルエンザが<ruby>急速<rt>きゅうそく</rt></ruby>に<ruby>感染<rt>かんせん</rt></ruby><ruby>拡大<rt>かくだい</rt></ruby>する（　　）がある。",
+      "hintTranslation": "（......） dịch cúm lan rộng nhanh chóng."
     },
     {
       "id": 62,
@@ -2432,7 +2755,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Lời tên nói dối đó thì ai mà tin cho được!",
-      "explanation": "Đáp án đúng là B. Ai mà thèm tin."
+      "explanation": "Đáp án đúng là B. Ai mà thèm tin.",
+      "rubyQuestion": "あんな<ruby>嘘つき<rt>うそつき</rt></ruby>の<ruby>言う<rt>いう</rt></ruby>ことなんて、<ruby>誰が<rt>だれが</rt></ruby><ruby>信じ<rt>しんじ</rt></ruby>る（　　）！",
+      "hintTranslation": "（......） Lời tên nói dối đó thì ai mà tin cho được!"
     },
     {
       "id": 63,
@@ -2447,7 +2772,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Khi máy tính trục trặc, tốt nhất nên thử khởi động lại xem sao.",
-      "explanation": "Đáp án đúng là C. Khuyên cách xử lý."
+      "explanation": "Đáp án đúng là C. Khuyên cách xử lý.",
+      "rubyQuestion": "パソコンの<ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪い<rt>わるい</rt></ruby>ときは、まず<ruby>再起動<rt>さいきどう</rt></ruby>してみる（　　）よ。",
+      "hintTranslation": "Khi máy tính trục trặc, tốt nhất （......） thử khởi động lại xem sao."
     },
     {
       "id": 64,
@@ -2462,7 +2789,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Muốn bạn mau khỏi ốm nên tôi nấu canh bổ dưỡng.",
-      "explanation": "Đáp án đúng là D. 「治ってほしい」."
+      "explanation": "Đáp án đúng là D. 「治ってほしい」.",
+      "rubyQuestion": "<ruby>早く<rt>はやく</rt></ruby><ruby>風邪<rt>かぜ</rt></ruby>が<ruby>治っ<rt>なおっ</rt></ruby>（　　）から、<ruby>栄養<rt>えいよう</rt></ruby>のあるスープを<ruby>作っ<rt>つくっ</rt></ruby>た。",
+      "hintTranslation": "（......） Muốn bạn mau khỏi ốm nên tôi nấu canh bổ dưỡng."
     },
     {
       "id": 65,
@@ -2477,7 +2806,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Các nhân viên trẻ vừa tốt nghiệp đại học đang được đào tạo.",
-      "explanation": "Đáp án đúng là A. Vừa tốt nghiệp."
+      "explanation": "Đáp án đúng là A. Vừa tốt nghiệp.",
+      "rubyQuestion": "<ruby>大学<rt>だいがく</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>し（　　）の<ruby>若手<rt>わかて</rt></ruby><ruby>社員<rt>しゃいん</rt></ruby>たちが<ruby>研修<rt>けんしゅう</rt></ruby>を<ruby>受け<rt>うけ</rt></ruby>ている。",
+      "hintTranslation": "（......） Các nhân viên trẻ vừa tốt nghiệp đại học đang được đào tạo."
     },
     {
       "id": 66,
@@ -2492,7 +2823,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Vừa mới ăn cơm trưa xong giờ lại đói rồi à?",
-      "explanation": "Đáp án đúng là B. Vừa mới ăn lúc nãy."
+      "explanation": "Đáp án đúng là B. Vừa mới ăn lúc nãy.",
+      "rubyQuestion": "「さっきお<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>めし</rt></ruby>を<ruby>食べ<rt>たべ</rt></ruby>（　　）なのに、もうお<ruby>腹<rt>はら</rt></ruby>が<ruby>空い<rt>あい</rt></ruby>たの？」",
+      "hintTranslation": "（......） ăn cơm trưa xong giờ lại đói rồi à?"
     },
     {
       "id": 67,
@@ -2507,7 +2840,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nếu không muốn hối hận thì hãy dốc toàn lực làm ngay lúc này.",
-      "explanation": "Đáp án đúng là B. Lời khuyên tâm huyết."
+      "explanation": "Đáp án đúng là B. Lời khuyên tâm huyết.",
+      "rubyQuestion": "<ruby>後悔<rt>こうかい</rt></ruby>したくないなら、<ruby>今<rt>いま</rt></ruby>できる<ruby>全力<rt>ぜんりょく</rt></ruby>を<ruby>尽くす<rt>つくす</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Nếu không muốn hối hận thì hãy dốc toàn lực làm ngay lúc này."
     },
     {
       "id": 68,
@@ -2522,7 +2857,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Hay nỗi gì! Tôi ngủ gật giữa chừng luôn đấy.",
-      "explanation": "Đáp án đúng là A. Phủ định mỉa mai."
+      "explanation": "Đáp án đúng là A. Phủ định mỉa mai.",
+      "rubyQuestion": "「あの<ruby>映画<rt>えいが</rt></ruby>、<ruby>面白か<rt>おもしろか</rt></ruby>った？」「<ruby>面白か<rt>おもしろか</rt></ruby>った（　　）。<ruby>途中<rt>とちゅう</rt></ruby>で<ruby>寝ち<rt>ねち</rt></ruby>ゃったよ。」",
+      "hintTranslation": "（......） Hay nỗi gì! Tôi ngủ gật giữa chừng luôn đấy."
     },
     {
       "id": 69,
@@ -2537,7 +2874,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nhờ gia đình ủng hộ nên tôi đã vượt qua thời gian du học bình an.",
-      "explanation": "Đáp án đúng là B. Kết quả tốt đẹp nhờ người thân."
+      "explanation": "Đáp án đúng là B. Kết quả tốt đẹp nhờ người thân.",
+      "rubyQuestion": "<ruby>家族<rt>かぞく</rt></ruby>が<ruby>支え<rt>ささえ</rt></ruby>てくれた（　　）、<ruby>長い<rt>ながい</rt></ruby><ruby>留学生<rt>りゅうがくせい</rt></ruby><ruby>活<rt>かつ</rt></ruby>を<ruby>無事<rt>ぶじ</rt></ruby>に<ruby>乗り越え<rt>のりこえ</rt></ruby>られた。",
+      "hintTranslation": "（......） gia đình ủng hộ nên tôi đã vượt qua thời gian du học bình an."
     },
     {
       "id": 70,
@@ -2552,7 +2891,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Bạn có thể mang giúp kiện hàng này lên tầng 2 được không?",
-      "explanation": "Đáp án đúng là A. 「Vてほしい」nhờ vả, mong người khác làm."
+      "explanation": "Đáp án đúng là A. 「Vてほしい」nhờ vả, mong người khác làm.",
+      "rubyQuestion": "すみませんが、この<ruby>荷物<rt>にもつ</rt></ruby>を２<ruby>階<rt>かい</rt></ruby>まで<ruby>運ん<rt>はこん</rt></ruby>（　　）のですが。",
+      "hintTranslation": "（......） Bạn có thể mang giúp kiện hàng này lên tầng 2 được không?"
     },
     {
       "id": 71,
@@ -2567,7 +2908,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Tại vì kinh tế kém nên tiền thưởng bị cắt.",
-      "explanation": "Đáp án đúng là A. Nguyên nhân gây thiệt hại."
+      "explanation": "Đáp án đúng là A. Nguyên nhân gây thiệt hại.",
+      "rubyQuestion": "<ruby>景気<rt>けいき</rt></ruby>が<ruby>悪い<rt>わるい</rt></ruby>（　　）ボーナスが<ruby>大幅<rt>おおはば</rt></ruby>にカットされた。",
+      "hintTranslation": "（......） kinh tế kém nên tiền thưởng bị cắt."
     },
     {
       "id": 72,
@@ -2582,7 +2925,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Cứ mỗi lần thất bại nếu tìm ra điểm khắc phục thì sẽ trưởng thành.",
-      "explanation": "Đáp án đúng là B. 「V辞書形 + ごとに」: cứ mỗi lần..."
+      "explanation": "Đáp án đúng là B. 「V辞書形 + ごとに」: cứ mỗi lần...",
+      "rubyQuestion": "<ruby>失敗<rt>しっぱい</rt></ruby>する（　　）<ruby>改善点<rt>かいぜんてん</rt></ruby>を<ruby>見つ<rt>みつ</rt></ruby>けていけば、<ruby>必ず<rt>かならず</rt></ruby><ruby>成長<rt>せいちょう</rt></ruby>できる。",
+      "hintTranslation": "（......） thất bại nếu tìm ra điểm khắc phục thì sẽ trưởng thành."
     },
     {
       "id": 73,
@@ -2597,7 +2942,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đứa bé mới cấp 2 mà trông rất giống người lớn.",
-      "explanation": "Đáp án đúng là B. 「大人っぽい」chững chạc."
+      "explanation": "Đáp án đúng là B. 「大人っぽい」chững chạc.",
+      "rubyQuestion": "あの<ruby>子<rt>こ</rt></ruby>はまだ<ruby>中学生<rt>ちゅうがくせい</rt></ruby>なのに、とても<ruby>大人<rt>おとな</rt></ruby>（　　）。",
+      "hintTranslation": "Đứa bé mới cấp 2 mà trông （......）."
     },
     {
       "id": 74,
@@ -2612,7 +2959,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Trời mây đen kịt, mưa trông có vẻ khó mà tạnh sớm.",
-      "explanation": "Đáp án đúng là C. 「やみそうもない」."
+      "explanation": "Đáp án đúng là C. 「やみそうもない」.",
+      "rubyQuestion": "<ruby>空<rt>そら</rt></ruby>は<ruby>真っ黒<rt>まっくろ</rt></ruby>な<ruby>雲<rt>くも</rt></ruby>に<ruby>覆わ<rt>おおわ</rt></ruby>れ、<ruby>雨<rt>あめ</rt></ruby>はしばらくやみ（　　）。",
+      "hintTranslation": "（......） Trời mây đen kịt, mưa trông có vẻ khó mà tạnh sớm."
     },
     {
       "id": 75,
@@ -2627,7 +2976,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nhờ có internet, tin tức toàn cầu truyền đi chớp mắt.",
-      "explanation": "Đáp án đúng là B. Phương tiện / cách thức."
+      "explanation": "Đáp án đúng là B. Phương tiện / cách thức.",
+      "rubyQuestion": "インターネット（　　）、<ruby>世界中<rt>せかいじゅう</rt></ruby>のニュースが<ruby>瞬時<rt>しゅんじ</rt></ruby>に<ruby>伝わ<rt>つたわ</rt></ruby>る。",
+      "hintTranslation": "（......） Nhờ có internet, tin tức toàn cầu truyền đi chớp mắt."
     },
     {
       "id": 76,
@@ -2642,7 +2993,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ông tôi dạo này có tuổi nên trở nên rất hay quên.",
-      "explanation": "Đáp án đúng là B. 「忘れっぽい」tính hay quên."
+      "explanation": "Đáp án đúng là B. 「忘れっぽい」tính hay quên.",
+      "rubyQuestion": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>最近<rt>さいきん</rt></ruby><ruby>歳<rt>とし</rt></ruby>をとったせいか、とても<ruby>忘れ<rt>わすれ</rt></ruby>（　　）なった。",
+      "hintTranslation": "Ông tôi dạo này có tuổi nên trở nên rất （......）."
     },
     {
       "id": 77,
@@ -2657,7 +3010,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Anh Tanaka không chỉ tiếng Anh thêm vào đó còn nói tiếng Trung, Pháp.",
-      "explanation": "Đáp án đúng là A. 「N + に加えて」thêm vào đó."
+      "explanation": "Đáp án đúng là A. 「N + に加えて」thêm vào đó.",
+      "rubyQuestion": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>英語<rt>えいご</rt></ruby>（　　）、<ruby>中国語<rt>ちゅうごくご</rt></ruby>とフランス<ruby>語<rt>ご</rt></ruby>も<ruby>流暢<rt>りゅうちょう</rt></ruby>に<ruby>話せ<rt>はなせ</rt></ruby>る。",
+      "hintTranslation": "Anh Tanaka không chỉ tiếng Anh （......） còn nói tiếng Trung, Pháp."
     },
     {
       "id": 78,
@@ -2672,7 +3027,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đồ đắt tiền chưa chắc chất lượng đã tốt.",
-      "explanation": "Đáp án đúng là D. 「〜とは限らない」chưa chắc là."
+      "explanation": "Đáp án đúng là D. 「〜とは限らない」chưa chắc là.",
+      "rubyQuestion": "<ruby>値段<rt>ねだん</rt></ruby>が<ruby>高い<rt>たかい</rt></ruby>ものが、<ruby>必ずしも<rt>かならずしも</rt></ruby><ruby>品質<rt>ひんしつ</rt></ruby>が<ruby>良い<rt>よい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Đồ đắt tiền chưa chắc chất lượng đã tốt."
     },
     {
       "id": 79,
@@ -2687,7 +3044,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Muốn giỏi tiếng Nhật thì nên mạnh dạn nói đừng ngại.",
-      "explanation": "Đáp án đúng là B. Khuyên nên làm gì."
+      "explanation": "Đáp án đúng là B. Khuyên nên làm gì.",
+      "rubyQuestion": "<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>になりたかったら、<ruby>恥ずかし<rt>はずかし</rt></ruby>がらずに<ruby>話す<rt>はなす</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn giỏi tiếng Nhật thì nên mạnh dạn nói （......） ngại."
     },
     {
       "id": 80,
@@ -2702,7 +3061,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Độ chính xác trong công việc của anh ấy ai cũng nể phục.",
-      "explanation": "Đáp án đúng là A. 「正確さ」tính từ đuôi na."
+      "explanation": "Đáp án đúng là A. 「正確さ」tính từ đuôi na.",
+      "rubyQuestion": "<ruby>彼の<rt>かの</rt></ruby><ruby>仕事<rt>しごと</rt></ruby>の<ruby>正確<rt>せいかく</rt></ruby>（　　）には、<ruby>誰も<rt>だれも</rt></ruby>が<ruby>一目<rt>いちもく</rt></ruby><ruby>置い<rt>おい</rt></ruby>ている。",
+      "hintTranslation": "（......） Độ chính xác trong công việc của anh ấy ai cũng nể phục."
     },
     {
       "id": 81,
@@ -2717,7 +3078,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đang bị cảnh báo có nguy cơ rò rỉ thông tin cá nhân ra ngoài.",
-      "explanation": "Đáp án đúng là C. Nguy cơ rò rỉ dữ liệu."
+      "explanation": "Đáp án đúng là C. Nguy cơ rò rỉ dữ liệu.",
+      "rubyQuestion": "<ruby>個人情報<rt>こじんじょうほう</rt></ruby>が<ruby>外部<rt>がいぶ</rt></ruby>に<ruby>流出<rt>りゅうしゅつ</rt></ruby>する（　　）が<ruby>指摘<rt>してき</rt></ruby>されている。",
+      "hintTranslation": "Đang bị cảnh báo （......） rò rỉ thông tin cá nhân ra ngoài."
     },
     {
       "id": 82,
@@ -2732,7 +3095,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Dù bị ai nói gì tôi cũng không từ bỏ ước mơ.",
-      "explanation": "Đáp án đúng là D. Cho dù bị ai nói gì."
+      "explanation": "Đáp án đúng là D. Cho dù bị ai nói gì.",
+      "rubyQuestion": "<ruby>誰<rt>だれ</rt></ruby>に<ruby>何を<rt>なにを</rt></ruby><ruby>言わ<rt>いわ</rt></ruby>れ（　　）、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>諦め<rt>あきらめ</rt></ruby>るつもりはありません。",
+      "hintTranslation": "（......） bị ai nói gì tôi cũng không từ bỏ ước mơ."
     },
     {
       "id": 83,
@@ -2747,7 +3112,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sức hút du lịch thêm vào đó giao thông thuận tiện tạo nên sự nổi tiếng.",
-      "explanation": "Đáp án đúng là C. Thêm điểm cộng."
+      "explanation": "Đáp án đúng là C. Thêm điểm cộng.",
+      "rubyQuestion": "<ruby>観光地<rt>かんこうち</rt></ruby>としての<ruby>魅力<rt>みりょく</rt></ruby>（　　）、<ruby>交通<rt>こうつう</rt></ruby>の<ruby>便<rt>びん</rt></ruby>の<ruby>良さ<rt>よさ</rt></ruby>も<ruby>人気<rt>にんき</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>だ。",
+      "hintTranslation": "Sức hút du lịch （......） giao thông thuận tiện tạo nên sự nổi tiếng."
     },
     {
       "id": 84,
@@ -2762,7 +3129,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đồng Yên giảm giúp doanh nghiệp xuất khẩu có lãi nhưng doanh nghiệp nhập khẩu gặp khó.",
-      "explanation": "Đáp án đúng là C. Đối lập giữa 2 đối tượng."
+      "explanation": "Đáp án đúng là C. Đối lập giữa 2 đối tượng.",
+      "rubyQuestion": "<ruby>円安<rt>えんやす</rt></ruby>で<ruby>輸出<rt>ゆしゅつ</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>が<ruby>利益<rt>りえき</rt></ruby>を<ruby>上げ<rt>あげ</rt></ruby>る（　　）、<ruby>輸入<rt>ゆにゅう</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>は<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>に<ruby>直面<rt>ちょくめん</rt></ruby>している。",
+      "hintTranslation": "（......） Đồng Yên giảm giúp doanh nghiệp xuất khẩu có lãi nhưng doanh nghiệp nhập khẩu gặp khó."
     },
     {
       "id": 85,
@@ -2777,7 +3146,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Tôi dặn mong họ đừng lại gần nơi nguy hiểm.",
-      "explanation": "Đáp án đúng là A. Phủ định: ないでほしい."
+      "explanation": "Đáp án đúng là A. Phủ định: ないでほしい.",
+      "rubyQuestion": "<ruby>危険<rt>きけん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>には<ruby>近づ<rt>ちかづ</rt></ruby>か（　　）と<ruby>注意<rt>ちゅうい</rt></ruby>した。",
+      "hintTranslation": "（......） Tôi dặn mong họ đừng lại gần nơi nguy hiểm."
     },
     {
       "id": 86,
@@ -2792,7 +3163,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đầu bếp chuyên nghiệp nấu thì làm sao mà dở được!",
-      "explanation": "Đáp án đúng là C. Chắc chắn ngon."
+      "explanation": "Đáp án đúng là C. Chắc chắn ngon.",
+      "rubyQuestion": "プロの<ruby>料理人<rt>りょうりにん</rt></ruby>が<ruby>作っ<rt>つくっ</rt></ruby>たのだから、まずい（　　）。",
+      "hintTranslation": "Đầu bếp chuyên nghiệp nấu thì （......） dở được!"
     },
     {
       "id": 87,
@@ -2807,7 +3180,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Cô ấy hết mình vì công việc, song song đó trân trọng gia đình.",
-      "explanation": "Đáp án đúng là C. 「一方で」diễn tả đồng thời 2 việc song song."
+      "explanation": "Đáp án đúng là C. 「一方で」diễn tả đồng thời 2 việc song song.",
+      "rubyQuestion": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>に<ruby>情熱<rt>じょうねつ</rt></ruby>を<ruby>注ぐ<rt>そそぐ</rt></ruby>（　　）、<ruby>休日<rt>きゅうじつ</rt></ruby>は<ruby>家族<rt>かぞく</rt></ruby>との<ruby>時間<rt>じかん</rt></ruby>を<ruby>大切<rt>たいせつ</rt></ruby>にしている。",
+      "hintTranslation": "Cô ấy hết mình vì công việc, （......） trân trọng gia đình."
     },
     {
       "id": 88,
@@ -2822,7 +3197,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngân sách thiếu hụt nên kế hoạch khó mà thực hiện được.",
-      "explanation": "Đáp án đúng là D. Khó thành hiện thực."
+      "explanation": "Đáp án đúng là D. Khó thành hiện thực.",
+      "rubyQuestion": "<ruby>予算<rt>よさん</rt></ruby>が<ruby>足り<rt>たり</rt></ruby>ないため、この<ruby>計画<rt>けいかく</rt></ruby>は<ruby>実現<rt>じつげん</rt></ruby>でき（　　）。",
+      "hintTranslation": "（......） Ngân sách thiếu hụt nên kế hoạch khó mà thực hiện được."
     },
     {
       "id": 89,
@@ -2837,7 +3214,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Mưa to thêm vào đó gió giật mạnh, ra ngoài rất nguy hiểm.",
-      "explanation": "Đáp án đúng là D. Mưa to kèm gió lớn."
+      "explanation": "Đáp án đúng là D. Mưa to kèm gió lớn.",
+      "rubyQuestion": "<ruby>激しい<rt>はげしい</rt></ruby><ruby>雨<rt>あめ</rt></ruby>（　　）<ruby>強い<rt>つよい</rt></ruby><ruby>風<rt>かぜ</rt></ruby>も<ruby>吹き<rt>ふき</rt></ruby><ruby>荒れ<rt>あれ</rt></ruby>、<ruby>外出<rt>がいしゅつ</rt></ruby>が<ruby>極め<rt>きわめ</rt></ruby>て<ruby>危険<rt>きけん</rt></ruby>な<ruby>状態<rt>じょうたい</rt></ruby>だ。",
+      "hintTranslation": "Mưa to （......） gió giật mạnh, ra ngoài rất nguy hiểm."
     },
     {
       "id": 90,
@@ -2852,7 +3231,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Tôi vừa mới vào công ty nên chưa quen quy trình việc.",
-      "explanation": "Đáp án đúng là A. Vừa mới vào làm."
+      "explanation": "Đáp án đúng là A. Vừa mới vào làm.",
+      "rubyQuestion": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入社<rt>にゅうしゃ</rt></ruby>し（　　）なので、まだ<ruby>仕事<rt>しごと</rt></ruby>の<ruby>流れ<rt>ながれ</rt></ruby>に<ruby>慣れ<rt>なれ</rt></ruby>ていません。",
+      "hintTranslation": "Tôi （......） vào công ty nên chưa quen quy trình việc."
     },
     {
       "id": 91,
@@ -2867,7 +3248,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nhờ thời tiết đẹp nên ngắm rõ đỉnh núi Phú Sĩ.",
-      "explanation": "Đáp án đúng là C. Nguyên nhân tích cực."
+      "explanation": "Đáp án đúng là C. Nguyên nhân tích cực.",
+      "rubyQuestion": "<ruby>天気<rt>てんき</rt></ruby>が<ruby>良か<rt>よか</rt></ruby>った（　　）、<ruby>富士山<rt>ふじさん</rt></ruby>の<ruby>頂上<rt>ちょうじょう</rt></ruby>まできれいに<ruby>見え<rt>みえ</rt></ruby>ました。",
+      "hintTranslation": "（......） thời tiết đẹp nên ngắm rõ đỉnh núi Phú Sĩ."
     },
     {
       "id": 92,
@@ -2882,7 +3265,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Mai đi du lịch nên mong sao trời sẽ nắng ráo.",
-      "explanation": "Đáp án đúng là C. Ước nguyện thời tiết."
+      "explanation": "Đáp án đúng là C. Ước nguyện thời tiết.",
+      "rubyQuestion": "<ruby>明日<rt>あした</rt></ruby>から<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行く<rt>いく</rt></ruby>ので、<ruby>天気<rt>てんき</rt></ruby>が<ruby>晴れ<rt>はれ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Mai đi du lịch nên mong sao trời sẽ nắng ráo."
     },
     {
       "id": 93,
@@ -2897,7 +3282,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Lái xe thì lái được thật nhưng đường cao tốc thì không dám đi.",
-      "explanation": "Đáp án đúng là C. Lặp lại động từ."
+      "explanation": "Đáp án đúng là C. Lặp lại động từ.",
+      "rubyQuestion": "<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>できる（　　）できますが、<ruby>高速道路<rt>こうそくどうろ</rt></ruby>は<ruby>怖く<rt>こわく</rt></ruby>て<ruby>走れ<rt>はしれ</rt></ruby>ません。",
+      "hintTranslation": "Lái xe thì lái được （......） đường cao tốc thì không dám đi."
     },
     {
       "id": 94,
@@ -2912,7 +3299,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sống ở Nhật lâu chưa chắc đã dùng kính ngữ chuẩn.",
-      "explanation": "Đáp án đúng là C. Chưa chắc đã thành thạo."
+      "explanation": "Đáp án đúng là C. Chưa chắc đã thành thạo.",
+      "rubyQuestion": "<ruby>日本<rt>にっぽん</rt></ruby>に<ruby>長く<rt>ながく</rt></ruby><ruby>住ん<rt>すん</rt></ruby>でいるからといって、<ruby>敬語<rt>けいご</rt></ruby>が<ruby>完璧<rt>かんぺき</rt></ruby>に<ruby>使え<rt>つかえ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Sống ở Nhật lâu chưa chắc đã dùng kính ngữ chuẩn."
     },
     {
       "id": 95,
@@ -2927,7 +3316,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Mỗi khi mùa hoa anh đào đến, lại cảm nhận trời ấm dần lên từng ngày.",
-      "explanation": "Đáp án đúng là A. 「日ごとに」: từng ngày một, ngày qua ngày."
+      "explanation": "Đáp án đúng là A. 「日ごとに」: từng ngày một, ngày qua ngày.",
+      "rubyQuestion": "<ruby>桜<rt>さくら</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>になると、<ruby>日<rt>にち</rt></ruby>（　　）<ruby>暖かく<rt>あたたかく</rt></ruby>なっていくのを<ruby>感じ<rt>かんじ</rt></ruby>る。",
+      "hintTranslation": "Mỗi khi mùa hoa anh đào đến, lại cảm nhận trời ấm dần lên （......） ngày."
     },
     {
       "id": 96,
@@ -2942,7 +3333,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Người dùng sách điện tử tăng trong khi sách giấy giảm.",
-      "explanation": "Đáp án đúng là A. Đối lập giữa 2 xu hướng trái chiều."
+      "explanation": "Đáp án đúng là A. Đối lập giữa 2 xu hướng trái chiều.",
+      "rubyQuestion": "<ruby>電子<rt>でんし</rt></ruby><ruby>書籍<rt>しょせき</rt></ruby>の<ruby>利用者<rt>りようしゃ</rt></ruby>が<ruby>増え<rt>ふえ</rt></ruby>ている（　　）、<ruby>紙<rt>かみ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>の<ruby>売り上げ<rt>うりあげ</rt></ruby>は<ruby>減少<rt>げんしょう</rt></ruby>している。",
+      "hintTranslation": "（......） Người dùng sách điện tử tăng trong khi sách giấy giảm."
     },
     {
       "id": 97,
@@ -2957,7 +3350,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Bão đến gần có nguy cơ nước sông tràn bờ.",
-      "explanation": "Đáp án đúng là A. 「〜恐れがある」nguy cơ xấu."
+      "explanation": "Đáp án đúng là A. 「〜恐れがある」nguy cơ xấu.",
+      "rubyQuestion": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>接近し<rt>せっきんし</rt></ruby>ているため、<ruby>大雨<rt>おおあめ</rt></ruby>による<ruby>河川<rt>かせん</rt></ruby>の<ruby>氾濫<rt>はんらん</rt></ruby>の（　　）。",
+      "hintTranslation": "Bão đến gần （......） nước sông tràn bờ."
     },
     {
       "id": 98,
@@ -2972,7 +3367,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Kế hoạch dù có thành công thì quá tốn kém nên không khả thi.",
-      "explanation": "Đáp án đúng là B. Dù thành công."
+      "explanation": "Đáp án đúng là B. Dù thành công.",
+      "rubyQuestion": "あの<ruby>計画<rt>けいかく</rt></ruby>が<ruby>成功<rt>せいこう</rt></ruby>した（　　）、<ruby>莫大<rt>ばくだい</rt></ruby>な<ruby>費用<rt>ひよう</rt></ruby>がかかるので<ruby>現実的<rt>げんじつてき</rt></ruby>ではない。",
+      "hintTranslation": "Kế hoạch （......） có thành công thì quá tốn kém nên không khả thi."
     },
     {
       "id": 99,
@@ -2987,7 +3384,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Thay vì trả tiền mặt, thanh toán ví điện tử sẽ được điểm.",
-      "explanation": "Đáp án đúng là C. Thay đổi hình thức trả tiền."
+      "explanation": "Đáp án đúng là C. Thay đổi hình thức trả tiền.",
+      "rubyQuestion": "<ruby>現金<rt>げんきん</rt></ruby>で<ruby>支払う<rt>しはらう</rt></ruby>（　　）、<ruby>電子<rt>でんし</rt></ruby>マネーで<ruby>決済<rt>けっさい</rt></ruby>するとポイントが<ruby>付く<rt>つく</rt></ruby>。",
+      "hintTranslation": "（......） trả tiền mặt, thanh toán ví điện tử sẽ được điểm."
     },
     {
       "id": 100,
@@ -3002,7 +3401,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Điện thoại mới bên cạnh hiệu năng thêm vào đó thiết kế cũng đẹp.",
-      "explanation": "Đáp án đúng là A. Bổ sung ưu điểm."
+      "explanation": "Đáp án đúng là A. Bổ sung ưu điểm.",
+      "rubyQuestion": "<ruby>今回<rt>こんかい</rt></ruby>の<ruby>新型<rt>しんがた</rt></ruby>スマホは、<ruby>性能<rt>せいのう</rt></ruby>の<ruby>向上<rt>こうじょう</rt></ruby>（　　）デザインの<ruby>美しさ<rt>うつくしさ</rt></ruby>も<ruby>評価<rt>ひょうか</rt></ruby>されている。",
+      "hintTranslation": "Điện thoại mới bên cạnh hiệu năng （......） thiết kế cũng đẹp."
     }
   ],
   "3": [
@@ -3019,7 +3420,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Cơn giận của anh ấy gay gắt, có vẻ không dễ tha thứ.",
-      "explanation": "Đáp án đúng là B. Khó được tha."
+      "explanation": "Đáp án đúng là B. Khó được tha.",
+      "rubyQuestion": "<ruby>彼の<rt>かの</rt></ruby><ruby>怒り<rt>いかり</rt></ruby>は<ruby>相当<rt>そうとう</rt></ruby><ruby>激しく<rt>はげしく</rt></ruby>、<ruby>簡単<rt>かんたん</rt></ruby>には<ruby>許し<rt>ゆるし</rt></ruby>てくれ（　　）。",
+      "hintTranslation": "（......） Cơn giận của anh ấy gay gắt, có vẻ không dễ tha thứ."
     },
     {
       "id": 2,
@@ -3034,7 +3437,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Cô ấy hết mình vì công việc, song song đó trân trọng gia đình.",
-      "explanation": "Đáp án đúng là A. 「一方で」diễn tả đồng thời 2 việc song song."
+      "explanation": "Đáp án đúng là A. 「一方で」diễn tả đồng thời 2 việc song song.",
+      "rubyQuestion": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>に<ruby>情熱<rt>じょうねつ</rt></ruby>を<ruby>注ぐ<rt>そそぐ</rt></ruby>（　　）、<ruby>休日<rt>きゅうじつ</rt></ruby>は<ruby>家族<rt>かぞく</rt></ruby>との<ruby>時間<rt>じかん</rt></ruby>を<ruby>大切<rt>たいせつ</rt></ruby>にしている。",
+      "hintTranslation": "Cô ấy hết mình vì công việc, （......） trân trọng gia đình."
     },
     {
       "id": 3,
@@ -3049,7 +3454,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Cho dù chuyện đó là thật tôi cũng không tha thứ cho anh ấy.",
-      "explanation": "Đáp án đúng là C. Dù là sự thật."
+      "explanation": "Đáp án đúng là C. Dù là sự thật.",
+      "rubyQuestion": "<ruby>仮に<rt>かりに</rt></ruby>その<ruby>話<rt>はなし</rt></ruby>が<ruby>本当<rt>ほんとう</rt></ruby>だ（　　）、<ruby>彼<rt>かれ</rt></ruby>を<ruby>許す<rt>ゆるす</rt></ruby>ことはできない。",
+      "hintTranslation": "（......） chuyện đó là thật tôi cũng không tha thứ cho anh ấy."
     },
     {
       "id": 4,
@@ -3064,7 +3471,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Chuẩn bị bài thuyết trình công phu thế thì làm sao thất bại được!",
-      "explanation": "Đáp án đúng là D. Tự tin không thể hỏng."
+      "explanation": "Đáp án đúng là D. Tự tin không thể hỏng.",
+      "rubyQuestion": "あんなに<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby><ruby>準備<rt>じゅんび</rt></ruby>したプレゼンが、<ruby>失敗<rt>しっぱい</rt></ruby>する（　　）。",
+      "hintTranslation": "（......） Chuẩn bị bài thuyết trình công phu thế thì làm sao thất bại được!"
     },
     {
       "id": 5,
@@ -3079,7 +3488,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Internet giúp tra thông tin nhanh, mặt khác có nguy cơ lan truyền tin giả.",
-      "explanation": "Đáp án đúng là C. Mặt lợi và mặt hại đối lập."
+      "explanation": "Đáp án đúng là C. Mặt lợi và mặt hại đối lập.",
+      "rubyQuestion": "インターネットは<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>素早く<rt>すばやく</rt></ruby><ruby>得ら<rt>えら</rt></ruby>れる（　　）、<ruby>誤<rt>ご</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>が<ruby>広が<rt>ひろが</rt></ruby>りやすいリスクもある。",
+      "hintTranslation": "Internet giúp tra thông tin nhanh, （......） có nguy cơ lan truyền tin giả."
     },
     {
       "id": 6,
@@ -3094,7 +3505,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn thi đỗ thì tốt nhất không nên lơ là ôn tập.",
-      "explanation": "Đáp án đúng là A. 「Vないことだ」khuyên không nên."
+      "explanation": "Đáp án đúng là A. 「Vないことだ」khuyên không nên.",
+      "rubyQuestion": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>したいなら、<ruby>毎日<rt>まいにち</rt></ruby><ruby>復習<rt>ふくしゅう</rt></ruby>を<ruby>怠ら<rt>おこたら</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn thi đỗ thì tốt nhất （......） lơ là ôn tập."
     },
     {
       "id": 7,
@@ -3109,7 +3522,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đầu bếp chuyên nghiệp nấu thì làm sao mà dở được!",
-      "explanation": "Đáp án đúng là A. Chắc chắn ngon."
+      "explanation": "Đáp án đúng là A. Chắc chắn ngon.",
+      "rubyQuestion": "プロの<ruby>料理人<rt>りょうりにん</rt></ruby>が<ruby>作っ<rt>つくっ</rt></ruby>たのだから、まずい（　　）。",
+      "hintTranslation": "Đầu bếp chuyên nghiệp nấu thì （......） dở được!"
     },
     {
       "id": 8,
@@ -3124,7 +3539,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Bão đến gần có nguy cơ nước sông tràn bờ.",
-      "explanation": "Đáp án đúng là B. 「〜恐れがある」nguy cơ xấu."
+      "explanation": "Đáp án đúng là B. 「〜恐れがある」nguy cơ xấu.",
+      "rubyQuestion": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>接近し<rt>せっきんし</rt></ruby>ているため、<ruby>大雨<rt>おおあめ</rt></ruby>による<ruby>河川<rt>かせん</rt></ruby>の<ruby>氾濫<rt>はんらん</rt></ruby>の（　　）。",
+      "hintTranslation": "Bão đến gần （......） nước sông tràn bờ."
     },
     {
       "id": 9,
@@ -3139,7 +3556,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dù bị cha mẹ phản đối tôi vẫn quyết tâm du học.",
-      "explanation": "Đáp án đúng là A. Dù bị phản đối."
+      "explanation": "Đáp án đúng là A. Dù bị phản đối.",
+      "rubyQuestion": "<ruby>親<rt>おや</rt></ruby>に<ruby>反対<rt>はんたい</rt></ruby>され（　　）、<ruby>私<rt>わたし</rt></ruby>は<ruby>海外留学<rt>かいがいりゅうがく</rt></ruby>を<ruby>決意<rt>けつい</rt></ruby>した。",
+      "hintTranslation": "（......） bị cha mẹ phản đối tôi vẫn quyết tâm du học."
     },
     {
       "id": 10,
@@ -3154,7 +3573,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tôi dặn mong họ đừng lại gần nơi nguy hiểm.",
-      "explanation": "Đáp án đúng là B. Phủ định: ないでほしい."
+      "explanation": "Đáp án đúng là B. Phủ định: ないでほしい.",
+      "rubyQuestion": "<ruby>危険<rt>きけん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>には<ruby>近づ<rt>ちかづ</rt></ruby>か（　　）と<ruby>注意<rt>ちゅうい</rt></ruby>した。",
+      "hintTranslation": "（......） Tôi dặn mong họ đừng lại gần nơi nguy hiểm."
     },
     {
       "id": 11,
@@ -3169,7 +3590,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cho dù mai ngày tận thế tôi vẫn sẽ trồng cây táo như thường.",
-      "explanation": "Đáp án đúng là D. Dù tận thế."
+      "explanation": "Đáp án đúng là D. Dù tận thế.",
+      "rubyQuestion": "もし<ruby>明日<rt>あした</rt></ruby><ruby>世界<rt>せかい</rt></ruby>が<ruby>終わ<rt>おわ</rt></ruby>る（　　）、<ruby>私<rt>わたし</rt></ruby>はいつも<ruby>通り<rt>とうり</rt></ruby>リンゴの<ruby>木<rt>き</rt></ruby>を<ruby>植え<rt>うえ</rt></ruby>るだろう。",
+      "hintTranslation": "（......） mai ngày tận thế tôi vẫn sẽ trồng cây táo như thường."
     },
     {
       "id": 12,
@@ -3184,7 +3607,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngon thì ngon thật nhưng nấu mất nhiều thời gian.",
-      "explanation": "Đáp án đúng là D. 「イAことはイAが」."
+      "explanation": "Đáp án đúng là D. 「イAことはイAが」.",
+      "rubyQuestion": "この<ruby>料理<rt>りょうり</rt></ruby>は<ruby>美味しい<rt>おいしい</rt></ruby>（　　）<ruby>美味しい<rt>おいしい</rt></ruby>が、<ruby>作る<rt>つくる</rt></ruby>のに<ruby>時間<rt>じかん</rt></ruby>がかかる。",
+      "hintTranslation": "Ngon （......） nhưng nấu mất nhiều thời gian."
     },
     {
       "id": 13,
@@ -3199,7 +3624,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Bằng việc vận động định kỳ có thể giữ gìn sức khỏe.",
-      "explanation": "Đáp án đúng là D. Chỉ phương pháp, cách thức."
+      "explanation": "Đáp án đúng là D. Chỉ phương pháp, cách thức.",
+      "rubyQuestion": "<ruby>定期的<rt>ていきてき</rt></ruby>な<ruby>運動<rt>うんどう</rt></ruby>（　　）、<ruby>健康<rt>けんこう</rt></ruby>を<ruby>維持す<rt>いじす</rt></ruby>ることができます。",
+      "hintTranslation": "（......） Bằng việc vận động định kỳ có thể giữ gìn sức khỏe."
     },
     {
       "id": 14,
@@ -3214,7 +3641,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Anh trai hoạt bát nhiều bạn bè, trái lại em trai trầm tính thích ở một mình.",
-      "explanation": "Đáp án đúng là B. So sánh đối lập 2 người."
+      "explanation": "Đáp án đúng là B. So sánh đối lập 2 người.",
+      "rubyQuestion": "<ruby>兄<rt>あに</rt></ruby>は<ruby>社交的<rt>しゃこうてき</rt></ruby>で<ruby>友達<rt>ともだち</rt></ruby>が<ruby>多い<rt>おおい</rt></ruby>（　　）、<ruby>弟<rt>おとうと</rt></ruby>は<ruby>物<rt>もの</rt></ruby><ruby>静か<rt>しずか</rt></ruby>で<ruby>一人<rt>ひとり</rt></ruby>を<ruby>好む<rt>このむ</rt></ruby><ruby>性格<rt>せいかく</rt></ruby>だ。",
+      "hintTranslation": "（......） Anh trai hoạt bát nhiều bạn bè, trái lại em trai trầm tính thích ở một mình."
     },
     {
       "id": 15,
@@ -3229,7 +3658,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Mưa to thêm vào đó gió giật mạnh, ra ngoài rất nguy hiểm.",
-      "explanation": "Đáp án đúng là A. Mưa to kèm gió lớn."
+      "explanation": "Đáp án đúng là A. Mưa to kèm gió lớn.",
+      "rubyQuestion": "<ruby>激しい<rt>はげしい</rt></ruby><ruby>雨<rt>あめ</rt></ruby>（　　）<ruby>強い<rt>つよい</rt></ruby><ruby>風<rt>かぜ</rt></ruby>も<ruby>吹き<rt>ふき</rt></ruby><ruby>荒れ<rt>あれ</rt></ruby>、<ruby>外出<rt>がいしゅつ</rt></ruby>が<ruby>極め<rt>きわめ</rt></ruby>て<ruby>危険<rt>きけん</rt></ruby>な<ruby>状態<rt>じょうたい</rt></ruby>だ。",
+      "hintTranslation": "Mưa to （......） gió giật mạnh, ra ngoài rất nguy hiểm."
     },
     {
       "id": 16,
@@ -3244,7 +3675,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Người lớn rồi đừng có nhõng nhẽo trẻ con như thế.",
-      "explanation": "Đáp án đúng là A. 「子供っぽい」tính trẻ con."
+      "explanation": "Đáp án đúng là A. 「子供っぽい」tính trẻ con.",
+      "rubyQuestion": "いい<ruby>大人<rt>おとな</rt></ruby>のくせに、そんな<ruby>子供<rt>こども</rt></ruby>（　　）わがままを<ruby>言う<rt>いう</rt></ruby>な。",
+      "hintTranslation": "（......） Người lớn rồi đừng có nhõng nhẽo trẻ con như thế."
     },
     {
       "id": 17,
@@ -3259,7 +3692,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Rét đậm cộng thêm tuyết rơi dày khiến giao thông tê liệt.",
-      "explanation": "Đáp án đúng là A. Rét cộng tuyết lớn."
+      "explanation": "Đáp án đúng là A. Rét cộng tuyết lớn.",
+      "rubyQuestion": "<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>寒さ<rt>さむさ</rt></ruby>（　　）<ruby>大雪<rt>おおゆき</rt></ruby>に<ruby>見舞<rt>みまい</rt></ruby>われ、<ruby>交通網<rt>こうつうもう</rt></ruby>が<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>麻痺<rt>まひ</rt></ruby>した。",
+      "hintTranslation": "（......） Rét đậm cộng thêm tuyết rơi dày khiến giao thông tê liệt."
     },
     {
       "id": 18,
@@ -3274,7 +3709,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đời nào tôi chịu bỏ cuộc ước mơ ở nơi thế này!",
-      "explanation": "Đáp án đúng là B. Không từ bỏ."
+      "explanation": "Đáp án đúng là B. Không từ bỏ.",
+      "rubyQuestion": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>をこんなところで<ruby>諦め<rt>あきらめ</rt></ruby>てたまる（　　）。",
+      "hintTranslation": "（......） Đời nào tôi chịu bỏ cuộc ước mơ ở nơi thế này!"
     },
     {
       "id": 19,
@@ -3289,7 +3726,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Món súp này nhiều nước (loãng toẹt), không ngon.",
-      "explanation": "Đáp án đúng là B. 「水っぽい」loãng, nhiều nước."
+      "explanation": "Đáp án đúng là B. 「水っぽい」loãng, nhiều nước.",
+      "rubyQuestion": "このスープは<ruby>水<rt>みず</rt></ruby>（　　）て、あまり<ruby>美味しく<rt>おいしく</rt></ruby>ない。",
+      "hintTranslation": "Món súp này （......） (loãng toẹt), không ngon."
     },
     {
       "id": 20,
@@ -3304,7 +3743,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Người mà ngay cả lỗi sai của mình cũng không thừa nhận thì không thể tiến bộ.",
-      "explanation": "Đáp án đúng là C. Ngay cả lỗi bản thân."
+      "explanation": "Đáp án đúng là C. Ngay cả lỗi bản thân.",
+      "rubyQuestion": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>間違い<rt>まちがい</rt></ruby>（　　）<ruby>認め<rt>みとめ</rt></ruby>られない<ruby>人<rt>にん</rt></ruby>は、<ruby>成長す<rt>せいちょうす</rt></ruby>ることができない。",
+      "hintTranslation": "Người mà （......） lỗi sai của mình cũng không thừa nhận thì không thể tiến bộ."
     },
     {
       "id": 21,
@@ -3319,7 +3760,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tôi tính chóng chán nên làm gì cũng không bền.",
-      "explanation": "Đáp án đúng là D. 「飽きっぽい」tính chóng chán."
+      "explanation": "Đáp án đúng là D. 「飽きっぽい」tính chóng chán.",
+      "rubyQuestion": "<ruby>私<rt>わたし</rt></ruby>は<ruby>飽き<rt>あき</rt></ruby>（　　）<ruby>性格<rt>せいかく</rt></ruby>なので、<ruby>何を<rt>なにを</rt></ruby>やっても<ruby>長続き<rt>ながつづき</rt></ruby>しない。",
+      "hintTranslation": "（......） Tôi tính chóng chán nên làm gì cũng không bền."
     },
     {
       "id": 22,
@@ -3334,7 +3777,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sơ suất tàn lửa có nguy cơ phát triển thành hỏa hoạn lớn.",
-      "explanation": "Đáp án đúng là D. Nguy cơ cháy nổ."
+      "explanation": "Đáp án đúng là D. Nguy cơ cháy nổ.",
+      "rubyQuestion": "<ruby>火<rt>ひ</rt></ruby>の<ruby>不始末<rt>ふしまつ</rt></ruby>から<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>火災<rt>かさい</rt></ruby>に<ruby>発展<rt>はってん</rt></ruby>する（　　）。",
+      "hintTranslation": "Sơ suất tàn lửa （......） phát triển thành hỏa hoạn lớn."
     },
     {
       "id": 23,
@@ -3349,7 +3794,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cứ mỗi lần lật một trang lại có phát hiện mới, cuốn sách rất hay.",
-      "explanation": "Đáp án đúng là D. 「めくるごとに」: cứ mỗi lần lật trang."
+      "explanation": "Đáp án đúng là D. 「めくるごとに」: cứ mỗi lần lật trang.",
+      "rubyQuestion": "ページをめくる（　　）<ruby>新しい<rt>あたらしい</rt></ruby><ruby>発見<rt>はっけん</rt></ruby>があり、とても<ruby>面白い<rt>おもしろい</rt></ruby><ruby>本<rt>ほん</rt></ruby>だ。",
+      "hintTranslation": "（......） lật một trang lại có phát hiện mới, cuốn sách rất hay."
     },
     {
       "id": 24,
@@ -3364,7 +3811,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Loài chim này có nguy cơ tuyệt chủng.",
-      "explanation": "Đáp án đúng là A. 「絶滅のおそれがある」."
+      "explanation": "Đáp án đúng là A. 「絶滅のおそれがある」.",
+      "rubyQuestion": "この<ruby>鳥<rt>とり</rt></ruby>は<ruby>生息地<rt>せいそくち</rt></ruby>が<ruby>減少<rt>げんしょう</rt></ruby>し、<ruby>絶滅<rt>ぜつめつ</rt></ruby>の（　　）があると<ruby>言わ<rt>いわ</rt></ruby>れている。",
+      "hintTranslation": "Loài chim này （......） tuyệt chủng."
     },
     {
       "id": 25,
@@ -3379,7 +3828,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngày kỷ niệm quan trọng nên muốn cả hai bên nhau trọn vẹn.",
-      "explanation": "Đáp án đúng là D. Mong ước."
+      "explanation": "Đáp án đúng là D. Mong ước.",
+      "rubyQuestion": "<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>記念日<rt>きねんび</rt></ruby>だから、<ruby>二人<rt>ふたり</rt></ruby>でゆっくり<ruby>過ご<rt>すご</rt></ruby>し（　　）。",
+      "hintTranslation": "（......） Ngày kỷ niệm quan trọng nên muốn cả hai bên nhau trọn vẹn."
     },
     {
       "id": 26,
@@ -3394,7 +3845,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Mới dọn hôm qua mà tụi nhỏ lại bày bừa rồi.",
-      "explanation": "Đáp án đúng là D. Vừa mới dọn xong."
+      "explanation": "Đáp án đúng là D. Vừa mới dọn xong.",
+      "rubyQuestion": "<ruby>昨日<rt>きのう</rt></ruby><ruby>掃除<rt>そうじ</rt></ruby>をし（　　）なのに、<ruby>子供<rt>こども</rt></ruby>たちがもう<ruby>部屋<rt>へや</rt></ruby>を<ruby>散ら<rt>ちら</rt></ruby>かした。",
+      "hintTranslation": "（......） dọn hôm qua mà tụi nhỏ lại bày bừa rồi."
     },
     {
       "id": 27,
@@ -3409,7 +3862,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Tập mỗi ngày chưa chắc đã thắng trận.",
-      "explanation": "Đáp án đúng là A. Chưa chắc thắng."
+      "explanation": "Đáp án đúng là A. Chưa chắc thắng.",
+      "rubyQuestion": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>練習<rt>れんしゅう</rt></ruby>したからといって、<ruby>必ず<rt>かならず</rt></ruby><ruby>試合<rt>しあい</rt></ruby>に<ruby>勝て<rt>かて</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Tập mỗi ngày chưa chắc đã thắng trận."
     },
     {
       "id": 28,
@@ -3424,7 +3879,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nhờ thời tiết đẹp nên ngắm rõ đỉnh núi Phú Sĩ.",
-      "explanation": "Đáp án đúng là B. Nguyên nhân tích cực."
+      "explanation": "Đáp án đúng là B. Nguyên nhân tích cực.",
+      "rubyQuestion": "<ruby>天気<rt>てんき</rt></ruby>が<ruby>良か<rt>よか</rt></ruby>った（　　）、<ruby>富士山<rt>ふじさん</rt></ruby>の<ruby>頂上<rt>ちょうじょう</rt></ruby>まできれいに<ruby>見え<rt>みえ</rt></ruby>ました。",
+      "hintTranslation": "（......） thời tiết đẹp nên ngắm rõ đỉnh núi Phú Sĩ."
     },
     {
       "id": 29,
@@ -3439,7 +3896,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đã khóa cửa cẩn thận thì trộm làm sao vào dễ thế được!",
-      "explanation": "Đáp án đúng là B. Khẳng định an toàn."
+      "explanation": "Đáp án đúng là B. Khẳng định an toàn.",
+      "rubyQuestion": "<ruby>鍵<rt>かぎ</rt></ruby>をかけたのだから、<ruby>泥棒<rt>どろぼう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>入れ<rt>いれ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Đã khóa cửa cẩn thận thì trộm làm sao vào dễ thế được!"
     },
     {
       "id": 30,
@@ -3454,7 +3913,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đang tuyển nhân sự có kiến thức chuyên môn cộng thêm kinh nghiệm phong phú.",
-      "explanation": "Đáp án đúng là A. Kiến thức cộng kinh nghiệm."
+      "explanation": "Đáp án đúng là A. Kiến thức cộng kinh nghiệm.",
+      "rubyQuestion": "<ruby>専門知識<rt>せんもんちしき</rt></ruby>（　　）<ruby>豊か<rt>ゆたか</rt></ruby>な<ruby>実務経験<rt>じつむけいけん</rt></ruby>を<ruby>持つ<rt>もつ</rt></ruby><ruby>人材<rt>じんざい</rt></ruby>が<ruby>求め<rt>もとめ</rt></ruby>られている。",
+      "hintTranslation": "（......） Đang tuyển nhân sự có kiến thức chuyên môn cộng thêm kinh nghiệm phong phú."
     },
     {
       "id": 31,
@@ -3469,7 +3930,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sắp muộn rồi nên mong tàu đến đúng giờ.",
-      "explanation": "Đáp án đúng là C. Mong hiện tượng xảy ra."
+      "explanation": "Đáp án đúng là C. Mong hiện tượng xảy ra.",
+      "rubyQuestion": "<ruby>遅刻<rt>ちこく</rt></ruby>しそうだから、<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>時間<rt>じかん</rt></ruby><ruby>通り<rt>とうり</rt></ruby>に<ruby>来<rt>らい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Sắp muộn rồi nên mong tàu đến đúng giờ."
     },
     {
       "id": 32,
@@ -3484,7 +3947,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Xe cũ nên dốc đứng thế này trông khó mà leo hết nổi.",
-      "explanation": "Đáp án đúng là D. Khó leo nổi dốc."
+      "explanation": "Đáp án đúng là D. Khó leo nổi dốc.",
+      "rubyQuestion": "<ruby>古い<rt>ふるい</rt></ruby><ruby>車<rt>くるま</rt></ruby>なので、<ruby>急な<rt>きゅうな</rt></ruby><ruby>坂道<rt>さかみち</rt></ruby>を<ruby>登り<rt>のぼり</rt></ruby><ruby>切れ<rt>きれ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Xe cũ nên dốc đứng thế này trông khó mà leo hết nổi."
     },
     {
       "id": 33,
@@ -3499,7 +3964,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Trước khi cái lạnh mùa đông buốt giá, tôi chuẩn bị lò sưởi.",
-      "explanation": "Đáp án đúng là A. 「寒さ」cái lạnh."
+      "explanation": "Đáp án đúng là A. 「寒さ」cái lạnh.",
+      "rubyQuestion": "<ruby>冬<rt>ふゆ</rt></ruby>の<ruby>寒<rt>かん</rt></ruby>（　　）が<ruby>厳しく<rt>いかめしく</rt></ruby>なる<ruby>前<rt>まえ</rt></ruby>に、<ruby>暖房器<rt>だんぼうき</rt></ruby><ruby>具<rt>ぐ</rt></ruby>を<ruby>用意し<rt>よういし</rt></ruby>た。",
+      "hintTranslation": "（......） Trước khi cái lạnh mùa đông buốt giá, tôi chuẩn bị lò sưởi."
     },
     {
       "id": 34,
@@ -3514,7 +3981,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Dù trời có mưa trận đấu vẫn diễn ra đúng lịch.",
-      "explanation": "Đáp án đúng là C. Dù mưa cũng thi đấu."
+      "explanation": "Đáp án đúng là C. Dù mưa cũng thi đấu.",
+      "rubyQuestion": "<ruby>明日<rt>あした</rt></ruby>の<ruby>試合<rt>しあい</rt></ruby>、たとえ<ruby>雨<rt>あめ</rt></ruby>が<ruby>降っ<rt>ふっ</rt></ruby>（　　）<ruby>予定通り<rt>よていどおり</rt></ruby><ruby>決行<rt>けっこう</rt></ruby>されます。",
+      "hintTranslation": "（......） trời có mưa trận đấu vẫn diễn ra đúng lịch."
     },
     {
       "id": 35,
@@ -3529,7 +3998,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Cuộc sống thành thị tiện lợi nhưng chi phí đắt đỏ.",
-      "explanation": "Đáp án đúng là A. 「普通形 + 一方で」nêu 2 mặt đối lập."
+      "explanation": "Đáp án đúng là A. 「普通形 + 一方で」nêu 2 mặt đối lập.",
+      "rubyQuestion": "<ruby>都会<rt>とかい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>な（　　）、<ruby>生活費<rt>せいかつひ</rt></ruby>が<ruby>高く<rt>たかく</rt></ruby>ストレスも<ruby>多い<rt>おおい</rt></ruby>。",
+      "hintTranslation": "（......） Cuộc sống thành thị tiện lợi nhưng chi phí đắt đỏ."
     },
     {
       "id": 36,
@@ -3544,7 +4015,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Doanh nghiệp lớn chưa hẳn tương lai đã mãi ổn định.",
-      "explanation": "Đáp án đúng là C. Chưa chắc ổn định."
+      "explanation": "Đáp án đúng là C. Chưa chắc ổn định.",
+      "rubyQuestion": "<ruby>大手<rt>おおて</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>だからといって、<ruby>将来<rt>しょうらい</rt></ruby>ずっと<ruby>安定<rt>あんてい</rt></ruby>している（　　）。",
+      "hintTranslation": "（......） Doanh nghiệp lớn chưa hẳn tương lai đã mãi ổn định."
     },
     {
       "id": 37,
@@ -3559,7 +4032,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn tiết kiệm tiền thì nên ngừng tiêu xài hoang phí.",
-      "explanation": "Đáp án đúng là A. 「〜ことだ」."
+      "explanation": "Đáp án đúng là A. 「〜ことだ」.",
+      "rubyQuestion": "お<ruby>金<rt>きん</rt></ruby>を<ruby>貯め<rt>ため</rt></ruby>たいなら、<ruby>無駄遣い<rt>むだづかい</rt></ruby>をやめる（　　）だ。",
+      "hintTranslation": "Muốn tiết kiệm tiền thì （......） ngừng tiêu xài hoang phí."
     },
     {
       "id": 38,
@@ -3574,7 +4049,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu.",
-      "explanation": "Đáp án đúng là C. 「面白さ」."
+      "explanation": "Đáp án đúng là C. 「面白さ」.",
+      "rubyQuestion": "この<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>面白<rt>おもしろ</rt></ruby>（　　）は、<ruby>読んだ<rt>よんだ</rt></ruby><ruby>人<rt>にん</rt></ruby>にしか<ruby>分か<rt>わか</rt></ruby>らない。",
+      "hintTranslation": "（......） Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu."
     },
     {
       "id": 39,
@@ -3589,7 +4066,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Thay vì mua ô tô, nhà tôi quyết định đi du lịch nước ngoài.",
-      "explanation": "Đáp án đúng là C. Lựa chọn thay thế."
+      "explanation": "Đáp án đúng là C. Lựa chọn thay thế.",
+      "rubyQuestion": "<ruby>車<rt>くるま</rt></ruby>を<ruby>買う<rt>かう</rt></ruby>（　　）、<ruby>家族<rt>かぞく</rt></ruby>で<ruby>海外旅行<rt>かいがいりょこう</rt></ruby>に<ruby>行く<rt>いく</rt></ruby>ことにした。",
+      "hintTranslation": "（......） mua ô tô, nhà tôi quyết định đi du lịch nước ngoài."
     },
     {
       "id": 40,
@@ -3604,7 +4083,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Sự quan tâm của giới trẻ đối với chính trị đang mờ nhạt dần.",
-      "explanation": "Đáp án đúng là A. 「政治に対する関心」."
+      "explanation": "Đáp án đúng là A. 「政治に対する関心」.",
+      "rubyQuestion": "<ruby>若者<rt>わかもの</rt></ruby>の<ruby>政治<rt>せいじ</rt></ruby>（　　）<ruby>関心<rt>かんしん</rt></ruby>が<ruby>薄れ<rt>うすれ</rt></ruby>ていると<ruby>言わ<rt>いわ</rt></ruby>れている。",
+      "hintTranslation": "Sự quan tâm của giới trẻ （......） chính trị đang mờ nhạt dần."
     },
     {
       "id": 41,
@@ -3619,7 +4100,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ý kiến hai người đối lập, cuộc thảo luận khó đi tới thống nhất.",
-      "explanation": "Đáp án đúng là B. Khó thống nhất."
+      "explanation": "Đáp án đúng là B. Khó thống nhất.",
+      "rubyQuestion": "あの<ruby>二人<rt>ふたり</rt></ruby>は<ruby>意見<rt>いけん</rt></ruby>が<ruby>対立<rt>たいりつ</rt></ruby>していて、<ruby>話し合い<rt>はなしあい</rt></ruby>はまとまり（　　）。",
+      "hintTranslation": "（......） Ý kiến hai người đối lập, cuộc thảo luận khó đi tới thống nhất."
     },
     {
       "id": 42,
@@ -3634,7 +4117,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Cân độ nặng hành lý rồi tính phí ship.",
-      "explanation": "Đáp án đúng là B. 「重い」→「重さ」độ nặng."
+      "explanation": "Đáp án đúng là B. 「重い」→「重さ」độ nặng.",
+      "rubyQuestion": "この<ruby>荷物<rt>にもつ</rt></ruby>の（　　）を<ruby>測っ<rt>はかっ</rt></ruby>てから、<ruby>送料<rt>そうりょう</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>してください。",
+      "hintTranslation": "（......） Cân độ nặng hành lý rồi tính phí ship."
     },
     {
       "id": 43,
@@ -3649,7 +4134,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Thay vì trả tiền mặt, thanh toán ví điện tử sẽ được điểm.",
-      "explanation": "Đáp án đúng là D. Thay đổi hình thức trả tiền."
+      "explanation": "Đáp án đúng là D. Thay đổi hình thức trả tiền.",
+      "rubyQuestion": "<ruby>現金<rt>げんきん</rt></ruby>で<ruby>支払う<rt>しはらう</rt></ruby>（　　）、<ruby>電子<rt>でんし</rt></ruby>マネーで<ruby>決済<rt>けっさい</rt></ruby>するとポイントが<ruby>付く<rt>つく</rt></ruby>。",
+      "hintTranslation": "（......） trả tiền mặt, thanh toán ví điện tử sẽ được điểm."
     },
     {
       "id": 44,
@@ -3664,7 +4151,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Cứ mỗi khi thêm tuổi lại càng thấm thía giá trị của sức khỏe.",
-      "explanation": "Đáp án đúng là B. 「重ねるごとに」: cứ mỗi lần thêm tuổi."
+      "explanation": "Đáp án đúng là B. 「重ねるごとに」: cứ mỗi lần thêm tuổi.",
+      "rubyQuestion": "<ruby>年齢<rt>ねんれい</rt></ruby>を<ruby>重ねる<rt>かさねる</rt></ruby>（　　）、<ruby>健康<rt>けんこう</rt></ruby>のありがたみが<ruby>身に<rt>みに</rt></ruby><ruby>染み<rt>そみ</rt></ruby>てわかる。",
+      "hintTranslation": "（......） khi thêm tuổi lại càng thấm thía giá trị của sức khỏe."
     },
     {
       "id": 45,
@@ -3679,7 +4168,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Để ngừa tai nạn do bất cẩn, hãy kiểm tra kỹ.",
-      "explanation": "Đáp án đúng là C. Bổ nghĩa danh từ: 「NによるN」."
+      "explanation": "Đáp án đúng là C. Bổ nghĩa danh từ: 「NによるN」.",
+      "rubyQuestion": "<ruby>不注意<rt>ふちゅうい</rt></ruby>（　　）<ruby>事故<rt>じこ</rt></ruby>を<ruby>防ぐ<rt>ふせぐ</rt></ruby>ために、<ruby>確認<rt>かくにん</rt></ruby>を<ruby>徹底<rt>てってい</rt></ruby>しましょう。",
+      "hintTranslation": "（......） Để ngừa tai nạn do bất cẩn, hãy kiểm tra kỹ."
     },
     {
       "id": 46,
@@ -3694,7 +4185,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Khi máy tính trục trặc, tốt nhất nên thử khởi động lại xem sao.",
-      "explanation": "Đáp án đúng là A. Khuyên cách xử lý."
+      "explanation": "Đáp án đúng là A. Khuyên cách xử lý.",
+      "rubyQuestion": "パソコンの<ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪い<rt>わるい</rt></ruby>ときは、まず<ruby>再起動<rt>さいきどう</rt></ruby>してみる（　　）よ。",
+      "hintTranslation": "Khi máy tính trục trặc, tốt nhất （......） thử khởi động lại xem sao."
     },
     {
       "id": 47,
@@ -3709,7 +4202,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nhờ công nghệ y tế mới nhất mà nhiều sinh mạng được cứu.",
-      "explanation": "Đáp án đúng là B. 「Nの + おかげで」."
+      "explanation": "Đáp án đúng là B. 「Nの + おかげで」.",
+      "rubyQuestion": "<ruby>最新<rt>さいしん</rt></ruby>の<ruby>医療技術<rt>いりょうぎじゅつ</rt></ruby>の（　　）、<ruby>多く<rt>おおく</rt></ruby>の<ruby>人命<rt>じんめい</rt></ruby>が<ruby>救わ<rt>すくわ</rt></ruby>れるようになった。",
+      "hintTranslation": "（......） công nghệ y tế mới nhất mà nhiều sinh mạng được cứu."
     },
     {
       "id": 48,
@@ -3724,7 +4219,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dù lương có cao tôi cũng không làm công ty bóc lột tăng ca.",
-      "explanation": "Đáp án đúng là A. Dù lương cao."
+      "explanation": "Đáp án đúng là A. Dù lương cao.",
+      "rubyQuestion": "どんなに<ruby>給料<rt>きゅうりょう</rt></ruby>が<ruby>高い<rt>たかい</rt></ruby>（　　）、<ruby>残業<rt>ざんぎょう</rt></ruby>ばかりのブラック<ruby>企業<rt>きぎょう</rt></ruby>では<ruby>働き<rt>はたらき</rt></ruby>たくない。",
+      "hintTranslation": "（......） lương có cao tôi cũng không làm công ty bóc lột tăng ca."
     },
     {
       "id": 49,
@@ -3739,7 +4236,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Thường thức đến trẻ con cũng biết sao người lớn lại không biết.",
-      "explanation": "Đáp án đúng là D. 「子供さえ」."
+      "explanation": "Đáp án đúng là D. 「子供さえ」.",
+      "rubyQuestion": "<ruby>子供<rt>こども</rt></ruby>（　　）<ruby>知って<rt>しって</rt></ruby>いる<ruby>常識<rt>じょうしき</rt></ruby>を、なぜ<ruby>大人<rt>おとな</rt></ruby>のあなたが<ruby>知ら<rt>しら</rt></ruby>ないのですか。",
+      "hintTranslation": "（......） Thường thức đến trẻ con cũng biết sao người lớn lại không biết."
     },
     {
       "id": 50,
@@ -3754,7 +4253,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sức hút du lịch thêm vào đó giao thông thuận tiện tạo nên sự nổi tiếng.",
-      "explanation": "Đáp án đúng là C. Thêm điểm cộng."
+      "explanation": "Đáp án đúng là C. Thêm điểm cộng.",
+      "rubyQuestion": "<ruby>観光地<rt>かんこうち</rt></ruby>としての<ruby>魅力<rt>みりょく</rt></ruby>（　　）、<ruby>交通<rt>こうつう</rt></ruby>の<ruby>便<rt>びん</rt></ruby>の<ruby>良さ<rt>よさ</rt></ruby>も<ruby>人気<rt>にんき</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>だ。",
+      "hintTranslation": "Sức hút du lịch （......） giao thông thuận tiện tạo nên sự nổi tiếng."
     },
     {
       "id": 51,
@@ -3769,7 +4270,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Quán đông khách chưa chắc đã hợp khẩu vị mình.",
-      "explanation": "Đáp án đúng là D. Chưa chắc hợp miệng."
+      "explanation": "Đáp án đúng là D. Chưa chắc hợp miệng.",
+      "rubyQuestion": "<ruby>人気<rt>にんき</rt></ruby>のある<ruby>店<rt>みせ</rt></ruby>だからといって、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>口<rt>くち</rt></ruby>に<ruby>合う<rt>あう</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Quán đông khách chưa chắc đã hợp khẩu vị mình."
     },
     {
       "id": 52,
@@ -3784,7 +4287,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Mỗi khi mùa hoa anh đào đến, lại cảm nhận trời ấm dần lên từng ngày.",
-      "explanation": "Đáp án đúng là B. 「日ごとに」: từng ngày một, ngày qua ngày."
+      "explanation": "Đáp án đúng là B. 「日ごとに」: từng ngày một, ngày qua ngày.",
+      "rubyQuestion": "<ruby>桜<rt>さくら</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>になると、<ruby>日<rt>にち</rt></ruby>（　　）<ruby>暖かく<rt>あたたかく</rt></ruby>なっていくのを<ruby>感じ<rt>かんじ</rt></ruby>る。",
+      "hintTranslation": "Mỗi khi mùa hoa anh đào đến, lại cảm nhận trời ấm dần lên （......） ngày."
     },
     {
       "id": 53,
@@ -3799,7 +4304,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Bị bão tàn phá thêm vào đó động đất xảy ra khiến hiện trường hỗn loạn.",
-      "explanation": "Đáp án đúng là C. Thiên tai chồng chất."
+      "explanation": "Đáp án đúng là C. Thiên tai chồng chất.",
+      "rubyQuestion": "<ruby>台風<rt>たいふう</rt></ruby>の<ruby>被害<rt>ひがい</rt></ruby>（　　）、<ruby>地震<rt>じしん</rt></ruby>まで<ruby>発生<rt>はっせい</rt></ruby>して<ruby>現地<rt>げんち</rt></ruby>は<ruby>混乱<rt>こんらん</rt></ruby>している。",
+      "hintTranslation": "Bị bão tàn phá （......） động đất xảy ra khiến hiện trường hỗn loạn."
     },
     {
       "id": 54,
@@ -3814,7 +4321,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tại xem điện thoại quá nhiều nên dạo này thị lực giảm mạnh.",
-      "explanation": "Đáp án đúng là D. Hậu quả xấu đối với sức khỏe."
+      "explanation": "Đáp án đúng là D. Hậu quả xấu đối với sức khỏe.",
+      "rubyQuestion": "スマートフォンの<ruby>見す<rt>みす</rt></ruby>ぎの（　　）、<ruby>最近<rt>さいきん</rt></ruby><ruby>急に<rt>きゅうに</rt></ruby><ruby>視力<rt>しりょく</rt></ruby>が<ruby>落ち<rt>おち</rt></ruby>てきた。",
+      "hintTranslation": "（......） xem điện thoại quá nhiều nên dạo này thị lực giảm mạnh."
     },
     {
       "id": 55,
@@ -3829,7 +4338,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Anh ấy vừa là nhà nghiên cứu giỏi vừa là nhà giáo dục.",
-      "explanation": "Đáp án đúng là B. 「である一方で」nêu 2 vai trò song song."
+      "explanation": "Đáp án đúng là B. 「である一方で」nêu 2 vai trò song song.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby><ruby>優秀<rt>ゆうしゅう</rt></ruby>な<ruby>研究者<rt>けんきゅうしゃ</rt></ruby>である（　　）、<ruby>大学<rt>だいがく</rt></ruby>で<ruby>学生<rt>がくせい</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>る<ruby>教育者<rt>きょういくしゃ</rt></ruby>でもある。",
+      "hintTranslation": "（......） Anh ấy vừa là nhà nghiên cứu giỏi vừa là nhà giáo dục."
     },
     {
       "id": 56,
@@ -3844,7 +4355,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Luyện 5 tiếng mỗi ngày thì lẽ nào lại không thắng được!",
-      "explanation": "Đáp án đúng là C. Phủ định kép: chắc chắn thắng."
+      "explanation": "Đáp án đúng là C. Phủ định kép: chắc chắn thắng.",
+      "rubyQuestion": "<ruby>毎日<rt>まいにち</rt></ruby>５<ruby>時間<rt>じかん</rt></ruby>も<ruby>練習<rt>れんしゅう</rt></ruby>したのだから、<ruby>試合<rt>しあい</rt></ruby>に<ruby>勝て<rt>かて</rt></ruby>ない（　　）。",
+      "hintTranslation": "Luyện 5 tiếng mỗi ngày thì （......） không thắng được!"
     },
     {
       "id": 57,
@@ -3859,7 +4372,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Xem thì có xem thật nhưng gần như không nhớ nội dung.",
-      "explanation": "Đáp án đúng là A. Đã xem nhưng không nhớ."
+      "explanation": "Đáp án đúng là A. Đã xem nhưng không nhớ.",
+      "rubyQuestion": "あの<ruby>映画<rt>えいが</rt></ruby>は<ruby>見た<rt>みた</rt></ruby>（　　）<ruby>見た<rt>みた</rt></ruby>けれど、<ruby>内容<rt>ないよう</rt></ruby>をほとんど<ruby>覚え<rt>おぼえ</rt></ruby>ていない。",
+      "hintTranslation": "Xem thì có xem （......） gần như không nhớ nội dung."
     },
     {
       "id": 58,
@@ -3874,7 +4389,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Do có nguy cơ sóng thần vì động đất nên phát cảnh báo.",
-      "explanation": "Đáp án đúng là B. 「NによるN」."
+      "explanation": "Đáp án đúng là B. 「NによるN」.",
+      "rubyQuestion": "<ruby>地震<rt>じしん</rt></ruby>（　　）<ruby>津波<rt>つなみ</rt></ruby>の<ruby>危険<rt>きけん</rt></ruby>があるため、<ruby>警報<rt>けいほう</rt></ruby>が<ruby>発令<rt>はつれい</rt></ruby>された。",
+      "hintTranslation": "（......） Do có nguy cơ sóng thần vì động đất nên phát cảnh báo."
     },
     {
       "id": 59,
@@ -3889,7 +4406,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Dù thất bại thế nào nếu học hỏi được thì không vô ích.",
-      "explanation": "Đáp án đúng là B. Dù thất bại."
+      "explanation": "Đáp án đúng là B. Dù thất bại.",
+      "rubyQuestion": "どんなに<ruby>失敗<rt>しっぱい</rt></ruby>し（　　）、そこから<ruby>学べ<rt>まなべ</rt></ruby>ば<ruby>無駄<rt>むだ</rt></ruby>にはならない。",
+      "hintTranslation": "（......） thất bại thế nào nếu học hỏi được thì không vô ích."
     },
     {
       "id": 60,
@@ -3904,7 +4423,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Nghĩa trong từ điển chưa chắc đúng mọi ngữ cảnh.",
-      "explanation": "Đáp án đúng là D. Chưa hẳn đúng mọi lúc."
+      "explanation": "Đáp án đúng là D. Chưa hẳn đúng mọi lúc.",
+      "rubyQuestion": "<ruby>辞書<rt>じしょ</rt></ruby>に<ruby>載っ<rt>のっ</rt></ruby>ている<ruby>意味<rt>いみ</rt></ruby>が、すべての<ruby>文脈<rt>ぶんみゃく</rt></ruby>に<ruby>当て<rt>あて</rt></ruby>はまる（　　）。",
+      "hintTranslation": "（......） Nghĩa trong từ điển chưa chắc đúng mọi ngữ cảnh."
     },
     {
       "id": 61,
@@ -3919,7 +4440,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Không được có thái độ thô lỗ đối với khách hàng.",
-      "explanation": "Đáp án đúng là C. 「N + に対して」chỉ đối tượng hướng tới."
+      "explanation": "Đáp án đúng là C. 「N + に対して」chỉ đối tượng hướng tới.",
+      "rubyQuestion": "お<ruby>客様<rt>きゃくさま</rt></ruby>（　　）<ruby>失礼<rt>しつれい</rt></ruby>な<ruby>態度<rt>たいど</rt></ruby>をとってはいけません。",
+      "hintTranslation": "Không được có thái độ thô lỗ （......） khách hàng."
     },
     {
       "id": 62,
@@ -3934,7 +4457,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn xây dựng niềm tin thì nên giữ đúng lời hứa.",
-      "explanation": "Đáp án đúng là A. Khuyên răn đạo lý."
+      "explanation": "Đáp án đúng là A. Khuyên răn đạo lý.",
+      "rubyQuestion": "<ruby>人<rt>にん</rt></ruby>との<ruby>信頼関係<rt>しんらいかんけい</rt></ruby>を<ruby>築き<rt>きづき</rt></ruby>たいなら、<ruby>約束<rt>やくそく</rt></ruby>を<ruby>守る<rt>まもる</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn xây dựng niềm tin thì （......） giữ đúng lời hứa."
     },
     {
       "id": 63,
@@ -3949,7 +4474,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sống ở Nhật 1 năm mà ngay cả Hiragana cũng không viết được.",
-      "explanation": "Đáp án đúng là C. 「N + さえ」nghĩa là 'ngay cả, đến cả'."
+      "explanation": "Đáp án đúng là C. 「N + さえ」nghĩa là 'ngay cả, đến cả'.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby>１<ruby>年<rt>ねん</rt></ruby>も<ruby>日本<rt>にっぽん</rt></ruby>に<ruby>住ん<rt>すん</rt></ruby>でいるのに、ひらがな（　　）<ruby>書け<rt>かけ</rt></ruby>ない。",
+      "hintTranslation": "Sống ở Nhật 1 năm mà （......） Hiragana cũng không viết được."
     },
     {
       "id": 64,
@@ -3964,7 +4491,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Vừa mới bước ra khỏi nhà thì trời mưa, phải quay lại lấy ô.",
-      "explanation": "Đáp án đúng là D. Vừa mới ra khỏi nhà."
+      "explanation": "Đáp án đúng là D. Vừa mới ra khỏi nhà.",
+      "rubyQuestion": "<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>しゅつ</rt></ruby>（　　）のところで<ruby>雨<rt>あめ</rt></ruby>が<ruby>降り<rt>おり</rt></ruby><ruby>出し<rt>だし</rt></ruby>、<ruby>傘<rt>かさ</rt></ruby>を<ruby>取り<rt>とり</rt></ruby>に<ruby>戻っ<rt>もどっ</rt></ruby>た。",
+      "hintTranslation": "（......） bước ra khỏi nhà thì trời mưa, phải quay lại lấy ô."
     },
     {
       "id": 65,
@@ -3979,7 +4508,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Có chứng cứ hôm qua anh ấy ở Tokyo thì lẽ nào là thủ phạm được!",
-      "explanation": "Đáp án đúng là D. Nの + わけがない."
+      "explanation": "Đáp án đúng là D. Nの + わけがない.",
+      "rubyQuestion": "<ruby>彼<rt>かれ</rt></ruby>が<ruby>昨日<rt>きのう</rt></ruby><ruby>東京<rt>とうきょう</rt></ruby>にいた<ruby>証拠<rt>しょうこ</rt></ruby>があるのだから、<ruby>犯人<rt>はんにん</rt></ruby>の（　　）。",
+      "hintTranslation": "Có chứng cứ hôm qua anh ấy ở Tokyo thì （......） là thủ phạm được!"
     },
     {
       "id": 66,
@@ -3994,7 +4525,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sống ở Nhật lâu chưa chắc đã dùng kính ngữ chuẩn.",
-      "explanation": "Đáp án đúng là B. Chưa chắc đã thành thạo."
+      "explanation": "Đáp án đúng là B. Chưa chắc đã thành thạo.",
+      "rubyQuestion": "<ruby>日本<rt>にっぽん</rt></ruby>に<ruby>長く<rt>ながく</rt></ruby><ruby>住ん<rt>すん</rt></ruby>でいるからといって、<ruby>敬語<rt>けいご</rt></ruby>が<ruby>完璧<rt>かんぺき</rt></ruby>に<ruby>使え<rt>つかえ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Sống ở Nhật lâu chưa chắc đã dùng kính ngữ chuẩn."
     },
     {
       "id": 67,
@@ -4009,7 +4542,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tùy theo mùa loài hoa nở thay đổi nên ngắm được 4 mùa.",
-      "explanation": "Đáp án đúng là C. Tương ứng theo mùa."
+      "explanation": "Đáp án đúng là C. Tương ứng theo mùa.",
+      "rubyQuestion": "<ruby>季節<rt>きせつ</rt></ruby>（　　）<ruby>咲く<rt>さく</rt></ruby><ruby>花<rt>はな</rt></ruby>の<ruby>種類<rt>しゅるい</rt></ruby>が<ruby>変わ<rt>かわ</rt></ruby>るので、<ruby>四季<rt>しき</rt></ruby>を<ruby>楽し<rt>たのし</rt></ruby>める。",
+      "hintTranslation": "（......） Tùy theo mùa loài hoa nở thay đổi nên ngắm được 4 mùa."
     },
     {
       "id": 68,
@@ -4024,7 +4559,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Tại bật điều hòa quá lạnh nên tôi bị ốm.",
-      "explanation": "Đáp án đúng là A. Hậu quả tiêu cực."
+      "explanation": "Đáp án đúng là A. Hậu quả tiêu cực.",
+      "rubyQuestion": "エアコンの<ruby>温度<rt>おんど</rt></ruby>を<ruby>下げ<rt>さげ</rt></ruby>すぎた（　　）、<ruby>体調<rt>たいちょう</rt></ruby>を<ruby>崩し<rt>くずし</rt></ruby>てしまった。",
+      "hintTranslation": "（......） bật điều hòa quá lạnh nên tôi bị ốm."
     },
     {
       "id": 69,
@@ -4039,7 +4576,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nhờ chăm chỉ học mỗi ngày nên việc hội thoại trôi chảy hơn.",
-      "explanation": "Đáp án đúng là C. Kết quả tích cực dùng おかげで."
+      "explanation": "Đáp án đúng là C. Kết quả tích cực dùng おかげで.",
+      "rubyQuestion": "<ruby>毎日<rt>まいにち</rt></ruby>コツコツ<ruby>勉強<rt>べんきょう</rt></ruby>した（　　）、<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>会話<rt>かいわ</rt></ruby>がスムーズになった。",
+      "hintTranslation": "（......） chăm chỉ học mỗi ngày nên việc hội thoại trôi chảy hơn."
     },
     {
       "id": 70,
@@ -4054,7 +4593,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Rời xa cha mẹ mới thấm thía sự quý giá của gia đình.",
-      "explanation": "Đáp án đúng là B. 「ありがたさ」."
+      "explanation": "Đáp án đúng là B. 「ありがたさ」.",
+      "rubyQuestion": "<ruby>親元<rt>おやもと</rt></ruby>を<ruby>離れ<rt>はなれ</rt></ruby>て<ruby>初めて<rt>はじめて</rt></ruby>、<ruby>家族<rt>かぞく</rt></ruby>のありがた（　　）が<ruby>身に<rt>みに</rt></ruby>しみて<ruby>分か<rt>わか</rt></ruby>った。",
+      "hintTranslation": "（......） Rời xa cha mẹ mới thấm thía sự quý giá của gia đình."
     },
     {
       "id": 71,
@@ -4069,7 +4610,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Hay nỗi gì! Tôi ngủ gật giữa chừng luôn đấy.",
-      "explanation": "Đáp án đúng là B. Phủ định mỉa mai."
+      "explanation": "Đáp án đúng là B. Phủ định mỉa mai.",
+      "rubyQuestion": "「あの<ruby>映画<rt>えいが</rt></ruby>、<ruby>面白か<rt>おもしろか</rt></ruby>った？」「<ruby>面白か<rt>おもしろか</rt></ruby>った（　　）。<ruby>途中<rt>とちゅう</rt></ruby>で<ruby>寝ち<rt>ねち</rt></ruby>ゃったよ。」",
+      "hintTranslation": "（......） Hay nỗi gì! Tôi ngủ gật giữa chừng luôn đấy."
     },
     {
       "id": 72,
@@ -4084,7 +4627,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Muốn mau khỏi cảm cúm thì nên giữ ấm nghỉ ngơi.",
-      "explanation": "Đáp án đúng là B. 「V辞書形 + ことだ」lời khuyên tốt nhất."
+      "explanation": "Đáp án đúng là B. 「V辞書形 + ことだ」lời khuyên tốt nhất.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>を<ruby>早く<rt>はやく</rt></ruby><ruby>治し<rt>なおし</rt></ruby>たければ、<ruby>暖かく<rt>あたたかく</rt></ruby>してゆっくり<ruby>休む<rt>やすむ</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn mau khỏi cảm cúm thì （......） giữ ấm nghỉ ngơi."
     },
     {
       "id": 73,
@@ -4099,7 +4644,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Anh ấy túng quẫn đến tiền mua bánh mì ngày mai cũng không có.",
-      "explanation": "Đáp án đúng là C. Ngay cả tiền lẻ."
+      "explanation": "Đáp án đúng là C. Ngay cả tiền lẻ.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby>お<ruby>金<rt>きん</rt></ruby>がなくて、<ruby>明日<rt>あした</rt></ruby>のパンを<ruby>買う<rt>かう</rt></ruby><ruby>小銭<rt>こぜに</rt></ruby>（　　）<ruby>持っ<rt>もっ</rt></ruby>ていない。",
+      "hintTranslation": "（......） Anh ấy túng quẫn đến tiền mua bánh mì ngày mai cũng không có."
     },
     {
       "id": 74,
@@ -4114,7 +4661,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Người đó cứ mỗi lần gặp lại mặc đồ mới.",
-      "explanation": "Đáp án đúng là B. 「V辞書形 + ごとに」: cứ mỗi lần gặp."
+      "explanation": "Đáp án đúng là B. 「V辞書形 + ごとに」: cứ mỗi lần gặp.",
+      "rubyQuestion": "あの<ruby>人<rt>にん</rt></ruby>は<ruby>会う<rt>あう</rt></ruby>（　　）<ruby>新しい<rt>あたらしい</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>着て<rt>きて</rt></ruby>いて、とてもおしゃれだ。",
+      "hintTranslation": "Người đó （......） gặp lại mặc đồ mới."
     },
     {
       "id": 75,
@@ -4129,7 +4678,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sự quan tâm đối với môi trường đang tăng lên.",
-      "explanation": "Đáp án đúng là D. Bổ nghĩa danh từ: 「〜に対するN」."
+      "explanation": "Đáp án đúng là D. Bổ nghĩa danh từ: 「〜に対するN」.",
+      "rubyQuestion": "<ruby>環境問題<rt>かんきょうもんだい</rt></ruby>（　　）<ruby>関心<rt>かんしん</rt></ruby>が<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>高ま<rt>たかま</rt></ruby>っている。",
+      "hintTranslation": "Sự quan tâm （......） môi trường đang tăng lên."
     },
     {
       "id": 76,
@@ -4144,7 +4695,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đang bị cảnh báo có nguy cơ rò rỉ thông tin cá nhân ra ngoài.",
-      "explanation": "Đáp án đúng là C. Nguy cơ rò rỉ dữ liệu."
+      "explanation": "Đáp án đúng là C. Nguy cơ rò rỉ dữ liệu.",
+      "rubyQuestion": "<ruby>個人情報<rt>こじんじょうほう</rt></ruby>が<ruby>外部<rt>がいぶ</rt></ruby>に<ruby>流出<rt>りゅうしゅつ</rt></ruby>する（　　）が<ruby>指摘<rt>してき</rt></ruby>されている。",
+      "hintTranslation": "Đang bị cảnh báo （......） rò rỉ thông tin cá nhân ra ngoài."
     },
     {
       "id": 77,
@@ -4159,7 +4712,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dự báo mưa chưa chắc trời đã mưa.",
-      "explanation": "Đáp án đúng là A. Chưa chắc đã mưa."
+      "explanation": "Đáp án đúng là A. Chưa chắc đã mưa.",
+      "rubyQuestion": "<ruby>天気予報<rt>てんきよほう</rt></ruby>が<ruby>雨<rt>あめ</rt></ruby>だと<ruby>言って<rt>いって</rt></ruby>も、<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降る<rt>ふる</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Dự báo mưa chưa chắc trời đã mưa."
     },
     {
       "id": 78,
@@ -4174,7 +4729,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Phó từ hay đi kèm là 必ずしも.",
-      "explanation": "Đáp án đúng là A. Đi kèm 必ずしも."
+      "explanation": "Đáp án đúng là A. Đi kèm 必ずしも.",
+      "rubyQuestion": "「〜とは<ruby>限ら<rt>かぎら</rt></ruby>ない」と<ruby>一緒に<rt>いっしょに</rt></ruby>よく<ruby>使わ<rt>つかわ</rt></ruby>れる<ruby>副詞<rt>ふくし</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Phó từ hay đi kèm là 必ずしも."
     },
     {
       "id": 79,
@@ -4189,7 +4746,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Trái ngược dân số thành thị tăng, vùng quê bị giảm dân.",
-      "explanation": "Đáp án đúng là B. Đối lập 2 thực trạng."
+      "explanation": "Đáp án đúng là B. Đối lập 2 thực trạng.",
+      "rubyQuestion": "<ruby>都市部<rt>としぶ</rt></ruby>の<ruby>人口<rt>じんこう</rt></ruby>が<ruby>増加<rt>ぞうか</rt></ruby>しているの（　　）、<ruby>地方<rt>ちほう</rt></ruby>では<ruby>過疎<rt>かそ</rt></ruby><ruby>化<rt>か</rt></ruby>が<ruby>進ん<rt>すすん</rt></ruby>でいる。",
+      "hintTranslation": "（......） Trái ngược dân số thành thị tăng, vùng quê bị giảm dân."
     },
     {
       "id": 80,
@@ -4204,7 +4763,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đừng cãi nhau nữa, tôi mong hai bạn làm lành với nhau.",
-      "explanation": "Đáp án đúng là A. Mong người khác làm lành."
+      "explanation": "Đáp án đúng là A. Mong người khác làm lành.",
+      "rubyQuestion": "もう<ruby>喧嘩<rt>けんか</rt></ruby>は<ruby>終わり<rt>おわり</rt></ruby>にして、<ruby>仲直り<rt>なかなおり</rt></ruby>し（　　）。",
+      "hintTranslation": "（......） Đừng cãi nhau nữa, tôi mong hai bạn làm lành với nhau."
     },
     {
       "id": 81,
@@ -4219,7 +4780,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Trước đối thủ mạnh đời nào ta chịu thua dễ thế! Chiến đấu tới cùng!",
-      "explanation": "Đáp án đúng là A. Tuyệt đối không đầu hàng."
+      "explanation": "Đáp án đúng là A. Tuyệt đối không đầu hàng.",
+      "rubyQuestion": "あんな<ruby>強い<rt>つよい</rt></ruby><ruby>相手<rt>あいて</rt></ruby>に、<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>負け<rt>まけ</rt></ruby>てたまる（　　）。<ruby>最後<rt>さいご</rt></ruby>まで<ruby>戦う<rt>たたかう</rt></ruby>ぞ！",
+      "hintTranslation": "（......） Trước đối thủ mạnh đời nào ta chịu thua dễ thế! Chiến đấu tới cùng!"
     },
     {
       "id": 82,
@@ -4234,7 +4797,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Mặc áo khoác màu hơi ngả đen đi làm.",
-      "explanation": "Đáp án đúng là D. 「黒っぽい」hơi đen."
+      "explanation": "Đáp án đúng là D. 「黒っぽい」hơi đen.",
+      "rubyQuestion": "<ruby>黒<rt>くろ</rt></ruby>（　　）ジャケットを<ruby>羽織<rt>はおり</rt></ruby>って<ruby>出勤<rt>しゅっきん</rt></ruby>した。",
+      "hintTranslation": "（......） Mặc áo khoác màu hơi ngả đen đi làm."
     },
     {
       "id": 83,
@@ -4249,7 +4814,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Được dạy tiếng Anh, đổi lại tôi dạy tiếng Việt cho bạn.",
-      "explanation": "Đáp án đúng là A. Bù lại tương xứng."
+      "explanation": "Đáp án đúng là A. Bù lại tương xứng.",
+      "rubyQuestion": "<ruby>英語<rt>えいご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>てもらう（　　）、<ruby>彼<rt>かれ</rt></ruby>にベトナム<ruby>語<rt>ご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>てあげている。",
+      "hintTranslation": "（......） Được dạy tiếng Anh, đổi lại tôi dạy tiếng Việt cho bạn."
     },
     {
       "id": 84,
@@ -4264,7 +4831,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nói thì nói được thật nhưng chỉ mức cơ bản.",
-      "explanation": "Đáp án đúng là C. Cấu trúc lặp từ 「VことはVが」."
+      "explanation": "Đáp án đúng là C. Cấu trúc lặp từ 「VことはVが」.",
+      "rubyQuestion": "<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話せ<rt>はなせ</rt></ruby>る（　　）<ruby>話せ<rt>はなせ</rt></ruby>ますが、<ruby>日常会話<rt>にちじょうかいわ</rt></ruby>レベルです。",
+      "hintTranslation": "Nói thì nói được （......） chỉ mức cơ bản."
     },
     {
       "id": 85,
@@ -4279,7 +4848,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "(Mỉa mai) 'Nhờ cậu quên tài liệu mà cuộc họp bị hủy luôn rồi đấy!'",
-      "explanation": "Đáp án đúng là B. 「おかげで」dùng mỉa mai trách khéo."
+      "explanation": "Đáp án đúng là B. 「おかげで」dùng mỉa mai trách khéo.",
+      "rubyQuestion": "（<ruby>皮肉<rt>ひにく</rt></ruby>）「<ruby>君<rt>くん</rt></ruby>が<ruby>重要な<rt>じゅうような</rt></ruby><ruby>書類<rt>しょるい</rt></ruby>を<ruby>忘れ<rt>わすれ</rt></ruby>てくれた（　　）、<ruby>会議<rt>かいぎ</rt></ruby>が<ruby>中止<rt>ちゅうし</rt></ruby>になっちゃったよ。」",
+      "hintTranslation": "(Mỉa mai) '（......） cậu quên tài liệu mà cuộc họp bị hủy luôn rồi đấy!'"
     },
     {
       "id": 86,
@@ -4294,7 +4865,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Kinh tế xấu tiếp diễn có nguy cơ nhiều doanh nghiệp phá sản.",
-      "explanation": "Đáp án đúng là A. Nguy cơ phá sản."
+      "explanation": "Đáp án đúng là A. Nguy cơ phá sản.",
+      "rubyQuestion": "<ruby>景気<rt>けいき</rt></ruby>の<ruby>悪化<rt>あっか</rt></ruby>が<ruby>続け<rt>つづけ</rt></ruby>ば、<ruby>多く<rt>おおく</rt></ruby>の<ruby>中小企業<rt>ちゅうしょうきぎょう</rt></ruby>が<ruby>倒産<rt>とうさん</rt></ruby>する（　　）。",
+      "hintTranslation": "Kinh tế xấu tiếp diễn （......） nhiều doanh nghiệp phá sản."
     },
     {
       "id": 87,
@@ -4309,7 +4882,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tắc đường nặng thế này có vẻ không kịp giờ hẹn.",
-      "explanation": "Đáp án đúng là B. Khó lòng kịp giờ."
+      "explanation": "Đáp án đúng là B. Khó lòng kịp giờ.",
+      "rubyQuestion": "<ruby>渋滞<rt>じゅうたい</rt></ruby>がひどいので、<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>に<ruby>間に合い<rt>まにあい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Tắc đường nặng thế này có vẻ không kịp giờ hẹn."
     },
     {
       "id": 88,
@@ -4324,7 +4899,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tôi vừa mới vào công ty nên chưa quen quy trình việc.",
-      "explanation": "Đáp án đúng là B. Vừa mới vào làm."
+      "explanation": "Đáp án đúng là B. Vừa mới vào làm.",
+      "rubyQuestion": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入社<rt>にゅうしゃ</rt></ruby>し（　　）なので、まだ<ruby>仕事<rt>しごと</rt></ruby>の<ruby>流れ<rt>ながれ</rt></ruby>に<ruby>慣れ<rt>なれ</rt></ruby>ていません。",
+      "hintTranslation": "Tôi （......） vào công ty nên chưa quen quy trình việc."
     },
     {
       "id": 89,
@@ -4339,7 +4916,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đối với câu hỏi của thầy, anh ấy tự tin trả lời.",
-      "explanation": "Đáp án đúng là D. Hướng vào đối tượng câu hỏi."
+      "explanation": "Đáp án đúng là D. Hướng vào đối tượng câu hỏi.",
+      "rubyQuestion": "<ruby>先生<rt>せんせい</rt></ruby>の<ruby>質問<rt>しつもん</rt></ruby>（　　）、<ruby>彼は<rt>かれは</rt></ruby><ruby>自信<rt>じしん</rt></ruby>を<ruby>持っ<rt>もっ</rt></ruby>て<ruby>答え<rt>こたえ</rt></ruby>た。",
+      "hintTranslation": "（......） câu hỏi của thầy, anh ấy tự tin trả lời."
     },
     {
       "id": 90,
@@ -4354,7 +4933,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Hoạt động núi lửa sôi động, nguy cơ phun trào tăng cao.",
-      "explanation": "Đáp án đúng là D. Nguy cơ phun trào."
+      "explanation": "Đáp án đúng là D. Nguy cơ phun trào.",
+      "rubyQuestion": "<ruby>火山活動<rt>かざんかつどう</rt></ruby>が<ruby>活発化<rt>かっぱつか</rt></ruby>しており、<ruby>噴火<rt>ふんか</rt></ruby>の（　　）が<ruby>高ま<rt>たかま</rt></ruby>っている。",
+      "hintTranslation": "Hoạt động núi lửa sôi động, （......） phun trào tăng cao."
     },
     {
       "id": 91,
@@ -4369,7 +4950,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Vì sức khỏe nên tôi ăn gạo lứt thay cho gạo trắng.",
-      "explanation": "Đáp án đúng là D. 「N + のかわりに」= thay cho."
+      "explanation": "Đáp án đúng là D. 「N + のかわりに」= thay cho.",
+      "rubyQuestion": "<ruby>健康<rt>けんこう</rt></ruby>のために、<ruby>白米<rt>はくまい</rt></ruby>の（　　）<ruby>玄米<rt>げんまい</rt></ruby>を<ruby>食べ<rt>たべ</rt></ruby>るようにしています。",
+      "hintTranslation": "Vì sức khỏe nên tôi ăn gạo lứt （......） gạo trắng."
     },
     {
       "id": 92,
@@ -4384,7 +4967,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tôi mong bạn thấu hiểu cho tâm trạng của tôi một chút.",
-      "explanation": "Đáp án đúng là B. Mong người khác hiểu."
+      "explanation": "Đáp án đúng là B. Mong người khác hiểu.",
+      "rubyQuestion": "<ruby>私<rt>わたし</rt></ruby>の<ruby>気持ち<rt>きもち</rt></ruby>をもう<ruby>少し<rt>すこし</rt></ruby><ruby>理解<rt>りかい</rt></ruby>し（　　）と<ruby>思い<rt>おもい</rt></ruby>ます。",
+      "hintTranslation": "（......） Tôi mong bạn thấu hiểu cho tâm trạng của tôi một chút."
     },
     {
       "id": 93,
@@ -4399,7 +4984,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Chịu nỗi nhục nhã này làm sao mà im lặng chịu trận được!",
-      "explanation": "Đáp án đúng là C. Không thể ngồi yên."
+      "explanation": "Đáp án đúng là C. Không thể ngồi yên.",
+      "rubyQuestion": "こんな<ruby>屈辱<rt>くつじょく</rt></ruby>を<ruby>味わ<rt>あじわ</rt></ruby>って、<ruby>黙っ<rt>だまっ</rt></ruby>ていられる（　　）。",
+      "hintTranslation": "（......） Chịu nỗi nhục nhã này làm sao mà im lặng chịu trận được!"
     },
     {
       "id": 94,
@@ -4414,7 +5001,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Bận rộn việc cộng thêm thiếu ngủ khiến tôi kiệt sức.",
-      "explanation": "Đáp án đúng là B. Yếu tố dồn thêm."
+      "explanation": "Đáp án đúng là B. Yếu tố dồn thêm.",
+      "rubyQuestion": "<ruby>今週<rt>こんしゅう</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>の<ruby>忙しさ<rt>いそがしさ</rt></ruby>（　　）<ruby>寝不足<rt>ねぶそく</rt></ruby>も<ruby>重なり<rt>かさなり</rt></ruby>、ひどく<ruby>疲れ<rt>つかれ</rt></ruby>ている。",
+      "hintTranslation": "（......） Bận rộn việc cộng thêm thiếu ngủ khiến tôi kiệt sức."
     },
     {
       "id": 95,
@@ -4429,7 +5018,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đọc thì đọc được đấy nhưng giải thích nghĩa chữ Hán thì khó.",
-      "explanation": "Đáp án đúng là B. VことはVが."
+      "explanation": "Đáp án đúng là B. VことはVが.",
+      "rubyQuestion": "<ruby>読め<rt>よめ</rt></ruby>る（　　）<ruby>読め<rt>よめ</rt></ruby>るが、<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>説明す<rt>せつめいす</rt></ruby>るのは<ruby>難しい<rt>むずかしい</rt></ruby>。",
+      "hintTranslation": "（......） Đọc thì đọc được đấy nhưng giải thích nghĩa chữ Hán thì khó."
     },
     {
       "id": 96,
@@ -4444,7 +5035,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ông tôi dạo này có tuổi nên trở nên rất hay quên.",
-      "explanation": "Đáp án đúng là C. 「忘れっぽい」tính hay quên."
+      "explanation": "Đáp án đúng là C. 「忘れっぽい」tính hay quên.",
+      "rubyQuestion": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>最近<rt>さいきん</rt></ruby><ruby>歳<rt>とし</rt></ruby>をとったせいか、とても<ruby>忘れ<rt>わすれ</rt></ruby>（　　）なった。",
+      "hintTranslation": "Ông tôi dạo này có tuổi nên trở nên rất （......）."
     },
     {
       "id": 97,
@@ -4459,7 +5052,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Dự luật đó đã được thông qua bằng biểu quyết đa số ở quốc hội.",
-      "explanation": "Đáp án đúng là D. Phương tiện thông qua."
+      "explanation": "Đáp án đúng là D. Phương tiện thông qua.",
+      "rubyQuestion": "その<ruby>法案<rt>ほうあん</rt></ruby>は<ruby>国会<rt>こっかい</rt></ruby>の<ruby>多数決<rt>たすうけつ</rt></ruby>（　　）<ruby>可決<rt>かけつ</rt></ruby>されました。",
+      "hintTranslation": "（......） Dự luật đó đã được thông qua bằng biểu quyết đa số ở quốc hội."
     },
     {
       "id": 98,
@@ -4474,7 +5069,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Do mưa lớn nên tàu dừng chạy, tôi bị muộn làm.",
-      "explanation": "Đáp án đúng là C. Hậu quả tiêu cực do mưa."
+      "explanation": "Đáp án đúng là C. Hậu quả tiêu cực do mưa.",
+      "rubyQuestion": "<ruby>大雨<rt>おおあめ</rt></ruby>の（　　）<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>を<ruby>見合わ<rt>みあわ</rt></ruby>せ、<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>遅刻<rt>ちこく</rt></ruby>した。",
+      "hintTranslation": "（......） mưa lớn nên tàu dừng chạy, tôi bị muộn làm."
     },
     {
       "id": 99,
@@ -4489,7 +5086,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Vì bị cảm nên phải hủy chuyến du lịch mong đợi.",
-      "explanation": "Đáp án đúng là A. Hậu quả xấu do bị ốm."
+      "explanation": "Đáp án đúng là A. Hậu quả xấu do bị ốm.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>をひいた（　　）、<ruby>楽しみ<rt>たのしみ</rt></ruby>にしていた<ruby>旅行<rt>りょこう</rt></ruby>をキャンセルした。",
+      "hintTranslation": "（......） bị cảm nên phải hủy chuyến du lịch mong đợi."
     },
     {
       "id": 100,
@@ -4504,7 +5103,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tôi được bế em bé vừa mới chào đời.",
-      "explanation": "Đáp án đúng là B. Vừa mới sinh ra."
+      "explanation": "Đáp án đúng là B. Vừa mới sinh ra.",
+      "rubyQuestion": "<ruby>生まれ<rt>うまれ</rt></ruby>て（　　）の<ruby>赤ちゃん<rt>あかちゃん</rt></ruby>を<ruby>抱っこ<rt>だっこ</rt></ruby>させてもらった。",
+      "hintTranslation": "Tôi được bế em bé （......） chào đời."
     }
   ],
   "4": [
@@ -4521,7 +5122,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ông tôi dạo này có tuổi nên trở nên rất hay quên.",
-      "explanation": "Đáp án đúng là A. 「忘れっぽい」tính hay quên."
+      "explanation": "Đáp án đúng là A. 「忘れっぽい」tính hay quên.",
+      "rubyQuestion": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>最近<rt>さいきん</rt></ruby><ruby>歳<rt>とし</rt></ruby>をとったせいか、とても<ruby>忘れ<rt>わすれ</rt></ruby>（　　）なった。",
+      "hintTranslation": "Ông tôi dạo này có tuổi nên trở nên rất （......）."
     },
     {
       "id": 2,
@@ -4536,7 +5139,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Thường thức đến trẻ con cũng biết sao người lớn lại không biết.",
-      "explanation": "Đáp án đúng là D. 「子供さえ」."
+      "explanation": "Đáp án đúng là D. 「子供さえ」.",
+      "rubyQuestion": "<ruby>子供<rt>こども</rt></ruby>（　　）<ruby>知って<rt>しって</rt></ruby>いる<ruby>常識<rt>じょうしき</rt></ruby>を、なぜ<ruby>大人<rt>おとな</rt></ruby>のあなたが<ruby>知ら<rt>しら</rt></ruby>ないのですか。",
+      "hintTranslation": "（......） Thường thức đến trẻ con cũng biết sao người lớn lại không biết."
     },
     {
       "id": 3,
@@ -4551,7 +5156,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Trái với anh trai hòa đồng, em trai lại hướng nội.",
-      "explanation": "Đáp án đúng là C. So sánh đối lập 2 sự việc."
+      "explanation": "Đáp án đúng là C. So sánh đối lập 2 sự việc.",
+      "rubyQuestion": "<ruby>兄<rt>あに</rt></ruby>が<ruby>社交的<rt>しゃこうてき</rt></ruby>なの（　　）、<ruby>弟<rt>おとうと</rt></ruby>は<ruby>内向的<rt>ないこうてき</rt></ruby>で<ruby>物<rt>もの</rt></ruby><ruby>静か<rt>しずか</rt></ruby>だ。",
+      "hintTranslation": "（......） anh trai hòa đồng, em trai lại hướng nội."
     },
     {
       "id": 4,
@@ -4566,7 +5173,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đầu bếp chuyên nghiệp nấu thì làm sao mà dở được!",
-      "explanation": "Đáp án đúng là A. Chắc chắn ngon."
+      "explanation": "Đáp án đúng là A. Chắc chắn ngon.",
+      "rubyQuestion": "プロの<ruby>料理人<rt>りょうりにん</rt></ruby>が<ruby>作っ<rt>つくっ</rt></ruby>たのだから、まずい（　　）。",
+      "hintTranslation": "Đầu bếp chuyên nghiệp nấu thì （......） dở được!"
     },
     {
       "id": 5,
@@ -4581,7 +5190,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Được dạy tiếng Anh, đổi lại tôi dạy tiếng Việt cho bạn.",
-      "explanation": "Đáp án đúng là C. Bù lại tương xứng."
+      "explanation": "Đáp án đúng là C. Bù lại tương xứng.",
+      "rubyQuestion": "<ruby>英語<rt>えいご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>てもらう（　　）、<ruby>彼<rt>かれ</rt></ruby>にベトナム<ruby>語<rt>ご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>てあげている。",
+      "hintTranslation": "（......） Được dạy tiếng Anh, đổi lại tôi dạy tiếng Việt cho bạn."
     },
     {
       "id": 6,
@@ -4596,7 +5207,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tắc đường nặng thế này có vẻ không kịp giờ hẹn.",
-      "explanation": "Đáp án đúng là C. Khó lòng kịp giờ."
+      "explanation": "Đáp án đúng là C. Khó lòng kịp giờ.",
+      "rubyQuestion": "<ruby>渋滞<rt>じゅうたい</rt></ruby>がひどいので、<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>に<ruby>間に合い<rt>まにあい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Tắc đường nặng thế này có vẻ không kịp giờ hẹn."
     },
     {
       "id": 7,
@@ -4611,7 +5224,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đổ lỗi cho người khác không phải thái độ người lớn.",
-      "explanation": "Đáp án đúng là B. 「他人のせいにする」: đổ lỗi cho người khác."
+      "explanation": "Đáp án đúng là B. 「他人のせいにする」: đổ lỗi cho người khác.",
+      "rubyQuestion": "<ruby>何で<rt>なんで</rt></ruby>も<ruby>他人<rt>たにん</rt></ruby>の（　　）にするのは、<ruby>大人<rt>おとな</rt></ruby>の<ruby>態度<rt>たいど</rt></ruby>とは<ruby>言え<rt>いえ</rt></ruby>ない。",
+      "hintTranslation": "（......） Đổ lỗi cho người khác không phải thái độ người lớn."
     },
     {
       "id": 8,
@@ -4626,7 +5241,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Rét đậm cộng thêm tuyết rơi dày khiến giao thông tê liệt.",
-      "explanation": "Đáp án đúng là D. Rét cộng tuyết lớn."
+      "explanation": "Đáp án đúng là D. Rét cộng tuyết lớn.",
+      "rubyQuestion": "<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>寒さ<rt>さむさ</rt></ruby>（　　）<ruby>大雪<rt>おおゆき</rt></ruby>に<ruby>見舞<rt>みまい</rt></ruby>われ、<ruby>交通網<rt>こうつうもう</rt></ruby>が<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>麻痺<rt>まひ</rt></ruby>した。",
+      "hintTranslation": "（......） Rét đậm cộng thêm tuyết rơi dày khiến giao thông tê liệt."
     },
     {
       "id": 9,
@@ -4641,7 +5258,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Vì bị cảm nên phải hủy chuyến du lịch mong đợi.",
-      "explanation": "Đáp án đúng là C. Hậu quả xấu do bị ốm."
+      "explanation": "Đáp án đúng là C. Hậu quả xấu do bị ốm.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>をひいた（　　）、<ruby>楽しみ<rt>たのしみ</rt></ruby>にしていた<ruby>旅行<rt>りょこう</rt></ruby>をキャンセルした。",
+      "hintTranslation": "（......） bị cảm nên phải hủy chuyến du lịch mong đợi."
     },
     {
       "id": 10,
@@ -4656,7 +5275,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Trái ngược với cái nóng gay gắt hôm qua, hôm nay lạnh se se.",
-      "explanation": "Đáp án đúng là D. Đối lập thời tiết 2 ngày."
+      "explanation": "Đáp án đúng là D. Đối lập thời tiết 2 ngày.",
+      "rubyQuestion": "<ruby>昨日<rt>きのう</rt></ruby>の<ruby>猛暑<rt>もうしょ</rt></ruby>（　　）、<ruby>今日は<rt>こんにちは</rt></ruby><ruby>急に<rt>きゅうに</rt></ruby><ruby>気温<rt>きおん</rt></ruby>が<ruby>下が<rt>さが</rt></ruby>って<ruby>肌寒い<rt>はださむい</rt></ruby>。",
+      "hintTranslation": "（......） cái nóng gay gắt hôm qua, hôm nay lạnh se se."
     },
     {
       "id": 11,
@@ -4671,7 +5292,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Mưa to thêm vào đó gió giật mạnh, ra ngoài rất nguy hiểm.",
-      "explanation": "Đáp án đúng là D. Mưa to kèm gió lớn."
+      "explanation": "Đáp án đúng là D. Mưa to kèm gió lớn.",
+      "rubyQuestion": "<ruby>激しい<rt>はげしい</rt></ruby><ruby>雨<rt>あめ</rt></ruby>（　　）<ruby>強い<rt>つよい</rt></ruby><ruby>風<rt>かぜ</rt></ruby>も<ruby>吹き<rt>ふき</rt></ruby><ruby>荒れ<rt>あれ</rt></ruby>、<ruby>外出<rt>がいしゅつ</rt></ruby>が<ruby>極め<rt>きわめ</rt></ruby>て<ruby>危険<rt>きけん</rt></ruby>な<ruby>状態<rt>じょうたい</rt></ruby>だ。",
+      "hintTranslation": "Mưa to （......） gió giật mạnh, ra ngoài rất nguy hiểm."
     },
     {
       "id": 12,
@@ -4686,7 +5309,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu.",
-      "explanation": "Đáp án đúng là B. 「面白さ」."
+      "explanation": "Đáp án đúng là B. 「面白さ」.",
+      "rubyQuestion": "この<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>面白<rt>おもしろ</rt></ruby>（　　）は、<ruby>読んだ<rt>よんだ</rt></ruby><ruby>人<rt>にん</rt></ruby>にしか<ruby>分か<rt>わか</rt></ruby>らない。",
+      "hintTranslation": "（......） Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu."
     },
     {
       "id": 13,
@@ -4701,7 +5326,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nếu không muốn hối hận thì hãy dốc toàn lực làm ngay lúc này.",
-      "explanation": "Đáp án đúng là C. Lời khuyên tâm huyết."
+      "explanation": "Đáp án đúng là C. Lời khuyên tâm huyết.",
+      "rubyQuestion": "<ruby>後悔<rt>こうかい</rt></ruby>したくないなら、<ruby>今<rt>いま</rt></ruby>できる<ruby>全力<rt>ぜんりょく</rt></ruby>を<ruby>尽くす<rt>つくす</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Nếu không muốn hối hận thì hãy dốc toàn lực làm ngay lúc này."
     },
     {
       "id": 14,
@@ -4716,7 +5343,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Người giàu không hẳn ai cũng đều hạnh phúc.",
-      "explanation": "Đáp án đúng là D. ナAだとは限らない."
+      "explanation": "Đáp án đúng là D. ナAだとは限らない.",
+      "rubyQuestion": "お<ruby>金持ち<rt>かねもち</rt></ruby>の<ruby>人<rt>にん</rt></ruby>が、みんな<ruby>幸せ<rt>しあわせ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Người giàu không hẳn ai cũng đều hạnh phúc."
     },
     {
       "id": 15,
@@ -4731,7 +5360,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đã khóa cửa cẩn thận thì trộm làm sao vào dễ thế được!",
-      "explanation": "Đáp án đúng là D. Khẳng định an toàn."
+      "explanation": "Đáp án đúng là D. Khẳng định an toàn.",
+      "rubyQuestion": "<ruby>鍵<rt>かぎ</rt></ruby>をかけたのだから、<ruby>泥棒<rt>どろぼう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>入れ<rt>いれ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Đã khóa cửa cẩn thận thì trộm làm sao vào dễ thế được!"
     },
     {
       "id": 16,
@@ -4746,7 +5377,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Có nguy cơ dịch cúm lan rộng nhanh chóng.",
-      "explanation": "Đáp án đúng là A. Nguy cơ dịch bệnh."
+      "explanation": "Đáp án đúng là A. Nguy cơ dịch bệnh.",
+      "rubyQuestion": "インフルエンザが<ruby>急速<rt>きゅうそく</rt></ruby>に<ruby>感染<rt>かんせん</rt></ruby><ruby>拡大<rt>かくだい</rt></ruby>する（　　）がある。",
+      "hintTranslation": "（......） dịch cúm lan rộng nhanh chóng."
     },
     {
       "id": 17,
@@ -4761,7 +5394,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Thầy giáo: 'Hãy chia thành nhóm 5 người một nhé.'",
-      "explanation": "Đáp án đúng là C. 「N + ごとに」mang nghĩa phân chia 'từng... một'."
+      "explanation": "Đáp án đúng là C. 「N + ごとに」mang nghĩa phân chia 'từng... một'.",
+      "rubyQuestion": "<ruby>先生<rt>せんせい</rt></ruby>：「それでは<ruby>今か<rt>いまか</rt></ruby>ら、５<ruby>人<rt>にん</rt></ruby>（　　）のグループに<ruby>分か<rt>わか</rt></ruby>れてください。」",
+      "hintTranslation": "（......） Thầy giáo: 'Hãy chia thành nhóm 5 người một nhé.'"
     },
     {
       "id": 18,
@@ -4776,7 +5411,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Bão đến gần có nguy cơ nước sông tràn bờ.",
-      "explanation": "Đáp án đúng là B. 「〜恐れがある」nguy cơ xấu."
+      "explanation": "Đáp án đúng là B. 「〜恐れがある」nguy cơ xấu.",
+      "rubyQuestion": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>接近し<rt>せっきんし</rt></ruby>ているため、<ruby>大雨<rt>おおあめ</rt></ruby>による<ruby>河川<rt>かせん</rt></ruby>の<ruby>氾濫<rt>はんらん</rt></ruby>の（　　）。",
+      "hintTranslation": "Bão đến gần （......） nước sông tràn bờ."
     },
     {
       "id": 19,
@@ -4791,7 +5428,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Quán đông khách chưa chắc đã hợp khẩu vị mình.",
-      "explanation": "Đáp án đúng là B. Chưa chắc hợp miệng."
+      "explanation": "Đáp án đúng là B. Chưa chắc hợp miệng.",
+      "rubyQuestion": "<ruby>人気<rt>にんき</rt></ruby>のある<ruby>店<rt>みせ</rt></ruby>だからといって、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>口<rt>くち</rt></ruby>に<ruby>合う<rt>あう</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Quán đông khách chưa chắc đã hợp khẩu vị mình."
     },
     {
       "id": 20,
@@ -4806,7 +5445,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đừng cãi nhau nữa, tôi mong hai bạn làm lành với nhau.",
-      "explanation": "Đáp án đúng là C. Mong người khác làm lành."
+      "explanation": "Đáp án đúng là C. Mong người khác làm lành.",
+      "rubyQuestion": "もう<ruby>喧嘩<rt>けんか</rt></ruby>は<ruby>終わり<rt>おわり</rt></ruby>にして、<ruby>仲直り<rt>なかなおり</rt></ruby>し（　　）。",
+      "hintTranslation": "（......） Đừng cãi nhau nữa, tôi mong hai bạn làm lành với nhau."
     },
     {
       "id": 21,
@@ -4821,7 +5462,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Internet giúp tra thông tin nhanh, mặt khác có nguy cơ lan truyền tin giả.",
-      "explanation": "Đáp án đúng là D. Mặt lợi và mặt hại đối lập."
+      "explanation": "Đáp án đúng là D. Mặt lợi và mặt hại đối lập.",
+      "rubyQuestion": "インターネットは<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>素早く<rt>すばやく</rt></ruby><ruby>得ら<rt>えら</rt></ruby>れる（　　）、<ruby>誤<rt>ご</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>が<ruby>広が<rt>ひろが</rt></ruby>りやすいリスクもある。",
+      "hintTranslation": "Internet giúp tra thông tin nhanh, （......） có nguy cơ lan truyền tin giả."
     },
     {
       "id": 22,
@@ -4836,7 +5479,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn xây dựng niềm tin thì nên giữ đúng lời hứa.",
-      "explanation": "Đáp án đúng là A. Khuyên răn đạo lý."
+      "explanation": "Đáp án đúng là A. Khuyên răn đạo lý.",
+      "rubyQuestion": "<ruby>人<rt>にん</rt></ruby>との<ruby>信頼関係<rt>しんらいかんけい</rt></ruby>を<ruby>築き<rt>きづき</rt></ruby>たいなら、<ruby>約束<rt>やくそく</rt></ruby>を<ruby>守る<rt>まもる</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn xây dựng niềm tin thì （......） giữ đúng lời hứa."
     },
     {
       "id": 23,
@@ -4851,7 +5496,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nhờ uống thuốc sớm nên cảm cúm đã khỏi không bị nặng.",
-      "explanation": "Đáp án đúng là C. Kết quả điều trị tốt."
+      "explanation": "Đáp án đúng là C. Kết quả điều trị tốt.",
+      "rubyQuestion": "<ruby>薬<rt>くすり</rt></ruby>を<ruby>早め<rt>はやめ</rt></ruby>に<ruby>飲ん<rt>のん</rt></ruby>だ（　　）、ひどくならずに<ruby>風邪<rt>かぜ</rt></ruby>が<ruby>治っ<rt>なおっ</rt></ruby>た。",
+      "hintTranslation": "（......） uống thuốc sớm nên cảm cúm đã khỏi không bị nặng."
     },
     {
       "id": 24,
@@ -4866,7 +5513,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Do cơn bão lần này, nhiều nhà cửa bị thiệt hại.",
-      "explanation": "Đáp án đúng là C. 「N + によって」chỉ nguyên nhân."
+      "explanation": "Đáp án đúng là C. 「N + によって」chỉ nguyên nhân.",
+      "rubyQuestion": "<ruby>今回<rt>こんかい</rt></ruby>の<ruby>台風<rt>たいふう</rt></ruby>（　　）、<ruby>多く<rt>おおく</rt></ruby>の<ruby>家屋<rt>かおく</rt></ruby>が<ruby>被害<rt>ひがい</rt></ruby>を<ruby>受け<rt>うけ</rt></ruby>ました。",
+      "hintTranslation": "（......） Do cơn bão lần này, nhiều nhà cửa bị thiệt hại."
     },
     {
       "id": 25,
@@ -4881,7 +5530,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Không được có thái độ thô lỗ đối với khách hàng.",
-      "explanation": "Đáp án đúng là B. 「N + に対して」chỉ đối tượng hướng tới."
+      "explanation": "Đáp án đúng là B. 「N + に対して」chỉ đối tượng hướng tới.",
+      "rubyQuestion": "お<ruby>客様<rt>きゃくさま</rt></ruby>（　　）<ruby>失礼<rt>しつれい</rt></ruby>な<ruby>態度<rt>たいど</rt></ruby>をとってはいけません。",
+      "hintTranslation": "Không được có thái độ thô lỗ （......） khách hàng."
     },
     {
       "id": 26,
@@ -4896,7 +5547,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Do có nguy cơ sóng thần vì động đất nên phát cảnh báo.",
-      "explanation": "Đáp án đúng là C. 「NによるN」."
+      "explanation": "Đáp án đúng là C. 「NによるN」.",
+      "rubyQuestion": "<ruby>地震<rt>じしん</rt></ruby>（　　）<ruby>津波<rt>つなみ</rt></ruby>の<ruby>危険<rt>きけん</rt></ruby>があるため、<ruby>警報<rt>けいほう</rt></ruby>が<ruby>発令<rt>はつれい</rt></ruby>された。",
+      "hintTranslation": "（......） Do có nguy cơ sóng thần vì động đất nên phát cảnh báo."
     },
     {
       "id": 27,
@@ -4911,7 +5564,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Nhờ công nghệ y tế mới nhất mà nhiều sinh mạng được cứu.",
-      "explanation": "Đáp án đúng là D. 「Nの + おかげで」."
+      "explanation": "Đáp án đúng là D. 「Nの + おかげで」.",
+      "rubyQuestion": "<ruby>最新<rt>さいしん</rt></ruby>の<ruby>医療技術<rt>いりょうぎじゅつ</rt></ruby>の（　　）、<ruby>多く<rt>おおく</rt></ruby>の<ruby>人命<rt>じんめい</rt></ruby>が<ruby>救わ<rt>すくわ</rt></ruby>れるようになった。",
+      "hintTranslation": "（......） công nghệ y tế mới nhất mà nhiều sinh mạng được cứu."
     },
     {
       "id": 28,
@@ -4926,7 +5581,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Lái xe thì lái được thật nhưng đường cao tốc thì không dám đi.",
-      "explanation": "Đáp án đúng là C. Lặp lại động từ."
+      "explanation": "Đáp án đúng là C. Lặp lại động từ.",
+      "rubyQuestion": "<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>できる（　　）できますが、<ruby>高速道路<rt>こうそくどうろ</rt></ruby>は<ruby>怖く<rt>こわく</rt></ruby>て<ruby>走れ<rt>はしれ</rt></ruby>ません。",
+      "hintTranslation": "Lái xe thì lái được （......） đường cao tốc thì không dám đi."
     },
     {
       "id": 29,
@@ -4941,7 +5598,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Độ rộng căn phòng này thì 5 người ở vẫn thoải mái.",
-      "explanation": "Đáp án đúng là A. 「広さ」độ rộng."
+      "explanation": "Đáp án đúng là A. 「広さ」độ rộng.",
+      "rubyQuestion": "この<ruby>部屋<rt>へや</rt></ruby>の<ruby>広<rt>こう</rt></ruby>（　　）なら、５<ruby>人<rt>にん</rt></ruby>でも<ruby>快適<rt>かいてき</rt></ruby>に<ruby>過ご<rt>すご</rt></ruby>せる。",
+      "hintTranslation": "（......） Độ rộng căn phòng này thì 5 người ở vẫn thoải mái."
     },
     {
       "id": 30,
@@ -4956,7 +5615,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Mong bạn đừng nói việc này cho ai biết.",
-      "explanation": "Đáp án đúng là B. 「Vないでほしい」mong đừng làm."
+      "explanation": "Đáp án đúng là B. 「Vないでほしい」mong đừng làm.",
+      "rubyQuestion": "この<ruby>件<rt>けん</rt></ruby>については、<ruby>他の<rt>ほかの</rt></ruby><ruby>人<rt>にん</rt></ruby>には<ruby>誰<rt>だれ</rt></ruby>にも<ruby>言わ<rt>いわ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Mong bạn đừng nói việc này cho ai biết."
     },
     {
       "id": 31,
@@ -4971,7 +5632,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ngân sách thiếu hụt nên kế hoạch khó mà thực hiện được.",
-      "explanation": "Đáp án đúng là B. Khó thành hiện thực."
+      "explanation": "Đáp án đúng là B. Khó thành hiện thực.",
+      "rubyQuestion": "<ruby>予算<rt>よさん</rt></ruby>が<ruby>足り<rt>たり</rt></ruby>ないため、この<ruby>計画<rt>けいかく</rt></ruby>は<ruby>実現<rt>じつげん</rt></ruby>でき（　　）。",
+      "hintTranslation": "（......） Ngân sách thiếu hụt nên kế hoạch khó mà thực hiện được."
     },
     {
       "id": 32,
@@ -4986,7 +5649,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Người đàn ông mặc áo màu hơi trăng trắng kia là tổ trưởng mới.",
-      "explanation": "Đáp án đúng là B. 「白っぽい」hơi trắng."
+      "explanation": "Đáp án đúng là B. 「白っぽい」hơi trắng.",
+      "rubyQuestion": "あの<ruby>白<rt>しろ</rt></ruby>（　　）シャツを<ruby>着て<rt>きて</rt></ruby>いる<ruby>男性<rt>だんせい</rt></ruby>が、<ruby>新しい<rt>あたらしい</rt></ruby><ruby>課長<rt>かちょう</rt></ruby>です。",
+      "hintTranslation": "（......） Người đàn ông mặc áo màu hơi trăng trắng kia là tổ trưởng mới."
     },
     {
       "id": 33,
@@ -5001,7 +5666,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Văn hóa khác nhau tùy theo mỗi quốc gia.",
-      "explanation": "Đáp án đúng là D. 「N + によって」= tùy vào."
+      "explanation": "Đáp án đúng là D. 「N + によって」= tùy vào.",
+      "rubyQuestion": "<ruby>文化<rt>ぶんか</rt></ruby>や<ruby>習慣<rt>しゅうかん</rt></ruby>は、<ruby>国<rt>くに</rt></ruby>（　　）<ruby>大きく<rt>おおきく</rt></ruby><ruby>異な<rt>ことな</rt></ruby>ります。",
+      "hintTranslation": "（......） Văn hóa khác nhau tùy theo mỗi quốc gia."
     },
     {
       "id": 34,
@@ -5016,7 +5683,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Các nhân viên trẻ vừa tốt nghiệp đại học đang được đào tạo.",
-      "explanation": "Đáp án đúng là D. Vừa tốt nghiệp."
+      "explanation": "Đáp án đúng là D. Vừa tốt nghiệp.",
+      "rubyQuestion": "<ruby>大学<rt>だいがく</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>し（　　）の<ruby>若手<rt>わかて</rt></ruby><ruby>社員<rt>しゃいん</rt></ruby>たちが<ruby>研修<rt>けんしゅう</rt></ruby>を<ruby>受け<rt>うけ</rt></ruby>ている。",
+      "hintTranslation": "（......） Các nhân viên trẻ vừa tốt nghiệp đại học đang được đào tạo."
     },
     {
       "id": 35,
@@ -5031,7 +5700,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Chuẩn bị bài thuyết trình công phu thế thì làm sao thất bại được!",
-      "explanation": "Đáp án đúng là B. Tự tin không thể hỏng."
+      "explanation": "Đáp án đúng là B. Tự tin không thể hỏng.",
+      "rubyQuestion": "あんなに<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby><ruby>準備<rt>じゅんび</rt></ruby>したプレゼンが、<ruby>失敗<rt>しっぱい</rt></ruby>する（　　）。",
+      "hintTranslation": "（......） Chuẩn bị bài thuyết trình công phu thế thì làm sao thất bại được!"
     },
     {
       "id": 36,
@@ -5046,7 +5717,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Muốn mau khỏi cảm cúm thì nên giữ ấm nghỉ ngơi.",
-      "explanation": "Đáp án đúng là D. 「V辞書形 + ことだ」lời khuyên tốt nhất."
+      "explanation": "Đáp án đúng là D. 「V辞書形 + ことだ」lời khuyên tốt nhất.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>を<ruby>早く<rt>はやく</rt></ruby><ruby>治し<rt>なおし</rt></ruby>たければ、<ruby>暖かく<rt>あたたかく</rt></ruby>してゆっくり<ruby>休む<rt>やすむ</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn mau khỏi cảm cúm thì （......） giữ ấm nghỉ ngơi."
     },
     {
       "id": 37,
@@ -5061,7 +5734,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Để vượt qua cái nóng mùa hè hãy dùng điều hòa hợp lý.",
-      "explanation": "Đáp án đúng là D. 「暑さ」độ nóng."
+      "explanation": "Đáp án đúng là D. 「暑さ」độ nóng.",
+      "rubyQuestion": "<ruby>真夏<rt>まなつ</rt></ruby>の<ruby>暑<rt>しょ</rt></ruby>（　　）を<ruby>乗り切る<rt>のりきる</rt></ruby>ために、エアコンを<ruby>適切<rt>てきせつ</rt></ruby>に<ruby>使お<rt>つかお</rt></ruby>う。",
+      "hintTranslation": "（......） Để vượt qua cái nóng mùa hè hãy dùng điều hòa hợp lý."
     },
     {
       "id": 38,
@@ -5076,7 +5751,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Cô ấy hết mình vì công việc, song song đó trân trọng gia đình.",
-      "explanation": "Đáp án đúng là B. 「一方で」diễn tả đồng thời 2 việc song song."
+      "explanation": "Đáp án đúng là B. 「一方で」diễn tả đồng thời 2 việc song song.",
+      "rubyQuestion": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>に<ruby>情熱<rt>じょうねつ</rt></ruby>を<ruby>注ぐ<rt>そそぐ</rt></ruby>（　　）、<ruby>休日<rt>きゅうじつ</rt></ruby>は<ruby>家族<rt>かぞく</rt></ruby>との<ruby>時間<rt>じかん</rt></ruby>を<ruby>大切<rt>たいせつ</rt></ruby>にしている。",
+      "hintTranslation": "Cô ấy hết mình vì công việc, （......） trân trọng gia đình."
     },
     {
       "id": 39,
@@ -5091,7 +5768,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Doanh nghiệp lớn chưa hẳn tương lai đã mãi ổn định.",
-      "explanation": "Đáp án đúng là A. Chưa chắc ổn định."
+      "explanation": "Đáp án đúng là A. Chưa chắc ổn định.",
+      "rubyQuestion": "<ruby>大手<rt>おおて</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>だからといって、<ruby>将来<rt>しょうらい</rt></ruby>ずっと<ruby>安定<rt>あんてい</rt></ruby>している（　　）。",
+      "hintTranslation": "（......） Doanh nghiệp lớn chưa hẳn tương lai đã mãi ổn định."
     },
     {
       "id": 40,
@@ -5106,7 +5785,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tôi dặn mong họ đừng lại gần nơi nguy hiểm.",
-      "explanation": "Đáp án đúng là B. Phủ định: ないでほしい."
+      "explanation": "Đáp án đúng là B. Phủ định: ないでほしい.",
+      "rubyQuestion": "<ruby>危険<rt>きけん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>には<ruby>近づ<rt>ちかづ</rt></ruby>か（　　）と<ruby>注意<rt>ちゅうい</rt></ruby>した。",
+      "hintTranslation": "（......） Tôi dặn mong họ đừng lại gần nơi nguy hiểm."
     },
     {
       "id": 41,
@@ -5121,7 +5802,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Dù là quần áo trông có vẻ rẻ tiền nhưng khéo mặc vẫn đẹp.",
-      "explanation": "Đáp án đúng là C. 「安っぽい」trông rẻ tiền."
+      "explanation": "Đáp án đúng là C. 「安っぽい」trông rẻ tiền.",
+      "rubyQuestion": "<ruby>安物<rt>やすもの</rt></ruby>（　　）<ruby>服<rt>ふく</rt></ruby>でも、<ruby>着こ<rt>つこ</rt></ruby>なし<ruby>次第<rt>しだい</rt></ruby>でおしゃれに<ruby>見え<rt>みえ</rt></ruby>る。",
+      "hintTranslation": "（......） Dù là quần áo trông có vẻ rẻ tiền nhưng khéo mặc vẫn đẹp."
     },
     {
       "id": 42,
@@ -5136,7 +5819,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Để ngừa tai nạn do bất cẩn, hãy kiểm tra kỹ.",
-      "explanation": "Đáp án đúng là D. Bổ nghĩa danh từ: 「NによるN」."
+      "explanation": "Đáp án đúng là D. Bổ nghĩa danh từ: 「NによるN」.",
+      "rubyQuestion": "<ruby>不注意<rt>ふちゅうい</rt></ruby>（　　）<ruby>事故<rt>じこ</rt></ruby>を<ruby>防ぐ<rt>ふせぐ</rt></ruby>ために、<ruby>確認<rt>かくにん</rt></ruby>を<ruby>徹底<rt>てってい</rt></ruby>しましょう。",
+      "hintTranslation": "（......） Để ngừa tai nạn do bất cẩn, hãy kiểm tra kỹ."
     },
     {
       "id": 43,
@@ -5151,7 +5836,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Chi phí nhân công tăng cộng thêm nguyên liệu đắt gây áp lực kinh doanh.",
-      "explanation": "Đáp án đúng là A. Cộng thêm khó khăn."
+      "explanation": "Đáp án đúng là A. Cộng thêm khó khăn.",
+      "rubyQuestion": "<ruby>人件費<rt>じんけんひ</rt></ruby>の<ruby>高騰<rt>こうとう</rt></ruby>（　　）<ruby>原材料費<rt>げんざいりょうひ</rt></ruby>の<ruby>値上がり<rt>ねあがり</rt></ruby>も、<ruby>経営<rt>けいえい</rt></ruby>を<ruby>圧迫<rt>あっぱく</rt></ruby>している。",
+      "hintTranslation": "（......） Chi phí nhân công tăng cộng thêm nguyên liệu đắt gây áp lực kinh doanh."
     },
     {
       "id": 44,
@@ -5166,7 +5853,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tính từ いい biến đổi thành danh từ dạng nào?",
-      "explanation": "Đáp án đúng là D. Ngoại lệ: 「よさ」= điểm tốt, độ tốt."
+      "explanation": "Đáp án đúng là D. Ngoại lệ: 「よさ」= điểm tốt, độ tốt.",
+      "rubyQuestion": "<ruby>形容詞<rt>けいようし</rt></ruby>「いい（<ruby>良い<rt>よい</rt></ruby>）」を「〜さ」で<ruby>名詞化<rt>めいしか</rt></ruby>する<ruby>時<rt>とき</rt></ruby>、<ruby>正しい<rt>ただしい</rt></ruby><ruby>形<rt>かたち</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Tính từ いい biến đổi thành danh từ dạng nào?"
     },
     {
       "id": 45,
@@ -5181,7 +5870,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dạng văn viết trang trọng là 〜に加え.",
-      "explanation": "Đáp án đúng là A. Lược bỏ 'て' thành に加え."
+      "explanation": "Đáp án đúng là A. Lược bỏ 'て' thành に加え.",
+      "rubyQuestion": "「〜に<ruby>加え<rt>くわえ</rt></ruby>て」を<ruby>文章語<rt>ぶんしょうご</rt></ruby>（<ruby>書き言葉<rt>かきことば</rt></ruby>）でより<ruby>硬く<rt>かたく</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>、<ruby>正しい<rt>ただしい</rt></ruby><ruby>形<rt>かたち</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Dạng văn viết trang trọng là 〜に加え."
     },
     {
       "id": 46,
@@ -5196,7 +5887,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Người lớn rồi đừng có nhõng nhẽo trẻ con như thế.",
-      "explanation": "Đáp án đúng là A. 「子供っぽい」tính trẻ con."
+      "explanation": "Đáp án đúng là A. 「子供っぽい」tính trẻ con.",
+      "rubyQuestion": "いい<ruby>大人<rt>おとな</rt></ruby>のくせに、そんな<ruby>子供<rt>こども</rt></ruby>（　　）わがままを<ruby>言う<rt>いう</rt></ruby>な。",
+      "hintTranslation": "（......） Người lớn rồi đừng có nhõng nhẽo trẻ con như thế."
     },
     {
       "id": 47,
@@ -5211,7 +5904,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Trời mây đen kịt, mưa trông có vẻ khó mà tạnh sớm.",
-      "explanation": "Đáp án đúng là D. 「やみそうもない」."
+      "explanation": "Đáp án đúng là D. 「やみそうもない」.",
+      "rubyQuestion": "<ruby>空<rt>そら</rt></ruby>は<ruby>真っ黒<rt>まっくろ</rt></ruby>な<ruby>雲<rt>くも</rt></ruby>に<ruby>覆わ<rt>おおわ</rt></ruby>れ、<ruby>雨<rt>あめ</rt></ruby>はしばらくやみ（　　）。",
+      "hintTranslation": "（......） Trời mây đen kịt, mưa trông có vẻ khó mà tạnh sớm."
     },
     {
       "id": 48,
@@ -5226,7 +5921,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Loài chim này có nguy cơ tuyệt chủng.",
-      "explanation": "Đáp án đúng là D. 「絶滅のおそれがある」."
+      "explanation": "Đáp án đúng là D. 「絶滅のおそれがある」.",
+      "rubyQuestion": "この<ruby>鳥<rt>とり</rt></ruby>は<ruby>生息地<rt>せいそくち</rt></ruby>が<ruby>減少<rt>げんしょう</rt></ruby>し、<ruby>絶滅<rt>ぜつめつ</rt></ruby>の（　　）があると<ruby>言わ<rt>いわ</rt></ruby>れている。",
+      "hintTranslation": "Loài chim này （......） tuyệt chủng."
     },
     {
       "id": 49,
@@ -5241,7 +5938,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tuy xa ga nhưng bù lại phòng rộng và giá rẻ.",
-      "explanation": "Đáp án đúng là B. Bù lại khuyết điểm."
+      "explanation": "Đáp án đúng là B. Bù lại khuyết điểm.",
+      "rubyQuestion": "このアパートは<ruby>駅<rt>えき</rt></ruby>から<ruby>遠い<rt>とおい</rt></ruby>（　　）、<ruby>部屋<rt>へや</rt></ruby>が<ruby>広く<rt>ひろく</rt></ruby>て<ruby>家賃<rt>やちん</rt></ruby>も<ruby>安い<rt>やすい</rt></ruby>。",
+      "hintTranslation": "（......） Tuy xa ga nhưng bù lại phòng rộng và giá rẻ."
     },
     {
       "id": 50,
@@ -5256,7 +5955,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "(Mỉa mai) 'Nhờ cậu quên tài liệu mà cuộc họp bị hủy luôn rồi đấy!'",
-      "explanation": "Đáp án đúng là C. 「おかげで」dùng mỉa mai trách khéo."
+      "explanation": "Đáp án đúng là C. 「おかげで」dùng mỉa mai trách khéo.",
+      "rubyQuestion": "（<ruby>皮肉<rt>ひにく</rt></ruby>）「<ruby>君<rt>くん</rt></ruby>が<ruby>重要な<rt>じゅうような</rt></ruby><ruby>書類<rt>しょるい</rt></ruby>を<ruby>忘れ<rt>わすれ</rt></ruby>てくれた（　　）、<ruby>会議<rt>かいぎ</rt></ruby>が<ruby>中止<rt>ちゅうし</rt></ruby>になっちゃったよ。」",
+      "hintTranslation": "(Mỉa mai) '（......） cậu quên tài liệu mà cuộc họp bị hủy luôn rồi đấy!'"
     },
     {
       "id": 51,
@@ -5271,7 +5972,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nhờ lời khuyên của tiền bối mà tôi đã tự tin trả lời phỏng vấn.",
-      "explanation": "Đáp án đúng là C. Kết quả tích cực từ lời khuyên."
+      "explanation": "Đáp án đúng là C. Kết quả tích cực từ lời khuyên.",
+      "rubyQuestion": "<ruby>先輩<rt>せんぱい</rt></ruby>のアドバイスの（　　）、<ruby>面接<rt>めんせつ</rt></ruby>で<ruby>落ち着い<rt>おちつい</rt></ruby>て<ruby>受け答え<rt>うけこたえ</rt></ruby>ができた。",
+      "hintTranslation": "（......） lời khuyên của tiền bối mà tôi đã tự tin trả lời phỏng vấn."
     },
     {
       "id": 52,
@@ -5286,7 +5989,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Vì thiếu ngủ nên đầu óc lơ mơ không tập trung làm việc được.",
-      "explanation": "Đáp án đúng là D. 「Nのせいで」."
+      "explanation": "Đáp án đúng là D. 「Nのせいで」.",
+      "rubyQuestion": "<ruby>寝不足<rt>ねぶそく</rt></ruby>の（　　）<ruby>頭<rt>あたま</rt></ruby>がボーッとして、<ruby>仕事<rt>しごと</rt></ruby>に<ruby>集中<rt>しゅうちゅう</rt></ruby>できない。",
+      "hintTranslation": "（......） thiếu ngủ nên đầu óc lơ mơ không tập trung làm việc được."
     },
     {
       "id": 53,
@@ -5301,7 +6006,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Vừa mới nghe giải thích lúc nãy mà giờ đã quên rồi à?",
-      "explanation": "Đáp án đúng là C. Vừa mới nghe xong."
+      "explanation": "Đáp án đúng là C. Vừa mới nghe xong.",
+      "rubyQuestion": "さっき<ruby>説明<rt>せつめい</rt></ruby>を<ruby>聞い<rt>きい</rt></ruby>（　　）なのに、もう<ruby>忘れ<rt>わすれ</rt></ruby>てしまったのですか。",
+      "hintTranslation": "（......） nghe giải thích lúc nãy mà giờ đã quên rồi à?"
     },
     {
       "id": 54,
@@ -5316,7 +6023,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sơ suất tàn lửa có nguy cơ phát triển thành hỏa hoạn lớn.",
-      "explanation": "Đáp án đúng là D. Nguy cơ cháy nổ."
+      "explanation": "Đáp án đúng là D. Nguy cơ cháy nổ.",
+      "rubyQuestion": "<ruby>火<rt>ひ</rt></ruby>の<ruby>不始末<rt>ふしまつ</rt></ruby>から<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>火災<rt>かさい</rt></ruby>に<ruby>発展<rt>はってん</rt></ruby>する（　　）。",
+      "hintTranslation": "Sơ suất tàn lửa （......） phát triển thành hỏa hoạn lớn."
     },
     {
       "id": 55,
@@ -5331,7 +6040,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Nơi nguy hiểm thế dù có năn nỉ tôi cũng không thèm đi.",
-      "explanation": "Đáp án đúng là D. Nhất định không đi."
+      "explanation": "Đáp án đúng là D. Nhất định không đi.",
+      "rubyQuestion": "あんな<ruby>危険<rt>きけん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>、<ruby>頼ま<rt>たのま</rt></ruby>れたって<ruby>行く<rt>いく</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Nơi nguy hiểm thế dù có năn nỉ tôi cũng không thèm đi."
     },
     {
       "id": 56,
@@ -5346,7 +6057,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Hay gặp trong thời sự tin tức và cảnh báo công cộng.",
-      "explanation": "Đáp án đúng là A. Văn phong trang trọng."
+      "explanation": "Đáp án đúng là A. Văn phong trang trọng.",
+      "rubyQuestion": "「〜<ruby>恐れ<rt>おそれ</rt></ruby>がある」は<ruby>主に<rt>おもに</rt></ruby>どのような<ruby>場面<rt>ばめん</rt></ruby>でよく<ruby>使わ<rt>つかわ</rt></ruby>れますか。",
+      "hintTranslation": "（......） Hay gặp trong thời sự tin tức và cảnh báo công cộng."
     },
     {
       "id": 57,
@@ -5361,7 +6074,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Dù trời có mưa trận đấu vẫn diễn ra đúng lịch.",
-      "explanation": "Đáp án đúng là C. Dù mưa cũng thi đấu."
+      "explanation": "Đáp án đúng là C. Dù mưa cũng thi đấu.",
+      "rubyQuestion": "<ruby>明日<rt>あした</rt></ruby>の<ruby>試合<rt>しあい</rt></ruby>、たとえ<ruby>雨<rt>あめ</rt></ruby>が<ruby>降っ<rt>ふっ</rt></ruby>（　　）<ruby>予定通り<rt>よていどおり</rt></ruby><ruby>決行<rt>けっこう</rt></ruby>されます。",
+      "hintTranslation": "（......） trời có mưa trận đấu vẫn diễn ra đúng lịch."
     },
     {
       "id": 58,
@@ -5376,7 +6091,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đi làm ngày Chủ Nhật bù lại được nghỉ bù Thứ Hai.",
-      "explanation": "Đáp án đúng là C. Đổi ngày làm việc."
+      "explanation": "Đáp án đúng là C. Đổi ngày làm việc.",
+      "rubyQuestion": "<ruby>日曜日<rt>にちようび</rt></ruby>に<ruby>出勤<rt>しゅっきん</rt></ruby>した（　　）、<ruby>月曜日<rt>げつようび</rt></ruby>に<ruby>振替休日<rt>ふりかえきゅうじつ</rt></ruby>をもらった。",
+      "hintTranslation": "（......） Đi làm ngày Chủ Nhật bù lại được nghỉ bù Thứ Hai."
     },
     {
       "id": 59,
@@ -5391,7 +6108,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Mặc áo khoác màu hơi ngả đen đi làm.",
-      "explanation": "Đáp án đúng là A. 「黒っぽい」hơi đen."
+      "explanation": "Đáp án đúng là A. 「黒っぽい」hơi đen.",
+      "rubyQuestion": "<ruby>黒<rt>くろ</rt></ruby>（　　）ジャケットを<ruby>羽織<rt>はおり</rt></ruby>って<ruby>出勤<rt>しゅっきん</rt></ruby>した。",
+      "hintTranslation": "（......） Mặc áo khoác màu hơi ngả đen đi làm."
     },
     {
       "id": 60,
@@ -5406,7 +6125,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đồ đắt tiền chưa chắc chất lượng đã tốt.",
-      "explanation": "Đáp án đúng là D. 「〜とは限らない」chưa chắc là."
+      "explanation": "Đáp án đúng là D. 「〜とは限らない」chưa chắc là.",
+      "rubyQuestion": "<ruby>値段<rt>ねだん</rt></ruby>が<ruby>高い<rt>たかい</rt></ruby>ものが、<ruby>必ずしも<rt>かならずしも</rt></ruby><ruby>品質<rt>ひんしつ</rt></ruby>が<ruby>良い<rt>よい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Đồ đắt tiền chưa chắc chất lượng đã tốt."
     },
     {
       "id": 61,
@@ -5421,7 +6142,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Dù bị cha mẹ phản đối tôi vẫn quyết tâm du học.",
-      "explanation": "Đáp án đúng là D. Dù bị phản đối."
+      "explanation": "Đáp án đúng là D. Dù bị phản đối.",
+      "rubyQuestion": "<ruby>親<rt>おや</rt></ruby>に<ruby>反対<rt>はんたい</rt></ruby>され（　　）、<ruby>私<rt>わたし</rt></ruby>は<ruby>海外留学<rt>かいがいりゅうがく</rt></ruby>を<ruby>決意<rt>けつい</rt></ruby>した。",
+      "hintTranslation": "（......） bị cha mẹ phản đối tôi vẫn quyết tâm du học."
     },
     {
       "id": 62,
@@ -5436,7 +6159,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Bận rộn việc cộng thêm thiếu ngủ khiến tôi kiệt sức.",
-      "explanation": "Đáp án đúng là B. Yếu tố dồn thêm."
+      "explanation": "Đáp án đúng là B. Yếu tố dồn thêm.",
+      "rubyQuestion": "<ruby>今週<rt>こんしゅう</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>の<ruby>忙しさ<rt>いそがしさ</rt></ruby>（　　）<ruby>寝不足<rt>ねぶそく</rt></ruby>も<ruby>重なり<rt>かさなり</rt></ruby>、ひどく<ruby>疲れ<rt>つかれ</rt></ruby>ている。",
+      "hintTranslation": "（......） Bận rộn việc cộng thêm thiếu ngủ khiến tôi kiệt sức."
     },
     {
       "id": 63,
@@ -5451,7 +6176,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Một mình nâng sao nổi cây đàn piano này! Giúp tôi với.",
-      "explanation": "Đáp án đúng là C. Bất khả thi."
+      "explanation": "Đáp án đúng là C. Bất khả thi.",
+      "rubyQuestion": "<ruby>一人<rt>ひとり</rt></ruby>でこの<ruby>重い<rt>おもい</rt></ruby>ピアノを<ruby>持ち<rt>もち</rt></ruby><ruby>上げ<rt>あげ</rt></ruby>られる（　　）。<ruby>手伝っ<rt>てつだっ</rt></ruby>てくれ。",
+      "hintTranslation": "（......） Một mình nâng sao nổi cây đàn piano này! Giúp tôi với."
     },
     {
       "id": 64,
@@ -5466,7 +6193,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tốt nghiệp đại học danh tiếng chưa chắc vào được công ty tốt.",
-      "explanation": "Đáp án đúng là C. Không hẳn là."
+      "explanation": "Đáp án đúng là C. Không hẳn là.",
+      "rubyQuestion": "<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>大学<rt>だいがく</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>したからといって、<ruby>良い<rt>よい</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入れ<rt>いれ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Tốt nghiệp đại học danh tiếng chưa chắc vào được công ty tốt."
     },
     {
       "id": 65,
@@ -5481,7 +6210,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dù có tốn thời gian tôi muốn tự sức hoàn thành.",
-      "explanation": "Đáp án đúng là A. Dù mất thời gian."
+      "explanation": "Đáp án đúng là A. Dù mất thời gian.",
+      "rubyQuestion": "たとえ<ruby>時間<rt>じかん</rt></ruby>がかかっ（　　）、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>で<ruby>最後<rt>さいご</rt></ruby>までやり<ruby>遂げ<rt>とげ</rt></ruby>たい。",
+      "hintTranslation": "（......） có tốn thời gian tôi muốn tự sức hoàn thành."
     },
     {
       "id": 66,
@@ -5496,7 +6227,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Cuộc sống thành thị tiện lợi nhưng chi phí đắt đỏ.",
-      "explanation": "Đáp án đúng là A. 「普通形 + 一方で」nêu 2 mặt đối lập."
+      "explanation": "Đáp án đúng là A. 「普通形 + 一方で」nêu 2 mặt đối lập.",
+      "rubyQuestion": "<ruby>都会<rt>とかい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>な（　　）、<ruby>生活費<rt>せいかつひ</rt></ruby>が<ruby>高く<rt>たかく</rt></ruby>ストレスも<ruby>多い<rt>おおい</rt></ruby>。",
+      "hintTranslation": "（......） Cuộc sống thành thị tiện lợi nhưng chi phí đắt đỏ."
     },
     {
       "id": 67,
@@ -5511,7 +6244,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Dùng mật ong thay cho đường để làm bánh ít calo.",
-      "explanation": "Đáp án đúng là B. Thay thế nguyên liệu."
+      "explanation": "Đáp án đúng là B. Thay thế nguyên liệu.",
+      "rubyQuestion": "<ruby>砂糖<rt>さとう</rt></ruby>の（　　）ハチミツを<ruby>使って<rt>つかって</rt></ruby>、<ruby>低<rt>てい</rt></ruby>カロリーのお<ruby>菓子<rt>かし</rt></ruby>を<ruby>作っ<rt>つくっ</rt></ruby>た。",
+      "hintTranslation": "Dùng mật ong （......） đường để làm bánh ít calo."
     },
     {
       "id": 68,
@@ -5526,7 +6261,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đọc thì đọc được đấy nhưng giải thích nghĩa chữ Hán thì khó.",
-      "explanation": "Đáp án đúng là A. VことはVが."
+      "explanation": "Đáp án đúng là A. VことはVが.",
+      "rubyQuestion": "<ruby>読め<rt>よめ</rt></ruby>る（　　）<ruby>読め<rt>よめ</rt></ruby>るが、<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>説明す<rt>せつめいす</rt></ruby>るのは<ruby>難しい<rt>むずかしい</rt></ruby>。",
+      "hintTranslation": "（......） Đọc thì đọc được đấy nhưng giải thích nghĩa chữ Hán thì khó."
     },
     {
       "id": 69,
@@ -5541,7 +6278,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đặt mật khẩu dễ đoán có nguy cơ bị tấn công tài khoản.",
-      "explanation": "Đáp án đúng là C. Nguy cơ an ninh mạng."
+      "explanation": "Đáp án đúng là C. Nguy cơ an ninh mạng.",
+      "rubyQuestion": "パスワードを<ruby>簡単<rt>かんたん</rt></ruby>にすると、<ruby>不正<rt>ふせい</rt></ruby>アクセスの<ruby>被害<rt>ひがい</rt></ruby>に<ruby>遭う<rt>あう</rt></ruby>（　　）。",
+      "hintTranslation": "Đặt mật khẩu dễ đoán （......） bị tấn công tài khoản."
     },
     {
       "id": 70,
@@ -5556,7 +6295,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Hồi vừa mới sang Nhật, đổi tàu cũng thấy khó.",
-      "explanation": "Đáp án đúng là C. 「Vタ形 + ばかり」vừa mới xong."
+      "explanation": "Đáp án đúng là C. 「Vタ形 + ばかり」vừa mới xong.",
+      "rubyQuestion": "<ruby>日本<rt>にっぽん</rt></ruby>に<ruby>来<rt>らい</rt></ruby>（　　）の<ruby>頃<rt>ごろ</rt></ruby>は、<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>乗り換え<rt>のりかえ</rt></ruby>さえ<ruby>難しか<rt>むずかしか</rt></ruby>った。",
+      "hintTranslation": "Hồi （......） sang Nhật, đổi tàu cũng thấy khó."
     },
     {
       "id": 71,
@@ -5571,7 +6312,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Trước đối thủ mạnh đời nào ta chịu thua dễ thế! Chiến đấu tới cùng!",
-      "explanation": "Đáp án đúng là B. Tuyệt đối không đầu hàng."
+      "explanation": "Đáp án đúng là B. Tuyệt đối không đầu hàng.",
+      "rubyQuestion": "あんな<ruby>強い<rt>つよい</rt></ruby><ruby>相手<rt>あいて</rt></ruby>に、<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>負け<rt>まけ</rt></ruby>てたまる（　　）。<ruby>最後<rt>さいご</rt></ruby>まで<ruby>戦う<rt>たたかう</rt></ruby>ぞ！",
+      "hintTranslation": "（......） Trước đối thủ mạnh đời nào ta chịu thua dễ thế! Chiến đấu tới cùng!"
     },
     {
       "id": 72,
@@ -5586,7 +6329,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tôi được bế em bé vừa mới chào đời.",
-      "explanation": "Đáp án đúng là B. Vừa mới sinh ra."
+      "explanation": "Đáp án đúng là B. Vừa mới sinh ra.",
+      "rubyQuestion": "<ruby>生まれ<rt>うまれ</rt></ruby>て（　　）の<ruby>赤ちゃん<rt>あかちゃん</rt></ruby>を<ruby>抱っこ<rt>だっこ</rt></ruby>させてもらった。",
+      "hintTranslation": "Tôi được bế em bé （......） chào đời."
     },
     {
       "id": 73,
@@ -5601,7 +6346,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Mua thì mua được nhưng vượt quá ngân sách tháng này.",
-      "explanation": "Đáp án đúng là C. Công nhận khả năng mua."
+      "explanation": "Đáp án đúng là C. Công nhận khả năng mua.",
+      "rubyQuestion": "<ruby>買え<rt>かえ</rt></ruby>る（　　）<ruby>買え<rt>かえ</rt></ruby>るが、<ruby>今月<rt>こんげつ</rt></ruby>の<ruby>予算<rt>よさん</rt></ruby>をオーバーしてしまう。",
+      "hintTranslation": "（......） Mua thì mua được nhưng vượt quá ngân sách tháng này."
     },
     {
       "id": 74,
@@ -5616,7 +6363,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Người đó cứ mỗi lần gặp lại mặc đồ mới.",
-      "explanation": "Đáp án đúng là C. 「V辞書形 + ごとに」: cứ mỗi lần gặp."
+      "explanation": "Đáp án đúng là C. 「V辞書形 + ごとに」: cứ mỗi lần gặp.",
+      "rubyQuestion": "あの<ruby>人<rt>にん</rt></ruby>は<ruby>会う<rt>あう</rt></ruby>（　　）<ruby>新しい<rt>あたらしい</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>着て<rt>きて</rt></ruby>いて、とてもおしゃれだ。",
+      "hintTranslation": "Người đó （......） gặp lại mặc đồ mới."
     },
     {
       "id": 75,
@@ -5631,7 +6380,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nghĩa trong từ điển chưa chắc đúng mọi ngữ cảnh.",
-      "explanation": "Đáp án đúng là B. Chưa hẳn đúng mọi lúc."
+      "explanation": "Đáp án đúng là B. Chưa hẳn đúng mọi lúc.",
+      "rubyQuestion": "<ruby>辞書<rt>じしょ</rt></ruby>に<ruby>載っ<rt>のっ</rt></ruby>ている<ruby>意味<rt>いみ</rt></ruby>が、すべての<ruby>文脈<rt>ぶんみゃく</rt></ruby>に<ruby>当て<rt>あて</rt></ruby>はまる（　　）。",
+      "hintTranslation": "（......） Nghĩa trong từ điển chưa chắc đúng mọi ngữ cảnh."
     },
     {
       "id": 76,
@@ -5646,7 +6397,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Do mưa lớn nên tàu dừng chạy, tôi bị muộn làm.",
-      "explanation": "Đáp án đúng là C. Hậu quả tiêu cực do mưa."
+      "explanation": "Đáp án đúng là C. Hậu quả tiêu cực do mưa.",
+      "rubyQuestion": "<ruby>大雨<rt>おおあめ</rt></ruby>の（　　）<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>を<ruby>見合わ<rt>みあわ</rt></ruby>せ、<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>遅刻<rt>ちこく</rt></ruby>した。",
+      "hintTranslation": "（......） mưa lớn nên tàu dừng chạy, tôi bị muộn làm."
     },
     {
       "id": 77,
@@ -5661,7 +6414,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Kế hoạch dù có thành công thì quá tốn kém nên không khả thi.",
-      "explanation": "Đáp án đúng là C. Dù thành công."
+      "explanation": "Đáp án đúng là C. Dù thành công.",
+      "rubyQuestion": "あの<ruby>計画<rt>けいかく</rt></ruby>が<ruby>成功<rt>せいこう</rt></ruby>した（　　）、<ruby>莫大<rt>ばくだい</rt></ruby>な<ruby>費用<rt>ひよう</rt></ruby>がかかるので<ruby>現実的<rt>げんじつてき</rt></ruby>ではない。",
+      "hintTranslation": "Kế hoạch （......） có thành công thì quá tốn kém nên không khả thi."
     },
     {
       "id": 78,
@@ -5676,7 +6431,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Cứ mỗi lần công bố điểm thi, cả lớp lại hồi hộp vui buồn.",
-      "explanation": "Đáp án đúng là A. 「発表されるごとに」: cứ mỗi lần được công bố."
+      "explanation": "Đáp án đúng là A. 「発表されるごとに」: cứ mỗi lần được công bố.",
+      "rubyQuestion": "テストの<ruby>点数<rt>てんすう</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される（　　）、クラス<ruby>中<rt>なか</rt></ruby>が<ruby>一喜一憂<rt>いっきいちゆう</rt></ruby>している。",
+      "hintTranslation": "（......） công bố điểm thi, cả lớp lại hồi hộp vui buồn."
     },
     {
       "id": 79,
@@ -5691,7 +6448,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Cứ mỗi lần thất bại nếu tìm ra điểm khắc phục thì sẽ trưởng thành.",
-      "explanation": "Đáp án đúng là C. 「V辞書形 + ごとに」: cứ mỗi lần..."
+      "explanation": "Đáp án đúng là C. 「V辞書形 + ごとに」: cứ mỗi lần...",
+      "rubyQuestion": "<ruby>失敗<rt>しっぱい</rt></ruby>する（　　）<ruby>改善点<rt>かいぜんてん</rt></ruby>を<ruby>見つ<rt>みつ</rt></ruby>けていけば、<ruby>必ず<rt>かならず</rt></ruby><ruby>成長<rt>せいちょう</rt></ruby>できる。",
+      "hintTranslation": "（......） thất bại nếu tìm ra điểm khắc phục thì sẽ trưởng thành."
     },
     {
       "id": 80,
@@ -5706,7 +6465,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Bận quá đến cả thời gian ăn trưa cũng không có.",
-      "explanation": "Đáp án đúng là A. Mức độ cực đoan: đến cả ăn cũng không kịp."
+      "explanation": "Đáp án đúng là A. Mức độ cực đoan: đến cả ăn cũng không kịp.",
+      "rubyQuestion": "<ruby>今日は<rt>こんにちは</rt></ruby><ruby>朝<rt>あさ</rt></ruby>から<ruby>忙しす<rt>いそがしす</rt></ruby>ぎて、<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>めし</rt></ruby>を<ruby>食べ<rt>たべ</rt></ruby>る<ruby>時間<rt>じかん</rt></ruby>（　　）なかった。",
+      "hintTranslation": "Bận quá （......） thời gian ăn trưa cũng không có."
     },
     {
       "id": 81,
@@ -5721,7 +6482,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Có chứng cứ hôm qua anh ấy ở Tokyo thì lẽ nào là thủ phạm được!",
-      "explanation": "Đáp án đúng là A. Nの + わけがない."
+      "explanation": "Đáp án đúng là A. Nの + わけがない.",
+      "rubyQuestion": "<ruby>彼<rt>かれ</rt></ruby>が<ruby>昨日<rt>きのう</rt></ruby><ruby>東京<rt>とうきょう</rt></ruby>にいた<ruby>証拠<rt>しょうこ</rt></ruby>があるのだから、<ruby>犯人<rt>はんにん</rt></ruby>の（　　）。",
+      "hintTranslation": "Có chứng cứ hôm qua anh ấy ở Tokyo thì （......） là thủ phạm được!"
     },
     {
       "id": 82,
@@ -5736,7 +6499,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đối thủ là tuyển thủ chuyên nghiệp, tôi khó mà thắng nổi.",
-      "explanation": "Đáp án đúng là D. Khó thắng được."
+      "explanation": "Đáp án đúng là D. Khó thắng được.",
+      "rubyQuestion": "<ruby>相手<rt>あいて</rt></ruby>はプロの<ruby>選手<rt>せんしゅ</rt></ruby>だから、<ruby>初心者<rt>しょしんしゃ</rt></ruby>の<ruby>私<rt>わたし</rt></ruby>が<ruby>勝て<rt>かて</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Đối thủ là tuyển thủ chuyên nghiệp, tôi khó mà thắng nổi."
     },
     {
       "id": 83,
@@ -5751,7 +6516,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Họng đau đến mức ngay cả nước uống nuốt xuống cũng thấy buốt.",
-      "explanation": "Đáp án đúng là D. Đến cả nước cũng không nuốt nổi."
+      "explanation": "Đáp án đúng là D. Đến cả nước cũng không nuốt nổi.",
+      "rubyQuestion": "<ruby>喉<rt>のど</rt></ruby>が<ruby>痛く<rt>いたく</rt></ruby>て、<ruby>水<rt>みず</rt></ruby>（　　）<ruby>飲み込む<rt>のみこむ</rt></ruby>のがつらい。",
+      "hintTranslation": "Họng đau đến mức （......） nước uống nuốt xuống cũng thấy buốt."
     },
     {
       "id": 84,
@@ -5766,7 +6533,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Phó từ hay đi kèm là 必ずしも.",
-      "explanation": "Đáp án đúng là D. Đi kèm 必ずしも."
+      "explanation": "Đáp án đúng là D. Đi kèm 必ずしも.",
+      "rubyQuestion": "「〜とは<ruby>限ら<rt>かぎら</rt></ruby>ない」と<ruby>一緒に<rt>いっしょに</rt></ruby>よく<ruby>使わ<rt>つかわ</rt></ruby>れる<ruby>副詞<rt>ふくし</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Phó từ hay đi kèm là 必ずしも."
     },
     {
       "id": 85,
@@ -5781,7 +6550,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Nói thì nói được thật nhưng chỉ mức cơ bản.",
-      "explanation": "Đáp án đúng là B. Cấu trúc lặp từ 「VことはVが」."
+      "explanation": "Đáp án đúng là B. Cấu trúc lặp từ 「VことはVが」.",
+      "rubyQuestion": "<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話せ<rt>はなせ</rt></ruby>る（　　）<ruby>話せ<rt>はなせ</rt></ruby>ますが、<ruby>日常会話<rt>にちじょうかいわ</rt></ruby>レベルです。",
+      "hintTranslation": "Nói thì nói được （......） chỉ mức cơ bản."
     },
     {
       "id": 86,
@@ -5796,7 +6567,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Dù lương có cao tôi cũng không làm công ty bóc lột tăng ca.",
-      "explanation": "Đáp án đúng là B. Dù lương cao."
+      "explanation": "Đáp án đúng là B. Dù lương cao.",
+      "rubyQuestion": "どんなに<ruby>給料<rt>きゅうりょう</rt></ruby>が<ruby>高い<rt>たかい</rt></ruby>（　　）、<ruby>残業<rt>ざんぎょう</rt></ruby>ばかりのブラック<ruby>企業<rt>きぎょう</rt></ruby>では<ruby>働き<rt>はたらき</rt></ruby>たくない。",
+      "hintTranslation": "（......） lương có cao tôi cũng không làm công ty bóc lột tăng ca."
     },
     {
       "id": 87,
@@ -5811,7 +6584,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Bằng việc vận động định kỳ có thể giữ gìn sức khỏe.",
-      "explanation": "Đáp án đúng là D. Chỉ phương pháp, cách thức."
+      "explanation": "Đáp án đúng là D. Chỉ phương pháp, cách thức.",
+      "rubyQuestion": "<ruby>定期的<rt>ていきてき</rt></ruby>な<ruby>運動<rt>うんどう</rt></ruby>（　　）、<ruby>健康<rt>けんこう</rt></ruby>を<ruby>維持す<rt>いじす</rt></ruby>ることができます。",
+      "hintTranslation": "（......） Bằng việc vận động định kỳ có thể giữ gìn sức khỏe."
     },
     {
       "id": 88,
@@ -5826,7 +6601,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đồng Yên giảm giúp doanh nghiệp xuất khẩu có lãi nhưng doanh nghiệp nhập khẩu gặp khó.",
-      "explanation": "Đáp án đúng là C. Đối lập giữa 2 đối tượng."
+      "explanation": "Đáp án đúng là C. Đối lập giữa 2 đối tượng.",
+      "rubyQuestion": "<ruby>円安<rt>えんやす</rt></ruby>で<ruby>輸出<rt>ゆしゅつ</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>が<ruby>利益<rt>りえき</rt></ruby>を<ruby>上げ<rt>あげ</rt></ruby>る（　　）、<ruby>輸入<rt>ゆにゅう</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>は<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>に<ruby>直面<rt>ちょくめん</rt></ruby>している。",
+      "hintTranslation": "（......） Đồng Yên giảm giúp doanh nghiệp xuất khẩu có lãi nhưng doanh nghiệp nhập khẩu gặp khó."
     },
     {
       "id": 89,
@@ -5841,7 +6618,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Người dùng sách điện tử tăng trong khi sách giấy giảm.",
-      "explanation": "Đáp án đúng là D. Đối lập giữa 2 xu hướng trái chiều."
+      "explanation": "Đáp án đúng là D. Đối lập giữa 2 xu hướng trái chiều.",
+      "rubyQuestion": "<ruby>電子<rt>でんし</rt></ruby><ruby>書籍<rt>しょせき</rt></ruby>の<ruby>利用者<rt>りようしゃ</rt></ruby>が<ruby>増え<rt>ふえ</rt></ruby>ている（　　）、<ruby>紙<rt>かみ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>の<ruby>売り上げ<rt>うりあげ</rt></ruby>は<ruby>減少<rt>げんしょう</rt></ruby>している。",
+      "hintTranslation": "（......） Người dùng sách điện tử tăng trong khi sách giấy giảm."
     },
     {
       "id": 90,
@@ -5856,7 +6635,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đời nào tôi chịu bỏ cuộc ước mơ ở nơi thế này!",
-      "explanation": "Đáp án đúng là C. Không từ bỏ."
+      "explanation": "Đáp án đúng là C. Không từ bỏ.",
+      "rubyQuestion": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>をこんなところで<ruby>諦め<rt>あきらめ</rt></ruby>てたまる（　　）。",
+      "hintTranslation": "（......） Đời nào tôi chịu bỏ cuộc ước mơ ở nơi thế này!"
     },
     {
       "id": 91,
@@ -5871,7 +6652,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Lời tên nói dối đó thì ai mà tin cho được!",
-      "explanation": "Đáp án đúng là A. Ai mà thèm tin."
+      "explanation": "Đáp án đúng là A. Ai mà thèm tin.",
+      "rubyQuestion": "あんな<ruby>嘘つき<rt>うそつき</rt></ruby>の<ruby>言う<rt>いう</rt></ruby>ことなんて、<ruby>誰が<rt>だれが</rt></ruby><ruby>信じ<rt>しんじ</rt></ruby>る（　　）！",
+      "hintTranslation": "（......） Lời tên nói dối đó thì ai mà tin cho được!"
     },
     {
       "id": 92,
@@ -5886,7 +6669,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sức hút du lịch thêm vào đó giao thông thuận tiện tạo nên sự nổi tiếng.",
-      "explanation": "Đáp án đúng là B. Thêm điểm cộng."
+      "explanation": "Đáp án đúng là B. Thêm điểm cộng.",
+      "rubyQuestion": "<ruby>観光地<rt>かんこうち</rt></ruby>としての<ruby>魅力<rt>みりょく</rt></ruby>（　　）、<ruby>交通<rt>こうつう</rt></ruby>の<ruby>便<rt>びん</rt></ruby>の<ruby>良さ<rt>よさ</rt></ruby>も<ruby>人気<rt>にんき</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>だ。",
+      "hintTranslation": "Sức hút du lịch （......） giao thông thuận tiện tạo nên sự nổi tiếng."
     },
     {
       "id": 93,
@@ -5901,7 +6686,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Cho dù chuyện đó là thật tôi cũng không tha thứ cho anh ấy.",
-      "explanation": "Đáp án đúng là D. Dù là sự thật."
+      "explanation": "Đáp án đúng là D. Dù là sự thật.",
+      "rubyQuestion": "<ruby>仮に<rt>かりに</rt></ruby>その<ruby>話<rt>はなし</rt></ruby>が<ruby>本当<rt>ほんとう</rt></ruby>だ（　　）、<ruby>彼<rt>かれ</rt></ruby>を<ruby>許す<rt>ゆるす</rt></ruby>ことはできない。",
+      "hintTranslation": "（......） chuyện đó là thật tôi cũng không tha thứ cho anh ấy."
     },
     {
       "id": 94,
@@ -5916,7 +6703,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Mai đi du lịch nên mong sao trời sẽ nắng ráo.",
-      "explanation": "Đáp án đúng là A. Ước nguyện thời tiết."
+      "explanation": "Đáp án đúng là A. Ước nguyện thời tiết.",
+      "rubyQuestion": "<ruby>明日<rt>あした</rt></ruby>から<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行く<rt>いく</rt></ruby>ので、<ruby>天気<rt>てんき</rt></ruby>が<ruby>晴れ<rt>はれ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Mai đi du lịch nên mong sao trời sẽ nắng ráo."
     },
     {
       "id": 95,
@@ -5931,7 +6720,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn giỏi tiếng Nhật thì nên mạnh dạn nói đừng ngại.",
-      "explanation": "Đáp án đúng là A. Khuyên nên làm gì."
+      "explanation": "Đáp án đúng là A. Khuyên nên làm gì.",
+      "rubyQuestion": "<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>になりたかったら、<ruby>恥ずかし<rt>はずかし</rt></ruby>がらずに<ruby>話す<rt>はなす</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn giỏi tiếng Nhật thì nên mạnh dạn nói （......） ngại."
     },
     {
       "id": 96,
@@ -5946,7 +6737,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ngày kỷ niệm quan trọng nên muốn cả hai bên nhau trọn vẹn.",
-      "explanation": "Đáp án đúng là A. Mong ước."
+      "explanation": "Đáp án đúng là A. Mong ước.",
+      "rubyQuestion": "<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>記念日<rt>きねんび</rt></ruby>だから、<ruby>二人<rt>ふたり</rt></ruby>でゆっくり<ruby>過ご<rt>すご</rt></ruby>し（　　）。",
+      "hintTranslation": "（......） Ngày kỷ niệm quan trọng nên muốn cả hai bên nhau trọn vẹn."
     },
     {
       "id": 97,
@@ -5961,7 +6754,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Trái với ý kiến tán thành chiếm 60%, phản đối chiếm 40%.",
-      "explanation": "Đáp án đúng là D. So sánh tỉ lệ đối lập."
+      "explanation": "Đáp án đúng là D. So sánh tỉ lệ đối lập.",
+      "rubyQuestion": "<ruby>賛成意見<rt>さんせいいけん</rt></ruby>が６<ruby>割<rt>わり</rt></ruby>なの（　　）、<ruby>反対意見<rt>はんたいいけん</rt></ruby>は４<ruby>割<rt>わり</rt></ruby>にとどまった。",
+      "hintTranslation": "（......） ý kiến tán thành chiếm 60%, phản đối chiếm 40%."
     },
     {
       "id": 98,
@@ -5976,7 +6771,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Chân đau dữ dội, đến cả việc đứng cũng không làm được.",
-      "explanation": "Đáp án đúng là B. 「V辞書形こと + さえ」."
+      "explanation": "Đáp án đúng là B. 「V辞書形こと + さえ」.",
+      "rubyQuestion": "<ruby>足<rt>あし</rt></ruby>の<ruby>痛み<rt>いたみ</rt></ruby>がひどくて、<ruby>立つ<rt>たつ</rt></ruby>こと（　　）できない<ruby>状態<rt>じょうたい</rt></ruby>だ。",
+      "hintTranslation": "Chân đau dữ dội, （......） việc đứng cũng không làm được."
     },
     {
       "id": 99,
@@ -5991,7 +6788,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn thi đỗ thì tốt nhất không nên lơ là ôn tập.",
-      "explanation": "Đáp án đúng là A. 「Vないことだ」khuyên không nên."
+      "explanation": "Đáp án đúng là A. 「Vないことだ」khuyên không nên.",
+      "rubyQuestion": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>したいなら、<ruby>毎日<rt>まいにち</rt></ruby><ruby>復習<rt>ふくしゅう</rt></ruby>を<ruby>怠ら<rt>おこたら</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn thi đỗ thì tốt nhất （......） lơ là ôn tập."
     },
     {
       "id": 100,
@@ -6006,7 +6805,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sự quan tâm đối với môi trường đang tăng lên.",
-      "explanation": "Đáp án đúng là B. Bổ nghĩa danh từ: 「〜に対するN」."
+      "explanation": "Đáp án đúng là B. Bổ nghĩa danh từ: 「〜に対するN」.",
+      "rubyQuestion": "<ruby>環境問題<rt>かんきょうもんだい</rt></ruby>（　　）<ruby>関心<rt>かんしん</rt></ruby>が<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>高ま<rt>たかま</rt></ruby>っている。",
+      "hintTranslation": "Sự quan tâm （......） môi trường đang tăng lên."
     }
   ],
   "5": [
@@ -6023,7 +6824,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Nhờ có internet, tin tức toàn cầu truyền đi chớp mắt.",
-      "explanation": "Đáp án đúng là A. Phương tiện / cách thức."
+      "explanation": "Đáp án đúng là A. Phương tiện / cách thức.",
+      "rubyQuestion": "インターネット（　　）、<ruby>世界中<rt>せかいじゅう</rt></ruby>のニュースが<ruby>瞬時<rt>しゅんじ</rt></ruby>に<ruby>伝わ<rt>つたわ</rt></ruby>る。",
+      "hintTranslation": "（......） Nhờ có internet, tin tức toàn cầu truyền đi chớp mắt."
     },
     {
       "id": 2,
@@ -6038,7 +6841,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Mong bạn đừng nói việc này cho ai biết.",
-      "explanation": "Đáp án đúng là C. 「Vないでほしい」mong đừng làm."
+      "explanation": "Đáp án đúng là C. 「Vないでほしい」mong đừng làm.",
+      "rubyQuestion": "この<ruby>件<rt>けん</rt></ruby>については、<ruby>他の<rt>ほかの</rt></ruby><ruby>人<rt>にん</rt></ruby>には<ruby>誰<rt>だれ</rt></ruby>にも<ruby>言わ<rt>いわ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Mong bạn đừng nói việc này cho ai biết."
     },
     {
       "id": 3,
@@ -6053,7 +6858,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Muốn sống lâu khỏe mạnh thì nên sinh hoạt điều độ.",
-      "explanation": "Đáp án đúng là D. Khuyên bảo lối sống."
+      "explanation": "Đáp án đúng là D. Khuyên bảo lối sống.",
+      "rubyQuestion": "<ruby>健康<rt>けんこう</rt></ruby>で<ruby>長生き<rt>ながいき</rt></ruby>したければ、<ruby>規則正し<rt>きそくただし</rt></ruby>い<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送る<rt>おくる</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn sống lâu khỏe mạnh thì （......） sinh hoạt điều độ."
     },
     {
       "id": 4,
@@ -6068,7 +6875,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Rét đậm cộng thêm tuyết rơi dày khiến giao thông tê liệt.",
-      "explanation": "Đáp án đúng là B. Rét cộng tuyết lớn."
+      "explanation": "Đáp án đúng là B. Rét cộng tuyết lớn.",
+      "rubyQuestion": "<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>寒さ<rt>さむさ</rt></ruby>（　　）<ruby>大雪<rt>おおゆき</rt></ruby>に<ruby>見舞<rt>みまい</rt></ruby>われ、<ruby>交通網<rt>こうつうもう</rt></ruby>が<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>麻痺<rt>まひ</rt></ruby>した。",
+      "hintTranslation": "（......） Rét đậm cộng thêm tuyết rơi dày khiến giao thông tê liệt."
     },
     {
       "id": 5,
@@ -6083,7 +6892,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tại vì kinh tế kém nên tiền thưởng bị cắt.",
-      "explanation": "Đáp án đúng là D. Nguyên nhân gây thiệt hại."
+      "explanation": "Đáp án đúng là D. Nguyên nhân gây thiệt hại.",
+      "rubyQuestion": "<ruby>景気<rt>けいき</rt></ruby>が<ruby>悪い<rt>わるい</rt></ruby>（　　）ボーナスが<ruby>大幅<rt>おおはば</rt></ruby>にカットされた。",
+      "hintTranslation": "（......） kinh tế kém nên tiền thưởng bị cắt."
     },
     {
       "id": 6,
@@ -6098,7 +6909,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Văn hóa khác nhau tùy theo mỗi quốc gia.",
-      "explanation": "Đáp án đúng là D. 「N + によって」= tùy vào."
+      "explanation": "Đáp án đúng là D. 「N + によって」= tùy vào.",
+      "rubyQuestion": "<ruby>文化<rt>ぶんか</rt></ruby>や<ruby>習慣<rt>しゅうかん</rt></ruby>は、<ruby>国<rt>くに</rt></ruby>（　　）<ruby>大きく<rt>おおきく</rt></ruby><ruby>異な<rt>ことな</rt></ruby>ります。",
+      "hintTranslation": "（......） Văn hóa khác nhau tùy theo mỗi quốc gia."
     },
     {
       "id": 7,
@@ -6113,7 +6926,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dù thất bại thế nào nếu học hỏi được thì không vô ích.",
-      "explanation": "Đáp án đúng là A. Dù thất bại."
+      "explanation": "Đáp án đúng là A. Dù thất bại.",
+      "rubyQuestion": "どんなに<ruby>失敗<rt>しっぱい</rt></ruby>し（　　）、そこから<ruby>学べ<rt>まなべ</rt></ruby>ば<ruby>無駄<rt>むだ</rt></ruby>にはならない。",
+      "hintTranslation": "（......） thất bại thế nào nếu học hỏi được thì không vô ích."
     },
     {
       "id": 8,
@@ -6128,7 +6943,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Thay vì trả tiền mặt, thanh toán ví điện tử sẽ được điểm.",
-      "explanation": "Đáp án đúng là C. Thay đổi hình thức trả tiền."
+      "explanation": "Đáp án đúng là C. Thay đổi hình thức trả tiền.",
+      "rubyQuestion": "<ruby>現金<rt>げんきん</rt></ruby>で<ruby>支払う<rt>しはらう</rt></ruby>（　　）、<ruby>電子<rt>でんし</rt></ruby>マネーで<ruby>決済<rt>けっさい</rt></ruby>するとポイントが<ruby>付く<rt>つく</rt></ruby>。",
+      "hintTranslation": "（......） trả tiền mặt, thanh toán ví điện tử sẽ được điểm."
     },
     {
       "id": 9,
@@ -6143,7 +6960,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Quá bận rộn, đến thời gian gọi điện cho gia đình cũng không thu xếp được.",
-      "explanation": "Đáp án đúng là B. Ngay cả việc tối thiểu."
+      "explanation": "Đáp án đúng là B. Ngay cả việc tối thiểu.",
+      "rubyQuestion": "<ruby>忙しす<rt>いそがしす</rt></ruby>ぎて、<ruby>家族<rt>かぞく</rt></ruby>と<ruby>電話<rt>でんわ</rt></ruby>で<ruby>話す<rt>はなす</rt></ruby><ruby>時間<rt>じかん</rt></ruby>（　　）<ruby>取れ<rt>とれ</rt></ruby>ない。",
+      "hintTranslation": "（......） Quá bận rộn, đến thời gian gọi điện cho gia đình cũng không thu xếp được."
     },
     {
       "id": 10,
@@ -6158,7 +6977,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Tiện thì tiện thật nhưng cần luyện tập mới quen dùng.",
-      "explanation": "Đáp án đúng là A. Tính từ đuôi na: 便利なことは便利だが."
+      "explanation": "Đáp án đúng là A. Tính từ đuôi na: 便利なことは便利だが.",
+      "rubyQuestion": "<ruby>便利<rt>べんり</rt></ruby>な（　　）<ruby>便利<rt>べんり</rt></ruby>だが、<ruby>使い<rt>つかい</rt></ruby>こなすまでに<ruby>練習<rt>れんしゅう</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だ。",
+      "hintTranslation": "Tiện thì tiện （......） cần luyện tập mới quen dùng."
     },
     {
       "id": 11,
@@ -6173,7 +6994,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Bị bão tàn phá thêm vào đó động đất xảy ra khiến hiện trường hỗn loạn.",
-      "explanation": "Đáp án đúng là B. Thiên tai chồng chất."
+      "explanation": "Đáp án đúng là B. Thiên tai chồng chất.",
+      "rubyQuestion": "<ruby>台風<rt>たいふう</rt></ruby>の<ruby>被害<rt>ひがい</rt></ruby>（　　）、<ruby>地震<rt>じしん</rt></ruby>まで<ruby>発生<rt>はっせい</rt></ruby>して<ruby>現地<rt>げんち</rt></ruby>は<ruby>混乱<rt>こんらん</rt></ruby>している。",
+      "hintTranslation": "Bị bão tàn phá （......） động đất xảy ra khiến hiện trường hỗn loạn."
     },
     {
       "id": 12,
@@ -6188,7 +7011,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Trái ngược với cái nóng gay gắt hôm qua, hôm nay lạnh se se.",
-      "explanation": "Đáp án đúng là D. Đối lập thời tiết 2 ngày."
+      "explanation": "Đáp án đúng là D. Đối lập thời tiết 2 ngày.",
+      "rubyQuestion": "<ruby>昨日<rt>きのう</rt></ruby>の<ruby>猛暑<rt>もうしょ</rt></ruby>（　　）、<ruby>今日は<rt>こんにちは</rt></ruby><ruby>急に<rt>きゅうに</rt></ruby><ruby>気温<rt>きおん</rt></ruby>が<ruby>下が<rt>さが</rt></ruby>って<ruby>肌寒い<rt>はださむい</rt></ruby>。",
+      "hintTranslation": "（......） cái nóng gay gắt hôm qua, hôm nay lạnh se se."
     },
     {
       "id": 13,
@@ -6203,7 +7028,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Anh ấy vừa là nhà nghiên cứu giỏi vừa là nhà giáo dục.",
-      "explanation": "Đáp án đúng là B. 「である一方で」nêu 2 vai trò song song."
+      "explanation": "Đáp án đúng là B. 「である一方で」nêu 2 vai trò song song.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby><ruby>優秀<rt>ゆうしゅう</rt></ruby>な<ruby>研究者<rt>けんきゅうしゃ</rt></ruby>である（　　）、<ruby>大学<rt>だいがく</rt></ruby>で<ruby>学生<rt>がくせい</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>る<ruby>教育者<rt>きょういくしゃ</rt></ruby>でもある。",
+      "hintTranslation": "（......） Anh ấy vừa là nhà nghiên cứu giỏi vừa là nhà giáo dục."
     },
     {
       "id": 14,
@@ -6218,7 +7045,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sau động đất có nguy cơ sóng thần nên hãy sơ tán.",
-      "explanation": "Đáp án đúng là C. Nguy cơ sóng thần."
+      "explanation": "Đáp án đúng là C. Nguy cơ sóng thần.",
+      "rubyQuestion": "<ruby>地震<rt>じしん</rt></ruby>の<ruby>後<rt>のち</rt></ruby>は、<ruby>津波<rt>つなみ</rt></ruby>が<ruby>発生<rt>はっせい</rt></ruby>する（　　）ので<ruby>避難<rt>ひなん</rt></ruby>してください。",
+      "hintTranslation": "Sau động đất （......） sóng thần nên hãy sơ tán."
     },
     {
       "id": 15,
@@ -6233,7 +7062,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Hay nỗi gì! Tôi ngủ gật giữa chừng luôn đấy.",
-      "explanation": "Đáp án đúng là D. Phủ định mỉa mai."
+      "explanation": "Đáp án đúng là D. Phủ định mỉa mai.",
+      "rubyQuestion": "「あの<ruby>映画<rt>えいが</rt></ruby>、<ruby>面白か<rt>おもしろか</rt></ruby>った？」「<ruby>面白か<rt>おもしろか</rt></ruby>った（　　）。<ruby>途中<rt>とちゅう</rt></ruby>で<ruby>寝ち<rt>ねち</rt></ruby>ゃったよ。」",
+      "hintTranslation": "（......） Hay nỗi gì! Tôi ngủ gật giữa chừng luôn đấy."
     },
     {
       "id": 16,
@@ -6248,7 +7079,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Doanh nghiệp lớn chưa hẳn tương lai đã mãi ổn định.",
-      "explanation": "Đáp án đúng là C. Chưa chắc ổn định."
+      "explanation": "Đáp án đúng là C. Chưa chắc ổn định.",
+      "rubyQuestion": "<ruby>大手<rt>おおて</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>だからといって、<ruby>将来<rt>しょうらい</rt></ruby>ずっと<ruby>安定<rt>あんてい</rt></ruby>している（　　）。",
+      "hintTranslation": "（......） Doanh nghiệp lớn chưa hẳn tương lai đã mãi ổn định."
     },
     {
       "id": 17,
@@ -6263,7 +7096,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nhờ uống thuốc sớm nên cảm cúm đã khỏi không bị nặng.",
-      "explanation": "Đáp án đúng là C. Kết quả điều trị tốt."
+      "explanation": "Đáp án đúng là C. Kết quả điều trị tốt.",
+      "rubyQuestion": "<ruby>薬<rt>くすり</rt></ruby>を<ruby>早め<rt>はやめ</rt></ruby>に<ruby>飲ん<rt>のん</rt></ruby>だ（　　）、ひどくならずに<ruby>風邪<rt>かぜ</rt></ruby>が<ruby>治っ<rt>なおっ</rt></ruby>た。",
+      "hintTranslation": "（......） uống thuốc sớm nên cảm cúm đã khỏi không bị nặng."
     },
     {
       "id": 18,
@@ -6278,7 +7113,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Dù có tốn thời gian tôi muốn tự sức hoàn thành.",
-      "explanation": "Đáp án đúng là C. Dù mất thời gian."
+      "explanation": "Đáp án đúng là C. Dù mất thời gian.",
+      "rubyQuestion": "たとえ<ruby>時間<rt>じかん</rt></ruby>がかかっ（　　）、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>で<ruby>最後<rt>さいご</rt></ruby>までやり<ruby>遂げ<rt>とげ</rt></ruby>たい。",
+      "hintTranslation": "（......） có tốn thời gian tôi muốn tự sức hoàn thành."
     },
     {
       "id": 19,
@@ -6293,7 +7130,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đổ lỗi cho người khác không phải thái độ người lớn.",
-      "explanation": "Đáp án đúng là C. 「他人のせいにする」: đổ lỗi cho người khác."
+      "explanation": "Đáp án đúng là C. 「他人のせいにする」: đổ lỗi cho người khác.",
+      "rubyQuestion": "<ruby>何で<rt>なんで</rt></ruby>も<ruby>他人<rt>たにん</rt></ruby>の（　　）にするのは、<ruby>大人<rt>おとな</rt></ruby>の<ruby>態度<rt>たいど</rt></ruby>とは<ruby>言え<rt>いえ</rt></ruby>ない。",
+      "hintTranslation": "（......） Đổ lỗi cho người khác không phải thái độ người lớn."
     },
     {
       "id": 20,
@@ -6308,7 +7147,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Thầy giáo: 'Hãy chia thành nhóm 5 người một nhé.'",
-      "explanation": "Đáp án đúng là D. 「N + ごとに」mang nghĩa phân chia 'từng... một'."
+      "explanation": "Đáp án đúng là D. 「N + ごとに」mang nghĩa phân chia 'từng... một'.",
+      "rubyQuestion": "<ruby>先生<rt>せんせい</rt></ruby>：「それでは<ruby>今か<rt>いまか</rt></ruby>ら、５<ruby>人<rt>にん</rt></ruby>（　　）のグループに<ruby>分か<rt>わか</rt></ruby>れてください。」",
+      "hintTranslation": "（......） Thầy giáo: 'Hãy chia thành nhóm 5 người một nhé.'"
     },
     {
       "id": 21,
@@ -6323,7 +7164,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Bão đến gần có nguy cơ nước sông tràn bờ.",
-      "explanation": "Đáp án đúng là D. 「〜恐れがある」nguy cơ xấu."
+      "explanation": "Đáp án đúng là D. 「〜恐れがある」nguy cơ xấu.",
+      "rubyQuestion": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>接近し<rt>せっきんし</rt></ruby>ているため、<ruby>大雨<rt>おおあめ</rt></ruby>による<ruby>河川<rt>かせん</rt></ruby>の<ruby>氾濫<rt>はんらん</rt></ruby>の（　　）。",
+      "hintTranslation": "Bão đến gần （......） nước sông tràn bờ."
     },
     {
       "id": 22,
@@ -6338,7 +7181,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Hay gặp trong thời sự tin tức và cảnh báo công cộng.",
-      "explanation": "Đáp án đúng là D. Văn phong trang trọng."
+      "explanation": "Đáp án đúng là D. Văn phong trang trọng.",
+      "rubyQuestion": "「〜<ruby>恐れ<rt>おそれ</rt></ruby>がある」は<ruby>主に<rt>おもに</rt></ruby>どのような<ruby>場面<rt>ばめん</rt></ruby>でよく<ruby>使わ<rt>つかわ</rt></ruby>れますか。",
+      "hintTranslation": "（......） Hay gặp trong thời sự tin tức và cảnh báo công cộng."
     },
     {
       "id": 23,
@@ -6353,7 +7198,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Quán đông khách chưa chắc đã hợp khẩu vị mình.",
-      "explanation": "Đáp án đúng là D. Chưa chắc hợp miệng."
+      "explanation": "Đáp án đúng là D. Chưa chắc hợp miệng.",
+      "rubyQuestion": "<ruby>人気<rt>にんき</rt></ruby>のある<ruby>店<rt>みせ</rt></ruby>だからといって、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>口<rt>くち</rt></ruby>に<ruby>合う<rt>あう</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Quán đông khách chưa chắc đã hợp khẩu vị mình."
     },
     {
       "id": 24,
@@ -6368,7 +7215,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Là cha mẹ thì luôn mong con lớn lên khỏe mạnh hạnh phúc.",
-      "explanation": "Đáp án đúng là C. Mong ước cho con cái."
+      "explanation": "Đáp án đúng là C. Mong ước cho con cái.",
+      "rubyQuestion": "<ruby>親<rt>おや</rt></ruby>としては、<ruby>子供<rt>こども</rt></ruby>に<ruby>健康<rt>けんこう</rt></ruby>で<ruby>幸せ<rt>しあわせ</rt></ruby>に<ruby>育っ<rt>そだっ</rt></ruby>（　　）ものだ。",
+      "hintTranslation": "（......） Là cha mẹ thì luôn mong con lớn lên khỏe mạnh hạnh phúc."
     },
     {
       "id": 25,
@@ -6383,7 +7232,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Cho dù chuyện đó là thật tôi cũng không tha thứ cho anh ấy.",
-      "explanation": "Đáp án đúng là A. Dù là sự thật."
+      "explanation": "Đáp án đúng là A. Dù là sự thật.",
+      "rubyQuestion": "<ruby>仮に<rt>かりに</rt></ruby>その<ruby>話<rt>はなし</rt></ruby>が<ruby>本当<rt>ほんとう</rt></ruby>だ（　　）、<ruby>彼<rt>かれ</rt></ruby>を<ruby>許す<rt>ゆるす</rt></ruby>ことはできない。",
+      "hintTranslation": "（......） chuyện đó là thật tôi cũng không tha thứ cho anh ấy."
     },
     {
       "id": 26,
@@ -6398,7 +7249,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tùy mỗi người mà khẩu vị khác nhau là điều hiển nhiên.",
-      "explanation": "Đáp án đúng là B. Tùy thuộc vào mỗi người."
+      "explanation": "Đáp án đúng là B. Tùy thuộc vào mỗi người.",
+      "rubyQuestion": "<ruby>人<rt>にん</rt></ruby>（　　）<ruby>味<rt>あじ</rt></ruby>の<ruby>好み<rt>このみ</rt></ruby>が<ruby>違う<rt>ちがう</rt></ruby>のは<ruby>当たり前<rt>あたりまえ</rt></ruby>のことだ。",
+      "hintTranslation": "（......） Tùy mỗi người mà khẩu vị khác nhau là điều hiển nhiên."
     },
     {
       "id": 27,
@@ -6413,7 +7266,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu.",
-      "explanation": "Đáp án đúng là A. 「面白さ」."
+      "explanation": "Đáp án đúng là A. 「面白さ」.",
+      "rubyQuestion": "この<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>面白<rt>おもしろ</rt></ruby>（　　）は、<ruby>読んだ<rt>よんだ</rt></ruby><ruby>人<rt>にん</rt></ruby>にしか<ruby>分か<rt>わか</rt></ruby>らない。",
+      "hintTranslation": "（......） Độ thú vị của tiểu thuyết này chỉ ai đọc mới hiểu."
     },
     {
       "id": 28,
@@ -6428,7 +7283,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Tôi mong bạn thấu hiểu cho tâm trạng của tôi một chút.",
-      "explanation": "Đáp án đúng là A. Mong người khác hiểu."
+      "explanation": "Đáp án đúng là A. Mong người khác hiểu.",
+      "rubyQuestion": "<ruby>私<rt>わたし</rt></ruby>の<ruby>気持ち<rt>きもち</rt></ruby>をもう<ruby>少し<rt>すこし</rt></ruby><ruby>理解<rt>りかい</rt></ruby>し（　　）と<ruby>思い<rt>おもい</rt></ruby>ます。",
+      "hintTranslation": "（......） Tôi mong bạn thấu hiểu cho tâm trạng của tôi một chút."
     },
     {
       "id": 29,
@@ -6443,7 +7300,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Người dùng sách điện tử tăng trong khi sách giấy giảm.",
-      "explanation": "Đáp án đúng là C. Đối lập giữa 2 xu hướng trái chiều."
+      "explanation": "Đáp án đúng là C. Đối lập giữa 2 xu hướng trái chiều.",
+      "rubyQuestion": "<ruby>電子<rt>でんし</rt></ruby><ruby>書籍<rt>しょせき</rt></ruby>の<ruby>利用者<rt>りようしゃ</rt></ruby>が<ruby>増え<rt>ふえ</rt></ruby>ている（　　）、<ruby>紙<rt>かみ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>の<ruby>売り上げ<rt>うりあげ</rt></ruby>は<ruby>減少<rt>げんしょう</rt></ruby>している。",
+      "hintTranslation": "（......） Người dùng sách điện tử tăng trong khi sách giấy giảm."
     },
     {
       "id": 30,
@@ -6458,7 +7317,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Hồi vừa mới sang Nhật, đổi tàu cũng thấy khó.",
-      "explanation": "Đáp án đúng là B. 「Vタ形 + ばかり」vừa mới xong."
+      "explanation": "Đáp án đúng là B. 「Vタ形 + ばかり」vừa mới xong.",
+      "rubyQuestion": "<ruby>日本<rt>にっぽん</rt></ruby>に<ruby>来<rt>らい</rt></ruby>（　　）の<ruby>頃<rt>ごろ</rt></ruby>は、<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>乗り換え<rt>のりかえ</rt></ruby>さえ<ruby>難しか<rt>むずかしか</rt></ruby>った。",
+      "hintTranslation": "Hồi （......） sang Nhật, đổi tàu cũng thấy khó."
     },
     {
       "id": 31,
@@ -6473,7 +7334,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Món súp này nhiều nước (loãng toẹt), không ngon.",
-      "explanation": "Đáp án đúng là C. 「水っぽい」loãng, nhiều nước."
+      "explanation": "Đáp án đúng là C. 「水っぽい」loãng, nhiều nước.",
+      "rubyQuestion": "このスープは<ruby>水<rt>みず</rt></ruby>（　　）て、あまり<ruby>美味しく<rt>おいしく</rt></ruby>ない。",
+      "hintTranslation": "Món súp này （......） (loãng toẹt), không ngon."
     },
     {
       "id": 32,
@@ -6488,7 +7351,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Xe cũ nên dốc đứng thế này trông khó mà leo hết nổi.",
-      "explanation": "Đáp án đúng là D. Khó leo nổi dốc."
+      "explanation": "Đáp án đúng là D. Khó leo nổi dốc.",
+      "rubyQuestion": "<ruby>古い<rt>ふるい</rt></ruby><ruby>車<rt>くるま</rt></ruby>なので、<ruby>急な<rt>きゅうな</rt></ruby><ruby>坂道<rt>さかみち</rt></ruby>を<ruby>登り<rt>のぼり</rt></ruby><ruby>切れ<rt>きれ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Xe cũ nên dốc đứng thế này trông khó mà leo hết nổi."
     },
     {
       "id": 33,
@@ -6503,7 +7368,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Thế vận hội Olympic được tổ chức 4 năm một lần.",
-      "explanation": "Đáp án đúng là D. 「N + ごとに」chỉ chu kỳ lặp lại 'cứ mỗi... lại...'."
+      "explanation": "Đáp án đúng là D. 「N + ごとに」chỉ chu kỳ lặp lại 'cứ mỗi... lại...'.",
+      "rubyQuestion": "オリンピックは４<ruby>年<rt>ねん</rt></ruby>（　　）<ruby>開催<rt>かいさい</rt></ruby>される<ruby>世界的<rt>せかいてき</rt></ruby>なスポーツの<ruby>祭典<rt>さいてん</rt></ruby>です。",
+      "hintTranslation": "（......） Thế vận hội Olympic được tổ chức 4 năm một lần."
     },
     {
       "id": 34,
@@ -6518,7 +7385,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Lái xe thì lái được thật nhưng đường cao tốc thì không dám đi.",
-      "explanation": "Đáp án đúng là A. Lặp lại động từ."
+      "explanation": "Đáp án đúng là A. Lặp lại động từ.",
+      "rubyQuestion": "<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>できる（　　）できますが、<ruby>高速道路<rt>こうそくどうろ</rt></ruby>は<ruby>怖く<rt>こわく</rt></ruby>て<ruby>走れ<rt>はしれ</rt></ruby>ません。",
+      "hintTranslation": "Lái xe thì lái được （......） đường cao tốc thì không dám đi."
     },
     {
       "id": 35,
@@ -6533,7 +7402,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn thi đỗ thì tốt nhất không nên lơ là ôn tập.",
-      "explanation": "Đáp án đúng là A. 「Vないことだ」khuyên không nên."
+      "explanation": "Đáp án đúng là A. 「Vないことだ」khuyên không nên.",
+      "rubyQuestion": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>したいなら、<ruby>毎日<rt>まいにち</rt></ruby><ruby>復習<rt>ふくしゅう</rt></ruby>を<ruby>怠ら<rt>おこたら</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn thi đỗ thì tốt nhất （......） lơ là ôn tập."
     },
     {
       "id": 36,
@@ -6548,7 +7419,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tính toán dễ thế này làm sao sinh viên đại học nhầm được!",
-      "explanation": "Đáp án đúng là D. Phủ định khả năng xảy ra."
+      "explanation": "Đáp án đúng là D. Phủ định khả năng xảy ra.",
+      "rubyQuestion": "こんなに<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>計算<rt>けいさん</rt></ruby>、<ruby>大学生<rt>だいがくせい</rt></ruby>の<ruby>彼<rt>かれ</rt></ruby>が<ruby>間違え<rt>まちがえ</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Tính toán dễ thế này làm sao sinh viên đại học nhầm được!"
     },
     {
       "id": 37,
@@ -6563,7 +7436,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đứa bé mới cấp 2 mà trông rất giống người lớn.",
-      "explanation": "Đáp án đúng là B. 「大人っぽい」chững chạc."
+      "explanation": "Đáp án đúng là B. 「大人っぽい」chững chạc.",
+      "rubyQuestion": "あの<ruby>子<rt>こ</rt></ruby>はまだ<ruby>中学生<rt>ちゅうがくせい</rt></ruby>なのに、とても<ruby>大人<rt>おとな</rt></ruby>（　　）。",
+      "hintTranslation": "Đứa bé mới cấp 2 mà trông （......）."
     },
     {
       "id": 38,
@@ -6578,7 +7453,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Sự quan tâm của giới trẻ đối với chính trị đang mờ nhạt dần.",
-      "explanation": "Đáp án đúng là A. 「政治に対する関心」."
+      "explanation": "Đáp án đúng là A. 「政治に対する関心」.",
+      "rubyQuestion": "<ruby>若者<rt>わかもの</rt></ruby>の<ruby>政治<rt>せいじ</rt></ruby>（　　）<ruby>関心<rt>かんしん</rt></ruby>が<ruby>薄れ<rt>うすれ</rt></ruby>ていると<ruby>言わ<rt>いわ</rt></ruby>れている。",
+      "hintTranslation": "Sự quan tâm của giới trẻ （......） chính trị đang mờ nhạt dần."
     },
     {
       "id": 39,
@@ -6593,7 +7470,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Độ cao của núi Phú Sĩ là 3.776m.",
-      "explanation": "Đáp án đúng là B. 「高い」→「高さ」độ cao."
+      "explanation": "Đáp án đúng là B. 「高い」→「高さ」độ cao.",
+      "rubyQuestion": "<ruby>富士山<rt>ふじさん</rt></ruby>の（　　）は、<ruby>約<rt>やく</rt></ruby>3,776メートルです。",
+      "hintTranslation": "（......） Độ cao của núi Phú Sĩ là 3.776m."
     },
     {
       "id": 40,
@@ -6608,7 +7487,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Kỹ thuật y tế tiến bộ, bên cạnh đó các vấn đề đạo đức cũng được bàn luận nhiều.",
-      "explanation": "Đáp án đúng là B. Hai mặt cùng diễn ra song song."
+      "explanation": "Đáp án đúng là B. Hai mặt cùng diễn ra song song.",
+      "rubyQuestion": "<ruby>医療技術<rt>いりょうぎじゅつ</rt></ruby>が<ruby>進歩<rt>しんぽ</rt></ruby>する（　　）、<ruby>倫理的<rt>りんりてき</rt></ruby>な<ruby>課題<rt>かだい</rt></ruby>も<ruby>多く<rt>おおく</rt></ruby><ruby>議論<rt>ぎろん</rt></ruby>されるようになった。",
+      "hintTranslation": "（......） Kỹ thuật y tế tiến bộ, bên cạnh đó các vấn đề đạo đức cũng được bàn luận nhiều."
     },
     {
       "id": 41,
@@ -6623,7 +7504,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Độ sâu của bể bơi này là mấy mét?",
-      "explanation": "Đáp án đúng là A. 「深い」→「深さ」."
+      "explanation": "Đáp án đúng là A. 「深い」→「深さ」.",
+      "rubyQuestion": "このプールの<ruby>水深<rt>すいしん</rt></ruby>の（　　）は<ruby>何<rt>なに</rt></ruby>メートルですか。",
+      "hintTranslation": "（......） Độ sâu của bể bơi này là mấy mét?"
     },
     {
       "id": 42,
@@ -6638,7 +7521,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Vì chơi game muộn nên sáng nay ngủ quên.",
-      "explanation": "Đáp án đúng là B. 「せいで」chỉ nguyên nhân gây hậu quả xấu."
+      "explanation": "Đáp án đúng là B. 「せいで」chỉ nguyên nhân gây hậu quả xấu.",
+      "rubyQuestion": "<ruby>昨夜<rt>さくや</rt></ruby><ruby>遅く<rt>おそく</rt></ruby>までゲームをした（　　）、<ruby>今朝<rt>けさ</rt></ruby><ruby>寝坊<rt>ねぼう</rt></ruby>してしまった。",
+      "hintTranslation": "（......） chơi game muộn nên sáng nay ngủ quên."
     },
     {
       "id": 43,
@@ -6653,7 +7538,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Dự luật đó đã được thông qua bằng biểu quyết đa số ở quốc hội.",
-      "explanation": "Đáp án đúng là B. Phương tiện thông qua."
+      "explanation": "Đáp án đúng là B. Phương tiện thông qua.",
+      "rubyQuestion": "その<ruby>法案<rt>ほうあん</rt></ruby>は<ruby>国会<rt>こっかい</rt></ruby>の<ruby>多数決<rt>たすうけつ</rt></ruby>（　　）<ruby>可決<rt>かけつ</rt></ruby>されました。",
+      "hintTranslation": "（......） Dự luật đó đã được thông qua bằng biểu quyết đa số ở quốc hội."
     },
     {
       "id": 44,
@@ -6668,7 +7555,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Từ người mà ngay cả tên tôi cũng không nhớ, bỗng nhận được quà đắt tiền.",
-      "explanation": "Đáp án đúng là C. Nhấn mạnh mức độ không biết."
+      "explanation": "Đáp án đúng là C. Nhấn mạnh mức độ không biết.",
+      "rubyQuestion": "<ruby>名前<rt>なまえ</rt></ruby>（　　）<ruby>覚え<rt>おぼえ</rt></ruby>ていない<ruby>相手<rt>あいて</rt></ruby>から、<ruby>突然<rt>とつぜん</rt></ruby><ruby>高価<rt>こうか</rt></ruby>なプレゼントが<ruby>届い<rt>とどい</rt></ruby>た。",
+      "hintTranslation": "Từ người mà （......） tên tôi cũng không nhớ, bỗng nhận được quà đắt tiền."
     },
     {
       "id": 45,
@@ -6683,7 +7572,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Có nguy cơ dịch cúm lan rộng nhanh chóng.",
-      "explanation": "Đáp án đúng là B. Nguy cơ dịch bệnh."
+      "explanation": "Đáp án đúng là B. Nguy cơ dịch bệnh.",
+      "rubyQuestion": "インフルエンザが<ruby>急速<rt>きゅうそく</rt></ruby>に<ruby>感染<rt>かんせん</rt></ruby><ruby>拡大<rt>かくだい</rt></ruby>する（　　）がある。",
+      "hintTranslation": "（......） dịch cúm lan rộng nhanh chóng."
     },
     {
       "id": 46,
@@ -6698,7 +7589,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Dù có giàu có tôi vẫn sống giản dị như giờ.",
-      "explanation": "Đáp án đúng là D. 「〜としても」cho dù đi nữa."
+      "explanation": "Đáp án đúng là D. 「〜としても」cho dù đi nữa.",
+      "rubyQuestion": "たとえ<ruby>大金持<rt>おおがねもち</rt></ruby>ちになっ（　　）、<ruby>質素<rt>しっそ</rt></ruby>な<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>変え<rt>かえ</rt></ruby>ないだろう。",
+      "hintTranslation": "（......） có giàu có tôi vẫn sống giản dị như giờ."
     },
     {
       "id": 47,
@@ -6713,7 +7606,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đi làm ngày Chủ Nhật bù lại được nghỉ bù Thứ Hai.",
-      "explanation": "Đáp án đúng là D. Đổi ngày làm việc."
+      "explanation": "Đáp án đúng là D. Đổi ngày làm việc.",
+      "rubyQuestion": "<ruby>日曜日<rt>にちようび</rt></ruby>に<ruby>出勤<rt>しゅっきん</rt></ruby>した（　　）、<ruby>月曜日<rt>げつようび</rt></ruby>に<ruby>振替休日<rt>ふりかえきゅうじつ</rt></ruby>をもらった。",
+      "hintTranslation": "（......） Đi làm ngày Chủ Nhật bù lại được nghỉ bù Thứ Hai."
     },
     {
       "id": 48,
@@ -6728,7 +7623,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Thay vì mua ô tô, nhà tôi quyết định đi du lịch nước ngoài.",
-      "explanation": "Đáp án đúng là D. Lựa chọn thay thế."
+      "explanation": "Đáp án đúng là D. Lựa chọn thay thế.",
+      "rubyQuestion": "<ruby>車<rt>くるま</rt></ruby>を<ruby>買う<rt>かう</rt></ruby>（　　）、<ruby>家族<rt>かぞく</rt></ruby>で<ruby>海外旅行<rt>かいがいりょこう</rt></ruby>に<ruby>行く<rt>いく</rt></ruby>ことにした。",
+      "hintTranslation": "（......） mua ô tô, nhà tôi quyết định đi du lịch nước ngoài."
     },
     {
       "id": 49,
@@ -6743,7 +7640,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ngon thì ngon thật nhưng nấu mất nhiều thời gian.",
-      "explanation": "Đáp án đúng là C. 「イAことはイAが」."
+      "explanation": "Đáp án đúng là C. 「イAことはイAが」.",
+      "rubyQuestion": "この<ruby>料理<rt>りょうり</rt></ruby>は<ruby>美味しい<rt>おいしい</rt></ruby>（　　）<ruby>美味しい<rt>おいしい</rt></ruby>が、<ruby>作る<rt>つくる</rt></ruby>のに<ruby>時間<rt>じかん</rt></ruby>がかかる。",
+      "hintTranslation": "Ngon （......） nhưng nấu mất nhiều thời gian."
     },
     {
       "id": 50,
@@ -6758,7 +7657,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Thầy dạy tiếng Nhật bao năm lẽ nào lại không biết ngữ pháp này!",
-      "explanation": "Đáp án đúng là B. Phủ định kép."
+      "explanation": "Đáp án đúng là B. Phủ định kép.",
+      "rubyQuestion": "<ruby>何年<rt>なんねん</rt></ruby>も<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教え<rt>おしえ</rt></ruby>ている<ruby>先生<rt>せんせい</rt></ruby>が、この<ruby>文法<rt>ぶんぽう</rt></ruby>を<ruby>知ら<rt>しら</rt></ruby>ない（　　）。",
+      "hintTranslation": "Thầy dạy tiếng Nhật bao năm （......） không biết ngữ pháp này!"
     },
     {
       "id": 51,
@@ -6773,7 +7674,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Chi phí nhân công tăng cộng thêm nguyên liệu đắt gây áp lực kinh doanh.",
-      "explanation": "Đáp án đúng là C. Cộng thêm khó khăn."
+      "explanation": "Đáp án đúng là C. Cộng thêm khó khăn.",
+      "rubyQuestion": "<ruby>人件費<rt>じんけんひ</rt></ruby>の<ruby>高騰<rt>こうとう</rt></ruby>（　　）<ruby>原材料費<rt>げんざいりょうひ</rt></ruby>の<ruby>値上がり<rt>ねあがり</rt></ruby>も、<ruby>経営<rt>けいえい</rt></ruby>を<ruby>圧迫<rt>あっぱく</rt></ruby>している。",
+      "hintTranslation": "（......） Chi phí nhân công tăng cộng thêm nguyên liệu đắt gây áp lực kinh doanh."
     },
     {
       "id": 52,
@@ -6788,7 +7691,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "(Mỉa mai) 'Nhờ cậu nói lời thừa thãi mà không khí hỏng bét rồi đấy.'",
-      "explanation": "Đáp án đúng là B. おかげで dùng châm biếm."
+      "explanation": "Đáp án đúng là B. おかげで dùng châm biếm.",
+      "rubyQuestion": "（<ruby>皮肉<rt>ひにく</rt></ruby>）「あなたが<ruby>余計<rt>よけい</rt></ruby>なことを<ruby>言った<rt>いった</rt></ruby>（　　）、<ruby>雰囲気<rt>ふんいき</rt></ruby>が<ruby>台無し<rt>だいなし</rt></ruby>ですよ。」",
+      "hintTranslation": "(Mỉa mai) '（......） cậu nói lời thừa thãi mà không khí hỏng bét rồi đấy.'"
     },
     {
       "id": 53,
@@ -6803,7 +7708,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Cuộc sống thành thị tiện lợi nhưng chi phí đắt đỏ.",
-      "explanation": "Đáp án đúng là C. 「普通形 + 一方で」nêu 2 mặt đối lập."
+      "explanation": "Đáp án đúng là C. 「普通形 + 一方で」nêu 2 mặt đối lập.",
+      "rubyQuestion": "<ruby>都会<rt>とかい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>な（　　）、<ruby>生活費<rt>せいかつひ</rt></ruby>が<ruby>高く<rt>たかく</rt></ruby>ストレスも<ruby>多い<rt>おおい</rt></ruby>。",
+      "hintTranslation": "（......） Cuộc sống thành thị tiện lợi nhưng chi phí đắt đỏ."
     },
     {
       "id": 54,
@@ -6818,7 +7725,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Dù là quần áo trông có vẻ rẻ tiền nhưng khéo mặc vẫn đẹp.",
-      "explanation": "Đáp án đúng là A. 「安っぽい」trông rẻ tiền."
+      "explanation": "Đáp án đúng là A. 「安っぽい」trông rẻ tiền.",
+      "rubyQuestion": "<ruby>安物<rt>やすもの</rt></ruby>（　　）<ruby>服<rt>ふく</rt></ruby>でも、<ruby>着こ<rt>つこ</rt></ruby>なし<ruby>次第<rt>しだい</rt></ruby>でおしゃれに<ruby>見え<rt>みえ</rt></ruby>る。",
+      "hintTranslation": "（......） Dù là quần áo trông có vẻ rẻ tiền nhưng khéo mặc vẫn đẹp."
     },
     {
       "id": 55,
@@ -6833,7 +7742,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tập mỗi ngày chưa chắc đã thắng trận.",
-      "explanation": "Đáp án đúng là C. Chưa chắc thắng."
+      "explanation": "Đáp án đúng là C. Chưa chắc thắng.",
+      "rubyQuestion": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>練習<rt>れんしゅう</rt></ruby>したからといって、<ruby>必ず<rt>かならず</rt></ruby><ruby>試合<rt>しあい</rt></ruby>に<ruby>勝て<rt>かて</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Tập mỗi ngày chưa chắc đã thắng trận."
     },
     {
       "id": 56,
@@ -6848,7 +7759,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Do cơn bão lần này, nhiều nhà cửa bị thiệt hại.",
-      "explanation": "Đáp án đúng là D. 「N + によって」chỉ nguyên nhân."
+      "explanation": "Đáp án đúng là D. 「N + によって」chỉ nguyên nhân.",
+      "rubyQuestion": "<ruby>今回<rt>こんかい</rt></ruby>の<ruby>台風<rt>たいふう</rt></ruby>（　　）、<ruby>多く<rt>おおく</rt></ruby>の<ruby>家屋<rt>かおく</rt></ruby>が<ruby>被害<rt>ひがい</rt></ruby>を<ruby>受け<rt>うけ</rt></ruby>ました。",
+      "hintTranslation": "（......） Do cơn bão lần này, nhiều nhà cửa bị thiệt hại."
     },
     {
       "id": 57,
@@ -6863,7 +7776,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Người giàu không hẳn ai cũng đều hạnh phúc.",
-      "explanation": "Đáp án đúng là C. ナAだとは限らない."
+      "explanation": "Đáp án đúng là C. ナAだとは限らない.",
+      "rubyQuestion": "お<ruby>金持ち<rt>かねもち</rt></ruby>の<ruby>人<rt>にん</rt></ruby>が、みんな<ruby>幸せ<rt>しあわせ</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Người giàu không hẳn ai cũng đều hạnh phúc."
     },
     {
       "id": 58,
@@ -6878,7 +7793,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Không được có thái độ thô lỗ đối với khách hàng.",
-      "explanation": "Đáp án đúng là B. 「N + に対して」chỉ đối tượng hướng tới."
+      "explanation": "Đáp án đúng là B. 「N + に対して」chỉ đối tượng hướng tới.",
+      "rubyQuestion": "お<ruby>客様<rt>きゃくさま</rt></ruby>（　　）<ruby>失礼<rt>しつれい</rt></ruby>な<ruby>態度<rt>たいど</rt></ruby>をとってはいけません。",
+      "hintTranslation": "Không được có thái độ thô lỗ （......） khách hàng."
     },
     {
       "id": 59,
@@ -6893,7 +7810,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Chuyến tàu này cứ mỗi lần dừng ở ga lại có đông hành khách lên xuống.",
-      "explanation": "Đáp án đúng là B. 「止まるごとに」: cứ mỗi lần dừng lại."
+      "explanation": "Đáp án đúng là B. 「止まるごとに」: cứ mỗi lần dừng lại.",
+      "rubyQuestion": "この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>に<ruby>止ま<rt>とま</rt></ruby>る（　　）<ruby>多く<rt>おおく</rt></ruby>の<ruby>乗客<rt>じょうきゃく</rt></ruby>が<ruby>乗り降り<rt>のりおり</rt></ruby>する。",
+      "hintTranslation": "Chuyến tàu này （......） dừng ở ga lại có đông hành khách lên xuống."
     },
     {
       "id": 60,
@@ -6908,7 +7827,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sơ suất tàn lửa có nguy cơ phát triển thành hỏa hoạn lớn.",
-      "explanation": "Đáp án đúng là B. Nguy cơ cháy nổ."
+      "explanation": "Đáp án đúng là B. Nguy cơ cháy nổ.",
+      "rubyQuestion": "<ruby>火<rt>ひ</rt></ruby>の<ruby>不始末<rt>ふしまつ</rt></ruby>から<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>火災<rt>かさい</rt></ruby>に<ruby>発展<rt>はってん</rt></ruby>する（　　）。",
+      "hintTranslation": "Sơ suất tàn lửa （......） phát triển thành hỏa hoạn lớn."
     },
     {
       "id": 61,
@@ -6923,7 +7844,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Quán nhân viên thô lỗ thế không bao giờ thèm đến nữa!",
-      "explanation": "Đáp án đúng là B. 「ものか」tuyệt đối không bao giờ."
+      "explanation": "Đáp án đúng là B. 「ものか」tuyệt đối không bao giờ.",
+      "rubyQuestion": "あんな<ruby>失礼<rt>しつれい</rt></ruby>な<ruby>態度<rt>たいど</rt></ruby>の<ruby>店員<rt>てんいん</rt></ruby>がいる<ruby>店<rt>みせ</rt></ruby>には、<ruby>二度<rt>にど</rt></ruby>と<ruby>行く<rt>いく</rt></ruby>（　　）！",
+      "hintTranslation": "（......） Quán nhân viên thô lỗ thế không bao giờ thèm đến nữa!"
     },
     {
       "id": 62,
@@ -6938,7 +7861,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Điện thoại mới bên cạnh hiệu năng thêm vào đó thiết kế cũng đẹp.",
-      "explanation": "Đáp án đúng là D. Bổ sung ưu điểm."
+      "explanation": "Đáp án đúng là D. Bổ sung ưu điểm.",
+      "rubyQuestion": "<ruby>今回<rt>こんかい</rt></ruby>の<ruby>新型<rt>しんがた</rt></ruby>スマホは、<ruby>性能<rt>せいのう</rt></ruby>の<ruby>向上<rt>こうじょう</rt></ruby>（　　）デザインの<ruby>美しさ<rt>うつくしさ</rt></ruby>も<ruby>評価<rt>ひょうか</rt></ruby>されている。",
+      "hintTranslation": "Điện thoại mới bên cạnh hiệu năng （......） thiết kế cũng đẹp."
     },
     {
       "id": 63,
@@ -6953,7 +7878,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Kế hoạch dù có thành công thì quá tốn kém nên không khả thi.",
-      "explanation": "Đáp án đúng là A. Dù thành công."
+      "explanation": "Đáp án đúng là A. Dù thành công.",
+      "rubyQuestion": "あの<ruby>計画<rt>けいかく</rt></ruby>が<ruby>成功<rt>せいこう</rt></ruby>した（　　）、<ruby>莫大<rt>ばくだい</rt></ruby>な<ruby>費用<rt>ひよう</rt></ruby>がかかるので<ruby>現実的<rt>げんじつてき</rt></ruby>ではない。",
+      "hintTranslation": "Kế hoạch （......） có thành công thì quá tốn kém nên không khả thi."
     },
     {
       "id": 64,
@@ -6968,7 +7895,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tôi vào ca trực thay cho đồng nghiệp nghỉ ốm.",
-      "explanation": "Đáp án đúng là B. Trực ca thay thế."
+      "explanation": "Đáp án đúng là B. Trực ca thay thế.",
+      "rubyQuestion": "<ruby>病気<rt>びょうき</rt></ruby>で<ruby>休ん<rt>やすん</rt></ruby>だ<ruby>同僚<rt>どうりょう</rt></ruby>の（　　）シフトに<ruby>入る<rt>いる</rt></ruby>ことになった。",
+      "hintTranslation": "Tôi vào ca trực （......） đồng nghiệp nghỉ ốm."
     },
     {
       "id": 65,
@@ -6983,7 +7912,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nhờ gia đình ủng hộ nên tôi đã vượt qua thời gian du học bình an.",
-      "explanation": "Đáp án đúng là C. Kết quả tốt đẹp nhờ người thân."
+      "explanation": "Đáp án đúng là C. Kết quả tốt đẹp nhờ người thân.",
+      "rubyQuestion": "<ruby>家族<rt>かぞく</rt></ruby>が<ruby>支え<rt>ささえ</rt></ruby>てくれた（　　）、<ruby>長い<rt>ながい</rt></ruby><ruby>留学生<rt>りゅうがくせい</rt></ruby><ruby>活<rt>かつ</rt></ruby>を<ruby>無事<rt>ぶじ</rt></ruby>に<ruby>乗り越え<rt>のりこえ</rt></ruby>られた。",
+      "hintTranslation": "（......） gia đình ủng hộ nên tôi đã vượt qua thời gian du học bình an."
     },
     {
       "id": 66,
@@ -6998,7 +7929,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Loài chim này có nguy cơ tuyệt chủng.",
-      "explanation": "Đáp án đúng là B. 「絶滅のおそれがある」."
+      "explanation": "Đáp án đúng là B. 「絶滅のおそれがある」.",
+      "rubyQuestion": "この<ruby>鳥<rt>とり</rt></ruby>は<ruby>生息地<rt>せいそくち</rt></ruby>が<ruby>減少<rt>げんしょう</rt></ruby>し、<ruby>絶滅<rt>ぜつめつ</rt></ruby>の（　　）があると<ruby>言わ<rt>いわ</rt></ruby>れている。",
+      "hintTranslation": "Loài chim này （......） tuyệt chủng."
     },
     {
       "id": 67,
@@ -7013,7 +7946,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tôi được bế em bé vừa mới chào đời.",
-      "explanation": "Đáp án đúng là C. Vừa mới sinh ra."
+      "explanation": "Đáp án đúng là C. Vừa mới sinh ra.",
+      "rubyQuestion": "<ruby>生まれ<rt>うまれ</rt></ruby>て（　　）の<ruby>赤ちゃん<rt>あかちゃん</rt></ruby>を<ruby>抱っこ<rt>だっこ</rt></ruby>させてもらった。",
+      "hintTranslation": "Tôi được bế em bé （......） chào đời."
     },
     {
       "id": 68,
@@ -7028,7 +7963,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nhờ đồng nghiệp giúp đỡ nên tôi đã xong việc đúng giờ.",
-      "explanation": "Đáp án đúng là C. Nhờ sự giúp đỡ của đồng nghiệp."
+      "explanation": "Đáp án đúng là C. Nhờ sự giúp đỡ của đồng nghiệp.",
+      "rubyQuestion": "<ruby>同僚<rt>どうりょう</rt></ruby>が<ruby>手伝っ<rt>てつだっ</rt></ruby>てくれた（　　）、<ruby>定時<rt>ていじ</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>を<ruby>終え<rt>おえ</rt></ruby>ることができた。",
+      "hintTranslation": "（......） đồng nghiệp giúp đỡ nên tôi đã xong việc đúng giờ."
     },
     {
       "id": 69,
@@ -7043,7 +7980,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Bí mật mà ngay cả bạn thân cũng không nói.",
-      "explanation": "Đáp án đúng là B. 「〜にさえ」 = ngay cả với ai."
+      "explanation": "Đáp án đúng là B. 「〜にさえ」 = ngay cả với ai.",
+      "rubyQuestion": "<ruby>親友<rt>しんゆう</rt></ruby>に（　　）<ruby>言え<rt>いえ</rt></ruby>ない<ruby>秘密<rt>ひみつ</rt></ruby>を、<ruby>彼は<rt>かれは</rt></ruby>ずっと<ruby>一人<rt>ひとり</rt></ruby>で<ruby>抱え<rt>かかえ</rt></ruby>ていた。",
+      "hintTranslation": "Bí mật mà （......） bạn thân cũng không nói."
     },
     {
       "id": 70,
@@ -7058,7 +7997,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Dù bị ai nói gì tôi cũng không từ bỏ ước mơ.",
-      "explanation": "Đáp án đúng là B. Cho dù bị ai nói gì."
+      "explanation": "Đáp án đúng là B. Cho dù bị ai nói gì.",
+      "rubyQuestion": "<ruby>誰<rt>だれ</rt></ruby>に<ruby>何を<rt>なにを</rt></ruby><ruby>言わ<rt>いわ</rt></ruby>れ（　　）、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>諦め<rt>あきらめ</rt></ruby>るつもりはありません。",
+      "hintTranslation": "（......） bị ai nói gì tôi cũng không từ bỏ ước mơ."
     },
     {
       "id": 71,
@@ -7073,7 +8014,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Tại bật điều hòa quá lạnh nên tôi bị ốm.",
-      "explanation": "Đáp án đúng là D. Hậu quả tiêu cực."
+      "explanation": "Đáp án đúng là D. Hậu quả tiêu cực.",
+      "rubyQuestion": "エアコンの<ruby>温度<rt>おんど</rt></ruby>を<ruby>下げ<rt>さげ</rt></ruby>すぎた（　　）、<ruby>体調<rt>たいちょう</rt></ruby>を<ruby>崩し<rt>くずし</rt></ruby>てしまった。",
+      "hintTranslation": "（......） bật điều hòa quá lạnh nên tôi bị ốm."
     },
     {
       "id": 72,
@@ -7088,7 +8031,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Anh trai hoạt bát nhiều bạn bè, trái lại em trai trầm tính thích ở một mình.",
-      "explanation": "Đáp án đúng là B. So sánh đối lập 2 người."
+      "explanation": "Đáp án đúng là B. So sánh đối lập 2 người.",
+      "rubyQuestion": "<ruby>兄<rt>あに</rt></ruby>は<ruby>社交的<rt>しゃこうてき</rt></ruby>で<ruby>友達<rt>ともだち</rt></ruby>が<ruby>多い<rt>おおい</rt></ruby>（　　）、<ruby>弟<rt>おとうと</rt></ruby>は<ruby>物<rt>もの</rt></ruby><ruby>静か<rt>しずか</rt></ruby>で<ruby>一人<rt>ひとり</rt></ruby>を<ruby>好む<rt>このむ</rt></ruby><ruby>性格<rt>せいかく</rt></ruby>だ。",
+      "hintTranslation": "（......） Anh trai hoạt bát nhiều bạn bè, trái lại em trai trầm tính thích ở một mình."
     },
     {
       "id": 73,
@@ -7103,7 +8048,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đọc thì đọc được đấy nhưng giải thích nghĩa chữ Hán thì khó.",
-      "explanation": "Đáp án đúng là D. VことはVが."
+      "explanation": "Đáp án đúng là D. VことはVが.",
+      "rubyQuestion": "<ruby>読め<rt>よめ</rt></ruby>る（　　）<ruby>読め<rt>よめ</rt></ruby>るが、<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>説明す<rt>せつめいす</rt></ruby>るのは<ruby>難しい<rt>むずかしい</rt></ruby>。",
+      "hintTranslation": "（......） Đọc thì đọc được đấy nhưng giải thích nghĩa chữ Hán thì khó."
     },
     {
       "id": 74,
@@ -7118,7 +8065,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Nỗi khổ của tao đứa như mày làm sao mà hiểu được!",
-      "explanation": "Đáp án đúng là C. Văn nói: もんか."
+      "explanation": "Đáp án đúng là C. Văn nói: もんか.",
+      "rubyQuestion": "「<ruby>俺<rt>おれ</rt></ruby>の<ruby>苦しい<rt>くるしい</rt></ruby><ruby>気持ち<rt>きもち</rt></ruby>がお<ruby>前<rt>まえ</rt></ruby>なんかに<ruby>分か<rt>わか</rt></ruby>ってたまる（　　）！」",
+      "hintTranslation": "（......） Nỗi khổ của tao đứa như mày làm sao mà hiểu được!"
     },
     {
       "id": 75,
@@ -7133,7 +8082,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Mới dọn hôm qua mà tụi nhỏ lại bày bừa rồi.",
-      "explanation": "Đáp án đúng là A. Vừa mới dọn xong."
+      "explanation": "Đáp án đúng là A. Vừa mới dọn xong.",
+      "rubyQuestion": "<ruby>昨日<rt>きのう</rt></ruby><ruby>掃除<rt>そうじ</rt></ruby>をし（　　）なのに、<ruby>子供<rt>こども</rt></ruby>たちがもう<ruby>部屋<rt>へや</rt></ruby>を<ruby>散ら<rt>ちら</rt></ruby>かした。",
+      "hintTranslation": "（......） dọn hôm qua mà tụi nhỏ lại bày bừa rồi."
     },
     {
       "id": 76,
@@ -7148,7 +8099,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ngày kỷ niệm quan trọng nên muốn cả hai bên nhau trọn vẹn.",
-      "explanation": "Đáp án đúng là C. Mong ước."
+      "explanation": "Đáp án đúng là C. Mong ước.",
+      "rubyQuestion": "<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>記念日<rt>きねんび</rt></ruby>だから、<ruby>二人<rt>ふたり</rt></ruby>でゆっくり<ruby>過ご<rt>すご</rt></ruby>し（　　）。",
+      "hintTranslation": "（......） Ngày kỷ niệm quan trọng nên muốn cả hai bên nhau trọn vẹn."
     },
     {
       "id": 77,
@@ -7163,7 +8116,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Thường thức đến trẻ con cũng biết sao người lớn lại không biết.",
-      "explanation": "Đáp án đúng là C. 「子供さえ」."
+      "explanation": "Đáp án đúng là C. 「子供さえ」.",
+      "rubyQuestion": "<ruby>子供<rt>こども</rt></ruby>（　　）<ruby>知って<rt>しって</rt></ruby>いる<ruby>常識<rt>じょうしき</rt></ruby>を、なぜ<ruby>大人<rt>おとな</rt></ruby>のあなたが<ruby>知ら<rt>しら</rt></ruby>ないのですか。",
+      "hintTranslation": "（......） Thường thức đến trẻ con cũng biết sao người lớn lại không biết."
     },
     {
       "id": 78,
@@ -7178,7 +8133,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Dự báo mưa chưa chắc trời đã mưa.",
-      "explanation": "Đáp án đúng là C. Chưa chắc đã mưa."
+      "explanation": "Đáp án đúng là C. Chưa chắc đã mưa.",
+      "rubyQuestion": "<ruby>天気予報<rt>てんきよほう</rt></ruby>が<ruby>雨<rt>あめ</rt></ruby>だと<ruby>言って<rt>いって</rt></ruby>も、<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降る<rt>ふる</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Dự báo mưa chưa chắc trời đã mưa."
     },
     {
       "id": 79,
@@ -7193,7 +8150,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Cân độ nặng hành lý rồi tính phí ship.",
-      "explanation": "Đáp án đúng là B. 「重い」→「重さ」độ nặng."
+      "explanation": "Đáp án đúng là B. 「重い」→「重さ」độ nặng.",
+      "rubyQuestion": "この<ruby>荷物<rt>にもつ</rt></ruby>の（　　）を<ruby>測っ<rt>はかっ</rt></ruby>てから、<ruby>送料<rt>そうりょう</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>してください。",
+      "hintTranslation": "（......） Cân độ nặng hành lý rồi tính phí ship."
     },
     {
       "id": 80,
@@ -7208,7 +8167,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ông tôi dạo này có tuổi nên trở nên rất hay quên.",
-      "explanation": "Đáp án đúng là B. 「忘れっぽい」tính hay quên."
+      "explanation": "Đáp án đúng là B. 「忘れっぽい」tính hay quên.",
+      "rubyQuestion": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>最近<rt>さいきん</rt></ruby><ruby>歳<rt>とし</rt></ruby>をとったせいか、とても<ruby>忘れ<rt>わすれ</rt></ruby>（　　）なった。",
+      "hintTranslation": "Ông tôi dạo này có tuổi nên trở nên rất （......）."
     },
     {
       "id": 81,
@@ -7223,7 +8184,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Mưa to thêm vào đó gió giật mạnh, ra ngoài rất nguy hiểm.",
-      "explanation": "Đáp án đúng là D. Mưa to kèm gió lớn."
+      "explanation": "Đáp án đúng là D. Mưa to kèm gió lớn.",
+      "rubyQuestion": "<ruby>激しい<rt>はげしい</rt></ruby><ruby>雨<rt>あめ</rt></ruby>（　　）<ruby>強い<rt>つよい</rt></ruby><ruby>風<rt>かぜ</rt></ruby>も<ruby>吹き<rt>ふき</rt></ruby><ruby>荒れ<rt>あれ</rt></ruby>、<ruby>外出<rt>がいしゅつ</rt></ruby>が<ruby>極め<rt>きわめ</rt></ruby>て<ruby>危険<rt>きけん</rt></ruby>な<ruby>状態<rt>じょうたい</rt></ruby>だ。",
+      "hintTranslation": "Mưa to （......） gió giật mạnh, ra ngoài rất nguy hiểm."
     },
     {
       "id": 82,
@@ -7238,7 +8201,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Tôi dặn mong họ đừng lại gần nơi nguy hiểm.",
-      "explanation": "Đáp án đúng là C. Phủ định: ないでほしい."
+      "explanation": "Đáp án đúng là C. Phủ định: ないでほしい.",
+      "rubyQuestion": "<ruby>危険<rt>きけん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>には<ruby>近づ<rt>ちかづ</rt></ruby>か（　　）と<ruby>注意<rt>ちゅうい</rt></ruby>した。",
+      "hintTranslation": "（......） Tôi dặn mong họ đừng lại gần nơi nguy hiểm."
     },
     {
       "id": 83,
@@ -7253,7 +8218,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Tuyết rơi dày đặc, máy bay trông chừng khó cất cánh được.",
-      "explanation": "Đáp án đúng là B. Khó cất cánh."
+      "explanation": "Đáp án đúng là B. Khó cất cánh.",
+      "rubyQuestion": "<ruby>雪<rt>ゆき</rt></ruby>が<ruby>激しく<rt>はげしく</rt></ruby><ruby>降り<rt>おり</rt></ruby><ruby>続い<rt>つづい</rt></ruby>ており、<ruby>飛行機<rt>ひこうき</rt></ruby>は<ruby>飛び<rt>とび</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Tuyết rơi dày đặc, máy bay trông chừng khó cất cánh được."
     },
     {
       "id": 84,
@@ -7268,7 +8235,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ý kiến hai người đối lập, cuộc thảo luận khó đi tới thống nhất.",
-      "explanation": "Đáp án đúng là D. Khó thống nhất."
+      "explanation": "Đáp án đúng là D. Khó thống nhất.",
+      "rubyQuestion": "あの<ruby>二人<rt>ふたり</rt></ruby>は<ruby>意見<rt>いけん</rt></ruby>が<ruby>対立<rt>たいりつ</rt></ruby>していて、<ruby>話し合い<rt>はなしあい</rt></ruby>はまとまり（　　）。",
+      "hintTranslation": "（......） Ý kiến hai người đối lập, cuộc thảo luận khó đi tới thống nhất."
     },
     {
       "id": 85,
@@ -7283,7 +8252,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Anh ấy tính hay nổi nóng chuyện nhỏ cũng cáu.",
-      "explanation": "Đáp án đúng là B. 「怒りっぽい」."
+      "explanation": "Đáp án đúng là B. 「怒りっぽい」.",
+      "rubyQuestion": "<ruby>彼は<rt>かれは</rt></ruby><ruby>少し<rt>すこし</rt></ruby>のことですぐに<ruby>怒る<rt>いかる</rt></ruby>、<ruby>怒り<rt>いかり</rt></ruby>（　　）<ruby>性格<rt>せいかく</rt></ruby>だ。",
+      "hintTranslation": "（......） Anh ấy tính hay nổi nóng chuyện nhỏ cũng cáu."
     },
     {
       "id": 86,
@@ -7298,7 +8269,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Người chưa gặp bao giờ làm sao hiểu thấu lòng dạ họ được!",
-      "explanation": "Đáp án đúng là A. Tuyệt đối không thể hiểu."
+      "explanation": "Đáp án đúng là A. Tuyệt đối không thể hiểu.",
+      "rubyQuestion": "まだ<ruby>一度<rt>いちど</rt></ruby>も<ruby>会っ<rt>あっ</rt></ruby>たことがない<ruby>人<rt>にん</rt></ruby>の<ruby>本心<rt>ほんしん</rt></ruby>が、<ruby>分か<rt>わか</rt></ruby>る（　　）。",
+      "hintTranslation": "（......） Người chưa gặp bao giờ làm sao hiểu thấu lòng dạ họ được!"
     },
     {
       "id": 87,
@@ -7313,7 +8286,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đồ đắt tiền chưa chắc chất lượng đã tốt.",
-      "explanation": "Đáp án đúng là C. 「〜とは限らない」chưa chắc là."
+      "explanation": "Đáp án đúng là C. 「〜とは限らない」chưa chắc là.",
+      "rubyQuestion": "<ruby>値段<rt>ねだん</rt></ruby>が<ruby>高い<rt>たかい</rt></ruby>ものが、<ruby>必ずしも<rt>かならずしも</rt></ruby><ruby>品質<rt>ひんしつ</rt></ruby>が<ruby>良い<rt>よい</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Đồ đắt tiền chưa chắc chất lượng đã tốt."
     },
     {
       "id": 88,
@@ -7328,7 +8303,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Muốn xây dựng niềm tin thì nên giữ đúng lời hứa.",
-      "explanation": "Đáp án đúng là D. Khuyên răn đạo lý."
+      "explanation": "Đáp án đúng là D. Khuyên răn đạo lý.",
+      "rubyQuestion": "<ruby>人<rt>にん</rt></ruby>との<ruby>信頼関係<rt>しんらいかんけい</rt></ruby>を<ruby>築き<rt>きづき</rt></ruby>たいなら、<ruby>約束<rt>やくそく</rt></ruby>を<ruby>守る<rt>まもる</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn xây dựng niềm tin thì （......） giữ đúng lời hứa."
     },
     {
       "id": 89,
@@ -7343,7 +8320,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Bận rộn việc cộng thêm thiếu ngủ khiến tôi kiệt sức.",
-      "explanation": "Đáp án đúng là C. Yếu tố dồn thêm."
+      "explanation": "Đáp án đúng là C. Yếu tố dồn thêm.",
+      "rubyQuestion": "<ruby>今週<rt>こんしゅう</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>の<ruby>忙しさ<rt>いそがしさ</rt></ruby>（　　）<ruby>寝不足<rt>ねぶそく</rt></ruby>も<ruby>重なり<rt>かさなり</rt></ruby>、ひどく<ruby>疲れ<rt>つかれ</rt></ruby>ている。",
+      "hintTranslation": "（......） Bận rộn việc cộng thêm thiếu ngủ khiến tôi kiệt sức."
     },
     {
       "id": 90,
@@ -7358,7 +8337,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Muốn mau khỏi cảm cúm thì nên giữ ấm nghỉ ngơi.",
-      "explanation": "Đáp án đúng là A. 「V辞書形 + ことだ」lời khuyên tốt nhất."
+      "explanation": "Đáp án đúng là A. 「V辞書形 + ことだ」lời khuyên tốt nhất.",
+      "rubyQuestion": "<ruby>風邪<rt>かぜ</rt></ruby>を<ruby>早く<rt>はやく</rt></ruby><ruby>治し<rt>なおし</rt></ruby>たければ、<ruby>暖かく<rt>あたたかく</rt></ruby>してゆっくり<ruby>休む<rt>やすむ</rt></ruby>（　　）。",
+      "hintTranslation": "Muốn mau khỏi cảm cúm thì （......） giữ ấm nghỉ ngơi."
     },
     {
       "id": 91,
@@ -7373,7 +8354,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Có chứng cứ hôm qua anh ấy ở Tokyo thì lẽ nào là thủ phạm được!",
-      "explanation": "Đáp án đúng là A. Nの + わけがない."
+      "explanation": "Đáp án đúng là A. Nの + わけがない.",
+      "rubyQuestion": "<ruby>彼<rt>かれ</rt></ruby>が<ruby>昨日<rt>きのう</rt></ruby><ruby>東京<rt>とうきょう</rt></ruby>にいた<ruby>証拠<rt>しょうこ</rt></ruby>があるのだから、<ruby>犯人<rt>はんにん</rt></ruby>の（　　）。",
+      "hintTranslation": "Có chứng cứ hôm qua anh ấy ở Tokyo thì （......） là thủ phạm được!"
     },
     {
       "id": 92,
@@ -7388,7 +8371,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Chiếc điện thoại vừa mới mua tháng trước đã hỏng.",
-      "explanation": "Đáp án đúng là C. Cảm nhận chủ quan vừa mới mua."
+      "explanation": "Đáp án đúng là C. Cảm nhận chủ quan vừa mới mua.",
+      "rubyQuestion": "<ruby>先月<rt>せんげつ</rt></ruby><ruby>買っ<rt>かっ</rt></ruby>（　　）のスマートフォンが、もう<ruby>壊れ<rt>こわれ</rt></ruby>てしまった。",
+      "hintTranslation": "Chiếc điện thoại （......） mua tháng trước đã hỏng."
     },
     {
       "id": 93,
@@ -7403,7 +8388,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Một mình nâng sao nổi cây đàn piano này! Giúp tôi với.",
-      "explanation": "Đáp án đúng là C. Bất khả thi."
+      "explanation": "Đáp án đúng là C. Bất khả thi.",
+      "rubyQuestion": "<ruby>一人<rt>ひとり</rt></ruby>でこの<ruby>重い<rt>おもい</rt></ruby>ピアノを<ruby>持ち<rt>もち</rt></ruby><ruby>上げ<rt>あげ</rt></ruby>られる（　　）。<ruby>手伝っ<rt>てつだっ</rt></ruby>てくれ。",
+      "hintTranslation": "（......） Một mình nâng sao nổi cây đàn piano này! Giúp tôi với."
     },
     {
       "id": 94,
@@ -7418,7 +8405,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Người đó cứ mỗi lần gặp lại mặc đồ mới.",
-      "explanation": "Đáp án đúng là D. 「V辞書形 + ごとに」: cứ mỗi lần gặp."
+      "explanation": "Đáp án đúng là D. 「V辞書形 + ごとに」: cứ mỗi lần gặp.",
+      "rubyQuestion": "あの<ruby>人<rt>にん</rt></ruby>は<ruby>会う<rt>あう</rt></ruby>（　　）<ruby>新しい<rt>あたらしい</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>着て<rt>きて</rt></ruby>いて、とてもおしゃれだ。",
+      "hintTranslation": "Người đó （......） gặp lại mặc đồ mới."
     },
     {
       "id": 95,
@@ -7433,7 +8422,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Trái với anh trai hòa đồng, em trai lại hướng nội.",
-      "explanation": "Đáp án đúng là B. So sánh đối lập 2 sự việc."
+      "explanation": "Đáp án đúng là B. So sánh đối lập 2 sự việc.",
+      "rubyQuestion": "<ruby>兄<rt>あに</rt></ruby>が<ruby>社交的<rt>しゃこうてき</rt></ruby>なの（　　）、<ruby>弟<rt>おとうと</rt></ruby>は<ruby>内向的<rt>ないこうてき</rt></ruby>で<ruby>物<rt>もの</rt></ruby><ruby>静か<rt>しずか</rt></ruby>だ。",
+      "hintTranslation": "（......） anh trai hòa đồng, em trai lại hướng nội."
     },
     {
       "id": 96,
@@ -7448,7 +8439,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Phó từ hay đi kèm là 必ずしも.",
-      "explanation": "Đáp án đúng là B. Đi kèm 必ずしも."
+      "explanation": "Đáp án đúng là B. Đi kèm 必ずしも.",
+      "rubyQuestion": "「〜とは<ruby>限ら<rt>かぎら</rt></ruby>ない」と<ruby>一緒に<rt>いっしょに</rt></ruby>よく<ruby>使わ<rt>つかわ</rt></ruby>れる<ruby>副詞<rt>ふくし</rt></ruby>はどれですか。",
+      "hintTranslation": "（......） Phó từ hay đi kèm là 必ずしも."
     },
     {
       "id": 97,
@@ -7463,7 +8456,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đối thủ là tuyển thủ chuyên nghiệp, tôi khó mà thắng nổi.",
-      "explanation": "Đáp án đúng là C. Khó thắng được."
+      "explanation": "Đáp án đúng là C. Khó thắng được.",
+      "rubyQuestion": "<ruby>相手<rt>あいて</rt></ruby>はプロの<ruby>選手<rt>せんしゅ</rt></ruby>だから、<ruby>初心者<rt>しょしんしゃ</rt></ruby>の<ruby>私<rt>わたし</rt></ruby>が<ruby>勝て<rt>かて</rt></ruby>（　　）。",
+      "hintTranslation": "（......） Đối thủ là tuyển thủ chuyên nghiệp, tôi khó mà thắng nổi."
     },
     {
       "id": 98,
@@ -7478,7 +8473,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đối diện với những lời phê phán gắt gao, thủ tướng vẫn bình tĩnh giải thích.",
-      "explanation": "Đáp án đúng là A. Đối mặt với chỉ trích."
+      "explanation": "Đáp án đúng là A. Đối mặt với chỉ trích.",
+      "rubyQuestion": "<ruby>厳しい<rt>いかめしい</rt></ruby><ruby>批判<rt>ひはん</rt></ruby>（　　）、<ruby>首相<rt>しゅしょう</rt></ruby>は<ruby>冷静<rt>れいせい</rt></ruby>に<ruby>説明<rt>せつめい</rt></ruby>を<ruby>続け<rt>つづけ</rt></ruby>た。",
+      "hintTranslation": "（......） Đối diện với những lời phê phán gắt gao, thủ tướng vẫn bình tĩnh giải thích."
     },
     {
       "id": 99,
@@ -7493,7 +8490,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Muốn tránh rắc rối thì nên đọc kỹ hợp đồng.",
-      "explanation": "Đáp án đúng là B. Lời khuyên thực tế."
+      "explanation": "Đáp án đúng là B. Lời khuyên thực tế.",
+      "rubyQuestion": "トラブルを<ruby>避け<rt>さけ</rt></ruby>たいなら、<ruby>契約書<rt>けいやくしょ</rt></ruby>をよく<ruby>確認す<rt>かくにんす</rt></ruby>る（　　）ね。",
+      "hintTranslation": "Muốn tránh rắc rối thì （......） đọc kỹ hợp đồng."
     },
     {
       "id": 100,
@@ -7508,7 +8507,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đời nào tôi chịu bỏ cuộc ước mơ ở nơi thế này!",
-      "explanation": "Đáp án đúng là A. Không từ bỏ."
+      "explanation": "Đáp án đúng là A. Không từ bỏ.",
+      "rubyQuestion": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>をこんなところで<ruby>諦め<rt>あきらめ</rt></ruby>てたまる（　　）。",
+      "hintTranslation": "（......） Đời nào tôi chịu bỏ cuộc ước mơ ở nơi thế này!"
     }
   ],
   "grammar-to-meaning": [
@@ -7525,7 +8526,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đặc điểm của 〜一方で: Vừa... vừa... / Song song đó (đồng thời tiến hành hoặc tồn tại)",
-      "explanation": "Đáp án đúng là C. Ngoài ý nghĩa đối lập, 〜一方で còn dùng để chỉ sự song hành: cùng lúc vừa làm việc này vừa làm việc kia."
+      "explanation": "Đáp án đúng là C. Ngoài ý nghĩa đối lập, 〜一方で còn dùng để chỉ sự song hành: cùng lúc vừa làm việc này vừa làm việc kia.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜<ruby>一方<rt>いっぽう</rt></ruby>で」đ」ư」ợc sử dụng với sắc thái / hoàn cảnh nào sau đo sau ây?",
+      "hintTranslation": "Đặc điểm của 〜一方で: （......）... / Song song đó (đồng thời tiến hành hoặc tồn tại)"
     },
     {
       "id": 2,
@@ -7540,7 +8543,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đặc điểm của 〜ことだ: Không nên... / Đừng... (Vないことだ - lời khuyên cảnh báo)",
-      "explanation": "Đáp án đúng là A. Lưu ý: Không dùng mẫu câu này để đưa ra lời khuyên cho người bề trên hoặc cấp trên."
+      "explanation": "Đáp án đúng là A. Lưu ý: Không dùng mẫu câu này để đưa ra lời khuyên cho người bề trên hoặc cấp trên.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜ことだ」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜ことだ: Không nên... / （......）... (Vないことだ - lời khuyên cảnh báo)"
     },
     {
       "id": 3,
@@ -7555,7 +8560,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đặc điểm của 〜ものか / 〜もんか: Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2",
-      "explanation": "Đáp án đúng là B. Phân biệt: 〜わけがない là phủ định tính khả thi dựa trên lý lẽ; còn 〜ものか mang sắc thái cảm xúc quyết liệt của người nói."
+      "explanation": "Đáp án đúng là B. Phân biệt: 〜わけがない là phủ định tính khả thi dựa trên lý lẽ; còn 〜ものか mang sắc thái cảm xúc quyết liệt của người nói.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜ものか / 〜もんか」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "（......） Đặc điểm của 〜ものか / 〜もんか: Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2"
     },
     {
       "id": 4,
@@ -7570,7 +8577,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ngữ pháp: 〜に対して (ni taishite) ➔ Ý nghĩa: Đối với... (thái độ, hành vi hướng tới ai/cái gì)",
-      "explanation": "Đáp án đúng là B. 「〜に対して」nghĩa 1: Hướng hành động/thái độ vào đối tượng (Ví dụ: Thầy giáo rất thân thiện đối với học sinh; Danh từ đi kèm: に対するN)."
+      "explanation": "Đáp án đúng là B. 「〜に対して」nghĩa 1: Hướng hành động/thái độ vào đối tượng (Ví dụ: Thầy giáo rất thân thiện đối với học sinh; Danh từ đi kèm: に対するN).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜に<ruby>対し<rt>たいし</rt></ruby>て」(N + に<ruby>対し<rt>たいし</rt></ruby>て / Nに<ruby>対する<rt>たいする</rt></ruby>N / <ruby>普通<rt>ふつう</rt></ruby><ruby>形<rt>かたち</rt></ruby> + のに<ruby>対し<rt>たいし</rt></ruby>て) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜に対して (ni taishite) ➔ Ý nghĩa: （......）... (thái độ, hành vi hướng tới ai/cái gì)"
     },
     {
       "id": 5,
@@ -7585,7 +8594,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ngữ pháp: 〜一方で (ippou de) ➔ Ý nghĩa: Một mặt thì... mặt khác thì... (đối lập giữa 2 mặt của sự việc)",
-      "explanation": "Đáp án đúng là B. 「〜一方で」dùng để nêu ra hai mặt đối lập tương phản của một vấn đề (Ví dụ: tiện lợi một mặt nhưng chi phí lại đắt đỏ)."
+      "explanation": "Đáp án đúng là B. 「〜一方で」dùng để nêu ra hai mặt đối lập tương phản của một vấn đề (Ví dụ: tiện lợi một mặt nhưng chi phí lại đắt đỏ).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜<ruby>一方<rt>いっぽう</rt></ruby>で」(<ruby>普通<rt>ふつう</rt></ruby><ruby>形<rt>かたち</rt></ruby> + <ruby>一方<rt>いっぽう</rt></ruby>で) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜一方で (ippou de) ➔ Ý nghĩa: （......）... mặt khác thì... (đối lập giữa 2 mặt của sự việc)"
     },
     {
       "id": 6,
@@ -7600,7 +8611,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đặc điểm của 〜さえ: Thậm chí đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)",
-      "explanation": "Đáp án đúng là B. Thường đi kèm trợ từ phủ định hoặc câu mang hàm ý bất ngờ, thất vọng."
+      "explanation": "Đáp án đúng là B. Thường đi kèm trợ từ phủ định hoặc câu mang hàm ý bất ngờ, thất vọng.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜さえ」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜さえ: （......） đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)"
     },
     {
       "id": 7,
@@ -7615,7 +8628,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ngữ pháp: 〜せいで (sei de) ➔ Ý nghĩa: Do / Vì / Tại... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)",
-      "explanation": "Đáp án đúng là C. 「〜せいで」dùng khi nói về nguyên nhân gây ra hậu quả tiêu cực, thường mang sắc thái trách móc, đổ lỗi."
+      "explanation": "Đáp án đúng là C. 「〜せいで」dùng khi nói về nguyên nhân gây ra hậu quả tiêu cực, thường mang sắc thái trách móc, đổ lỗi.",
+      "rubyQuestion": "Mẫu ngữ pháp「〜せいで」(V/A/N + せいで) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜せいで (sei de) ➔ Ý nghĩa: Do / Vì / （......）... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)"
     },
     {
       "id": 8,
@@ -7630,7 +8645,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đặc điểm của 〜代わりに: Bù lại... / Đổi lại... (sự bù trừ qua lại)",
-      "explanation": "Đáp án đúng là A. Ngoài ra còn có ý bù trừ: Công việc tuy vất vả nhưng bù lại lương rất cao."
+      "explanation": "Đáp án đúng là A. Ngoài ra còn có ý bù trừ: Công việc tuy vất vả nhưng bù lại lương rất cao.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜<ruby>代わり<rt>かわり</rt></ruby>に」đ」ư」ợc sử dụng với sắc thái / hoàn cảnh nào sau đo sau ây?",
+      "hintTranslation": "（......） Đặc điểm của 〜代わりに: Bù lại... / Đổi lại... (sự bù trừ qua lại)"
     },
     {
       "id": 9,
@@ -7645,7 +8662,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đặc điểm của 〜わけがない: Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)",
-      "explanation": "Đáp án đúng là D. Dạng phủ định kép: 〜ないわけがない mang ý nghĩa chắc chắn là có/sẽ."
+      "explanation": "Đáp án đúng là D. Dạng phủ định kép: 〜ないわけがない mang ý nghĩa chắc chắn là có/sẽ.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜わけがない」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "（......） Đặc điểm của 〜わけがない: Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)"
     },
     {
       "id": 10,
@@ -7660,7 +8679,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngữ pháp: 〜としても (to shitemo) ➔ Ý nghĩa: Cho dù... (đi chăng nữa thì vẫn không thay đổi)",
-      "explanation": "Đáp án đúng là D. 「〜としても」đặt ra điều kiện giả định: Cho dù tình huống ở vế trước có xảy ra đi chăng nữa, thì lập trường, suy nghĩ hoặc sự việc ở vế sau vẫn không hề bị suy chuyển."
+      "explanation": "Đáp án đúng là D. 「〜としても」đặt ra điều kiện giả định: Cho dù tình huống ở vế trước có xảy ra đi chăng nữa, thì lập trường, suy nghĩ hoặc sự việc ở vế sau vẫn không hề bị suy chuyển.",
+      "rubyQuestion": "Mẫu ngữ pháp「〜としても」(<ruby>普通<rt>ふつう</rt></ruby><ruby>形<rt>かたち</rt></ruby> + としても) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜としても (to shitemo) ➔ Ý nghĩa: （......）... (đi chăng nữa thì vẫn không thay đổi)"
     },
     {
       "id": 11,
@@ -7675,7 +8696,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngữ pháp: 〜ことは〜が〜 (koto wa ... ga ...) ➔ Ý nghĩa: Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)",
-      "explanation": "Đáp án đúng là D. 「〜ことは〜が〜」dùng bằng cách lặp lại cùng một động từ hoặc tính từ, biểu thị sự nhượng bộ: thừa nhận vế trước nhưng vế sau nêu mặt hạn chế (Ví dụ: Ngon thì ngon thật đấy nhưng giá đắt quá)."
+      "explanation": "Đáp án đúng là D. 「〜ことは〜が〜」dùng bằng cách lặp lại cùng một động từ hoặc tính từ, biểu thị sự nhượng bộ: thừa nhận vế trước nhưng vế sau nêu mặt hạn chế (Ví dụ: Ngon thì ngon thật đấy nhưng giá đắt quá).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜ことは〜が〜」(AことはAが... (lặp lại cùng một từ)) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "（......） Ngữ pháp: 〜ことは〜が〜 (koto wa ... ga ...) ➔ Ý nghĩa: Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)"
     },
     {
       "id": 12,
@@ -7690,7 +8713,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đặc điểm của 〜ごとに: Cứ cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)",
-      "explanation": "Đáp án đúng là D. Khác với 〜たびに (nhấn mạnh cứ mỗi lần A thì lại xảy ra B bất kể thời gian), 〜ごとに nhấn mạnh sự lặp lại đều đặn theo chu kỳ, chuỗi thời gian hoặc đơn vị phân chia."
+      "explanation": "Đáp án đúng là D. Khác với 〜たびに (nhấn mạnh cứ mỗi lần A thì lại xảy ra B bất kể thời gian), 〜ごとに nhấn mạnh sự lặp lại đều đặn theo chu kỳ, chuỗi thời gian hoặc đơn vị phân chia.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜ごとに」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜ごとに: （......） cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)"
     },
     {
       "id": 13,
@@ -7705,7 +8730,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đặc điểm của 〜に対して: Trái ngược với... / Ngược lại với... (so sánh tương phản 2 vế)",
-      "explanation": "Đáp án đúng là B. Nghĩa 2: So sánh đối lập hai sự việc tương phản (Ví dụ: Tôi thích thể thao trái ngược với em trai thích đọc sách)."
+      "explanation": "Đáp án đúng là B. Nghĩa 2: So sánh đối lập hai sự việc tương phản (Ví dụ: Tôi thích thể thao trái ngược với em trai thích đọc sách).",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜に<ruby>対し<rt>たいし</rt></ruby>て」đ」ư」ợc sử dụng với sắc thái / hoàn cảnh nào sau đo sau ây?",
+      "hintTranslation": "Đặc điểm của 〜に対して: （......）... / Ngược lại với... (so sánh tương phản 2 vế)"
     },
     {
       "id": 14,
@@ -7720,7 +8747,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ngữ pháp: 〜ごとに (goto ni) ➔ Ý nghĩa: Cứ mỗi lần... lại... / Từng... một",
-      "explanation": "Đáp án đúng là B. 「〜ごとに」(chữ Hán là 毎に) diễn tả hành động hay sự việc cứ lặp lại tuần tự theo chu kỳ hoặc đơn vị (Ví dụ: 10分ごとに - cứ 10 phút một lần)."
+      "explanation": "Đáp án đúng là B. 「〜ごとに」(chữ Hán là 毎に) diễn tả hành động hay sự việc cứ lặp lại tuần tự theo chu kỳ hoặc đơn vị (Ví dụ: 10分ごとに - cứ 10 phút một lần).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜ごとに」(V（<ruby>辞書<rt>じしょ</rt></ruby><ruby>形<rt>かたち</rt></ruby>） / N + ごとに) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜ごとに (goto ni) ➔ Ý nghĩa: （......）... lại... / Từng... một"
     },
     {
       "id": 15,
@@ -7735,7 +8764,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ngữ pháp: 〜ことだ (koto da) ➔ Ý nghĩa: Nên... / Phải... (đưa ra lời khuyên, giải pháp tốt nhất)",
-      "explanation": "Đáp án đúng là A. 「〜ことだ」dùng trong văn nói trực tiếp để khuyên nhủ ai đó: Làm việc đó là tốt nhất, thích hợp nhất trong hoàn cảnh này."
+      "explanation": "Đáp án đúng là A. 「〜ことだ」dùng trong văn nói trực tiếp để khuyên nhủ ai đó: Làm việc đó là tốt nhất, thích hợp nhất trong hoàn cảnh này.",
+      "rubyQuestion": "Mẫu ngữ pháp「〜ことだ」(V（<ruby>辞書<rt>じしょ</rt></ruby><ruby>形<rt>かたち</rt></ruby> / ナイ<ruby>形<rt>かたち</rt></ruby>） + ことだ) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜ことだ (koto da) ➔ Ý nghĩa: Nên... / （......）... (đưa ra lời khuyên, giải pháp tốt nhất)"
     },
     {
       "id": 16,
@@ -7750,7 +8781,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đặc điểm của 〜おかげで: Nhờ có... (đôi khi dùng với sắc thái mỉa mai, châm biếm)",
-      "explanation": "Đáp án đúng là C. Khi dùng với kết quả xấu, 〜おかげで mang hàm ý mỉa mai, trách khéo (Ví dụ: Nhờ ơn cậu làm sai mà tớ phải làm lại hết)."
+      "explanation": "Đáp án đúng là C. Khi dùng với kết quả xấu, 〜おかげで mang hàm ý mỉa mai, trách khéo (Ví dụ: Nhờ ơn cậu làm sai mà tớ phải làm lại hết).",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜おかげで」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜おかげで: （......）... (đôi khi dùng với sắc thái mỉa mai, châm biếm)"
     },
     {
       "id": 17,
@@ -7765,7 +8798,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngữ pháp: 〜わけがない (wake ga nai) ➔ Ý nghĩa: Lẽ nào lại... / Làm sao mà... được / Tuyệt đối không thể...",
-      "explanation": "Đáp án đúng là D. 「〜わけがない」biểu thị sự quả quyết mạnh mẽ của người nói rằng chuyện đó tuyệt đối không thể xảy ra dựa trên lý lẽ xác đáng. Văn thoại hay dùng: 〜わけない."
+      "explanation": "Đáp án đúng là D. 「〜わけがない」biểu thị sự quả quyết mạnh mẽ của người nói rằng chuyện đó tuyệt đối không thể xảy ra dựa trên lý lẽ xác đáng. Văn thoại hay dùng: 〜わけない.",
+      "rubyQuestion": "Mẫu ngữ pháp「〜わけがない」(<ruby>普通<rt>ふつう</rt></ruby><ruby>形<rt>かたち</rt></ruby> + わけがない) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜わけがない (wake ga nai) ➔ Ý nghĩa: （......）... / Làm sao mà... được / Tuyệt đối không thể..."
     },
     {
       "id": 18,
@@ -7780,7 +8815,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngữ pháp: 〜恐れがある (osore ga aru) ➔ Ý nghĩa: E là... / Có nguy cơ... / Lo sợ rằng...",
-      "explanation": "Đáp án đúng là D. 「〜恐れがある」(chữ Hán là 恐 - sợ hãi) dùng để cảnh báo về khả năng một sự việc tiêu cực, tai họa hoặc tổn thất có thể xảy ra trong tương lai."
+      "explanation": "Đáp án đúng là D. 「〜恐れがある」(chữ Hán là 恐 - sợ hãi) dùng để cảnh báo về khả năng một sự việc tiêu cực, tai họa hoặc tổn thất có thể xảy ra trong tương lai.",
+      "rubyQuestion": "Mẫu ngữ pháp「〜<ruby>恐れ<rt>おそれ</rt></ruby>がある」(V<ruby>辞書<rt>じしょ</rt></ruby><ruby>形<rt>かたち</rt></ruby> / Nの + <ruby>恐れ<rt>おそれ</rt></ruby>がある) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜恐れがある (osore ga aru) ➔ Ý nghĩa: E là... / （......）... / Lo sợ rằng..."
     },
     {
       "id": 19,
@@ -7795,7 +8832,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đặc điểm của 〜恐れがある: Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra",
-      "explanation": "Đáp án đúng là D. Mang văn phong trang trọng, thường xuất hiện trong bản tin thời sự, dự báo thời tiết, thông báo y tế hoặc văn bản pháp quy."
+      "explanation": "Đáp án đúng là D. Mang văn phong trang trọng, thường xuất hiện trong bản tin thời sự, dự báo thời tiết, thông báo y tế hoặc văn bản pháp quy.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜<ruby>恐れ<rt>おそれ</rt></ruby>がある」đ」ư」ợc sử dụng với sắc thái / hoàn cảnh nào sau đo sau ây?",
+      "hintTranslation": "（......） Đặc điểm của 〜恐れがある: Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra"
     },
     {
       "id": 20,
@@ -7810,7 +8849,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ngữ pháp: 〜たばかり (ta bakari) ➔ Ý nghĩa: Vừa mới... xong (theo cảm nhận chủ quan của người nói)",
-      "explanation": "Đáp án đúng là C. 「〜たばかり」diễn tả hành động vừa xảy ra cách đây ít lâu theo cảm nhận chủ quan của người nói (Ví dụ: Vừa mới vào công ty được 1 tuần; Vừa mới ăn cơm xong)."
+      "explanation": "Đáp án đúng là C. 「〜たばかり」diễn tả hành động vừa xảy ra cách đây ít lâu theo cảm nhận chủ quan của người nói (Ví dụ: Vừa mới vào công ty được 1 tuần; Vừa mới ăn cơm xong).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜たばかり」(V（タ<ruby>形<rt>かたち</rt></ruby>） + ばかり) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜たばかり (ta bakari) ➔ Ý nghĩa: （......）... xong (theo cảm nhận chủ quan của người nói)"
     },
     {
       "id": 21,
@@ -7825,7 +8866,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ngữ pháp: 〜っぽい (-ppoi) ➔ Ý nghĩa: Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)",
-      "explanation": "Đáp án đúng là C. 「〜っぽい」có 3 nghĩa chính: 1. Có vẻ như (大人っぽい - giống người lớn, 白っぽい - hơi trắng); 2. Có nhiều chất gì đó (油っぽい - nhiều dầu mỡ); 3. Hay/Dễ làm gì (怒りっぽい - hay cáu, 忘れっぽい - hay quên)."
+      "explanation": "Đáp án đúng là C. 「〜っぽい」có 3 nghĩa chính: 1. Có vẻ như (大人っぽい - giống người lớn, 白っぽい - hơi trắng); 2. Có nhiều chất gì đó (油っぽい - nhiều dầu mỡ); 3. Hay/Dễ làm gì (怒りっぽい - hay cáu, 忘れっぽい - hay quên).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜っぽい」(N / Aい（bỏ い） / Vます（bỏ ます） + っぽい) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "（......） Ngữ pháp: 〜っぽい (-ppoi) ➔ Ý nghĩa: Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)"
     },
     {
       "id": 22,
@@ -7840,7 +8883,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đặc điểm của 〜としても: Dù giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên",
-      "explanation": "Đáp án đúng là D. Ví dụ: Cho dù tôi có trở thành người giàu thì lối sống của tôi vẫn bình dị như hiện tại."
+      "explanation": "Đáp án đúng là D. Ví dụ: Cho dù tôi có trở thành người giàu thì lối sống của tôi vẫn bình dị như hiện tại.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜としても」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜としても: （......） giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên"
     },
     {
       "id": 23,
@@ -7855,7 +8900,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ngữ pháp: 〜によって / 〜により / 〜による (ni yotte / ni yori / ni yoru) ➔ Ý nghĩa: Do / Vì... (nguyên nhân) HOẶC Bởi... (tác giả trong câu bị động)",
-      "explanation": "Đáp án đúng là A. 「〜によって」có 4 nghĩa quan trọng: 1. Do/Vì nguyên nhân; 2. Bởi ai (chủ thể bị động); 3. Bằng phương tiện/cách thức; 4. Tùy thuộc vào từng đối tượng."
+      "explanation": "Đáp án đúng là A. 「〜によって」có 4 nghĩa quan trọng: 1. Do/Vì nguyên nhân; 2. Bởi ai (chủ thể bị động); 3. Bằng phương tiện/cách thức; 4. Tùy thuộc vào từng đối tượng.",
+      "rubyQuestion": "Mẫu ngữ pháp「〜によって / 〜により / 〜による」(N + によって / により / によるN) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜によって / 〜により / 〜による (ni yotte / ni yori / ni yoru) ➔ Ý nghĩa: Do / Vì... (nguyên nhân) HOẶC （......）... (tác giả trong câu bị động)"
     },
     {
       "id": 24,
@@ -7870,7 +8917,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đặc điểm của 〜ことは〜が〜: A thì có A nhưng không hoàn hảo / có điểm trừ",
-      "explanation": "Đáp án đúng là A. Cấu trúc: V/AことはV/Aが... giúp câu nói mang tính khách quan, tế nhị hơn khi chê."
+      "explanation": "Đáp án đúng là A. Cấu trúc: V/AことはV/Aが... giúp câu nói mang tính khách quan, tế nhị hơn khi chê.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜ことは〜が〜」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜ことは〜が〜: A （......） A nhưng không hoàn hảo / có điểm trừ"
     },
     {
       "id": 25,
@@ -7885,7 +8934,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đặc điểm của 〜っぽい: Dễ... / Hay... (xu hướng tính cách: hay quên, hay giận, chóng chán)",
-      "explanation": "Đáp án đúng là C. Dùng nhiều trong văn nói thường ngày."
+      "explanation": "Đáp án đúng là C. Dùng nhiều trong văn nói thường ngày.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜っぽい」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜っぽい: Dễ... / Hay... (xu hướng tính cách: （......）, hay giận, chóng chán)"
     },
     {
       "id": 26,
@@ -7900,7 +8951,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngữ pháp: 〜おかげで (okage de) ➔ Ý nghĩa: Nhờ có... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)",
-      "explanation": "Đáp án đúng là D. 「〜おかげで」chỉ nguyên nhân đem lại kết quả tốt đẹp, thuận lợi. Thể hiện sự cảm kích, biết ơn."
+      "explanation": "Đáp án đúng là D. 「〜おかげで」chỉ nguyên nhân đem lại kết quả tốt đẹp, thuận lợi. Thể hiện sự cảm kích, biết ơn.",
+      "rubyQuestion": "Mẫu ngữ pháp「〜おかげで」(V/A/N + おかげで) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜おかげで (okage de) ➔ Ý nghĩa: （......）... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)"
     },
     {
       "id": 27,
@@ -7915,7 +8968,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đặc điểm của 〜とは限りません / 〜とは限らない: Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ",
-      "explanation": "Đáp án đúng là D. Thường đi kèm các phó từ: 必ずしも (chưa hẳn), いつも (luôn luôn), 全部 (toàn bộ)."
+      "explanation": "Đáp án đúng là D. Thường đi kèm các phó từ: 必ずしも (chưa hẳn), いつも (luôn luôn), 全部 (toàn bộ).",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜とは<ruby>限り<rt>かぎり</rt></ruby>ません / 〜とは<ruby>限ら<rt>かぎら</rt></ruby>ない」đ」ư」ợc sử dụng với sắc thái / hoàn cảnh nào sau đo sau ây?",
+      "hintTranslation": "（......） Đặc điểm của 〜とは限りません / 〜とは限らない: Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ"
     },
     {
       "id": 28,
@@ -7930,7 +8985,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngữ pháp: 〜さ（Aいさ / なAさ） (-sa) ➔ Ý nghĩa: Độ... / Mức độ... (danh từ hóa tính từ đo lường)",
-      "explanation": "Đáp án đúng là D. Thêm đuôi「〜さ」vào sau gốc tính từ để tạo thành danh từ chỉ mức độ đo lường khách quan (Ví dụ: 重さ - độ nặng, 長さ - chiều dài, 深さ - độ sâu)."
+      "explanation": "Đáp án đúng là D. Thêm đuôi「〜さ」vào sau gốc tính từ để tạo thành danh từ chỉ mức độ đo lường khách quan (Ví dụ: 重さ - độ nặng, 長さ - chiều dài, 深さ - độ sâu).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜さ（Aいさ / なAさ）」(Aい（bỏ い） + さ / Aな + さ) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜さ（Aいさ / なAさ） (-sa) ➔ Ý nghĩa: （......）... / Mức độ... (danh từ hóa tính từ đo lường)"
     },
     {
       "id": 29,
@@ -7945,7 +9002,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ngữ pháp: 〜さえ (sae) ➔ Ý nghĩa: Ngay cả... / Đến cả... (cũng không)",
-      "explanation": "Đáp án đúng là C. 「〜さえ」nêu ra một ví dụ cực đoan hoặc ở mức tối thiểu mà còn (không) làm được, huống chi là những thứ khác (Ví dụ: Ngay cả tên mình cũng không viết được)."
+      "explanation": "Đáp án đúng là C. 「〜さえ」nêu ra một ví dụ cực đoan hoặc ở mức tối thiểu mà còn (không) làm được, huống chi là những thứ khác (Ví dụ: Ngay cả tên mình cũng không viết được).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜さえ」(N / Vます（bỏ ます） + さえ) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜さえ (sae) ➔ Ý nghĩa: （......）... / Đến cả... (cũng không)"
     },
     {
       "id": 30,
@@ -7960,7 +9019,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ngữ pháp: 〜てほしい / 〜ないでほしい (te hoshii / naide hoshii) ➔ Ý nghĩa: Muốn (ai đó) làm... / Mong (ai đó) đừng làm...",
-      "explanation": "Đáp án đúng là B. 「〜てほしい」dùng để biểu đạt mong muốn của người nói yêu cầu đối phương hoặc người khác thực hiện một hành động (hoặc mong một hiện tượng tự nhiên xảy ra)."
+      "explanation": "Đáp án đúng là B. 「〜てほしい」dùng để biểu đạt mong muốn của người nói yêu cầu đối phương hoặc người khác thực hiện một hành động (hoặc mong một hiện tượng tự nhiên xảy ra).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜てほしい / 〜ないでほしい」(Vてほしい / Vないでほしい) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜てほしい / 〜ないでほしい (te hoshii / naide hoshii) ➔ Ý nghĩa: （......） (ai đó) làm... / Mong (ai đó) đừng làm..."
     },
     {
       "id": 31,
@@ -7975,7 +9036,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ngữ pháp: 〜に加えて (ni kuwaete) ➔ Ý nghĩa: Thêm vào đó... / Không chỉ... mà còn...",
-      "explanation": "Đáp án đúng là B. 「〜に加えて」(chữ Hán là 加 - gia tăng) dùng để bổ sung thêm một điều gì đó cùng tính chất (Ví dụ: Ngoài kiến thức chuyên môn, anh ấy còn có kinh nghiệm phong phú)."
+      "explanation": "Đáp án đúng là B. 「〜に加えて」(chữ Hán là 加 - gia tăng) dùng để bổ sung thêm một điều gì đó cùng tính chất (Ví dụ: Ngoài kiến thức chuyên môn, anh ấy còn có kinh nghiệm phong phú).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜に<ruby>加え<rt>くわえ</rt></ruby>て」(N + に<ruby>加え<rt>くわえ</rt></ruby>て) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜に加えて (ni kuwaete) ➔ Ý nghĩa: （......）... / Không chỉ... mà còn..."
     },
     {
       "id": 32,
@@ -7990,7 +9053,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đặc điểm của 〜てほしい / 〜ないでほしい: Mong ước, nguyện vọng người khác làm điều gì đó cho mình",
-      "explanation": "Đáp án đúng là A. Phân biệt: Vたい là bản thân người nói muốn làm; còn Vてほしい là muốn NGƯỜI KHÁC làm."
+      "explanation": "Đáp án đúng là A. Phân biệt: Vたい là bản thân người nói muốn làm; còn Vてほしい là muốn NGƯỜI KHÁC làm.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜てほしい / 〜ないでほしい」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜てほしい / 〜ないでほしい: （......） ước, nguyện vọng người khác làm điều gì đó cho mình"
     },
     {
       "id": 33,
@@ -8005,7 +9070,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ngữ pháp: 〜そうにない / 〜そうもない (sou ni nai / sou mo nai) ➔ Ý nghĩa: Có vẻ là không... / Khó lòng mà... (khả năng xảy ra cực kỳ thấp)",
-      "explanation": "Đáp án đúng là D. 「〜そうにない」diễn tả phán đoán của người nói dựa trên quan sát thực tế rằng khả năng một hành động/sự việc diễn ra là rất khó hoặc gần như không thể."
+      "explanation": "Đáp án đúng là D. 「〜そうにない」diễn tả phán đoán của người nói dựa trên quan sát thực tế rằng khả năng một hành động/sự việc diễn ra là rất khó hoặc gần như không thể.",
+      "rubyQuestion": "Mẫu ngữ pháp「〜そうにない / 〜そうもない」(Vます（bỏ ます） + そうにない / そうもない) có ý nghĩa tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜そうにない / 〜そうもない (sou ni nai / sou mo nai) ➔ Ý nghĩa: Có vẻ là không... / （......）... (khả năng xảy ra cực kỳ thấp)"
     },
     {
       "id": 34,
@@ -8020,7 +9087,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ngữ pháp: 〜ものか / 〜もんか (mono ka / mon ka) ➔ Ý nghĩa: Làm sao mà... được / Tuyệt đối không... đâu!",
-      "explanation": "Đáp án đúng là B. 「〜ものか」(văn nói thân mật: もんか) thể hiện sự phủ định đanh thép và quyết tâm mạnh mẽ của người nói (Ví dụ: Quán ăn tệ thế này tôi quyết không đến lần thứ hai đâu!)."
+      "explanation": "Đáp án đúng là B. 「〜ものか」(văn nói thân mật: もんか) thể hiện sự phủ định đanh thép và quyết tâm mạnh mẽ của người nói (Ví dụ: Quán ăn tệ thế này tôi quyết không đến lần thứ hai đâu!).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜ものか / 〜もんか」(V<ruby>辞書<rt>じしょ</rt></ruby><ruby>形<rt>かたち</rt></ruby> / A / N + ものか) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜ものか / 〜もんか (mono ka / mon ka) ➔ Ý nghĩa: （......）... được / Tuyệt đối không... đâu!"
     },
     {
       "id": 35,
@@ -8035,7 +9104,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đặc điểm của 〜さ（Aいさ / なAさ）: Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, độ sâu, sức nặng...)",
-      "explanation": "Đáp án đúng là D. Trường hợp ngoại lệ đặc biệt: いい / よい biến thành よさ (điểm tốt, nét đẹp)."
+      "explanation": "Đáp án đúng là D. Trường hợp ngoại lệ đặc biệt: いい / よい biến thành よさ (điểm tốt, nét đẹp).",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜さ（Aいさ / なAさ）」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜さ（Aいさ / なAさ）: Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, （......）, sức nặng...)"
     },
     {
       "id": 36,
@@ -8050,7 +9121,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ngữ pháp: 〜代わりに (kawari ni) ➔ Ý nghĩa: Thay cho... / Thay vì... (thay thế người, vật hoặc hành động)",
-      "explanation": "Đáp án đúng là C. 「〜代わりに」diễn tả ý thay thế: không làm A mà làm B, hoặc dùng B để thay cho A (Ví dụ: Uống nước thay vì uống nước ngọt)."
+      "explanation": "Đáp án đúng là C. 「〜代わりに」diễn tả ý thay thế: không làm A mà làm B, hoặc dùng B để thay cho A (Ví dụ: Uống nước thay vì uống nước ngọt).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜<ruby>代わり<rt>かわり</rt></ruby>に」(V<ruby>辞書<rt>じしょ</rt></ruby><ruby>形<rt>かたち</rt></ruby> / Nの + かわりに) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜代わりに (kawari ni) ➔ Ý nghĩa: （......）... / Thay vì... (thay thế người, vật hoặc hành động)"
     },
     {
       "id": 37,
@@ -8065,7 +9138,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đặc điểm của 〜そうにない / 〜そうもない: Nhìn tình hình thì khó mà hoàn thành/xảy ra được",
-      "explanation": "Đáp án đúng là B. Bản chất là thể phủ định của 〜そうだ (trông có vẻ)."
+      "explanation": "Đáp án đúng là B. Bản chất là thể phủ định của 〜そうだ (trông có vẻ).",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜そうにない / 〜そうもない」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "（......） Đặc điểm của 〜そうにない / 〜そうもない: Nhìn tình hình thì khó mà hoàn thành/xảy ra được"
     },
     {
       "id": 38,
@@ -8080,7 +9155,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Đặc điểm của 〜に加えて: Bên cạnh N, hơn thế nữa còn bổ sung thêm một yếu tố khác",
-      "explanation": "Đáp án đúng là D. Thường dùng trong văn viết hoặc văn phong trang trọng. Có thể lược bỏ て thành 〜にくわえ."
+      "explanation": "Đáp án đúng là D. Thường dùng trong văn viết hoặc văn phong trang trọng. Có thể lược bỏ て thành 〜にくわえ.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜に<ruby>加え<rt>くわえ</rt></ruby>て」đ」ư」ợc sử dụng với sắc thái / hoàn cảnh nào sau đo sau ây?",
+      "hintTranslation": "Đặc điểm của 〜に加えて: （......） N, hơn thế nữa còn bổ sung thêm một yếu tố khác"
     },
     {
       "id": 39,
@@ -8095,7 +9172,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Đặc điểm của 〜によって / 〜により / 〜による: Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC Tùy vào...",
-      "explanation": "Đáp án đúng là B. Đứng trước danh từ sẽ biến đổi thành「〜による + N」."
+      "explanation": "Đáp án đúng là B. Đứng trước danh từ sẽ biến đổi thành「〜による + N」.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜によって / 〜により / 〜による」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜によって / 〜により / 〜による: Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC （......）..."
     },
     {
       "id": 40,
@@ -8110,7 +9189,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Đặc điểm của 〜せいで: Tại vì... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)",
-      "explanation": "Đáp án đúng là A. Phân biệt: Kết quả tốt dùng 〜おかげで, kết quả xấu đổ trách nhiệm dùng 〜せいで."
+      "explanation": "Đáp án đúng là A. Phân biệt: Kết quả tốt dùng 〜おかげで, kết quả xấu đổ trách nhiệm dùng 〜せいで.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜せいで」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜せいで: （......）... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)"
     },
     {
       "id": 41,
@@ -8125,7 +9206,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ngữ pháp: 〜とは限りません / 〜とは限らない (to wa kagiranai) ➔ Ý nghĩa: Không hẳn là... / Chưa chắc là... (phủ định một phần)",
-      "explanation": "Đáp án đúng là A. 「〜とは限らない」dùng để phủ định một phần: không phải lúc nào cũng là như thế, vẫn có khả năng ngoại lệ (Ví dụ: Đắt tiền chưa chắc đã là đồ tốt)."
+      "explanation": "Đáp án đúng là A. 「〜とは限らない」dùng để phủ định một phần: không phải lúc nào cũng là như thế, vẫn có khả năng ngoại lệ (Ví dụ: Đắt tiền chưa chắc đã là đồ tốt).",
+      "rubyQuestion": "Mẫu ngữ pháp「〜とは<ruby>限り<rt>かぎり</rt></ruby>ません / 〜とは<ruby>限ら<rt>かぎら</rt></ruby>ない」(<ruby>普通<rt>ふつう</rt></ruby><ruby>形<rt>かたち</rt></ruby> + とは<ruby>限ら<rt>かぎら</rt></ruby>ない) có ý nghĩ ngha tiếng Việt chính xác là gì?",
+      "hintTranslation": "Ngữ pháp: 〜とは限りません / 〜とは限らない (to wa kagiranai) ➔ Ý nghĩa: Không hẳn là... / （......）... (phủ định một phần)"
     },
     {
       "id": 42,
@@ -8140,7 +9223,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Đặc điểm của 〜たばかり: Hành động vừa mới kết thúc cách đây không lâu",
-      "explanation": "Đáp án đúng là C. Khác với 〜たところ (thời gian thực tế vừa trôi qua trong tích tắc), 〜たばかり có thể dùng cho sự việc đã qua vài tháng nếu người nói cảm thấy như mới hôm qua."
+      "explanation": "Đáp án đúng là C. Khác với 〜たところ (thời gian thực tế vừa trôi qua trong tích tắc), 〜たばかり có thể dùng cho sự việc đã qua vài tháng nếu người nói cảm thấy như mới hôm qua.",
+      "rubyQuestion": "Trong tiếng Nhật, mẫu ngữ pháp「〜たばかり」được sử dụng với sắc thái / hoàn cảnh nào sau đây?",
+      "hintTranslation": "Đặc điểm của 〜たばかり: Hành động （......） kết thúc cách đây không lâu"
     }
   ],
   "meaning-to-grammar": [
@@ -8157,7 +9242,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ý nghĩa: \"Không hẳn là... / Chưa chắc là... (phủ định một phần)\" ➔ Mẫu ngữ pháp: 〜とは限りません / 〜とは限らない",
-      "explanation": "Đáp án đúng là B (「〜とは限りません / 〜とは限らない」). 「〜とは限らない」dùng để phủ định một phần: không phải lúc nào cũng là như thế, vẫn có khả năng ngoại lệ (Ví dụ: Đắt tiền chưa chắc đã là đồ tốt)."
+      "explanation": "Đáp án đúng là B (「〜とは限りません / 〜とは限らない」). 「〜とは限らない」dùng để phủ định một phần: không phải lúc nào cũng là như thế, vẫn có khả năng ngoại lệ (Ví dụ: Đắt tiền chưa chắc đã là đồ tốt).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Không hẳn là... / Chưa chắc là... (phủ định một phần)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"Không hẳn là... / （......）... (phủ định một phần)\" ➔ Mẫu ngữ pháp: 〜とは限りません / 〜とは限らない"
     },
     {
       "id": 2,
@@ -8172,7 +9259,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sắc thái: \"Tại vì... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)\" ➔ 〜せいで",
-      "explanation": "Đáp án đúng là B (「〜せいで」). Phân biệt: Kết quả tốt dùng 〜おかげで, kết quả xấu đổ trách nhiệm dùng 〜せいで."
+      "explanation": "Đáp án đúng là B (「〜せいで」). Phân biệt: Kết quả tốt dùng 〜おかげで, kết quả xấu đổ trách nhiệm dùng 〜せいで.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Tại vì... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......）... mà bị liên lụy (kết quả chẳng lành, quy trách nhiệm)\" ➔ 〜せいで"
     },
     {
       "id": 3,
@@ -8187,7 +9276,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sắc thái: \"Bù lại... / Đổi lại... (sự bù trừ qua lại)\" ➔ 〜代わりに",
-      "explanation": "Đáp án đúng là B (「〜代わりに」). Ngoài ra còn có ý bù trừ: Công việc tuy vất vả nhưng bù lại lương rất cao."
+      "explanation": "Đáp án đúng là B (「〜代わりに」). Ngoài ra còn có ý bù trừ: Công việc tuy vất vả nhưng bù lại lương rất cao.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Bù lại... / Đổi lại... (sự bù trừ qua lại)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "（......） Sắc thái: \"Bù lại... / Đổi lại... (sự bù trừ qua lại)\" ➔ 〜代わりに"
     },
     {
       "id": 4,
@@ -8202,7 +9293,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sắc thái: \"Nhờ có... (đôi khi dùng với sắc thái mỉa mai, châm biếm)\" ➔ 〜おかげで",
-      "explanation": "Đáp án đúng là D (「〜おかげで」). Khi dùng với kết quả xấu, 〜おかげで mang hàm ý mỉa mai, trách khéo (Ví dụ: Nhờ ơn cậu làm sai mà tớ phải làm lại hết)."
+      "explanation": "Đáp án đúng là D (「〜おかげで」). Khi dùng với kết quả xấu, 〜おかげで mang hàm ý mỉa mai, trách khéo (Ví dụ: Nhờ ơn cậu làm sai mà tớ phải làm lại hết).",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Nhờ có... (đôi khi dùng với sắc thái mỉa mai, châm biếm)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......）... (đôi khi dùng với sắc thái mỉa mai, châm biếm)\" ➔ 〜おかげで"
     },
     {
       "id": 5,
@@ -8217,7 +9310,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ý nghĩa: \"Ngay cả... / Đến cả... (cũng không)\" ➔ Mẫu ngữ pháp: 〜さえ",
-      "explanation": "Đáp án đúng là C (「〜さえ」). 「〜さえ」nêu ra một ví dụ cực đoan hoặc ở mức tối thiểu mà còn (không) làm được, huống chi là những thứ khác (Ví dụ: Ngay cả tên mình cũng không viết được)."
+      "explanation": "Đáp án đúng là C (「〜さえ」). 「〜さえ」nêu ra một ví dụ cực đoan hoặc ở mức tối thiểu mà còn (không) làm được, huống chi là những thứ khác (Ví dụ: Ngay cả tên mình cũng không viết được).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Ngay cả... / Đến cả... (cũng không)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... / Đến cả... (cũng không)\" ➔ Mẫu ngữ pháp: 〜さえ"
     },
     {
       "id": 6,
@@ -8232,7 +9327,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ý nghĩa: \"Đối với... (thái độ, hành vi hướng tới ai/cái gì)\" ➔ Mẫu ngữ pháp: 〜に対して",
-      "explanation": "Đáp án đúng là A (「〜に対して」). 「〜に対して」nghĩa 1: Hướng hành động/thái độ vào đối tượng (Ví dụ: Thầy giáo rất thân thiện đối với học sinh; Danh từ đi kèm: に対するN)."
+      "explanation": "Đáp án đúng là A (「〜に対して」). 「〜に対して」nghĩa 1: Hướng hành động/thái độ vào đối tượng (Ví dụ: Thầy giáo rất thân thiện đối với học sinh; Danh từ đi kèm: に対するN).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Đối với... (thái độ, hành vi hướng tới ai/cái gì)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... (thái độ, hành vi hướng tới ai/cái gì)\" ➔ Mẫu ngữ pháp: 〜に対して"
     },
     {
       "id": 7,
@@ -8247,7 +9344,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sắc thái: \"Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra\" ➔ 〜恐れがある",
-      "explanation": "Đáp án đúng là C (「〜恐れがある」). Mang văn phong trang trọng, thường xuất hiện trong bản tin thời sự, dự báo thời tiết, thông báo y tế hoặc văn bản pháp quy."
+      "explanation": "Đáp án đúng là C (「〜恐れがある」). Mang văn phong trang trọng, thường xuất hiện trong bản tin thời sự, dự báo thời tiết, thông báo y tế hoặc văn bản pháp quy.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "（......） Sắc thái: \"Lo ngại có thể có một sự việc xấu, nguy hiểm sẽ xảy ra\" ➔ 〜恐れがある"
     },
     {
       "id": 8,
@@ -8262,7 +9361,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ý nghĩa: \"Thêm vào đó... / Không chỉ... mà còn...\" ➔ Mẫu ngữ pháp: 〜に加えて",
-      "explanation": "Đáp án đúng là C (「〜に加えて」). 「〜に加えて」(chữ Hán là 加 - gia tăng) dùng để bổ sung thêm một điều gì đó cùng tính chất (Ví dụ: Ngoài kiến thức chuyên môn, anh ấy còn có kinh nghiệm phong phú)."
+      "explanation": "Đáp án đúng là C (「〜に加えて」). 「〜に加えて」(chữ Hán là 加 - gia tăng) dùng để bổ sung thêm một điều gì đó cùng tính chất (Ví dụ: Ngoài kiến thức chuyên môn, anh ấy còn có kinh nghiệm phong phú).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Thêm vào đó... / Không chỉ... mà còn...\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... / Không chỉ... mà còn...\" ➔ Mẫu ngữ pháp: 〜に加えて"
     },
     {
       "id": 9,
@@ -8277,7 +9378,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ý nghĩa: \"Nhờ có... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)\" ➔ Mẫu ngữ pháp: 〜おかげで",
-      "explanation": "Đáp án đúng là C (「〜おかげで」). 「〜おかげで」chỉ nguyên nhân đem lại kết quả tốt đẹp, thuận lợi. Thể hiện sự cảm kích, biết ơn."
+      "explanation": "Đáp án đúng là C (「〜おかげで」). 「〜おかげで」chỉ nguyên nhân đem lại kết quả tốt đẹp, thuận lợi. Thể hiện sự cảm kích, biết ơn.",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Nhờ có... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... / Nhờ ơn... (chỉ nguyên nhân mang lại kết quả tốt)\" ➔ Mẫu ngữ pháp: 〜おかげで"
     },
     {
       "id": 10,
@@ -8292,7 +9395,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ý nghĩa: \"Nên... / Phải... (đưa ra lời khuyên, giải pháp tốt nhất)\" ➔ Mẫu ngữ pháp: 〜ことだ",
-      "explanation": "Đáp án đúng là D (「〜ことだ」). 「〜ことだ」dùng trong văn nói trực tiếp để khuyên nhủ ai đó: Làm việc đó là tốt nhất, thích hợp nhất trong hoàn cảnh này."
+      "explanation": "Đáp án đúng là D (「〜ことだ」). 「〜ことだ」dùng trong văn nói trực tiếp để khuyên nhủ ai đó: Làm việc đó là tốt nhất, thích hợp nhất trong hoàn cảnh này.",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Nên... / Phải... (đưa ra lời khuyên, giải pháp tốt nhất)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"Nên... / （......）... (đưa ra lời khuyên, giải pháp tốt nhất)\" ➔ Mẫu ngữ pháp: 〜ことだ"
     },
     {
       "id": 11,
@@ -8307,7 +9412,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Sắc thái: \"Cứ cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)\" ➔ 〜ごとに",
-      "explanation": "Đáp án đúng là A (「〜ごとに」). Khác với 〜たびに (nhấn mạnh cứ mỗi lần A thì lại xảy ra B bất kể thời gian), 〜ごとに nhấn mạnh sự lặp lại đều đặn theo chu kỳ, chuỗi thời gian hoặc đơn vị phân chia."
+      "explanation": "Đáp án đúng là A (「〜ごとに」). Khác với 〜たびに (nhấn mạnh cứ mỗi lần A thì lại xảy ra B bất kể thời gian), 〜ごとに nhấn mạnh sự lặp lại đều đặn theo chu kỳ, chuỗi thời gian hoặc đơn vị phân chia.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Cứ cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......） cách một khoảng thời gian/chu kỳ thì lại lặp lại một lần (mỗi...)\" ➔ 〜ごとに"
     },
     {
       "id": 12,
@@ -8322,7 +9429,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Sắc thái: \"Thậm chí đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)\" ➔ 〜さえ",
-      "explanation": "Đáp án đúng là A (「〜さえ」). Thường đi kèm trợ từ phủ định hoặc câu mang hàm ý bất ngờ, thất vọng."
+      "explanation": "Đáp án đúng là A (「〜さえ」). Thường đi kèm trợ từ phủ định hoặc câu mang hàm ý bất ngờ, thất vọng.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Thậm chí đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......） đến mức... (ví dụ điển hình ở mức tối thiểu để ngụ ý những cái khác)\" ➔ 〜さえ"
     },
     {
       "id": 13,
@@ -8337,7 +9446,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ý nghĩa: \"Độ... / Mức độ... (danh từ hóa tính từ đo lường)\" ➔ Mẫu ngữ pháp: 〜さ（Aいさ / なAさ）",
-      "explanation": "Đáp án đúng là B (「〜さ（Aいさ / なAさ）」). Thêm đuôi「〜さ」vào sau gốc tính từ để tạo thành danh từ chỉ mức độ đo lường khách quan (Ví dụ: 重さ - độ nặng, 長さ - chiều dài, 深さ - độ sâu)."
+      "explanation": "Đáp án đúng là B (「〜さ（Aいさ / なAさ）」). Thêm đuôi「〜さ」vào sau gốc tính từ để tạo thành danh từ chỉ mức độ đo lường khách quan (Ví dụ: 重さ - độ nặng, 長さ - chiều dài, 深さ - độ sâu).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Độ... / Mức độ... (danh từ hóa tính từ đo lường)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... / Mức độ... (danh từ hóa tính từ đo lường)\" ➔ Mẫu ngữ pháp: 〜さ（Aいさ / なAさ）"
     },
     {
       "id": 14,
@@ -8352,7 +9463,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ý nghĩa: \"Cứ mỗi lần... lại... / Từng... một\" ➔ Mẫu ngữ pháp: 〜ごとに",
-      "explanation": "Đáp án đúng là A (「〜ごとに」). 「〜ごとに」(chữ Hán là 毎に) diễn tả hành động hay sự việc cứ lặp lại tuần tự theo chu kỳ hoặc đơn vị (Ví dụ: 10分ごとに - cứ 10 phút một lần)."
+      "explanation": "Đáp án đúng là A (「〜ごとに」). 「〜ごとに」(chữ Hán là 毎に) diễn tả hành động hay sự việc cứ lặp lại tuần tự theo chu kỳ hoặc đơn vị (Ví dụ: 10分ごとに - cứ 10 phút một lần).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Cứ mỗi lần... lại... / Từng... một\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... lại... / Từng... một\" ➔ Mẫu ngữ pháp: 〜ごとに"
     },
     {
       "id": 15,
@@ -8367,7 +9480,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ý nghĩa: \"Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)\" ➔ Mẫu ngữ pháp: 〜ことは〜が〜",
-      "explanation": "Đáp án đúng là D (「〜ことは〜が〜」). 「〜ことは〜が〜」dùng bằng cách lặp lại cùng một động từ hoặc tính từ, biểu thị sự nhượng bộ: thừa nhận vế trước nhưng vế sau nêu mặt hạn chế (Ví dụ: Ngon thì ngon thật đấy nhưng giá đắt quá)."
+      "explanation": "Đáp án đúng là D (「〜ことは〜が〜」). 「〜ことは〜が〜」dùng bằng cách lặp lại cùng một động từ hoặc tính từ, biểu thị sự nhượng bộ: thừa nhận vế trước nhưng vế sau nêu mặt hạn chế (Ví dụ: Ngon thì ngon thật đấy nhưng giá đắt quá).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "（......） Ý nghĩa: \"Tuy có... thật đấy, nhưng mà... (công nhận một phần nhưng vế sau hạn chế)\" ➔ Mẫu ngữ pháp: 〜ことは〜が〜"
     },
     {
       "id": 16,
@@ -8382,7 +9497,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ý nghĩa: \"Muốn (ai đó) làm... / Mong (ai đó) đừng làm...\" ➔ Mẫu ngữ pháp: 〜てほしい / 〜ないでほしい",
-      "explanation": "Đáp án đúng là A (「〜てほしい / 〜ないでほしい」). 「〜てほしい」dùng để biểu đạt mong muốn của người nói yêu cầu đối phương hoặc người khác thực hiện một hành động (hoặc mong một hiện tượng tự nhiên xảy ra)."
+      "explanation": "Đáp án đúng là A (「〜てほしい / 〜ないでほしい」). 「〜てほしい」dùng để biểu đạt mong muốn của người nói yêu cầu đối phương hoặc người khác thực hiện một hành động (hoặc mong một hiện tượng tự nhiên xảy ra).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Muốn (ai đó) làm... / Mong (ai đó) đừng làm...\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......） (ai đó) làm... / Mong (ai đó) đừng làm...\" ➔ Mẫu ngữ pháp: 〜てほしい / 〜ないでほしい"
     },
     {
       "id": 17,
@@ -8397,7 +9514,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ý nghĩa: \"Vừa mới... xong (theo cảm nhận chủ quan của người nói)\" ➔ Mẫu ngữ pháp: 〜たばかり",
-      "explanation": "Đáp án đúng là B (「〜たばかり」). 「〜たばかり」diễn tả hành động vừa xảy ra cách đây ít lâu theo cảm nhận chủ quan của người nói (Ví dụ: Vừa mới vào công ty được 1 tuần; Vừa mới ăn cơm xong)."
+      "explanation": "Đáp án đúng là B (「〜たばかり」). 「〜たばかり」diễn tả hành động vừa xảy ra cách đây ít lâu theo cảm nhận chủ quan của người nói (Ví dụ: Vừa mới vào công ty được 1 tuần; Vừa mới ăn cơm xong).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Vừa mới... xong (theo cảm nhận chủ quan của người nói)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... xong (theo cảm nhận chủ quan của người nói)\" ➔ Mẫu ngữ pháp: 〜たばかり"
     },
     {
       "id": 18,
@@ -8412,7 +9531,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sắc thái: \"Vừa... vừa... / Song song đó (đồng thời tiến hành hoặc tồn tại)\" ➔ 〜一方で",
-      "explanation": "Đáp án đúng là C (「〜一方で」). Ngoài ý nghĩa đối lập, 〜一方で còn dùng để chỉ sự song hành: cùng lúc vừa làm việc này vừa làm việc kia."
+      "explanation": "Đáp án đúng là C (「〜一方で」). Ngoài ý nghĩa đối lập, 〜一方で còn dùng để chỉ sự song hành: cùng lúc vừa làm việc này vừa làm việc kia.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Vừa... vừa... / Song song đó (đồng thời tiến hành hoặc tồn tại)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......）... / Song song đó (đồng thời tiến hành hoặc tồn tại)\" ➔ 〜一方で"
     },
     {
       "id": 19,
@@ -8427,7 +9548,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ý nghĩa: \"Có vẻ là không... / Khó lòng mà... (khả năng xảy ra cực kỳ thấp)\" ➔ Mẫu ngữ pháp: 〜そうにない / 〜そうもない",
-      "explanation": "Đáp án đúng là D (「〜そうにない / 〜そうもない」). 「〜そうにない」diễn tả phán đoán của người nói dựa trên quan sát thực tế rằng khả năng một hành động/sự việc diễn ra là rất khó hoặc gần như không thể."
+      "explanation": "Đáp án đúng là D (「〜そうにない / 〜そうもない」). 「〜そうにない」diễn tả phán đoán của người nói dựa trên quan sát thực tế rằng khả năng một hành động/sự việc diễn ra là rất khó hoặc gần như không thể.",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Có vẻ là không... / Khó lòng mà... (khả năng xảy ra cực kỳ thấp)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"Có vẻ là không... / （......）... (khả năng xảy ra cực kỳ thấp)\" ➔ Mẫu ngữ pháp: 〜そうにない / 〜そうもない"
     },
     {
       "id": 20,
@@ -8442,7 +9565,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sắc thái: \"Mong ước, nguyện vọng người khác làm điều gì đó cho mình\" ➔ 〜てほしい / 〜ないでほしい",
-      "explanation": "Đáp án đúng là C (「〜てほしい / 〜ないでほしい」). Phân biệt: Vたい là bản thân người nói muốn làm; còn Vてほしい là muốn NGƯỜI KHÁC làm."
+      "explanation": "Đáp án đúng là C (「〜てほしい / 〜ないでほしい」). Phân biệt: Vたい là bản thân người nói muốn làm; còn Vてほしい là muốn NGƯỜI KHÁC làm.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Mong ước, nguyện vọng người khác làm điều gì đó cho mình\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......） ước, nguyện vọng người khác làm điều gì đó cho mình\" ➔ 〜てほしい / 〜ないでほしい"
     },
     {
       "id": 21,
@@ -8457,7 +9582,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sắc thái: \"Nhìn tình hình thì khó mà hoàn thành/xảy ra được\" ➔ 〜そうにない / 〜そうもない",
-      "explanation": "Đáp án đúng là C (「〜そうにない / 〜そうもない」). Bản chất là thể phủ định của 〜そうだ (trông có vẻ)."
+      "explanation": "Đáp án đúng là C (「〜そうにない / 〜そうもない」). Bản chất là thể phủ định của 〜そうだ (trông có vẻ).",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Nhìn tình hình thì khó mà hoàn thành/xảy ra được\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "（......） Sắc thái: \"Nhìn tình hình thì khó mà hoàn thành/xảy ra được\" ➔ 〜そうにない / 〜そうもない"
     },
     {
       "id": 22,
@@ -8472,7 +9599,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ý nghĩa: \"Do / Vì / Tại... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)\" ➔ Mẫu ngữ pháp: 〜せいで",
-      "explanation": "Đáp án đúng là A (「〜せいで」). 「〜せいで」dùng khi nói về nguyên nhân gây ra hậu quả tiêu cực, thường mang sắc thái trách móc, đổ lỗi."
+      "explanation": "Đáp án đúng là A (「〜せいで」). 「〜せいで」dùng khi nói về nguyên nhân gây ra hậu quả tiêu cực, thường mang sắc thái trách móc, đổ lỗi.",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Do / Vì / Tại... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"Do / Vì / （......）... (chỉ nguyên nhân dẫn đến kết quả xấu, đổ lỗi)\" ➔ Mẫu ngữ pháp: 〜せいで"
     },
     {
       "id": 23,
@@ -8487,7 +9616,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sắc thái: \"Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)\" ➔ 〜わけがない",
-      "explanation": "Đáp án đúng là D (「〜わけがない」). Dạng phủ định kép: 〜ないわけがない mang ý nghĩa chắc chắn là có/sẽ."
+      "explanation": "Đáp án đúng là D (「〜わけがない」). Dạng phủ định kép: 〜ないわけがない mang ý nghĩa chắc chắn là có/sẽ.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "（......） Sắc thái: \"Không có lý do nào hoặc khả năng nào để xảy ra chuyện đó (= はずがない)\" ➔ 〜わけがない"
     },
     {
       "id": 24,
@@ -8502,7 +9633,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sắc thái: \"Không nên... / Đừng... (Vないことだ - lời khuyên cảnh báo)\" ➔ 〜ことだ",
-      "explanation": "Đáp án đúng là B (「〜ことだ」). Lưu ý: Không dùng mẫu câu này để đưa ra lời khuyên cho người bề trên hoặc cấp trên."
+      "explanation": "Đáp án đúng là B (「〜ことだ」). Lưu ý: Không dùng mẫu câu này để đưa ra lời khuyên cho người bề trên hoặc cấp trên.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Không nên... / Đừng... (Vないことだ - lời khuyên cảnh báo)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"Không nên... / （......）... (Vないことだ - lời khuyên cảnh báo)\" ➔ 〜ことだ"
     },
     {
       "id": 25,
@@ -8517,7 +9650,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sắc thái: \"Trái ngược với... / Ngược lại với... (so sánh tương phản 2 vế)\" ➔ 〜に対して",
-      "explanation": "Đáp án đúng là D (「〜に対して」). Nghĩa 2: So sánh đối lập hai sự việc tương phản (Ví dụ: Tôi thích thể thao trái ngược với em trai thích đọc sách)."
+      "explanation": "Đáp án đúng là D (「〜に対して」). Nghĩa 2: So sánh đối lập hai sự việc tương phản (Ví dụ: Tôi thích thể thao trái ngược với em trai thích đọc sách).",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Trái ngược với... / Ngược lại với... (so sánh tương phản 2 vế)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......）... / Ngược lại với... (so sánh tương phản 2 vế)\" ➔ 〜に対して"
     },
     {
       "id": 26,
@@ -8532,7 +9667,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sắc thái: \"Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ\" ➔ 〜とは限りません / 〜とは限らない",
-      "explanation": "Đáp án đúng là C (「〜とは限りません / 〜とは限らない」). Thường đi kèm các phó từ: 必ずしも (chưa hẳn), いつも (luôn luôn), 全部 (toàn bộ)."
+      "explanation": "Đáp án đúng là C (「〜とは限りません / 〜とは限らない」). Thường đi kèm các phó từ: 必ずしも (chưa hẳn), いつも (luôn luôn), 全部 (toàn bộ).",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "（......） Sắc thái: \"Không nhất thiết 100% luôn luôn như vậy, vẫn có trường hợp ngoại lệ\" ➔ 〜とは限りません / 〜とは限らない"
     },
     {
       "id": 27,
@@ -8547,7 +9684,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sắc thái: \"Dễ... / Hay... (xu hướng tính cách: hay quên, hay giận, chóng chán)\" ➔ 〜っぽい",
-      "explanation": "Đáp án đúng là C (「〜っぽい」). Dùng nhiều trong văn nói thường ngày."
+      "explanation": "Đáp án đúng là C (「〜っぽい」). Dùng nhiều trong văn nói thường ngày.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Dễ... / Hay... (xu hướng tính cách: hay quên, hay giận, chóng chán)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"Dễ... / Hay... (xu hướng tính cách: （......）, hay giận, chóng chán)\" ➔ 〜っぽい"
     },
     {
       "id": 28,
@@ -8562,7 +9701,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Sắc thái: \"Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC Tùy vào...\" ➔ 〜によって / 〜により / 〜による",
-      "explanation": "Đáp án đúng là B (「〜によって / 〜により / 〜による」). Đứng trước danh từ sẽ biến đổi thành「〜による + N」."
+      "explanation": "Đáp án đúng là B (「〜によって / 〜により / 〜による」). Đứng trước danh từ sẽ biến đổi thành「〜による + N」.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC Tùy vào...\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"Bằng cách / Nhờ vào... (phương tiện, phương pháp) HOẶC （......）...\" ➔ 〜によって / 〜により / 〜による"
     },
     {
       "id": 29,
@@ -8577,7 +9718,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sắc thái: \"Hành động vừa mới kết thúc cách đây không lâu\" ➔ 〜たばかり",
-      "explanation": "Đáp án đúng là D (「〜たばかり」). Khác với 〜たところ (thời gian thực tế vừa trôi qua trong tích tắc), 〜たばかり có thể dùng cho sự việc đã qua vài tháng nếu người nói cảm thấy như mới hôm qua."
+      "explanation": "Đáp án đúng là D (「〜たばかり」). Khác với 〜たところ (thời gian thực tế vừa trôi qua trong tích tắc), 〜たばかり có thể dùng cho sự việc đã qua vài tháng nếu người nói cảm thấy như mới hôm qua.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Hành động vừa mới kết thúc cách đây không lâu\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"Hành động （......） kết thúc cách đây không lâu\" ➔ 〜たばかり"
     },
     {
       "id": 30,
@@ -8592,7 +9735,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Ý nghĩa: \"Lẽ nào lại... / Làm sao mà... được / Tuyệt đối không thể...\" ➔ Mẫu ngữ pháp: 〜わけがない",
-      "explanation": "Đáp án đúng là D (「〜わけがない」). 「〜わけがない」biểu thị sự quả quyết mạnh mẽ của người nói rằng chuyện đó tuyệt đối không thể xảy ra dựa trên lý lẽ xác đáng. Văn thoại hay dùng: 〜わけない."
+      "explanation": "Đáp án đúng là D (「〜わけがない」). 「〜わけがない」biểu thị sự quả quyết mạnh mẽ của người nói rằng chuyện đó tuyệt đối không thể xảy ra dựa trên lý lẽ xác đáng. Văn thoại hay dùng: 〜わけない.",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Lẽ nào lại... / Làm sao mà... được / Tuyệt đối không thể...\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... / Làm sao mà... được / Tuyệt đối không thể...\" ➔ Mẫu ngữ pháp: 〜わけがない"
     },
     {
       "id": 31,
@@ -8607,7 +9752,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Ý nghĩa: \"Do / Vì... (nguyên nhân) HOẶC Bởi... (tác giả trong câu bị động)\" ➔ Mẫu ngữ pháp: 〜によって / 〜により / 〜による",
-      "explanation": "Đáp án đúng là A (「〜によって / 〜により / 〜による」). 「〜によって」có 4 nghĩa quan trọng: 1. Do/Vì nguyên nhân; 2. Bởi ai (chủ thể bị động); 3. Bằng phương tiện/cách thức; 4. Tùy thuộc vào từng đối tượng."
+      "explanation": "Đáp án đúng là A (「〜によって / 〜により / 〜による」). 「〜によって」có 4 nghĩa quan trọng: 1. Do/Vì nguyên nhân; 2. Bởi ai (chủ thể bị động); 3. Bằng phương tiện/cách thức; 4. Tùy thuộc vào từng đối tượng.",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Do / Vì... (nguyên nhân) HOẶC Bởi... (tác giả trong câu bị động)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"Do / Vì... (nguyên nhân) HOẶC （......）... (tác giả trong câu bị động)\" ➔ Mẫu ngữ pháp: 〜によって / 〜により / 〜による"
     },
     {
       "id": 32,
@@ -8622,7 +9769,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ý nghĩa: \"Cho dù... (đi chăng nữa thì vẫn không thay đổi)\" ➔ Mẫu ngữ pháp: 〜としても",
-      "explanation": "Đáp án đúng là C (「〜としても」). 「〜としても」đặt ra điều kiện giả định: Cho dù tình huống ở vế trước có xảy ra đi chăng nữa, thì lập trường, suy nghĩ hoặc sự việc ở vế sau vẫn không hề bị suy chuyển."
+      "explanation": "Đáp án đúng là C (「〜としても」). 「〜としても」đặt ra điều kiện giả định: Cho dù tình huống ở vế trước có xảy ra đi chăng nữa, thì lập trường, suy nghĩ hoặc sự việc ở vế sau vẫn không hề bị suy chuyển.",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Cho dù... (đi chăng nữa thì vẫn không thay đổi)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... (đi chăng nữa thì vẫn không thay đổi)\" ➔ Mẫu ngữ pháp: 〜としても"
     },
     {
       "id": 33,
@@ -8637,7 +9786,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Sắc thái: \"Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2\" ➔ 〜ものか / 〜もんか",
-      "explanation": "Đáp án đúng là A (「〜ものか / 〜もんか」). Phân biệt: 〜わけがない là phủ định tính khả thi dựa trên lý lẽ; còn 〜ものか mang sắc thái cảm xúc quyết liệt của người nói."
+      "explanation": "Đáp án đúng là A (「〜ものか / 〜もんか」). Phân biệt: 〜わけがない là phủ định tính khả thi dựa trên lý lẽ; còn 〜ものか mang sắc thái cảm xúc quyết liệt của người nói.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "（......） Sắc thái: \"Phủ định cực kỳ mạnh mẽ, kiên quyết không làm điều gì lần thứ 2\" ➔ 〜ものか / 〜もんか"
     },
     {
       "id": 34,
@@ -8652,7 +9803,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ý nghĩa: \"Một mặt thì... mặt khác thì... (đối lập giữa 2 mặt của sự việc)\" ➔ Mẫu ngữ pháp: 〜一方で",
-      "explanation": "Đáp án đúng là B (「〜一方で」). 「〜一方で」dùng để nêu ra hai mặt đối lập tương phản của một vấn đề (Ví dụ: tiện lợi một mặt nhưng chi phí lại đắt đỏ)."
+      "explanation": "Đáp án đúng là B (「〜一方で」). 「〜一方で」dùng để nêu ra hai mặt đối lập tương phản của một vấn đề (Ví dụ: tiện lợi một mặt nhưng chi phí lại đắt đỏ).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Một mặt thì... mặt khác thì... (đối lập giữa 2 mặt của sự việc)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... mặt khác thì... (đối lập giữa 2 mặt của sự việc)\" ➔ Mẫu ngữ pháp: 〜一方で"
     },
     {
       "id": 35,
@@ -8667,7 +9820,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Sắc thái: \"Bên cạnh N, hơn thế nữa còn bổ sung thêm một yếu tố khác\" ➔ 〜に加えて",
-      "explanation": "Đáp án đúng là C (「〜に加えて」). Thường dùng trong văn viết hoặc văn phong trang trọng. Có thể lược bỏ て thành 〜にくわえ."
+      "explanation": "Đáp án đúng là C (「〜に加えて」). Thường dùng trong văn viết hoặc văn phong trang trọng. Có thể lược bỏ て thành 〜にくわえ.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Bên cạnh N, hơn thế nữa còn bổ sung thêm một yếu tố khác\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......） N, hơn thế nữa còn bổ sung thêm một yếu tố khác\" ➔ 〜に加えて"
     },
     {
       "id": 36,
@@ -8682,7 +9837,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ý nghĩa: \"Thay cho... / Thay vì... (thay thế người, vật hoặc hành động)\" ➔ Mẫu ngữ pháp: 〜代わりに",
-      "explanation": "Đáp án đúng là B (「〜代わりに」). 「〜代わりに」diễn tả ý thay thế: không làm A mà làm B, hoặc dùng B để thay cho A (Ví dụ: Uống nước thay vì uống nước ngọt)."
+      "explanation": "Đáp án đúng là B (「〜代わりに」). 「〜代わりに」diễn tả ý thay thế: không làm A mà làm B, hoặc dùng B để thay cho A (Ví dụ: Uống nước thay vì uống nước ngọt).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Thay cho... / Thay vì... (thay thế người, vật hoặc hành động)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... / Thay vì... (thay thế người, vật hoặc hành động)\" ➔ Mẫu ngữ pháp: 〜代わりに"
     },
     {
       "id": 37,
@@ -8697,7 +9854,9 @@ const QUIZ_SETS = {
       ],
       "answer": 1,
       "translation": "Ý nghĩa: \"Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)\" ➔ Mẫu ngữ pháp: 〜っぽい",
-      "explanation": "Đáp án đúng là B (「〜っぽい」). 「〜っぽい」có 3 nghĩa chính: 1. Có vẻ như (大人っぽい - giống người lớn, 白っぽい - hơi trắng); 2. Có nhiều chất gì đó (油っぽい - nhiều dầu mỡ); 3. Hay/Dễ làm gì (怒りっぽい - hay cáu, 忘れっぽい - hay quên)."
+      "explanation": "Đáp án đúng là B (「〜っぽい」). 「〜っぽい」có 3 nghĩa chính: 1. Có vẻ như (大人っぽい - giống người lớn, 白っぽい - hơi trắng); 2. Có nhiều chất gì đó (油っぽい - nhiều dầu mỡ); 3. Hay/Dễ làm gì (怒りっぽい - hay cáu, 忘れっぽい - hay quên).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "（......） Ý nghĩa: \"Có vẻ như / Giống như... (cảm giác bề ngoài, màu sắc)\" ➔ Mẫu ngữ pháp: 〜っぽい"
     },
     {
       "id": 38,
@@ -8712,7 +9871,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ý nghĩa: \"Làm sao mà... được / Tuyệt đối không... đâu!\" ➔ Mẫu ngữ pháp: 〜ものか / 〜もんか",
-      "explanation": "Đáp án đúng là C (「〜ものか / 〜もんか」). 「〜ものか」(văn nói thân mật: もんか) thể hiện sự phủ định đanh thép và quyết tâm mạnh mẽ của người nói (Ví dụ: Quán ăn tệ thế này tôi quyết không đến lần thứ hai đâu!)."
+      "explanation": "Đáp án đúng là C (「〜ものか / 〜もんか」). 「〜ものか」(văn nói thân mật: もんか) thể hiện sự phủ định đanh thép và quyết tâm mạnh mẽ của người nói (Ví dụ: Quán ăn tệ thế này tôi quyết không đến lần thứ hai đâu!).",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"Làm sao mà... được / Tuyệt đối không... đâu!\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"（......）... được / Tuyệt đối không... đâu!\" ➔ Mẫu ngữ pháp: 〜ものか / 〜もんか"
     },
     {
       "id": 39,
@@ -8727,7 +9888,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sắc thái: \"A thì có A nhưng không hoàn hảo / có điểm trừ\" ➔ 〜ことは〜が〜",
-      "explanation": "Đáp án đúng là D (「〜ことは〜が〜」). Cấu trúc: V/AことはV/Aが... giúp câu nói mang tính khách quan, tế nhị hơn khi chê."
+      "explanation": "Đáp án đúng là D (「〜ことは〜が〜」). Cấu trúc: V/AことはV/Aが... giúp câu nói mang tính khách quan, tế nhị hơn khi chê.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"A thì có A nhưng không hoàn hảo / có điểm trừ\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"A （......） A nhưng không hoàn hảo / có điểm trừ\" ➔ 〜ことは〜が〜"
     },
     {
       "id": 40,
@@ -8742,7 +9905,9 @@ const QUIZ_SETS = {
       ],
       "answer": 0,
       "translation": "Sắc thái: \"Dù giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên\" ➔ 〜としても",
-      "explanation": "Đáp án đúng là A (「〜としても」). Ví dụ: Cho dù tôi có trở thành người giàu thì lối sống của tôi vẫn bình dị như hiện tại."
+      "explanation": "Đáp án đúng là A (「〜としても」). Ví dụ: Cho dù tôi có trở thành người giàu thì lối sống của tôi vẫn bình dị như hiện tại.",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Dù giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"（......） giả định điều đó có xảy ra thì vế sau vẫn giữ nguyên\" ➔ 〜としても"
     },
     {
       "id": 41,
@@ -8757,7 +9922,9 @@ const QUIZ_SETS = {
       ],
       "answer": 3,
       "translation": "Sắc thái: \"Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, độ sâu, sức nặng...)\" ➔ 〜さ（Aいさ / なAさ）",
-      "explanation": "Đáp án đúng là D (「〜さ（Aいさ / なAさ）」). Trường hợp ngoại lệ đặc biệt: いい / よい biến thành よさ (điểm tốt, nét đẹp)."
+      "explanation": "Đáp án đúng là D (「〜さ（Aいさ / なAさ）」). Trường hợp ngoại lệ đặc biệt: いい / よい biến thành よさ (điểm tốt, nét đẹp).",
+      "rubyQuestion": "Khi muốn diễn đạt: \"Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, độ sâu, sức nặng...)\", người Nhật thường dùng mẫu ngữ pháp nào?",
+      "hintTranslation": "Sắc thái: \"Biến đổi tính từ thành danh từ biểu thị mức độ tính chất (độ cao, （......）, sức nặng...)\" ➔ 〜さ（Aいさ / なAさ）"
     },
     {
       "id": 42,
@@ -8772,7 +9939,9 @@ const QUIZ_SETS = {
       ],
       "answer": 2,
       "translation": "Ý nghĩa: \"E là... / Có nguy cơ... / Lo sợ rằng...\" ➔ Mẫu ngữ pháp: 〜恐れがある",
-      "explanation": "Đáp án đúng là C (「〜恐れがある」). 「〜恐れがある」(chữ Hán là 恐 - sợ hãi) dùng để cảnh báo về khả năng một sự việc tiêu cực, tai họa hoặc tổn thất có thể xảy ra trong tương lai."
+      "explanation": "Đáp án đúng là C (「〜恐れがある」). 「〜恐れがある」(chữ Hán là 恐 - sợ hãi) dùng để cảnh báo về khả năng một sự việc tiêu cực, tai họa hoặc tổn thất có thể xảy ra trong tương lai.",
+      "rubyQuestion": "Ý nghĩa tiếng Việt: \"E là... / Có nguy cơ... / Lo sợ rằng...\" tương ứng với mẫu ngữ pháp nào trong tiếng Nhật?",
+      "hintTranslation": "Ý nghĩa: \"E là... / （......）... / Lo sợ rằng...\" ➔ Mẫu ngữ pháp: 〜恐れがある"
     }
   ]
 };

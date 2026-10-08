@@ -95,12 +95,18 @@
       <div class="question-card">
         <div class="question-header">
           <div class="q-meta">
-            <span class="unit-badge u9" id="q-unit-badge">Unit 9</span>
+            <span class="unit-badge u9" id="q-unit-badge" style="display: none;"></span>
             <span class="pattern-tag japanese-text" id="q-pattern-tag" style="display: none;"></span>
             <span class="q-index-tag" id="q-index-display">Câu 01 / 100</span>
           </div>
 
           <div class="q-actions-top">
+            <button class="icon-btn" id="q-hint-btn" title="Gợi ý nghĩa câu tiếng Việt (vẫn chừa chỗ trống)">
+              <i class="fa-regular fa-lightbulb"></i>
+            </button>
+            <button class="icon-btn active" id="q-furi-btn" title="Bật / Tắt Furigana trên Hán tự">
+              <span class="furi-icon-text">あ</span>
+            </button>
             <button class="icon-btn" id="q-speak-btn" title="Nghe câu hỏi tiếng Nhật">
               <i class="fa-solid fa-volume-high"></i>
             </button>
@@ -110,9 +116,17 @@
           </div>
         </div>
 
-        <!-- Nội dung câu hỏi -->
+        <!-- Nội dung câu hỏi (hỗ trợ Furigana thẻ ruby) -->
         <div class="question-body japanese-text" id="q-text">
-          オリンピックは４年（　　）開催される世界的なスポーツの祭典です。
+          <!-- Render động từ JS -->
+        </div>
+
+        <!-- Khung Gợi Ý Dịch Nghĩa Câu (Giữ chỗ trống) -->
+        <div class="hint-box" id="hint-box" style="display: none;">
+          <div class="hint-label">
+            <i class="fa-solid fa-lightbulb"></i> Gợi ý dịch câu:
+          </div>
+          <div class="hint-text" id="hint-text"></div>
         </div>
 
         <!-- Danh sách 4 đáp án -->
